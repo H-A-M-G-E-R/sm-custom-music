@@ -18,7 +18,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample0A,Sample0A+2268
 endspcblock
 
-spcblock $B210-($6E00-!p_sampleData) nspc ; sample data
+spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   Sample04: incbin "Sample04.brr"
   Sample05: incbin "Sample05.brr"
   Sample0A: incbin "Sample0A.brr"
