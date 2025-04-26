@@ -57,7 +57,7 @@ Tracker3C55:
   !d5
   !e5
   !g5
-  !dynamicMusicVolume,192,40
+  !dynamicMusicVolume,192,31
   db 96
   !a5
   !tie
