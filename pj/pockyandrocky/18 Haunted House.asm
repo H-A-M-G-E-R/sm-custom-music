@@ -1226,6 +1226,7 @@ Tracker28C2:
   !f3
   db 24
   !g3
+  !pitchSlide,8,16 : !g2
 
 .pattern12_3
   db 18,$7F
