@@ -107,6 +107,7 @@ Tracker2AFF:
   !rest
   db 24
   !e3
+  !pitchSlide,8,16 : !e2
 
 .pattern1_3
   !volume,255
@@ -783,6 +784,7 @@ Tracker2AFF:
   !c3
   db 24,$7F
   !as2
+  !pitchSlide,8,16 : !e2
 
 .pattern4_3
   db 18,$7F

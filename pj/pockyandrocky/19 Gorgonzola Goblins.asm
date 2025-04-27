@@ -917,6 +917,7 @@ Tracker2EF3:
   !g2
   db 24,$7F
   !g3
+  !pitchSlide,6,18 : !e2
 
 .pattern4_3
   db 24,$7F

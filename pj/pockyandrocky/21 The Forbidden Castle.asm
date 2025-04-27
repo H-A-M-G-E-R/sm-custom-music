@@ -246,6 +246,7 @@ Tracker2422:
   !rest
   db 24
   !d3
+  !pitchSlide,8,16 : !e2
 
 .pattern2_3
   !loop : dw .sub2B0E : db 1

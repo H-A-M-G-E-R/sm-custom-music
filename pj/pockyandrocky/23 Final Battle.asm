@@ -195,6 +195,7 @@ Tracker2D6C:
   !volume,80
   !dynamicVolume,96,180
   !as4
+  !pitchSlide,46,4 : !d5
 
 .pattern1_6
   !instr,!instr09
