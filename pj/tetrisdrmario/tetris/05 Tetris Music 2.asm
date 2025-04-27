@@ -216,6 +216,7 @@ TrackerE61B:
   !tie
   !pitchSlide,0,1 : !g6
   !tie
+  !pitchSlide,0,1 : !ds6
 
 .pattern0_5
   !volume,240
@@ -1344,6 +1345,7 @@ TrackerE61B:
   !tie
   !pitchSlide,0,1 : !e6
   !tie
+  !pitchSlide,0,1 : !cs6
 
 .pattern4_0
   db 96
@@ -1462,6 +1464,7 @@ TrackerE61B:
   !tie
   !pitchSlide,0,1 : !e6
   !tie
+  !pitchSlide,0,1 : !cs6
 
 .pattern4_5
   db 96
