@@ -1203,7 +1203,7 @@ Tracker28C2:
   !c3
   db 12,$7F
   !d3
-  !pitchSlide,5,2,143
+  !pitchSlide,5,2 : !ds3
   db 6
   !d3
   !c3
@@ -1442,13 +1442,13 @@ Tracker28C2:
   !as2
   db 12,$7F
   !as2
-  !pitchSlide,5,2,140
+  !pitchSlide,5,2 : !c3
   db 6,$1F
   !c3
   !c3
   db 24,$7F
   !a2
-  !pitchSlide,10,4,133
+  !pitchSlide,10,4 : !f2
   db 12
   !g2
   db 6,$1F
@@ -1468,7 +1468,7 @@ Tracker28C2:
   !d3
   db 12,$7F
   !f3
-  !pitchSlide,5,2,147
+  !pitchSlide,5,2 : !g3
   !g2
   db 6,$1F
   !g2
@@ -1480,13 +1480,13 @@ Tracker28C2:
   !as2
   db 12,$7F
   !as2
-  !pitchSlide,5,2,140
+  !pitchSlide,5,2 : !c3
   db 6,$1F
   !c3
   !c3
   db 24,$7F
   !a2
-  !pitchSlide,10,4,133
+  !pitchSlide,10,4 : !f2
   !end
 
 .sub2F62

@@ -1467,7 +1467,7 @@ Tracker241E:
   !d2
   db 48,$7F
   !d2
-  !pitchSlide,16,8,144
+  !pitchSlide,16,8 : !e3
   !end
 
 .sub2AA4

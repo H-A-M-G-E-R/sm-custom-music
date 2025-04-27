@@ -1465,7 +1465,7 @@ Tracker2EF3:
   !c7
   db 42
   !d7
-  !pitchSlide,24,18,183
+  !pitchSlide,24,18 : !g6
   db 54
   !g6
   !end
