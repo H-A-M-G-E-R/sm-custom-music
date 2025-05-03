@@ -5,6 +5,8 @@
 !p_sampleData = $2D00
 !p_extra = $E0
 
+!noteEndInTicks = $D0
+
 !c2 = "db $80"
 !cs2 = "db $81"
 !d2 = "db $82"
@@ -113,3 +115,7 @@ endmacro
 !dynamicEcho = "db $F8"
 !pitchSlide = "db $F9"
 !percBase = "db $FA"
+
+!setNoteLengthTable = "db $FB, $00"
+!adsrGain = "db $FB, $01"
+!setDPMiscCommand = "db $FB, $02"

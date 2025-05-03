@@ -19,6 +19,8 @@ You don't need to delete all the .nspc files before rebuilding using the script 
 # Credits
 Pocky & Rocky music by Hiroyuki Iwatsuki
 
+Pocky & Rocky 2 music by Hiroyuki Iwatsuki, Kinuyo Yamashita, Haruo Ohashi, Asuka Yamao
+
 SPCs from https://www.zophar.net/music/nintendo-snes-spc
 
 I use my [sm-nspc-tools](https://github.com/H-A-M-G-E-R/sm-nspc-tools) to port these songs.
