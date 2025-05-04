@@ -2146,7 +2146,7 @@ Tracker2402:
 .sub2FDC
   db 18
   !rest
-  !volume,108
+  !volume,83
   !subtranspose,80
   db 18,$3C
   !b4
@@ -2160,7 +2160,7 @@ Tracker2402:
   !gs4
   db 78
   !tie
-  !volume,135
+  !volume,104
   !subtranspose,72
   db 12,$0A
   !cs4

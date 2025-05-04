@@ -1695,12 +1695,12 @@ Tracker2402:
 .sub2C91
   db 48
   !f6
-  !dynamicVolume,36,40
+  !dynamicVolume,36,31
   db 36
   !tie
   db 12
   !rest
-  !volume,135
+  !volume,104
   db 6
   !d6
   !e6

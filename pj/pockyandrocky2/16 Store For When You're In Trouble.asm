@@ -530,7 +530,7 @@ Tracker2402:
   !f5
   db 96
   !d5
-  !dynamicVolume,96,55
+  !dynamicVolume,96,42
   !tie
   !end
 

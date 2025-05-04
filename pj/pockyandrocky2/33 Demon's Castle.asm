@@ -1671,7 +1671,7 @@ Tracker2402:
   !e6
   db 48
   !tie
-  !dynamicVolume,48,40
+  !dynamicVolume,48,31
   !tie
   !end
 
@@ -1695,7 +1695,7 @@ Tracker2402:
   !tie
   db 84,$7D
   !d6
-  !dynamicVolume,96,40
+  !dynamicVolume,96,31
   db 96
   !tie
   !end

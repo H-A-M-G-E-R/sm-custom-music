@@ -673,7 +673,7 @@ Tracker2587:
   db 48
   !d7
   !tie
-  !dynamicVolume,36,55
+  !dynamicVolume,36,42
   db 36
   !tie
   db 12

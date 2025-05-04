@@ -1683,8 +1683,8 @@ Tracker2402:
 .sub2DA9
   db 24
   !tie
-  !volume,68
-  !dynamicVolume,108,122
+  !volume,52
+  !dynamicVolume,108,94
   db 6
   !as5
   !b5
@@ -1704,7 +1704,7 @@ Tracker2402:
   !b5
   !as5
   !b5
-  !dynamicVolume,108,68
+  !dynamicVolume,108,52
   !as5
   !b5
   !as5
@@ -1933,7 +1933,7 @@ Tracker2402:
   !end
 
 .sub2EDC
-  !dynamicVolume,96,55
+  !dynamicVolume,96,42
   !gs5
   !cs6
   !cs7
@@ -1949,7 +1949,7 @@ Tracker2402:
   !gs5
   !cs6
   !cs7
-  !dynamicVolume,96,95
+  !dynamicVolume,96,73
   !dynamicPan,192,15
   !cs6
   !gs5
@@ -1966,7 +1966,7 @@ Tracker2402:
   !cs6
   !gs5
   !cs6
-  !dynamicVolume,96,55
+  !dynamicVolume,96,42
   !cs7
   !cs6
   !gs5
@@ -1985,7 +1985,7 @@ Tracker2402:
   !end
 
 .sub2F16
-  !dynamicVolume,96,95
+  !dynamicVolume,96,73
   !dynamicPan,192,5
   !cs6
   !cs7
@@ -2002,7 +2002,7 @@ Tracker2402:
   !cs6
   !cs7
   !cs6
-  !dynamicVolume,96,55
+  !dynamicVolume,96,42
   !gs5
   !cs6
   !cs7
@@ -2018,7 +2018,7 @@ Tracker2402:
   !gs5
   !cs6
   !cs7
-  !dynamicVolume,96,95
+  !dynamicVolume,96,73
   !dynamicPan,192,15
   !cs6
   !gs5
@@ -2035,7 +2035,7 @@ Tracker2402:
   !cs6
   !gs5
   !cs6
-  !dynamicVolume,96,55
+  !dynamicVolume,96,42
   !cs7
   !cs6
   !gs5

@@ -340,7 +340,7 @@ Tracker2404:
   !a6
   !b6
   !d7
-  !dynamicVolume,192,40
+  !dynamicVolume,192,31
   db 4
   !a6
   !b6
