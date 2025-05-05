@@ -1,0 +1,19 @@
+import glob, os.path
+
+nspc_paths = glob.glob('pj/**/*.nspc', recursive=True)
+
+for nspc_path in nspc_paths:
+    nspc = open(nspc_path, 'rb')
+    spc = open(os.path.splitext(nspc_path)[0] + '.spc', 'wb')
+    org = open('org/pjorg.spc', 'rb')
+
+    spc.write(org.read()) # Copy org to spc
+
+    while True:
+        size = int.from_bytes(nspc.read(2), 'little')
+        dest = int.from_bytes(nspc.read(2), 'little')
+        if size == 0:
+            break
+
+        spc.seek(dest+0x100)
+        spc.write(nspc.read(size))

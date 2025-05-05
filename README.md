@@ -3,6 +3,8 @@ This repository contains my ports of music from other games using the N-SPC engi
 
 The pj/ directory contains custom music intended to be used by [PJ's optimized SPC engine](https://github.com/H-A-M-G-E-R/SM-SPC).
 
+The org/ directory contains orgs needed to build SPCs.
+
 # How to build
 To assemble one of the ASM files with [asar 1.91](https://github.com/RPGHacker/asar/releases/tag/v1.91) (for example, "Main Theme" from Pocky & Rocky), run:
 
@@ -10,9 +12,13 @@ To assemble one of the ASM files with [asar 1.91](https://github.com/RPGHacker/a
 
 If you already compiled it, delete the .nspc file before rebuilding.
 
-To build all the ASM files, run:
+To build all the NSPC files, run:
 
 `python build_all.py <asar_path>`
+
+To build all the SPC files, run:
+
+`python build_spc.py`
 
 You don't need to delete all the .nspc files before rebuilding using the script above.
 
