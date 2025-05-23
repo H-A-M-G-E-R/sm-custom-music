@@ -1,6 +1,6 @@
-import glob, os.path
+import glob, os.path, sys
 
-nspc_paths = glob.glob('pj/**/*.nspc', recursive=True)
+nspc_paths = glob.glob('pj/**/*.nspc' if len(sys.argv) == 1 else sys.argv[1], recursive=True)
 
 for nspc_path in nspc_paths:
     nspc = open(nspc_path, 'rb')

@@ -244,11 +244,17 @@ TrackerF52A:
   db 14,$79
   !a4
   !pitchSlide,0,1 : !d7
+  !pitchSlide,4,2 : !b5
+  !pitchSlide,0,1 : !e7
+  !pitchSlide,4,2 : !e5
 
 .pattern2_2
   db 14,$77
   !ds4
   !pitchSlide,0,1 : !gs7
+  !pitchSlide,4,2 : !f5
+  !pitchSlide,0,1 : !as7
+  !pitchSlide,4,2 : !as5
 
 .pattern2_3
   db 14
@@ -501,11 +507,17 @@ TrackerF52A:
   db 14,$79
   !a4
   !pitchSlide,0,1 : !d7
+  !pitchSlide,4,2 : !b5
+  !pitchSlide,0,1 : !e7
+  !pitchSlide,4,2 : !e5
 
 .pattern7_2
   db 14,$77
   !ds4
   !pitchSlide,0,1 : !gs7
+  !pitchSlide,4,2 : !f5
+  !pitchSlide,0,1 : !as7
+  !pitchSlide,4,2 : !as5
 
 .pattern7_3
   db 14
