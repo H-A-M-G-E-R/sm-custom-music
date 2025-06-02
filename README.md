@@ -27,6 +27,8 @@ Pocky & Rocky music by Hiroyuki Iwatsuki
 
 Pocky & Rocky 2 music by Hiroyuki Iwatsuki, Kinuyo Yamashita, Haruo Ohashi, Asuka Yamao
 
+Kirby Super Star music by Jun Ishikawa, Dan Miyakawa
+
 SPCs from https://www.zophar.net/music/nintendo-snes-spc
 
 I use my [sm-nspc-tools](https://github.com/H-A-M-G-E-R/sm-nspc-tools) to port these songs.
