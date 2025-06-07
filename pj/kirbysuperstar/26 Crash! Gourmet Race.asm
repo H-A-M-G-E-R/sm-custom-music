@@ -142,7 +142,7 @@ Tracker4E85:
   %percNote(!instr30-!instr2C)
   db 20,$19
   %percNote(!instr30-!instr2C)
-  !dynamicEcho,16,38,38
+  !dynamicEcho,16,29,29
   db 16,$71
   !tie
   !echo,%00111100,29,29

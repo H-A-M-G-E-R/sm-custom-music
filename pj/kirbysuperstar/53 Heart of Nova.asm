@@ -1855,7 +1855,7 @@ Tracker4E85:
   !volume,182
   !pan,12
   !echo,%00011110,48,48
-  !dynamicEcho,30,120,120
+  !dynamicEcho,30,91,91
   db 18,$77
   %percNote(!instr30-!instr30)
   db 9,$71
@@ -1895,7 +1895,7 @@ Tracker4E85:
   %percNote(!instr30-!instr30)
   db 9,$72
   %percNote(!instr30-!instr30)
-  !dynamicEcho,17,63,63
+  !dynamicEcho,17,48,48
   db 18,$73
   %percNote(!instr30-!instr30)
   !end

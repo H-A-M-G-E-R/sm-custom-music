@@ -144,7 +144,7 @@ Tracker4E85:
   db 17,$16
   %percNote(!instr30-!instr2C)
   %percNote(!instr30-!instr2C)
-  !dynamicEcho,34,28,28
+  !dynamicEcho,34,21,21
   !instr,!instr2E
   !pan,11
   db 9,$75
@@ -1784,7 +1784,7 @@ Tracker4E85:
   !as6
   db 30,$76
   !g6
-  !dynamicEcho,36,60,60
+  !dynamicEcho,36,45,45
   db 21,$48
   !tie
   !pan,10
@@ -1823,7 +1823,7 @@ Tracker4E85:
   db 17,$16
   %percNote(!instr30-!instr2C)
   %percNote(!instr30-!instr2C)
-  !dynamicEcho,34,28,28
+  !dynamicEcho,34,21,21
   !instr,!instr2E
   !pan,11
   db 9,$75
@@ -3687,7 +3687,7 @@ Tracker4E85:
   !as6
   db 30,$76
   !g6
-  !dynamicEcho,36,60,60
+  !dynamicEcho,36,45,45
   db 21,$48
   !tie
   !pan,10
@@ -3726,7 +3726,7 @@ Tracker4E85:
   db 17,$16
   %percNote(!instr30-!instr2C)
   %percNote(!instr30-!instr2C)
-  !dynamicEcho,34,28,28
+  !dynamicEcho,34,21,21
   !instr,!instr2E
   !pan,11
   db 9,$75

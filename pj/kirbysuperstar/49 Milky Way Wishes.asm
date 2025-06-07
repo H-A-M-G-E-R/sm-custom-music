@@ -186,7 +186,7 @@ Tracker4E85:
   !tie
   db 72,$78
   !ds3
-  !dynamicEcho,71,45,45
+  !dynamicEcho,71,34,34
   !tie
   !end
 
