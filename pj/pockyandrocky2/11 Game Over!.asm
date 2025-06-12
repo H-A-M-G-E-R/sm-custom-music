@@ -83,6 +83,7 @@ Tracker2404:
   !tie
   db 2
   !rest
+  !end
 
 .pattern0_2
   db 96
@@ -101,6 +102,7 @@ Tracker2404:
   !tie
   db 2
   !rest
+  !end
 
 .pattern0_3
   !instr,!instr03
@@ -144,6 +146,7 @@ Tracker2404:
   !rest
   db 2
   !rest
+  !end
 
 .pattern0_4
   db 2
@@ -187,6 +190,7 @@ Tracker2404:
   !rest
   db 1
   !rest
+  !end
 
 .pattern0_5
   db 96
@@ -202,6 +206,7 @@ Tracker2404:
   !tie
   db 2
   !rest
+  !end
 
 .pattern0_6
   db 96
@@ -217,6 +222,7 @@ Tracker2404:
   !tie
   db 2
   !rest
+  !end
 
 .pattern0_7
   db 2
@@ -238,6 +244,7 @@ Tracker2404:
   !e6
   db 96
   !tie
+  !end
 endspcblock
 
 spcblock !p_extra nspc

@@ -887,6 +887,7 @@ Tracker4E85:
   !dynamicVolume,13,40
   db 13
   !tie
+  !end
 
 .pattern0_2
   db 20
@@ -1330,6 +1331,7 @@ Tracker4E85:
   !rest
   db 57
   !rest
+  !end
 
 .sub56AB
   !volume,90

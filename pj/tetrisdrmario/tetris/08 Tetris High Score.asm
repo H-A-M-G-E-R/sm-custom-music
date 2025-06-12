@@ -65,18 +65,21 @@ TrackerF7F3:
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr0B
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern0_4
   !instr,!instr03
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern1_0
   db 36,$7F
@@ -188,6 +191,7 @@ TrackerF7F3:
   !cs6
   db 96
   !gs5
+  !end
 
 .pattern1_2
   db 12
@@ -258,6 +262,7 @@ TrackerF7F3:
   !ds6
   db 96
   !tie
+  !end
 
 .pattern1_4
   !instr,!instr13
@@ -363,6 +368,7 @@ TrackerF7F3:
   db 24,$7F
   !gs2
   !rest
+  !end
 
 .pattern1_6
   !volume,200
@@ -528,6 +534,7 @@ TrackerF7F3:
   !gs5
   db 42
   !rest
+  !end
 
 .subFC2C
   db 36

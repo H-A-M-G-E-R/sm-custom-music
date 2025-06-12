@@ -128,6 +128,7 @@ Tracker2404:
   !f5
   db 72
   !tie
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -255,6 +256,7 @@ Tracker2404:
   !as3
   !f4
   !as4
+  !end
 
 .pattern1_3
   !volume,198
@@ -352,6 +354,7 @@ Tracker2404:
   %percNote(!instr06-!instr05)
   db 5
   %percNote(!instr06-!instr05)
+  !end
 
 .pattern1_4
   !instr,!instr02
@@ -394,6 +397,7 @@ Tracker2404:
   !d5
   db 72
   !tie
+  !end
 
 .pattern1_5
   !instr,!instr02
@@ -436,6 +440,7 @@ Tracker2404:
   !as4
   db 72
   !tie
+  !end
 
 .pattern1_6
   !volume,198
@@ -487,6 +492,7 @@ Tracker2404:
   db 12,$79
   %percNote(!instr08-!instr05)
   !loop : dw .sub2749 : db 8
+  !end
 
 .pattern1_7
   db 12
@@ -514,6 +520,7 @@ Tracker2404:
   !loop : dw .sub265B : db 1
   db 60
   !tie
+  !end
 
 .sub265B
   db 7

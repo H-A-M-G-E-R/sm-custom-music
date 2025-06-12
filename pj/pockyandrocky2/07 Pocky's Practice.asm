@@ -144,6 +144,7 @@ Tracker2404:
   !c4
   db 8
   !b3
+  !end
 
 .pattern1_3
   !volume,198
@@ -177,6 +178,7 @@ Tracker2404:
   %percNote(!instr05-!instr04)
   db 8,$7F
   %percNote(!instr05-!instr04)
+  !end
 
 .pattern1_5
   !instr,!instr02
@@ -215,6 +217,7 @@ Tracker2404:
   db 24
   !rest
   !loop : dw .sub2898 : db 3
+  !end
 
 .pattern1_6
   !volume,198
@@ -249,6 +252,7 @@ Tracker2404:
   %percNote(!instr06-!instr04)
   db 8
   %percNote(!instr06-!instr04)
+  !end
 
 .pattern2_0
   !instr,!instr00
@@ -474,6 +478,7 @@ Tracker2404:
   !rest
   db 8,$75
   !d6
+  !end
 
 .pattern2_2
   db 16,$7F
@@ -619,6 +624,7 @@ Tracker2404:
   !g3
   db 8
   !f3
+  !end
 
 .pattern2_3
   db 24,$7F
@@ -631,6 +637,7 @@ Tracker2404:
   !loop : dw .sub2A12 : db 6
   !loop : dw .sub2A17 : db 1
   !loop : dw .sub2A12 : db 7
+  !end
 
 .pattern2_4
   !instr,!instr03
@@ -694,6 +701,7 @@ Tracker2404:
   !a5
   db 56
   !g5
+  !end
 
 .pattern2_5
   !volume,104
@@ -796,6 +804,7 @@ Tracker2404:
   !e5
   db 56
   !d5
+  !end
 
 .pattern2_6
   db 16,$79
@@ -827,6 +836,7 @@ Tracker2404:
   %percNote(!instr06-!instr04)
   db 8
   %percNote(!instr06-!instr04)
+  !end
 
 .pattern2_7
   db 24
@@ -861,6 +871,7 @@ Tracker2404:
   !g6
   db 24
   !rest
+  !end
 
 .sub2861
   db 16

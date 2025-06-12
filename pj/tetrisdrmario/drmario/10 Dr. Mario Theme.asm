@@ -97,6 +97,7 @@ TrackerE644:
   db 96
   !rest
   !loop : dw .subE9D8 : db 7
+  !end
 
 .pattern0_2
   !instr,!instr05
@@ -121,6 +122,7 @@ TrackerE644:
   !a2
   db 6
   !rest
+  !end
 
 .pattern0_3
   !volume,200
@@ -135,6 +137,7 @@ TrackerE644:
   !g4
   db 24
   !g5
+  !end
 
 .pattern0_4
   !volume,200
@@ -147,6 +150,7 @@ TrackerE644:
   db 24
   !c5
   !loop : dw .subE9E1 : db 7
+  !end
 
 .pattern1_0
   !loop : dw .subE9E7 : db 1
@@ -181,6 +185,7 @@ TrackerE644:
   !g6
   !c7
   !a6
+  !end
 
 .pattern1_2
   !loop : dw .subEA21 : db 1
@@ -193,6 +198,7 @@ TrackerE644:
   !ds3
   !d3
   !gs2
+  !end
 
 .pattern1_3
   db 24
@@ -220,6 +226,7 @@ TrackerE644:
   db 8,$7F
   !g5
   !g5
+  !end
 
 .pattern1_4
   db 16,$73
@@ -239,6 +246,7 @@ TrackerE644:
   db 8,$73
   !c5
   !loop : dw .subEA47 : db 7
+  !end
 
 .pattern2_0
   !loop : dw .subE9E7 : db 1
@@ -271,6 +279,7 @@ TrackerE644:
   !c7
   !cs7
   !d7
+  !end
 
 .pattern2_2
   !loop : dw .subEA21 : db 1
@@ -306,9 +315,11 @@ TrackerE644:
   !b2
   db 6
   !b3
+  !end
 
 .pattern2_3
   !loop : dw .subEA5C : db 4
+  !end
 
 .pattern2_4
   db 16,$73
@@ -328,6 +339,7 @@ TrackerE644:
   db 8,$73
   !c5
   !loop : dw .subEA47 : db 7
+  !end
 
 .pattern3_0
   db 18
@@ -419,6 +431,7 @@ TrackerE644:
   !fs6
   !gs6
   !as6
+  !end
 
 .pattern3_2
   db 24,$7F
@@ -517,6 +530,7 @@ TrackerE644:
   !as2
   db 24
   !rest
+  !end
 
 .pattern3_3
   db 24
@@ -560,6 +574,7 @@ TrackerE644:
   !g5
   !g5
   !g5
+  !end
 
 .pattern3_4
   db 16,$73
@@ -582,6 +597,7 @@ TrackerE644:
   db 96,$7F
   !c5
   !rest
+  !end
 
 .pattern4_0
   db 24,$7F
@@ -666,6 +682,7 @@ TrackerE644:
   !rest
   !rest
   !rest
+  !end
 
 .pattern4_2
   !loop : dw .subEA21 : db 1
@@ -686,6 +703,7 @@ TrackerE644:
   !c2
   db 24
   !c2
+  !end
 
 .pattern4_3
   db 24
@@ -710,6 +728,7 @@ TrackerE644:
   !g5
   db 24
   !g6
+  !end
 
 .pattern4_4
   db 16,$73
@@ -743,6 +762,7 @@ TrackerE644:
   !c5
   db 24,$7F
   !c5
+  !end
 
 .subE9C5
   db 18

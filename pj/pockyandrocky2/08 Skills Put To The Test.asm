@@ -269,6 +269,7 @@ Tracker2A61:
   !ds6
   !loop : dw .sub2FC7 : db 1
   !loop : dw .sub3040 : db 4
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -398,6 +399,7 @@ Tracker2A61:
   db 12
   !d4
   !loop : dw .sub3063 : db 2
+  !end
 
 .pattern1_3
   !volume,198
@@ -502,6 +504,7 @@ Tracker2A61:
   db 6
   %percNote(!instr05-!instr04)
   %percNote(!instr05-!instr04)
+  !end
 
 .pattern1_4
   !instr,!instr03
@@ -596,6 +599,7 @@ Tracker2A61:
   !d6
   db 96
   !tie
+  !end
 
 .pattern1_5
   !instr,!instr03
@@ -696,6 +700,7 @@ Tracker2A61:
   !g5
   db 96
   !tie
+  !end
 
 .pattern1_6
   !subtranspose,54
@@ -772,6 +777,7 @@ Tracker2A61:
   !a4
   db 5
   !g4
+  !end
 
 .pattern1_7
   !volume,198
@@ -827,6 +833,7 @@ Tracker2A61:
   %percNote(!instr06-!instr04)
   %percNote(!instr06-!instr04)
   !loop : dw .sub30AC : db 9
+  !end
 
 .sub2E51
   db 6,$7F

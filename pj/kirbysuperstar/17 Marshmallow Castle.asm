@@ -107,18 +107,21 @@ Tracker4E85:
   !instr,!instr07
   !volume,240
   !loop : dw .sub528A : db 2
+  !end
 
 .pattern0_2
   !instr,!instr0B
   !pan,12
   !volume,135
   !loop : dw .sub52BC : db 2
+  !end
 
 .pattern0_3
   !instr,!instr0B
   !pan,8
   !volume,135
   !loop : dw .sub52E3 : db 2
+  !end
 
 .pattern0_4
   !pan,10
@@ -147,6 +150,7 @@ Tracker4E85:
   db 116
   !f5
   !tie
+  !end
 
 .pattern1_0
   !loop : dw .sub525D : db 7
@@ -180,15 +184,18 @@ Tracker4E85:
 
 .pattern1_1
   !loop : dw .sub528A : db 2
+  !end
 
 .pattern1_2
   !loop : dw .sub52E3 : db 2
+  !end
 
 .pattern1_3
   !loop : dw .sub530A : db 1
   !loop : dw .sub5324 : db 1
   !loop : dw .sub5332 : db 1
   !loop : dw .sub5324 : db 1
+  !end
 
 .pattern1_4
   !slideIn,0,15,1
@@ -215,6 +222,7 @@ Tracker4E85:
   db 116,$76
   !c6
   !tie
+  !end
 
 .pattern2_0
   !loop : dw .sub525D : db 7
@@ -248,12 +256,15 @@ Tracker4E85:
 
 .pattern2_1
   !loop : dw .sub528A : db 2
+  !end
 
 .pattern2_2
   !loop : dw .sub52BC : db 2
+  !end
 
 .pattern2_3
   !loop : dw .sub52E3 : db 2
+  !end
 
 .pattern2_4
   !instr,!instr29
@@ -287,6 +298,7 @@ Tracker4E85:
   !f5
   !endSlide
   !tie
+  !end
 
 .pattern3_0
   !loop : dw .sub525D : db 7
@@ -320,15 +332,18 @@ Tracker4E85:
 
 .pattern3_1
   !loop : dw .sub528A : db 2
+  !end
 
 .pattern3_2
   !loop : dw .sub52E3 : db 2
+  !end
 
 .pattern3_3
   !loop : dw .sub530A : db 1
   !loop : dw .sub5324 : db 1
   !loop : dw .sub5332 : db 1
   !loop : dw .sub5324 : db 1
+  !end
 
 .pattern3_4
   !slideIn,0,15,1
@@ -360,6 +375,7 @@ Tracker4E85:
   !f6
   !endSlide
   !tie
+  !end
 
 .pattern4_0
   !loop : dw .sub525D : db 15
@@ -536,6 +552,7 @@ Tracker4E85:
   !c3
   db 13
   !f3
+  !end
 
 .pattern4_2
   !instr,!instr09
@@ -571,6 +588,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern4_3
   !instr,!instr09
@@ -606,6 +624,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern4_4
   !instr,!instr26
@@ -695,6 +714,7 @@ Tracker4E85:
   !f5
   db 13
   !a4
+  !end
 
 .sub525D
   !instr,!instr2E

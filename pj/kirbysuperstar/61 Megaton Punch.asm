@@ -352,6 +352,7 @@ Tracker4E85:
   !e2
   db 36,$56
   !b2
+  !end
 
 .pattern0_2
   !volume,225
@@ -470,6 +471,7 @@ Tracker4E85:
   !f4
   !pan,12
   !ds4
+  !end
 
 .pattern0_3
   !volume,200
@@ -575,6 +577,7 @@ Tracker4E85:
   db 18,$36
   !g3
   !g2
+  !end
 
 .pattern0_4
   !subtranspose,60
@@ -810,6 +813,7 @@ Tracker4E85:
   !c5
   db 36
   !fs5
+  !end
 
 .pattern1_0
   !endSlide
@@ -868,6 +872,7 @@ Tracker4E85:
   !ds2
   db 54,$78
   !a2
+  !end
 
 .pattern1_2
   !loop : dw .sub57C0 : db 2
@@ -913,6 +918,7 @@ Tracker4E85:
   !instr,!instr30
   db 18,$79
   !a4
+  !end
 
 .pattern1_3
   !pan,10
@@ -934,6 +940,7 @@ Tracker4E85:
   !tie
   db 54
   !d4
+  !end
 
 .pattern1_4
   db 1
@@ -976,6 +983,7 @@ Tracker4E85:
   !ds4
   db 53,$76
   !a4
+  !end
 
 .pattern2_0
   !endSlide
@@ -1056,6 +1064,7 @@ Tracker4E85:
   !rest
   db 18,$48
   !g2
+  !end
 
 .pattern2_2
   !loop : dw .sub57C0 : db 3
@@ -1082,6 +1091,7 @@ Tracker4E85:
   db 9
   !a4
   !a4
+  !end
 
 .pattern2_3
   db 72,$76
@@ -1104,6 +1114,7 @@ Tracker4E85:
   db 9,$26
   !b4
   !b4
+  !end
 
 .pattern2_4
   db 1
@@ -1129,6 +1140,7 @@ Tracker4E85:
   !g4
   db 8
   !g4
+  !end
 
 .pattern3_0
   !volume,160
@@ -1192,6 +1204,7 @@ Tracker4E85:
   !a2
   !a2
   !a2
+  !end
 
 .pattern3_2
   !pan,10
@@ -1287,6 +1300,7 @@ Tracker4E85:
   !a4
   !a4
   !a4
+  !end
 
 .pattern3_3
   !volume,185
@@ -1327,6 +1341,7 @@ Tracker4E85:
   db 9,$7A
   !a3
   !a3
+  !end
 
 .pattern3_4
   !endVibrato
@@ -1454,6 +1469,7 @@ Tracker4E85:
   !a4
   db 9,$56
   !a4
+  !end
 
 .sub5668
   db 18,$58

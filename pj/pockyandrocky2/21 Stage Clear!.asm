@@ -138,6 +138,7 @@ Tracker2406:
   !e7
   db 36
   !rest
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -165,6 +166,7 @@ Tracker2406:
   !a3
   db 48
   !rest
+  !end
 
 .pattern1_3
   !volume,198
@@ -193,6 +195,7 @@ Tracker2406:
   %percNote(!instr05-!instr05)
   db 48
   !rest
+  !end
 
 .pattern1_4
   db 1
@@ -238,6 +241,7 @@ Tracker2406:
   !a7
   db 36
   !rest
+  !end
 
 .pattern1_5
   !instr,!instr03
@@ -260,6 +264,7 @@ Tracker2406:
   !a5
   db 30
   !rest
+  !end
 
 .pattern1_6
   !instr,!instr03
@@ -282,6 +287,7 @@ Tracker2406:
   !e5
   db 30
   !rest
+  !end
 
 .pattern1_7
   !instr,!instr03
@@ -304,6 +310,7 @@ Tracker2406:
   !c5
   db 30
   !rest
+  !end
 endspcblock
 
 spcblock !p_extra nspc

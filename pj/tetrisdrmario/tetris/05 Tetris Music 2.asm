@@ -108,6 +108,7 @@ TrackerE61B:
   !b3
   db 66
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr05
@@ -142,11 +143,13 @@ TrackerE61B:
   db 12,$2F
   !b2
   !b2
+  !end
 
 .pattern0_3
   !volume,200
   !pan,10
   !loop : dw .subEF0E : db 1
+  !end
 
 .pattern0_4
   !volume,200
@@ -217,6 +220,7 @@ TrackerE61B:
   !pitchSlide,0,1 : !g6
   !tie
   !pitchSlide,0,1 : !ds6
+  !end
 
 .pattern0_5
   !volume,240
@@ -224,6 +228,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern0_6
   !volume,200
@@ -231,6 +236,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern0_7
   !volume,200
@@ -238,6 +244,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern1_0
   !instr,!instr0D
@@ -341,6 +348,7 @@ TrackerE61B:
   !a4
   db 12,$2D
   !a4
+  !end
 
 .pattern1_2
   db 12,$2F
@@ -359,6 +367,7 @@ TrackerE61B:
   !b2
   !b2
   !loop : dw .subEF51 : db 2
+  !end
 
 .pattern1_3
   !loop : dw .subEF0E : db 1
@@ -382,6 +391,7 @@ TrackerE61B:
   !g3
   !instr,!instr08
   !c4
+  !end
 
 .pattern1_4
   db 6,$73
@@ -417,6 +427,7 @@ TrackerE61B:
   !tie
   !pitchSlide,0,1 : !ds6
   !loop : dw .subEF64 : db 2
+  !end
 
 .pattern1_5
   !instr,!instr13
@@ -428,6 +439,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern1_6
   !instr,!instr13
@@ -439,6 +451,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern1_7
   !instr,!instr13
@@ -450,6 +463,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern2_0
   !instr,!instr0D
@@ -553,6 +567,7 @@ TrackerE61B:
   !a4
   db 12,$2D
   !a4
+  !end
 
 .pattern2_2
   db 12,$2F
@@ -571,6 +586,7 @@ TrackerE61B:
   !b2
   !b2
   !loop : dw .subEF51 : db 2
+  !end
 
 .pattern2_3
   !loop : dw .subEF0E : db 1
@@ -594,6 +610,7 @@ TrackerE61B:
   !g3
   !instr,!instr08
   !c4
+  !end
 
 .pattern2_4
   db 6,$73
@@ -629,6 +646,7 @@ TrackerE61B:
   !tie
   !pitchSlide,0,1 : !ds6
   !loop : dw .subEF64 : db 2
+  !end
 
 .pattern2_5
   !instr,!instr13
@@ -640,6 +658,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern2_6
   !instr,!instr13
@@ -651,6 +670,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern2_7
   !instr,!instr13
@@ -662,6 +682,7 @@ TrackerE61B:
   db 96
   !rest
   !rest
+  !end
 
 .pattern3_0
   db 12,$2B
@@ -973,6 +994,7 @@ TrackerE61B:
   !rest
   db 96
   !rest
+  !end
 
 .pattern3_2
   db 12,$2F
@@ -1023,10 +1045,12 @@ TrackerE61B:
   !loop : dw .subEFF5 : db 2
   !loop : dw .subEF51 : db 2
   !loop : dw .subF008 : db 2
+  !end
 
 .pattern3_3
   !loop : dw .subEF0E : db 1
   !loop : dw .subF01B : db 12
+  !end
 
 .pattern3_4
   db 6,$73
@@ -1346,6 +1370,7 @@ TrackerE61B:
   !pitchSlide,0,1 : !e6
   !tie
   !pitchSlide,0,1 : !cs6
+  !end
 
 .pattern4_0
   db 96
@@ -1365,6 +1390,7 @@ TrackerE61B:
   db 12,$7F
   !a4
   !rest
+  !end
 
 .pattern4_2
   db 12,$2F
@@ -1396,9 +1422,11 @@ TrackerE61B:
   db 12,$2F
   !b2
   !b2
+  !end
 
 .pattern4_3
   !loop : dw .subEF0E : db 1
+  !end
 
 .pattern4_4
   db 6,$73
@@ -1465,6 +1493,7 @@ TrackerE61B:
   !pitchSlide,0,1 : !e6
   !tie
   !pitchSlide,0,1 : !cs6
+  !end
 
 .pattern4_5
   db 96
@@ -1478,6 +1507,7 @@ TrackerE61B:
   !volume,240
   db 2
   !rest
+  !end
 
 .pattern4_6
   db 96
@@ -1491,6 +1521,7 @@ TrackerE61B:
   !volume,200
   db 4
   !rest
+  !end
 
 .pattern4_7
   db 96
@@ -1504,6 +1535,7 @@ TrackerE61B:
   !volume,200
   db 4
   !rest
+  !end
 
 .subEF0E
   !instr,!instr07

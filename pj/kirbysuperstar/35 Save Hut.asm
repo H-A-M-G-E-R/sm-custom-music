@@ -245,6 +245,7 @@ Tracker4E85:
   !g5
   db 27
   !b5
+  !end
 
 .pattern0_2
   db 18
@@ -337,6 +338,7 @@ Tracker4E85:
   !g5
   db 29
   !d6
+  !end
 
 .pattern0_3
   !instr,!instr33
@@ -375,6 +377,7 @@ Tracker4E85:
   !tie
   db 103
   !rest
+  !end
 
 .pattern0_4
   !pan,11
@@ -419,6 +422,7 @@ Tracker4E85:
   !g4
   db 103,$74
   !g3
+  !end
 
 .sub50AF
   !e6

@@ -105,18 +105,21 @@ TrackerD704:
   !instr,!instr07
   db 24
   !rest
+  !end
 
 .pattern0_2
   !volume,200
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern0_3
   !volume,200
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern0_4
   !volume,200
@@ -124,6 +127,7 @@ TrackerD704:
   !instr,!instr0A
   db 24
   !rest
+  !end
 
 .pattern1_0
   !instr,!instr02
@@ -134,19 +138,23 @@ TrackerD704:
 .pattern1_1
   !instr,!instr07
   !loop : dw .subDE92 : db 1
+  !end
 
 .pattern1_2
   !loop : dw .subDEA5 : db 1
   db 96
   !rest
+  !end
 
 .pattern1_3
   db 96
   !rest
   !rest
+  !end
 
 .pattern1_4
   !loop : dw .subDDD2 : db 2
+  !end
 
 .pattern2_0
   !instr,!instr02
@@ -157,19 +165,23 @@ TrackerD704:
 .pattern2_1
   !instr,!instr07
   !loop : dw .subDE92 : db 1
+  !end
 
 .pattern2_2
   !loop : dw .subDEA5 : db 1
   db 96
   !rest
+  !end
 
 .pattern2_3
   db 96
   !rest
   !rest
+  !end
 
 .pattern2_4
   !loop : dw .subDDD2 : db 2
+  !end
 
 .pattern3_0
   !loop : dw .subDE7E : db 1
@@ -177,6 +189,7 @@ TrackerD704:
 
 .pattern3_1
   !loop : dw .subDE92 : db 1
+  !end
 
 .pattern3_2
   db 15
@@ -199,6 +212,7 @@ TrackerD704:
   !g6
   db 60
   !rest
+  !end
 
 .pattern3_3
   !instr,!instr08
@@ -222,9 +236,11 @@ TrackerD704:
   !c4
   !c3
   !c3
+  !end
 
 .pattern3_4
   !loop : dw .subDDD2 : db 2
+  !end
 
 .pattern4_0
   !loop : dw .subDE7E : db 1
@@ -232,6 +248,7 @@ TrackerD704:
 
 .pattern4_1
   !loop : dw .subDE92 : db 1
+  !end
 
 .pattern4_2
   db 15
@@ -254,6 +271,7 @@ TrackerD704:
   !g6
   db 60
   !rest
+  !end
 
 .pattern4_3
   !instr,!instr08
@@ -277,9 +295,11 @@ TrackerD704:
   !c4
   !c3
   !c3
+  !end
 
 .pattern4_4
   !loop : dw .subDDD2 : db 2
+  !end
 
 .pattern5_0
   !instr,!instr02
@@ -292,6 +312,7 @@ TrackerD704:
   !instr,!instr07
   !loop : dw .subDE92 : db 1
   !loop : dw .subDEB5 : db 2
+  !end
 
 .pattern5_2
   !loop : dw .subDE19 : db 1
@@ -305,15 +326,18 @@ TrackerD704:
   !g6
   db 60
   !rest
+  !end
 
 .pattern5_3
   !loop : dw .subDE40 : db 1
   db 96
   !rest
   !rest
+  !end
 
 .pattern5_4
   !loop : dw .subDDD2 : db 4
+  !end
 
 .pattern6_0
   !instr,!instr02
@@ -326,6 +350,7 @@ TrackerD704:
   !instr,!instr07
   !loop : dw .subDE92 : db 1
   !loop : dw .subDEB5 : db 2
+  !end
 
 .pattern6_2
   !loop : dw .subDE19 : db 1
@@ -339,15 +364,18 @@ TrackerD704:
   !g6
   db 60
   !rest
+  !end
 
 .pattern6_3
   !loop : dw .subDE40 : db 1
   db 96
   !rest
   !rest
+  !end
 
 .pattern6_4
   !loop : dw .subDDD2 : db 4
+  !end
 
 .pattern7_0
   !loop : dw .subDE7E : db 1
@@ -357,11 +385,13 @@ TrackerD704:
 .pattern7_1
   !loop : dw .subDE92 : db 1
   !loop : dw .subDEB5 : db 6
+  !end
 
 .pattern7_2
   !loop : dw .subDEBE : db 1
   !rest
   !loop : dw .subDEEC : db 1
+  !end
 
 .pattern7_3
   !instr,!instr08
@@ -385,9 +415,11 @@ TrackerD704:
   !c3
   !c3
   !loop : dw .subDF13 : db 7
+  !end
 
 .pattern7_4
   !loop : dw .subDDD2 : db 8
+  !end
 
 .pattern8_0
   !instr,!instr02
@@ -435,6 +467,7 @@ TrackerD704:
   db 24
   !rest
   !rest
+  !end
 
 .pattern8_2
   !loop : dw .subDE19 : db 1
@@ -489,6 +522,7 @@ TrackerD704:
   !c4
   !a3
   !loop : dw .subDE36 : db 1
+  !end
 
 .pattern8_3
   !loop : dw .subDE40 : db 1
@@ -511,6 +545,7 @@ TrackerD704:
   !volume,200
   db 18
   !rest
+  !end
 
 .pattern8_4
   db 6,$7B
@@ -549,6 +584,7 @@ TrackerD704:
   !g4
   !g4
   !g4
+  !end
 
 .pattern9_0
   db 12,$5B
@@ -589,6 +625,7 @@ TrackerD704:
   !endSlide
   db 42
   !rest
+  !end
 
 .pattern9_2
   !instr,!instr03
@@ -603,6 +640,7 @@ TrackerD704:
   db 96
   !tie
   !pitchSlide,0,72 : !f6
+  !end
 
 .pattern9_3
   !instr,!instr03
@@ -618,10 +656,12 @@ TrackerD704:
   !rest
   db 96
   !rest
+  !end
 
 .pattern9_4
   !dynamicVolume,192,50
   !loop : dw .subDDD2 : db 2
+  !end
 
 .pattern10_0
   !instr,!instr02
@@ -639,22 +679,26 @@ TrackerD704:
   !volume,200
   !instr,!instr07
   !loop : dw .subDD60 : db 1
+  !end
 
 .pattern10_2
   !volume,200
   db 96
   !rest
   !rest
+  !end
 
 .pattern10_3
   !volume,200
   !instr,!instr03
   !loop : dw .subDD7A : db 1
+  !end
 
 .pattern10_4
   !instr,!instr0A
   !volume,200
   !loop : dw .subDDA4 : db 2
+  !end
 
 .pattern11_0
   !instr,!instr02
@@ -672,22 +716,26 @@ TrackerD704:
   !volume,200
   !instr,!instr07
   !loop : dw .subDD60 : db 1
+  !end
 
 .pattern11_2
   !volume,200
   db 96
   !rest
   !rest
+  !end
 
 .pattern11_3
   !volume,200
   !instr,!instr03
   !loop : dw .subDD7A : db 1
+  !end
 
 .pattern11_4
   !instr,!instr0A
   !volume,200
   !loop : dw .subDDA4 : db 2
+  !end
 
 .pattern12_0
   db 24,$7B
@@ -713,6 +761,7 @@ TrackerD704:
 .pattern12_1
   !loop : dw .subDD60 : db 1
   !loop : dw .subDDC5 : db 2
+  !end
 
 .pattern12_2
   !instr,!instr10
@@ -721,6 +770,7 @@ TrackerD704:
   !tie
   !tie
   !tie
+  !end
 
 .pattern12_3
   !instr,!instr10
@@ -729,6 +779,7 @@ TrackerD704:
   !tie
   !tie
   !tie
+  !end
 
 .pattern12_4
   !loop : dw .subDDA4 : db 2
@@ -796,6 +847,7 @@ TrackerD704:
   !gs4
   db 5
   !as4
+  !end
 
 .pattern13_0
   db 96
@@ -808,6 +860,7 @@ TrackerD704:
 .pattern13_1
   !loop : dw .subDE92 : db 1
   !loop : dw .subDEB5 : db 4
+  !end
 
 .pattern13_2
   !instr,!instr0D
@@ -835,6 +888,7 @@ TrackerD704:
   !instr,!instr03
   !loop : dw .subDD7A : db 1
   !loop : dw .subDF27 : db 2
+  !end
 
 .pattern13_3
   !instr,!instr0D
@@ -864,10 +918,12 @@ TrackerD704:
   !rest
   !rest
   !rest
+  !end
 
 .pattern13_4
   !volume,200
   !loop : dw .subDDD2 : db 6
+  !end
 
 .subDE7E
   db 12,$5B

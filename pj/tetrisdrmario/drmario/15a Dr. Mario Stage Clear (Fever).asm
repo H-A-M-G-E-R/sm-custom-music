@@ -122,6 +122,7 @@ TrackerED48:
   db 8,$19
   !g6
   !rest
+  !end
 
 .pattern0_2
   !volume,200
@@ -153,6 +154,7 @@ TrackerED48:
   !rest
   !rest
   !loop : dw .subEF76 : db 4
+  !end
 
 .pattern0_3
   !volume,200
@@ -192,6 +194,7 @@ TrackerED48:
   !loop : dw .subEF76 : db 4
   db 8
   !rest
+  !end
 
 .pattern0_4
   !volume,200
@@ -224,6 +227,7 @@ TrackerED48:
   !rest
   db 22
   !rest
+  !end
 
 .pattern0_5
   !volume,200
@@ -259,6 +263,7 @@ TrackerED48:
   !loop : dw .subEF76 : db 10
   db 8
   !rest
+  !end
 
 .pattern0_6
   !volume,200
@@ -310,6 +315,7 @@ TrackerED48:
   !rest
   db 8
   !rest
+  !end
 
 .pattern0_7
   !volume,200
@@ -330,6 +336,7 @@ TrackerED48:
   !loop : dw .subEF76 : db 11
   db 8
   !rest
+  !end
 
 .subEEFC
   db 16,$09

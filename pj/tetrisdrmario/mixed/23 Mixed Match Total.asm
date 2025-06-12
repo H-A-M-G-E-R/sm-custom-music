@@ -122,6 +122,7 @@ TrackerE337:
   !loop : dw .subE570 : db 2
   db 96
   !rest
+  !end
 
 .pattern0_2
   !volume,200
@@ -149,6 +150,7 @@ TrackerE337:
   !loop : dw .subE581 : db 2
   db 96
   !rest
+  !end
 
 .pattern0_3
   !volume,200
@@ -188,6 +190,7 @@ TrackerE337:
   !pitchSlide,0,150 : !c2
   db 96
   !tie
+  !end
 
 .pattern0_4
   !volume,200
@@ -200,6 +203,7 @@ TrackerE337:
   !loop : dw .subE592 : db 3
   !rest
   !rest
+  !end
 
 .pattern1_0
   !tempo,25
@@ -292,6 +296,7 @@ TrackerE337:
   !d7
   !rest
   !g6
+  !end
 
 .pattern1_2
   !instr,!instr03
@@ -361,6 +366,7 @@ TrackerE337:
   !as6
   db 16
   !rest
+  !end
 
 .pattern1_3
   !instr,!instr07
@@ -369,6 +375,7 @@ TrackerE337:
   !g6
   !g5
   !g3
+  !end
 
 .pattern1_4
   !volume,200
@@ -389,6 +396,7 @@ TrackerE337:
   !pitchSlide,0,2 : !a7
   db 96,$27
   !g7
+  !end
 
 .subE55D
   !instr,!instr07

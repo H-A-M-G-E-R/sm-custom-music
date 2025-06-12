@@ -150,6 +150,7 @@ Tracker4E85:
   !e7
   db 13,$76
   !c7
+  !end
 
 .pattern0_2
   !pan,10
@@ -210,6 +211,7 @@ Tracker4E85:
   db 28
   !e6
   !f6
+  !end
 
 .pattern0_3
   !pan,12
@@ -270,6 +272,7 @@ Tracker4E85:
   db 28
   !g5
   !d6
+  !end
 
 .pattern0_4
   !volume,200
@@ -300,6 +303,7 @@ Tracker4E85:
   db 13,$71
   %percNote(!instr2D-!instr2D)
   !loop : dw .sub5004 : db 7
+  !end
 
 .sub4FF7
   !g6

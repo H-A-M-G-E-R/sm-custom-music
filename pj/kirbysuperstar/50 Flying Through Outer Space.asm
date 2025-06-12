@@ -218,15 +218,19 @@ Tracker4E85:
   !fs4
   db 10,$77
   !gs4
+  !end
 
 .pattern0_2
   !loop : dw .sub5433 : db 1
+  !end
 
 .pattern0_3
   !loop : dw .sub558A : db 1
+  !end
 
 .pattern0_4
   !loop : dw .sub56E1 : db 1
+  !end
 
 .pattern1_0
   !loop : dw .sub5838 : db 2
@@ -321,6 +325,7 @@ Tracker4E85:
   !tie
   db 40,$77
   !gs3
+  !end
 
 .pattern1_2
   db 10,$38
@@ -441,6 +446,7 @@ Tracker4E85:
   db 10,$48
   !ds5
   !c5
+  !end
 
 .pattern1_3
   db 10,$38
@@ -561,6 +567,7 @@ Tracker4E85:
   db 10,$48
   !fs5
   !ds5
+  !end
 
 .pattern1_4
   db 10,$38
@@ -680,6 +687,7 @@ Tracker4E85:
   db 10,$48
   !c6
   !fs5
+  !end
 
 .pattern2_0
   !loop : dw .sub5349 : db 3
@@ -833,15 +841,19 @@ Tracker4E85:
   !fs4
   db 10,$77
   !gs4
+  !end
 
 .pattern2_2
   !loop : dw .sub5433 : db 1
+  !end
 
 .pattern2_3
   !loop : dw .sub558A : db 1
+  !end
 
 .pattern2_4
   !loop : dw .sub56E1 : db 1
+  !end
 
 .pattern3_0
   !loop : dw .sub5838 : db 2
@@ -936,6 +948,7 @@ Tracker4E85:
   !tie
   db 40,$77
   !gs3
+  !end
 
 .pattern3_2
   db 10,$38
@@ -1056,6 +1069,7 @@ Tracker4E85:
   db 10,$48
   !ds5
   !c5
+  !end
 
 .pattern3_3
   db 10,$38
@@ -1176,6 +1190,7 @@ Tracker4E85:
   db 10,$48
   !fs5
   !ds5
+  !end
 
 .pattern3_4
   db 10,$38
@@ -1295,6 +1310,7 @@ Tracker4E85:
   db 10,$48
   !c6
   !fs5
+  !end
 
 .sub5349
   !pan,10

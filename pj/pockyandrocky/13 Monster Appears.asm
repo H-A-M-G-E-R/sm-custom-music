@@ -144,6 +144,7 @@ TrackerC380:
   !pan,13
   !vibrato,12,36,96
   !loop : dw .subC508 : db 1
+  !end
 
 .pattern1_2
   !instr,!instr07
@@ -153,12 +154,14 @@ TrackerC380:
   !as2
   !a2
   !g2
+  !end
 
 .pattern1_3
   !instr,!instr0A
   !pan,7
   !vibrato,12,36,96
   !loop : dw .subC523 : db 1
+  !end
 
 .pattern2_0
   db 8,$7F
@@ -253,6 +256,7 @@ TrackerC380:
 
 .pattern2_1
   !loop : dw .subC508 : db 1
+  !end
 
 .pattern2_2
   db 48,$7F
@@ -260,9 +264,11 @@ TrackerC380:
   !as2
   !a2
   !g2
+  !end
 
 .pattern2_3
   !loop : dw .subC523 : db 1
+  !end
 
 .subC508
   !volume,80

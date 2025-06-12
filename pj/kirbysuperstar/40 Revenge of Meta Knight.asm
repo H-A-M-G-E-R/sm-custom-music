@@ -74,6 +74,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern0_2
   !instr,!instr18
@@ -92,6 +93,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern0_3
   !vibrato,0,14,60
@@ -112,6 +114,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern0_4
   !vibrato,0,14,60
@@ -134,6 +137,7 @@ Tracker4E85:
   !tie
   !tie
   !tie
+  !end
 
 .pattern1_0
   db 72

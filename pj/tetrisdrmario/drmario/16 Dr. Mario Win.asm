@@ -110,6 +110,7 @@ TrackerF138:
   !c6
   !d6
   !c6
+  !end
 
 .pattern0_2
   !volume,200
@@ -128,6 +129,7 @@ TrackerF138:
   !c3
   !d3
   !c3
+  !end
 
 .pattern0_3
   !volume,240
@@ -140,6 +142,7 @@ TrackerF138:
   db 48
   !c5
   !rest
+  !end
 
 .pattern0_4
   !volume,200
@@ -155,6 +158,7 @@ TrackerF138:
   !pitchSlide,36,12 : !d5
   !endSlide
   !rest
+  !end
 
 .pattern0_5
   !volume,200
@@ -163,6 +167,7 @@ TrackerF138:
   !rest
   db 48
   !rest
+  !end
 
 .pattern1_0
   !loop : dw .subF425 : db 1
@@ -170,6 +175,7 @@ TrackerF138:
 
 .pattern1_1
   !loop : dw .subF425 : db 1
+  !end
 
 .pattern1_2
   !loop : dw .subF462 : db 1
@@ -191,6 +197,7 @@ TrackerF138:
   db 24,$2F
   !d3
   !loop : dw .subF485 : db 1
+  !end
 
 .pattern1_3
   !instr,!instr07
@@ -210,10 +217,12 @@ TrackerF138:
   db 24,$7F
   !c4
   !loop : dw .subF49C : db 7
+  !end
 
 .pattern1_4
   !instr,!instr0A
   !loop : dw .subF4B4 : db 8
+  !end
 
 .pattern1_5
   !instr,!instr03
@@ -247,6 +256,7 @@ TrackerF138:
   !pitchSlide,11,2 : !c7
   db 48
   !rest
+  !end
 
 .pattern2_0
   !loop : dw .subF4CD : db 1
@@ -258,6 +268,7 @@ TrackerF138:
   !loop : dw .subF4CD : db 1
   db 96
   !rest
+  !end
 
 .pattern2_2
   !loop : dw .subF502 : db 1
@@ -277,6 +288,7 @@ TrackerF138:
   !g2
   db 48
   !rest
+  !end
 
 .pattern2_3
   !instr,!instr07
@@ -310,6 +322,7 @@ TrackerF138:
   !c4
   !instr,!instr07
   !g3
+  !end
 
 .pattern2_4
   !loop : dw .subF4B4 : db 7
@@ -325,6 +338,7 @@ TrackerF138:
   !rest
   db 24,$7F
   !g4
+  !end
 
 .pattern2_5
   db 96
@@ -343,6 +357,7 @@ TrackerF138:
   !rest
   !rest
   !rest
+  !end
 
 .pattern3_0
   db 96
@@ -358,10 +373,12 @@ TrackerF138:
   !rest
   !rest
   !rest
+  !end
 
 .pattern3_2
   !loop : dw .subF462 : db 1
   !loop : dw .subF485 : db 1
+  !end
 
 .pattern3_3
   !instr,!instr07
@@ -381,9 +398,11 @@ TrackerF138:
   db 24,$7F
   !c4
   !loop : dw .subF49C : db 3
+  !end
 
 .pattern3_4
   !loop : dw .subF4B4 : db 4
+  !end
 
 .pattern3_5
   !instr,!instr03
@@ -419,6 +438,7 @@ TrackerF138:
   !pitchSlide,0,2 : !c7
   db 36
   !rest
+  !end
 
 .pattern4_0
   db 96
@@ -434,10 +454,12 @@ TrackerF138:
   !rest
   !rest
   !rest
+  !end
 
 .pattern4_2
   !loop : dw .subF462 : db 1
   !loop : dw .subF485 : db 1
+  !end
 
 .pattern4_3
   !instr,!instr07
@@ -457,9 +479,11 @@ TrackerF138:
   db 24,$7F
   !c4
   !loop : dw .subF49C : db 3
+  !end
 
 .pattern4_4
   !loop : dw .subF4B4 : db 4
+  !end
 
 .pattern4_5
   !instr,!instr03
@@ -495,6 +519,7 @@ TrackerF138:
   !pitchSlide,0,2 : !c7
   db 36
   !rest
+  !end
 
 .pattern5_0
   db 96
@@ -506,6 +531,7 @@ TrackerF138:
   db 96
   !rest
   !loop : dw .subF521 : db 7
+  !end
 
 .pattern5_2
   !loop : dw .subF502 : db 1
@@ -525,6 +551,7 @@ TrackerF138:
   !g2
   db 48
   !rest
+  !end
 
 .pattern5_3
   !instr,!instr07
@@ -558,6 +585,7 @@ TrackerF138:
   !c4
   !instr,!instr07
   !g3
+  !end
 
 .pattern5_4
   !loop : dw .subF4B4 : db 7
@@ -573,6 +601,7 @@ TrackerF138:
   !rest
   db 24,$7F
   !g4
+  !end
 
 .pattern5_5
   !instr,!instr02
@@ -597,6 +626,7 @@ TrackerF138:
   !transpose,0
   db 48
   !rest
+  !end
 
 .subF425
   db 12,$2F

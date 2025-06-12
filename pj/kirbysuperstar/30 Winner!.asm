@@ -57,12 +57,14 @@ Tracker4E85:
   !dynamicVolume,30,50
   db 30
   !tie
+  !end
 
 .pattern0_2
   !pan,12
   !volume,255
   db 80,$74
   %percNote(!instr30-!instr30)
+  !end
 
 .pattern0_3
   !subtranspose,2
@@ -70,6 +72,7 @@ Tracker4E85:
   !volume,255
   db 80,$74
   %percNote(!instr30-!instr30)
+  !end
 
 .pattern0_4
   !volume,255
@@ -79,6 +82,7 @@ Tracker4E85:
   !dynamicVolume,30,50
   db 30
   !tie
+  !end
 
 .pattern1_0
   db 72

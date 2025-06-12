@@ -82,6 +82,7 @@ Tracker2564:
   !a5
   db 10
   !rest
+  !end
 
 .pattern1_0
   db 48,$7F
@@ -139,6 +140,7 @@ Tracker2564:
   !a5
   !g5
   !c6
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -215,6 +217,7 @@ Tracker2564:
   db 24
   !c4
   !g3
+  !end
 
 .pattern1_3
   !volume,198
@@ -241,6 +244,7 @@ Tracker2564:
   %percNote(!instr06-!instr05)
   db 10,$7F
   %percNote(!instr06-!instr05)
+  !end
 
 .pattern1_4
   !instr,!instr02
@@ -320,6 +324,7 @@ Tracker2564:
   !as6
   db 10
   !rest
+  !end
 
 .pattern1_5
   !instr,!instr02
@@ -399,6 +404,7 @@ Tracker2564:
   !g6
   db 10
   !rest
+  !end
 
 .pattern1_6
   db 14,$75
@@ -418,6 +424,7 @@ Tracker2564:
   db 10
   %percNote(!instr07-!instr05)
   !loop : dw .sub2767 : db 7
+  !end
 
 .pattern1_7
   db 14,$7F
@@ -456,6 +463,7 @@ Tracker2564:
   !a5
   db 10
   !rest
+  !end
 
 .sub2745
   %percNote(!instr05-!instr05)

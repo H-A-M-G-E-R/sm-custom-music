@@ -85,6 +85,7 @@ Tracker276A:
   !g5
   !loop : dw .sub288C : db 7
   !rest
+  !end
 
 .pattern0_2
   db 2
@@ -101,6 +102,7 @@ Tracker276A:
   !loop : dw .sub288C : db 7
   db 22
   !rest
+  !end
 
 .pattern0_3
   !instr,!instr02
@@ -117,6 +119,7 @@ Tracker276A:
   !tie
   db 24
   !tie
+  !end
 
 .pattern0_4
   !instr,!instr02
@@ -133,6 +136,7 @@ Tracker276A:
   !tie
   db 24
   !tie
+  !end
 
 .pattern0_5
   !instr,!instr02
@@ -164,6 +168,7 @@ Tracker276A:
   !as3
   db 24
   !tie
+  !end
 
 .pattern0_6
   db 24
@@ -192,6 +197,7 @@ Tracker276A:
   !a5
   !loop : dw .sub2860 : db 2
   !loop : dw .sub2876 : db 1
+  !end
 
 .pattern0_7
   !volume,198
@@ -205,6 +211,7 @@ Tracker276A:
   db 12,$72
   %percNote(!instr08-!instr08)
   !rest
+  !end
 
 .sub2860
   db 36,$7F

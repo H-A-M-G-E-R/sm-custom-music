@@ -73,6 +73,7 @@ TrackerD917:
   !g7
   !g6
   !loop : dw .subDA04 : db 3
+  !end
 
 .pattern0_2
   !volume,200
@@ -94,6 +95,7 @@ TrackerD917:
   !rest
   db 96,$77
   !fs4
+  !end
 
 .pattern0_3
   !volume,200
@@ -115,6 +117,7 @@ TrackerD917:
   !rest
   db 96,$77
   !a4
+  !end
 
 .pattern0_4
   !volume,200
@@ -136,12 +139,14 @@ TrackerD917:
   !rest
   db 96,$77
   !d5
+  !end
 
 .pattern0_5
   !volume,200
   !pan,10
   !instr,!instr0A
   !loop : dw .subDA17 : db 4
+  !end
 
 .pattern0_6
   !volume,200
@@ -186,6 +191,7 @@ TrackerD917:
   !g5
   db 5
   !g5
+  !end
 
 .subD9F6
   db 18,$7F

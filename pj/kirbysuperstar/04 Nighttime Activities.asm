@@ -104,6 +104,7 @@ Tracker4E85:
   !tie
   !tie
   !loop : dw .sub529A : db 8
+  !end
 
 .pattern0_2
   !transpose,1
@@ -370,6 +371,7 @@ Tracker4E85:
   !rest
   !rest
   !loop : dw .sub529D : db 5
+  !end
 
 .pattern0_3
   !pan,8
@@ -524,6 +526,7 @@ Tracker4E85:
   !rest
   !rest
   !loop : dw .sub529D : db 6
+  !end
 
 .pattern0_4
   !pan,12
@@ -592,6 +595,7 @@ Tracker4E85:
   !rest
   !rest
   !loop : dw .sub529D : db 8
+  !end
 
 .sub529A
   !tie

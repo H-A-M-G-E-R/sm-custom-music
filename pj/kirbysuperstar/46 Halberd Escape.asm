@@ -104,6 +104,7 @@ Tracker4E85:
   !g3
   db 6,$7A
   !g3
+  !end
 
 .pattern0_2
   db 10
@@ -122,6 +123,7 @@ Tracker4E85:
   !tie
   db 62
   !tie
+  !end
 
 .pattern0_3
   db 20
@@ -140,6 +142,7 @@ Tracker4E85:
   !tie
   db 52
   !tie
+  !end
 
 .pattern1_0
   !echoParameters,5,50,0
@@ -370,6 +373,7 @@ Tracker4E85:
   db 8,$78
   !b4
   !b4
+  !end
 
 .pattern1_2
   !endVibrato
@@ -537,6 +541,7 @@ Tracker4E85:
   !ds5
   db 8,$79
   !ds5
+  !end
 
 .pattern1_3
   !endVibrato
@@ -684,6 +689,7 @@ Tracker4E85:
   !gs5
   !pan,7
   !gs5
+  !end
 
 .pattern1_4
   !vibrato,0,20,20
@@ -833,6 +839,7 @@ Tracker4E85:
   !gs6
   !pan,13
   !gs6
+  !end
 
 .sub5378
   !pitchSlide,0,255 : !gs6

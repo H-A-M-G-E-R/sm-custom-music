@@ -128,6 +128,7 @@ TrackerDA48:
   !as5
   db 48
   !g5
+  !end
 
 .pattern0_2
   !instr,!instr13
@@ -184,6 +185,7 @@ TrackerDA48:
   !gs4
   db 48,$3F
   !ds3
+  !end
 
 .pattern0_3
   !instr,!instr0B
@@ -233,6 +235,7 @@ TrackerDA48:
   !d7
   db 48
   !ds7
+  !end
 
 .pattern0_4
   !volume,200
@@ -259,6 +262,7 @@ TrackerDA48:
   !d5
   !rest
   !loop : dw .subDF9C : db 4
+  !end
 
 .pattern1_0
   db 6,$7B
@@ -390,6 +394,7 @@ TrackerDA48:
   !f6
   db 60,$5B
   !ds6
+  !end
 
 .pattern1_2
   !loop : dw .subDFA1 : db 1
@@ -481,6 +486,7 @@ TrackerDA48:
   db 12
   !gs3
   !loop : dw .subDFB8 : db 1
+  !end
 
 .pattern1_4
   db 96
@@ -524,6 +530,7 @@ TrackerDA48:
   !f7
   db 60,$55
   !ds7
+  !end
 
 .subDF34
   db 12,$3B

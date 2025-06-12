@@ -238,6 +238,7 @@ Tracker3A34:
   !tie
   db 36
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr32
@@ -298,6 +299,7 @@ Tracker3A34:
   !pan,20
   db 36,$78
   !c6
+  !end
 
 .pattern0_3
   !instr,!instr32
@@ -358,6 +360,7 @@ Tracker3A34:
   !pan,0
   db 36,$78
   !d6
+  !end
 
 .pattern0_4
   !instr,!instr32
@@ -417,6 +420,7 @@ Tracker3A34:
   !slideOut,2,34,220
   db 36
   !g7
+  !end
 
 .pattern1_0
   !transpose,0
@@ -434,6 +438,7 @@ Tracker3A34:
   !instr,!instr05
   !volume,255
   !loop : dw .sub4CD3 : db 2
+  !end
 
 .pattern1_2
   !endSlide
@@ -441,6 +446,7 @@ Tracker3A34:
   !volume,174
   !pan,12
   !loop : dw .sub512F : db 2
+  !end
 
 .pattern1_3
   !endSlide
@@ -448,6 +454,7 @@ Tracker3A34:
   !volume,174
   !pan,8
   !loop : dw .sub4DA5 : db 2
+  !end
 
 .pattern1_4
   !endSlide
@@ -456,10 +463,12 @@ Tracker3A34:
   !rest
   !rest
   !rest
+  !end
 
 .pattern1_5
   !volume,255
   !loop : dw .sub4F7F : db 2
+  !end
 
 .pattern2_0
   !loop : dw .sub4CA2 : db 8
@@ -524,6 +533,7 @@ Tracker3A34:
   !cs3
   !cs4
   !cs3
+  !end
 
 .pattern2_2
   !subtranspose,0
@@ -587,6 +597,7 @@ Tracker3A34:
   !f5
   db 9,$45
   !gs5
+  !end
 
 .pattern2_3
   !subtranspose,0
@@ -622,6 +633,7 @@ Tracker3A34:
   !gs5
   db 9,$45
   !b5
+  !end
 
 .pattern2_4
   !endVibrato
@@ -672,9 +684,11 @@ Tracker3A34:
   !f5
   db 9,$67
   !ds5
+  !end
 
 .pattern2_5
   !loop : dw .sub4F7F : db 8
+  !end
 
 .pattern3_0
   !loop : dw .sub4CA2 : db 8
@@ -741,11 +755,13 @@ Tracker3A34:
   !fs3
   db 9,$56
   !cs3
+  !end
 
 .pattern3_2
   !loop : dw .sub4DA5 : db 2
   !loop : dw .sub4DCE : db 1
   !loop : dw .sub4FA2 : db 1
+  !end
 
 .pattern3_3
   !loop : dw .sub4E6F : db 2
@@ -778,6 +794,7 @@ Tracker3A34:
   !fs5
   db 9,$45
   !as5
+  !end
 
 .pattern3_4
   !loop : dw .sub4F61 : db 1
@@ -831,6 +848,7 @@ Tracker3A34:
   !f6
   db 72,$16
   !fs6
+  !end
 
 .pattern3_5
   !loop : dw .sub4F7F : db 7
@@ -857,6 +875,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern4_0
   !loop : dw .sub4FF3 : db 7
@@ -1023,6 +1042,7 @@ Tracker3A34:
   !ds3
   db 9,$56
   !as2
+  !end
 
 .pattern4_2
   !instr,!instr1D
@@ -1153,6 +1173,7 @@ Tracker3A34:
   !fs5
   !as5
   !fs5
+  !end
 
 .pattern4_3
   !pan,11
@@ -1219,6 +1240,7 @@ Tracker3A34:
   db 36
   !cs6
   !cs6
+  !end
 
 .pattern4_4
   !pan,9
@@ -1286,9 +1308,11 @@ Tracker3A34:
   db 36
   !fs6
   !gs6
+  !end
 
 .pattern4_5
   !loop : dw .sub4F7F : db 7
+  !end
 
 .pattern5_0
   db 9,$72
@@ -1356,9 +1380,11 @@ Tracker3A34:
   db 9,$56
   !cs4
   !gs3
+  !end
 
 .pattern5_2
   !loop : dw .sub5158 : db 1
+  !end
 
 .pattern5_3
   db 54,$76
@@ -1369,6 +1395,7 @@ Tracker3A34:
   db 36
   !f6
   !gs4
+  !end
 
 .pattern5_4
   db 54,$76
@@ -1386,6 +1413,7 @@ Tracker3A34:
   !f5
   db 9
   !ds5
+  !end
 
 .pattern5_5
   !instr,!instr2E
@@ -1411,6 +1439,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern6_0
   !loop : dw .sub4CA2 : db 8
@@ -1475,6 +1504,7 @@ Tracker3A34:
   !cs3
   !cs4
   !cs3
+  !end
 
 .pattern6_2
   !subtranspose,0
@@ -1538,6 +1568,7 @@ Tracker3A34:
   !f5
   db 9,$45
   !gs5
+  !end
 
 .pattern6_3
   !subtranspose,0
@@ -1573,6 +1604,7 @@ Tracker3A34:
   !gs5
   db 9,$45
   !b5
+  !end
 
 .pattern6_4
   !endVibrato
@@ -1623,9 +1655,11 @@ Tracker3A34:
   !f5
   db 9,$67
   !ds5
+  !end
 
 .pattern6_5
   !loop : dw .sub4F7F : db 8
+  !end
 
 .pattern7_0
   !loop : dw .sub4CA2 : db 8
@@ -1692,11 +1726,13 @@ Tracker3A34:
   !fs3
   db 9,$56
   !cs3
+  !end
 
 .pattern7_2
   !loop : dw .sub4DA5 : db 2
   !loop : dw .sub4DCE : db 1
   !loop : dw .sub4FA2 : db 1
+  !end
 
 .pattern7_3
   !loop : dw .sub4E6F : db 2
@@ -1729,6 +1765,7 @@ Tracker3A34:
   !fs5
   db 9,$45
   !as5
+  !end
 
 .pattern7_4
   !loop : dw .sub4F61 : db 1
@@ -1782,6 +1819,7 @@ Tracker3A34:
   !f6
   db 72,$16
   !fs6
+  !end
 
 .pattern7_5
   !loop : dw .sub4F7F : db 7
@@ -1808,6 +1846,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern8_0
   !loop : dw .sub4FF3 : db 7
@@ -1974,6 +2013,7 @@ Tracker3A34:
   !ds3
   db 9,$56
   !as2
+  !end
 
 .pattern8_2
   !instr,!instr1D
@@ -2104,6 +2144,7 @@ Tracker3A34:
   !fs5
   !as5
   !fs5
+  !end
 
 .pattern8_3
   !pan,11
@@ -2170,6 +2211,7 @@ Tracker3A34:
   db 36
   !cs6
   !cs6
+  !end
 
 .pattern8_4
   !pan,9
@@ -2237,9 +2279,11 @@ Tracker3A34:
   db 36
   !fs6
   !gs6
+  !end
 
 .pattern8_5
   !loop : dw .sub4F7F : db 7
+  !end
 
 .pattern9_0
   db 9,$72
@@ -2307,9 +2351,11 @@ Tracker3A34:
   db 9,$56
   !cs4
   !gs3
+  !end
 
 .pattern9_2
   !loop : dw .sub5158 : db 1
+  !end
 
 .pattern9_3
   db 54,$76
@@ -2320,6 +2366,7 @@ Tracker3A34:
   db 36
   !f6
   !gs4
+  !end
 
 .pattern9_4
   db 54,$76
@@ -2344,6 +2391,7 @@ Tracker3A34:
   !pan,11
   db 8
   !f7
+  !end
 
 .pattern9_5
   !instr,!instr2E
@@ -2369,6 +2417,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern10_0
   !loop : dw .sub4CA2 : db 12
@@ -2502,6 +2551,7 @@ Tracker3A34:
   !fs3
   db 9,$56
   !cs3
+  !end
 
 .pattern10_2
   !instr,!instr1D
@@ -2757,6 +2807,7 @@ Tracker3A34:
   !volume,179
   !pan,12
   !loop : dw .sub512F : db 2
+  !end
 
 .pattern10_3
   !instr,!instr1D
@@ -2995,6 +3046,7 @@ Tracker3A34:
   !volume,179
   !pan,8
   !loop : dw .sub4DA5 : db 2
+  !end
 
 .pattern10_4
   !vibrato,18,14,30
@@ -3074,6 +3126,7 @@ Tracker3A34:
   !dynamicVolume,144,93
   !tie
   !tie
+  !end
 
 .pattern10_5
   !loop : dw .sub4F7F : db 11
@@ -3100,6 +3153,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern11_0
   !loop : dw .sub4FF3 : db 16
@@ -3226,6 +3280,7 @@ Tracker3A34:
   !cs3
   db 9,$5B
   !fs2
+  !end
 
 .pattern11_2
   !instr,!instr1D
@@ -3304,6 +3359,7 @@ Tracker3A34:
   !cs5
   !e5
   !as5
+  !end
 
 .pattern11_3
   !instr,!instr1D
@@ -3382,6 +3438,7 @@ Tracker3A34:
   !fs5
   !as5
   !cs6
+  !end
 
 .pattern11_4
   !volume,184
@@ -3476,6 +3533,7 @@ Tracker3A34:
   !fs6
   db 18
   !rest
+  !end
 
 .pattern11_5
   !loop : dw .sub4F7F : db 15
@@ -3502,6 +3560,7 @@ Tracker3A34:
   !pan,12
   db 18,$79
   !gs4
+  !end
 
 .pattern11_6
   db 36
@@ -3629,6 +3688,7 @@ Tracker3A34:
   !as5
   db 9,$79
   !cs6
+  !end
 
 .pattern11_7
   db 55
@@ -3751,6 +3811,7 @@ Tracker3A34:
   !fs6
   db 9,$79
   !gs6
+  !end
 
 .pattern12_0
   !loop : dw .sub4CA2 : db 15
@@ -3821,6 +3882,7 @@ Tracker3A34:
   !fs3
   db 9,$56
   !cs3
+  !end
 
 .pattern12_2
   db 9,$46
@@ -3925,6 +3987,7 @@ Tracker3A34:
   !volume,174
   !pan,12
   !loop : dw .sub512F : db 2
+  !end
 
 .pattern12_3
   db 9,$46
@@ -4014,6 +4077,7 @@ Tracker3A34:
   !volume,174
   !pan,8
   !loop : dw .sub4DA5 : db 2
+  !end
 
 .pattern12_5
   !pan,10
@@ -4041,6 +4105,7 @@ Tracker3A34:
   !volume,255
   db 8,$72
   %percNote(!instr31-!instr2D)
+  !end
 
 .pattern12_6
   !loop : dw .sub5477 : db 1
@@ -4113,6 +4178,7 @@ Tracker3A34:
   !dynamicVolume,144,98
   !tie
   !tie
+  !end
 
 .pattern12_7
   !loop : dw .sub5498 : db 1
@@ -4182,6 +4248,7 @@ Tracker3A34:
   !dynamicVolume,144,98
   !tie
   !tie
+  !end
 
 .sub4CA2
   db 9,$72

@@ -265,6 +265,7 @@ Tracker4E85:
   !d3
   db 36,$6A
   !g2
+  !end
 
 .pattern0_2
   !instr,!instr04
@@ -408,6 +409,7 @@ Tracker4E85:
   !fs4
   !b3
   !d4
+  !end
 
 .pattern0_3
   !instr,!instr04
@@ -523,6 +525,7 @@ Tracker4E85:
   !b4
   !e4
   !g4
+  !end
 
 .pattern0_4
   !instr,!instr04
@@ -638,6 +641,7 @@ Tracker4E85:
   !e5
   !a4
   !c5
+  !end
 
 .sub51CB
   !instr,!instr06

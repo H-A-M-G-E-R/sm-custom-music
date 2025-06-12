@@ -102,6 +102,7 @@ TrackerEF7B:
   !tie
   !rest
   !rest
+  !end
 
 .pattern0_2
   !volume,200
@@ -121,6 +122,7 @@ TrackerEF7B:
   !f2
   !b2
   !loop : dw .subF124 : db 3
+  !end
 
 .pattern0_3
   !volume,200
@@ -147,6 +149,7 @@ TrackerEF7B:
   !loop : dw .subF129 : db 3
   !rest
   !rest
+  !end
 
 .pattern0_4
   !volume,200
@@ -178,6 +181,7 @@ TrackerEF7B:
   !rest
   db 14
   !rest
+  !end
 
 .pattern0_5
   !volume,200
@@ -207,6 +211,7 @@ TrackerEF7B:
   !rest
   !rest
   !rest
+  !end
 
 .pattern0_7
   !volume,200
@@ -228,6 +233,7 @@ TrackerEF7B:
   !rest
   !rest
   !rest
+  !end
 
 .pattern1_0
   db 24,$7F
@@ -248,6 +254,7 @@ TrackerEF7B:
   !f3
   !f3
   !f3
+  !end
 
 .pattern1_2
   db 24,$7F
@@ -255,6 +262,7 @@ TrackerEF7B:
   !ds2
   !f2
   !b2
+  !end
 
 .pattern1_3
   !instr,!instr0F
@@ -267,6 +275,7 @@ TrackerEF7B:
   !c4
   !c4
   !cs4
+  !end
 
 .pattern2_0
   db 24,$7F
@@ -287,6 +296,7 @@ TrackerEF7B:
   !f3
   !f3
   !f3
+  !end
 
 .pattern2_2
   db 24,$7F
@@ -294,6 +304,7 @@ TrackerEF7B:
   !ds2
   !f2
   !b2
+  !end
 
 .pattern2_3
   !instr,!instr0F
@@ -306,6 +317,7 @@ TrackerEF7B:
   !c4
   !c4
   !cs4
+  !end
 
 .pattern3_0
   db 24,$7F
@@ -326,6 +338,7 @@ TrackerEF7B:
   !f3
   !f3
   !f3
+  !end
 
 .pattern3_2
   db 24,$7F
@@ -333,6 +346,7 @@ TrackerEF7B:
   !ds2
   !f2
   !b2
+  !end
 
 .pattern3_3
   !instr,!instr0F
@@ -345,6 +359,7 @@ TrackerEF7B:
   !c4
   !c4
   !cs4
+  !end
 
 .pattern4_0
   db 24,$7F
@@ -365,6 +380,7 @@ TrackerEF7B:
   !f3
   !f3
   !f3
+  !end
 
 .pattern4_2
   db 24,$7F
@@ -372,6 +388,7 @@ TrackerEF7B:
   !ds2
   !f2
   !b2
+  !end
 
 .pattern4_3
   !instr,!instr0F
@@ -384,6 +401,7 @@ TrackerEF7B:
   !c4
   !c4
   !cs4
+  !end
 
 .pattern5_0
   db 12,$7F
@@ -407,6 +425,7 @@ TrackerEF7B:
   !a3
   !a3
   !as3
+  !end
 
 .pattern5_2
   db 12,$7F
@@ -418,6 +437,7 @@ TrackerEF7B:
   !a3
   !as2
   !as3
+  !end
 
 .pattern5_3
   db 12,$2F
@@ -429,6 +449,7 @@ TrackerEF7B:
   !e4
   !e4
   !f4
+  !end
 
 .pattern6_0
   db 12,$7F
@@ -452,6 +473,7 @@ TrackerEF7B:
   !a3
   !a3
   !as3
+  !end
 
 .pattern6_2
   db 12,$7F
@@ -463,6 +485,7 @@ TrackerEF7B:
   !a3
   !as2
   !as3
+  !end
 
 .pattern6_3
   db 12,$2F
@@ -474,6 +497,7 @@ TrackerEF7B:
   !e4
   !e4
   !f4
+  !end
 
 .pattern7_0
   db 12,$7F
@@ -497,6 +521,7 @@ TrackerEF7B:
   !a3
   !a3
   !as3
+  !end
 
 .pattern7_2
   db 12,$7F
@@ -508,6 +533,7 @@ TrackerEF7B:
   !a3
   !as2
   !as3
+  !end
 
 .pattern7_3
   db 12,$2F
@@ -519,6 +545,7 @@ TrackerEF7B:
   !e4
   !e4
   !f4
+  !end
 
 .pattern8_0
   db 12,$7F
@@ -542,6 +569,7 @@ TrackerEF7B:
   !a3
   !a3
   !as3
+  !end
 
 .pattern8_2
   db 12,$7F
@@ -553,6 +581,7 @@ TrackerEF7B:
   !a3
   !as2
   !as3
+  !end
 
 .pattern8_3
   db 12,$2F
@@ -564,6 +593,7 @@ TrackerEF7B:
   !e4
   !e4
   !f4
+  !end
 
 .pattern9_0
   !instr,!instr03

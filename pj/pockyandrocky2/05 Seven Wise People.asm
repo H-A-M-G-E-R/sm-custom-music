@@ -69,6 +69,7 @@ Tracker29A2:
   !subtranspose,29
   db 24,$7F
   !c6
+  !end
 
 .pattern1_0
   !instr,!instr04
@@ -228,6 +229,7 @@ Tracker29A2:
   !dynamicVolume,192,31
   !tie
   !tie
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -276,6 +278,7 @@ Tracker29A2:
   !tie
   !d4
   !tie
+  !end
 
 .pattern1_3
   !instr,!instr02
@@ -322,6 +325,7 @@ Tracker29A2:
   !tie
   !f5
   !tie
+  !end
 
 .pattern1_4
   db 1
@@ -396,6 +400,7 @@ Tracker29A2:
   !tie
   !d5
   !tie
+  !end
 
 .pattern1_5
   db 96
@@ -430,6 +435,7 @@ Tracker29A2:
   !tie
   !c5
   !tie
+  !end
 
 .pattern1_6
   db 96
@@ -465,6 +471,7 @@ Tracker29A2:
   !tie
   !a4
   !tie
+  !end
 
 .pattern1_7
   !volume,198
@@ -485,6 +492,7 @@ Tracker29A2:
   %percNote(!instr06-!instr05)
   db 48
   %percNote(!instr08-!instr05)
+  !end
 
 .sub2C30
   db 12,$7F

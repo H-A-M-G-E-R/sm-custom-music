@@ -169,6 +169,7 @@ Tracker4E85:
   !ds3
   db 8,$45
   !ds4
+  !end
 
 .pattern0_2
   !instr,!instr22
@@ -252,6 +253,7 @@ Tracker4E85:
   !as6
   !g6
   !as6
+  !end
 
 .pattern0_3
   !instr,!instr22
@@ -313,6 +315,7 @@ Tracker4E85:
   !slideIn,2,14,1
   db 63,$75
   !cs7
+  !end
 
 .pattern0_4
   !instr,!instr22
@@ -374,6 +377,7 @@ Tracker4E85:
   !slideIn,2,14,1
   db 63,$75
   !f7
+  !end
 
 .sub5070
   db 8,$78

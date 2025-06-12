@@ -271,6 +271,7 @@ Tracker2402:
   !a5
   db 6,$75
   !a5
+  !end
 
 .pattern0_2
   !instr,!instr01
@@ -316,6 +317,7 @@ Tracker2402:
   !a3
   db 24,$78
   !a4
+  !end
 
 .pattern0_3
   !volume,198
@@ -339,6 +341,7 @@ Tracker2402:
   %percNote(!instr07-!instr06)
   %percNote(!instr07-!instr06)
   %percNote(!instr07-!instr06)
+  !end
 
 .pattern0_4
   !instr,!instr03
@@ -425,6 +428,7 @@ Tracker2402:
   !rest
   db 24,$0C
   !a7
+  !end
 
 .pattern0_5
   !instr,!instr05
@@ -527,6 +531,7 @@ Tracker2402:
   !e5
   db 6,$75
   !e5
+  !end
 
 .pattern0_7
   !volume,198
@@ -540,6 +545,7 @@ Tracker2402:
   %percNote(!instr08-!instr06)
   %percNote(!instr08-!instr06)
   !loop : dw .sub3012 : db 3
+  !end
 
 .pattern1_0
   db 6,$7A
@@ -1474,6 +1480,7 @@ Tracker2402:
   !a5
   db 6,$75
   !a5
+  !end
 
 .pattern1_2
   db 6,$79
@@ -1793,6 +1800,7 @@ Tracker2402:
   db 6,$79
   !a3
   !rest
+  !end
 
 .pattern1_3
   db 24,$7F
@@ -1832,6 +1840,7 @@ Tracker2402:
   !loop : dw .sub30E2 : db 3
   !loop : dw .sub30ED : db 2
   !loop : dw .sub3114 : db 2
+  !end
 
 .pattern1_4
   !instr,!instr02
@@ -1848,6 +1857,7 @@ Tracker2402:
   !tie
   db 72
   !rest
+  !end
 
 .pattern1_5
   !loop : dw .sub31B4 : db 2
@@ -2154,6 +2164,7 @@ Tracker2402:
   !e5
   db 6,$75
   !e5
+  !end
 
 .pattern1_6
   !instr,!instr02
@@ -2176,6 +2187,7 @@ Tracker2402:
   !rest
   db 12
   !rest
+  !end
 
 .pattern1_7
   db 12,$75
@@ -2205,6 +2217,7 @@ Tracker2402:
   %percNote(!instr08-!instr06)
   %percNote(!instr08-!instr06)
   !loop : dw .sub3012 : db 19
+  !end
 
 .sub3008
   db 24

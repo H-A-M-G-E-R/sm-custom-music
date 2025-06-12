@@ -146,6 +146,7 @@ Tracker4E85:
   !g4
   db 20,$79
   !g3
+  !end
 
 .pattern0_2
   !instr,!instr17
@@ -200,6 +201,7 @@ Tracker4E85:
   !as2
   db 20,$78
   !g2
+  !end
 
 .pattern0_3
   db 1
@@ -256,6 +258,7 @@ Tracker4E85:
   !as4
   db 19
   !g4
+  !end
 
 .pattern0_4
   !vibrato,0,20,40
@@ -310,6 +313,7 @@ Tracker4E85:
   !as4
   db 20
   !g4
+  !end
 
 .pattern1_0
   !pan,8
@@ -380,6 +384,7 @@ Tracker4E85:
   !volume,198
   !instr,!instr2D
   !loop : dw .sub5B16 : db 2
+  !end
 
 .pattern1_2
   db 80
@@ -393,6 +398,7 @@ Tracker4E85:
   !volume,230
   db 20,$79
   !g3
+  !end
 
 .pattern1_3
   !endVibrato
@@ -405,6 +411,7 @@ Tracker4E85:
   !rest
   !rest
   !rest
+  !end
 
 .pattern1_4
   !subtranspose,40
@@ -416,6 +423,7 @@ Tracker4E85:
   !rest
   !rest
   !rest
+  !end
 
 .pattern2_0
   !pan,10
@@ -427,17 +435,20 @@ Tracker4E85:
 .pattern2_1
   !volume,186
   !loop : dw .sub5B96 : db 8
+  !end
 
 .pattern2_2
   !volume,230
   !instr,!instr34
   !loop : dw .sub5BCB : db 8
+  !end
 
 .pattern2_3
   !subtranspose,0
   !instr,!instr22
   !volume,155
   !loop : dw .sub5BF0 : db 4
+  !end
 
 .pattern2_4
   db 20
@@ -618,6 +629,7 @@ Tracker4E85:
   !g5
   db 9,$56
   !a5
+  !end
 
 .pattern3_0
   !loop : dw .sub5B41 : db 4
@@ -658,12 +670,15 @@ Tracker4E85:
   !g3
   db 20,$72
   %percNote(!instr31-!instr2C)
+  !end
 
 .pattern3_2
   !loop : dw .sub5BCB : db 8
+  !end
 
 .pattern3_3
   !loop : dw .sub5BF0 : db 4
+  !end
 
 .pattern3_4
   db 20
@@ -844,6 +859,7 @@ Tracker4E85:
   !as6
   db 20,$56
   !g6
+  !end
 
 .pattern4_0
   !loop : dw .sub5B41 : db 4
@@ -921,12 +937,14 @@ Tracker4E85:
   !pan,8
   db 20,$78
   !e3
+  !end
 
 .pattern4_2
   !loop : dw .sub5C92 : db 2
   !loop : dw .sub5BCB : db 2
   !loop : dw .sub5C92 : db 2
   !loop : dw .sub5BCB : db 2
+  !end
 
 .pattern4_3
   !subtranspose,60
@@ -1039,6 +1057,7 @@ Tracker4E85:
   !fs7
   db 40,$74
   !fs7
+  !end
 
 .pattern4_4
   !subtranspose,60
@@ -1151,6 +1170,7 @@ Tracker4E85:
   !fs7
   db 37,$74
   !fs7
+  !end
 
 .pattern5_0
   !pan,10
@@ -1162,17 +1182,20 @@ Tracker4E85:
 .pattern5_1
   !volume,186
   !loop : dw .sub5B96 : db 8
+  !end
 
 .pattern5_2
   !volume,230
   !instr,!instr34
   !loop : dw .sub5BCB : db 8
+  !end
 
 .pattern5_3
   !subtranspose,0
   !instr,!instr22
   !volume,155
   !loop : dw .sub5BF0 : db 4
+  !end
 
 .pattern5_4
   db 20
@@ -1353,6 +1376,7 @@ Tracker4E85:
   !g5
   db 9,$56
   !a5
+  !end
 
 .pattern6_0
   !loop : dw .sub5B41 : db 4
@@ -1393,12 +1417,15 @@ Tracker4E85:
   !g3
   db 20,$72
   %percNote(!instr31-!instr2C)
+  !end
 
 .pattern6_2
   !loop : dw .sub5BCB : db 8
+  !end
 
 .pattern6_3
   !loop : dw .sub5BF0 : db 4
+  !end
 
 .pattern6_4
   db 20
@@ -1579,6 +1606,7 @@ Tracker4E85:
   !as6
   db 20,$56
   !g6
+  !end
 
 .pattern7_0
   !loop : dw .sub5B41 : db 4
@@ -1623,6 +1651,7 @@ Tracker4E85:
   !pan,8
   db 20,$78
   !e3
+  !end
 
 .pattern7_2
   !subtranspose,0
@@ -1668,6 +1697,7 @@ Tracker4E85:
   !loop : dw .sub5CB5 : db 1
   !instr,!instr05
   !loop : dw .sub5CE1 : db 2
+  !end
 
 .pattern7_3
   !subtranspose,60
@@ -1783,6 +1813,7 @@ Tracker4E85:
   !dynamicVolume,160,240
   !tie
   !tie
+  !end
 
 .pattern7_4
   !subtranspose,60
@@ -1905,6 +1936,7 @@ Tracker4E85:
   db 80,$75
   !g5
   !tie
+  !end
 
 .pattern8_0
   !volume,194
@@ -1914,11 +1946,13 @@ Tracker4E85:
 .pattern8_1
   !instr,!instr2F
   !loop : dw .sub5CEF : db 4
+  !end
 
 .pattern8_2
   !volume,240
   !instr,!instr34
   !loop : dw .sub5D8C : db 8
+  !end
 
 .pattern8_3
   db 20
@@ -2002,6 +2036,7 @@ Tracker4E85:
   !subtranspose,60
   db 11,$78
   !f5
+  !end
 
 .pattern8_4
   db 20
@@ -2084,6 +2119,7 @@ Tracker4E85:
   !subtranspose,60
   db 11,$78
   !f5
+  !end
 
 .pattern9_0
   !loop : dw .sub5B41 : db 4
@@ -2091,9 +2127,11 @@ Tracker4E85:
 
 .pattern9_1
   !loop : dw .sub5CEF : db 4
+  !end
 
 .pattern9_2
   !loop : dw .sub5D8C : db 8
+  !end
 
 .pattern9_3
   !pan,9
@@ -2325,6 +2363,7 @@ Tracker4E85:
   !subtranspose,188
   db 9
   !ds4
+  !end
 
 .pattern9_4
   !pan,11
@@ -2550,6 +2589,7 @@ Tracker4E85:
   !subtranspose,188
   db 9
   !ds5
+  !end
 
 .sub5AEB
   !instr,!instr30

@@ -62,24 +62,28 @@ TrackerDFD1:
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_2
   !volume,200
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_3
   !volume,200
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_4
   !volume,200
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_5
   !volume,200
@@ -89,12 +93,14 @@ TrackerDFD1:
   !g4
   !g4
   !g4
+  !end
 
 .pattern0_6
   !volume,200
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern1_0
   !instr,!instr12
@@ -208,6 +214,7 @@ TrackerDFD1:
   !dynamicVolume,24,100
   db 48,$3F
   !b4
+  !end
 
 .pattern1_2
   !instr,!instr12
@@ -301,6 +308,7 @@ TrackerDFD1:
   !dynamicVolume,24,100
   db 48,$3F
   !g4
+  !end
 
 .pattern1_3
   !instr,!instr12
@@ -319,6 +327,7 @@ TrackerDFD1:
   !g5
   !fs5
   !loop : dw .subE48B : db 1
+  !end
 
 .pattern1_4
   !volume,200
@@ -330,6 +339,7 @@ TrackerDFD1:
   !b2
   !fs2
   !loop : dw .subE51D : db 1
+  !end
 
 .pattern1_5
   !loop : dw .subE547 : db 3
@@ -374,11 +384,13 @@ TrackerDFD1:
   !e4
   db 24,$7F
   !e4
+  !end
 
 .pattern1_6
   db 96
   !rest
   !loop : dw .subE559 : db 7
+  !end
 
 .pattern2_0
   !loop : dw .subE55B : db 1
@@ -489,6 +501,7 @@ TrackerDFD1:
   !b5
   db 42
   !rest
+  !end
 
 .pattern2_2
   !volume,150
@@ -526,9 +539,11 @@ TrackerDFD1:
   !dynamicVolume,72,100
   db 96,$5F
   !fs5
+  !end
 
 .pattern2_3
   !loop : dw .subE55B : db 1
+  !end
 
 .pattern2_4
   db 12,$3F
@@ -552,6 +567,7 @@ TrackerDFD1:
   !b2
   !b2
   !loop : dw .subE5AC : db 3
+  !end
 
 .pattern2_5
   !loop : dw .subE547 : db 3
@@ -596,12 +612,14 @@ TrackerDFD1:
   !e4
   db 24,$7F
   !e4
+  !end
 
 .pattern2_6
   !pan,10
   !transpose,244
   !instr,!instr12
   !loop : dw .subE55B : db 1
+  !end
 
 .pattern3_0
   !instr,!instr12
@@ -715,6 +733,7 @@ TrackerDFD1:
   !dynamicVolume,24,100
   db 48,$3F
   !b4
+  !end
 
 .pattern3_2
   !instr,!instr12
@@ -808,6 +827,7 @@ TrackerDFD1:
   !dynamicVolume,24,100
   db 48,$3F
   !g4
+  !end
 
 .pattern3_3
   !instr,!instr12
@@ -826,6 +846,7 @@ TrackerDFD1:
   !g5
   !fs5
   !loop : dw .subE48B : db 1
+  !end
 
 .pattern3_4
   !volume,200
@@ -837,6 +858,7 @@ TrackerDFD1:
   !b2
   !fs2
   !loop : dw .subE51D : db 1
+  !end
 
 .pattern3_5
   !loop : dw .subE547 : db 3
@@ -881,11 +903,13 @@ TrackerDFD1:
   !e4
   db 24,$7F
   !e4
+  !end
 
 .pattern3_6
   db 96
   !rest
   !loop : dw .subE559 : db 7
+  !end
 
 .pattern4_0
   !volume,200
@@ -961,6 +985,7 @@ TrackerDFD1:
   !transpose,0
   db 2
   !rest
+  !end
 
 .pattern4_2
   !volume,200
@@ -1036,12 +1061,14 @@ TrackerDFD1:
   !g6
   db 18
   !rest
+  !end
 
 .pattern4_3
   !volume,200
   !instr,!instr11
   !loop : dw .subE5C3 : db 1
   !loop : dw .subE5E7 : db 1
+  !end
 
 .pattern4_4
   !volume,200
@@ -1053,6 +1080,7 @@ TrackerDFD1:
   !b2
   !fs2
   !loop : dw .subE51D : db 1
+  !end
 
 .pattern4_5
   !loop : dw .subE547 : db 3
@@ -1097,11 +1125,13 @@ TrackerDFD1:
   !e4
   db 24,$7F
   !e4
+  !end
 
 .pattern4_6
   db 96
   !rest
   !loop : dw .subE559 : db 7
+  !end
 
 .subE48B
   !volume,200

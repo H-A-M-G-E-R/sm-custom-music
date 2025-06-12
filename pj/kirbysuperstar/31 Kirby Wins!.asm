@@ -210,6 +210,7 @@ Tracker4E85:
   !e2
   db 111
   !rest
+  !end
 
 .pattern0_2
   !vibrato,3,15,20
@@ -258,6 +259,7 @@ Tracker4E85:
   !fs5
   db 111
   !rest
+  !end
 
 .pattern0_3
   !vibrato,3,15,20
@@ -306,6 +308,7 @@ Tracker4E85:
   !b5
   db 111
   !rest
+  !end
 
 .pattern0_4
   !vibrato,0,18,20
@@ -356,6 +359,7 @@ Tracker4E85:
   !e7
   db 111
   !rest
+  !end
 
 .pattern1_0
   !echo,%00011100,38,38
@@ -383,6 +387,7 @@ Tracker4E85:
   db 24
   !tie
   !pitchSlide,2,22 : !c3
+  !end
 
 .pattern2_0
   !loop : dw .sub5268 : db 3
@@ -557,6 +562,7 @@ Tracker4E85:
   !a3
   !endSlide
   !fs3
+  !end
 
 .pattern2_2
   db 16
@@ -628,6 +634,7 @@ Tracker4E85:
   !d5
   !rest
   !c5
+  !end
 
 .pattern2_3
   db 16
@@ -684,6 +691,7 @@ Tracker4E85:
   !rest
   !d5
   !loop : dw .sub529D : db 2
+  !end
 
 .pattern2_4
   db 16
@@ -755,6 +763,7 @@ Tracker4E85:
   !a5
   !rest
   !a5
+  !end
 
 .sub5268
   !pan,10

@@ -46,6 +46,7 @@ TrackerF0D9:
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr0B
@@ -53,6 +54,7 @@ TrackerF0D9:
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_3
   !instr,!instr0B
@@ -60,6 +62,7 @@ TrackerF0D9:
   !pan,10
   db 12
   !rest
+  !end
 
 .pattern0_4
   !instr,!instr0B
@@ -68,6 +71,7 @@ TrackerF0D9:
   !subtranspose,5
   db 12
   !rest
+  !end
 
 .pattern0_5
   !instr,!instr0B
@@ -76,6 +80,7 @@ TrackerF0D9:
   !subtranspose,5
   db 12
   !rest
+  !end
 
 .pattern1_0
   db 24,$4D
@@ -323,6 +328,7 @@ TrackerF0D9:
   !fs6
   db 60,$7D
   !fs6
+  !end
 
 .pattern1_2
   db 48,$4B
@@ -405,6 +411,7 @@ TrackerF0D9:
   !b4
   db 72
   !fs4
+  !end
 
 .pattern1_3
   db 24
@@ -493,6 +500,7 @@ TrackerF0D9:
   !cs5
   db 72,$08
   !tie
+  !end
 
 .pattern1_4
   db 12,$7D
@@ -648,6 +656,7 @@ TrackerF0D9:
   !gs6
   db 60
   !fs6
+  !end
 
 .pattern1_5
   db 24,$7B
@@ -781,6 +790,7 @@ TrackerF0D9:
   !cs5
   db 72
   !fs4
+  !end
 
 .subF48B
   !a5

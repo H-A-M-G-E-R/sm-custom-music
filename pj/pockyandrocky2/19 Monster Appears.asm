@@ -154,6 +154,7 @@ Tracker3A00:
   !e6
   db 4,$7D
   !d6
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -162,6 +163,7 @@ Tracker3A00:
   !e3
   !loop : dw .sub3C07 : db 3
   !d3
+  !end
 
 .pattern1_3
   !instr,!instr02
@@ -173,6 +175,7 @@ Tracker3A00:
   !e5
   !loop : dw .sub3C0A : db 3
   !d5
+  !end
 
 .pattern1_4
   db 1
@@ -187,6 +190,7 @@ Tracker3A00:
   !loop : dw .sub3C0A : db 3
   db 71
   !d5
+  !end
 
 .pattern1_5
   !instr,!instr02
@@ -198,6 +202,7 @@ Tracker3A00:
   !b4
   !loop : dw .sub3C0D : db 3
   !a4
+  !end
 
 .pattern1_6
   db 1
@@ -212,6 +217,7 @@ Tracker3A00:
   !loop : dw .sub3C0D : db 3
   db 71
   !a4
+  !end
 
 .pattern1_7
   !instr,!instr01
@@ -222,6 +228,7 @@ Tracker3A00:
   !e3
   !loop : dw .sub3C07 : db 3
   !d3
+  !end
 
 .sub3B40
   db 12

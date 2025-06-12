@@ -81,6 +81,7 @@ Tracker241C:
   !d5
   db 96
   !e5
+  !end
 
 .pattern1_2
   !instr,!instr0A
@@ -97,6 +98,7 @@ Tracker241C:
   !e4
   db 32
   !g4
+  !end
 
 .pattern1_4
   !instr,!instr05
@@ -116,6 +118,7 @@ Tracker241C:
   !b6
   db 48
   !rest
+  !end
 
 .pattern1_5
   !instr,!instr05
@@ -135,6 +138,7 @@ Tracker241C:
   !b5
   db 48
   !rest
+  !end
 
 .pattern2_0
   !loop : dw .sub26DD : db 1
@@ -155,6 +159,7 @@ Tracker241C:
   !volume,100
   db 32
   !c6
+  !end
 
 .pattern2_2
   db 96,$7F
@@ -166,16 +171,19 @@ Tracker241C:
   !e4
   !a4
   !tie
+  !end
 
 .pattern2_4
   !loop : dw .sub269B : db 1
   !loop : dw .sub26B5 : db 2
   !loop : dw .sub26FD : db 2
+  !end
 
 .pattern2_5
   !loop : dw .sub26BC : db 1
   !loop : dw .sub26D6 : db 2
   !loop : dw .sub2704 : db 2
+  !end
 
 .pattern3_0
   !loop : dw .sub270B : db 1
@@ -183,6 +191,7 @@ Tracker241C:
 
 .pattern3_1
   !loop : dw .sub270B : db 1
+  !end
 
 .pattern3_2
   db 96,$7F
@@ -198,6 +207,7 @@ Tracker241C:
   db 96
   !a4
   !tie
+  !end
 
 .pattern3_3
   !instr,!instr0A
@@ -222,6 +232,7 @@ Tracker241C:
   !a5
   !dynamicVolume,72,50
   !tie
+  !end
 
 .pattern3_4
   db 3,$4F
@@ -267,6 +278,7 @@ Tracker241C:
   !rest
   db 96
   !rest
+  !end
 
 .pattern3_5
   db 3,$4F
@@ -312,6 +324,7 @@ Tracker241C:
   !rest
   db 96
   !rest
+  !end
 
 .pattern3_6
   !instr,!instr0A
@@ -336,6 +349,7 @@ Tracker241C:
   !e5
   !dynamicVolume,72,50
   !tie
+  !end
 
 .pattern4_0
   db 32,$7F
@@ -398,6 +412,7 @@ Tracker241C:
   !a5
   !dynamicVolume,96,60
   !tie
+  !end
 
 .pattern4_2
   db 96,$7F
@@ -410,6 +425,7 @@ Tracker241C:
   !f4
   !as3
   !tie
+  !end
 
 .pattern4_3
   !volume,80
@@ -424,6 +440,7 @@ Tracker241C:
   !a5
   !dynamicVolume,96,40
   !tie
+  !end
 
 .pattern4_4
   !loop : dw .sub272D : db 1
@@ -431,12 +448,14 @@ Tracker241C:
   !loop : dw .sub2734 : db 1
   db 96
   !rest
+  !end
 
 .pattern4_5
   !loop : dw .sub272D : db 1
   !rest
   !rest
   !loop : dw .sub2734 : db 1
+  !end
 
 .pattern4_6
   !volume,80
@@ -451,6 +470,7 @@ Tracker241C:
   !f5
   !dynamicVolume,96,40
   !tie
+  !end
 
 .sub2680
   db 16,$7F

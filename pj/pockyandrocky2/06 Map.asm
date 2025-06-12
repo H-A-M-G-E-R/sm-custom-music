@@ -124,6 +124,7 @@ Tracker2402:
   !rest
   db 18
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr03
@@ -137,6 +138,7 @@ Tracker2402:
   !tie
   db 18
   !rest
+  !end
 
 .pattern0_3
   db 18
@@ -166,6 +168,7 @@ Tracker2402:
   !g5
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern0_4
   !instr,!instr03
@@ -180,6 +183,7 @@ Tracker2402:
   !tie
   db 18
   !rest
+  !end
 
 .pattern0_5
   !instr,!instr03
@@ -194,6 +198,7 @@ Tracker2402:
   !tie
   db 18
   !rest
+  !end
 
 .pattern0_6
   !instr,!instr03
@@ -208,6 +213,7 @@ Tracker2402:
   !tie
   db 18
   !rest
+  !end
 
 .pattern0_7
   !instr,!instr03
@@ -222,6 +228,7 @@ Tracker2402:
   !tie
   db 18
   !rest
+  !end
 endspcblock
 
 spcblock !p_extra nspc

@@ -209,6 +209,7 @@ Tracker4E85:
   !dynamicVolume,144,40
   !tie
   !tie
+  !end
 
 .pattern0_2
   !pan,0
@@ -224,6 +225,7 @@ Tracker4E85:
   !dynamicVolume,144,40
   !tie
   !tie
+  !end
 
 .pattern0_3
   !vibrato,0,2,243
@@ -252,6 +254,7 @@ Tracker4E85:
   !dynamicVolume,144,40
   !tie
   !tie
+  !end
 
 .pattern0_4
   !vibrato,0,2,243
@@ -280,6 +283,7 @@ Tracker4E85:
   !dynamicVolume,144,40
   !tie
   !tie
+  !end
 
 .sub501C
   !rest

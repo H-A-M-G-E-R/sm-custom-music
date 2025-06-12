@@ -74,6 +74,7 @@ TrackerFC94:
   db 48,$7B
   !g6
   !loop : dw .subFD9E : db 1
+  !end
 
 .pattern0_2
   !volume,240
@@ -117,6 +118,7 @@ TrackerFC94:
   !rest
   db 5
   !rest
+  !end
 
 .pattern0_3
   !volume,240
@@ -161,6 +163,7 @@ TrackerFC94:
   !rest
   db 21
   !rest
+  !end
 
 .pattern0_4
   !volume,240
@@ -204,6 +207,7 @@ TrackerFC94:
   db 5,$31
   !d5
   !d5
+  !end
 
 .subFD9E
   db 24

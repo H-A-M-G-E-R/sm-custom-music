@@ -100,6 +100,7 @@ Tracker4E85:
   !tie
   !tie
   !loop : dw .sub4FC1 : db 143
+  !end
 
 .pattern0_2
   !instr,!instr03
@@ -121,6 +122,7 @@ Tracker4E85:
   !tie
   !loop : dw .sub4FDC : db 1
   !loop : dw .sub4FEF : db 15
+  !end
 
 .pattern0_3
   !loop : dw .sub5012 : db 1
@@ -168,6 +170,7 @@ Tracker4E85:
   !tie
   db 30
   !tie
+  !end
 
 .pattern0_4
   !loop : dw .sub5012 : db 1
@@ -215,6 +218,7 @@ Tracker4E85:
   !tie
   db 24
   !tie
+  !end
 
 .sub4FC1
   !tie

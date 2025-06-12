@@ -153,6 +153,7 @@ Tracker4E85:
   !a6
   db 13,$76
   !f6
+  !end
 
 .pattern0_2
   !pan,10
@@ -213,6 +214,7 @@ Tracker4E85:
   db 28
   !a5
   !as5
+  !end
 
 .pattern0_3
   !pan,12
@@ -273,10 +275,12 @@ Tracker4E85:
   db 28
   !c5
   !g5
+  !end
 
 .pattern0_4
   !volume,201
   !loop : dw .sub4FDC : db 8
+  !end
 
 .sub4FCF
   !c6

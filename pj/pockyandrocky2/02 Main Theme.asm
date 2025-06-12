@@ -85,6 +85,7 @@ Tracker25F1:
   !a6
   db 4
   !d7
+  !end
 
 .pattern0_2
   !instr,!instr01
@@ -93,6 +94,7 @@ Tracker25F1:
   !rest
   db 24,$7F
   !b3
+  !end
 
 .pattern0_3
   !volume,198
@@ -101,6 +103,7 @@ Tracker25F1:
   !rest
   db 24,$7F
   %percNote(!instr05-!instr05)
+  !end
 
 .pattern0_4
   !instr,!instr00
@@ -114,6 +117,7 @@ Tracker25F1:
   !d6
   !g6
   !b6
+  !end
 
 .pattern1_0
   db 6,$7F
@@ -481,6 +485,7 @@ Tracker25F1:
   !a6
   db 4
   !d7
+  !end
 
 .pattern1_2
   db 6,$7F
@@ -547,6 +552,7 @@ Tracker25F1:
   db 12
   !b3
   !d4
+  !end
 
 .pattern1_3
   db 36,$7F
@@ -636,6 +642,7 @@ Tracker25F1:
   db 12,$7F
   %percNote(!instr06-!instr05)
   %percNote(!instr06-!instr05)
+  !end
 
 .pattern1_4
   !instr,!instr04
@@ -685,6 +692,7 @@ Tracker25F1:
   !e6
   db 24,$7F
   !d6
+  !end
 
 .pattern1_5
   !instr,!instr04
@@ -734,6 +742,7 @@ Tracker25F1:
   !b5
   db 24,$7F
   !a5
+  !end
 
 .pattern1_6
   !instr,!instr00
@@ -954,6 +963,7 @@ Tracker25F1:
   !g5
   db 24,$7F
   !fs5
+  !end
 
 .pattern1_7
   db 96
@@ -1043,6 +1053,7 @@ Tracker25F1:
   !d6
   !g6
   !b6
+  !end
 
 .sub2AF7
   db 18

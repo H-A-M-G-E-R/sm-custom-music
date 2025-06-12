@@ -101,6 +101,7 @@ TrackerF7F9:
   !volume,200
   db 1
   !rest
+  !end
 
 .pattern0_2
   !volume,240
@@ -115,6 +116,7 @@ TrackerF7F9:
   !d3
   db 9
   !fs3
+  !end
 
 .pattern0_3
   !volume,240
@@ -128,6 +130,7 @@ TrackerF7F9:
   !cs3
   db 9
   !f3
+  !end
 
 .pattern1_0
   !transpose,244
@@ -331,6 +334,7 @@ TrackerF7F9:
   !g7
   db 3,$7F
   !gs7
+  !end
 
 .pattern1_2
   db 96
@@ -364,6 +368,7 @@ TrackerF7F9:
   !g3
   db 9
   !rest
+  !end
 
 .pattern1_3
   db 96
@@ -408,6 +413,7 @@ TrackerF7F9:
   !g4
   db 9
   !rest
+  !end
 
 .pattern1_4
   !volume,200
@@ -427,6 +433,7 @@ TrackerF7F9:
   !c4
   db 6
   !rest
+  !end
 
 .pattern1_5
   !volume,200
@@ -445,6 +452,7 @@ TrackerF7F9:
   !g6
   db 4
   !rest
+  !end
 
 .pattern2_0
   !instr,!instr01
@@ -478,6 +486,7 @@ TrackerF7F9:
   !volume,200
   db 24
   !rest
+  !end
 
 .pattern2_3
   !instr,!instr03
@@ -489,6 +498,7 @@ TrackerF7F9:
   !e5
   !e5
   !e5
+  !end
 
 .pattern3_0
   !tempo,19
@@ -814,6 +824,7 @@ TrackerF7F9:
   db 5
   !g7
   !fs7
+  !end
 
 .pattern3_3
   db 9,$7F
@@ -843,6 +854,7 @@ TrackerF7F9:
   !rest
   db 13
   !rest
+  !end
 endspcblock
 
 spcblock !p_extra nspc

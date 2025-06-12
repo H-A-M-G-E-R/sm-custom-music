@@ -127,6 +127,7 @@ Tracker2422:
   !a4
   !d5
   !rest
+  !end
 
 .pattern1_4
   !instr,!instr04
@@ -147,6 +148,7 @@ Tracker2422:
   !loop : dw .sub2684 : db 1
   db 96
   !d5
+  !end
 
 .pattern1_5
   !instr,!instr0A
@@ -167,6 +169,7 @@ Tracker2422:
   !loop : dw .sub2684 : db 1
   db 96
   !d5
+  !end
 
 .pattern2_0
   db 24,$7F
@@ -238,6 +241,7 @@ Tracker2422:
   !c4
   !e4
   !g4
+  !end
 
 .pattern2_2
   !instr,!instr0A
@@ -261,6 +265,7 @@ Tracker2422:
   !g5
   !g5
   !g5
+  !end
 
 .pattern2_3
   !instr,!instr0A
@@ -299,6 +304,7 @@ Tracker2422:
   !e5
   !e5
   !e5
+  !end
 
 .pattern2_4
   !loop : dw .sub2696 : db 1
@@ -307,11 +313,13 @@ Tracker2422:
   db 12
   !f5
   !g5
+  !end
 
 .pattern2_5
   !loop : dw .sub2696 : db 1
   db 96
   !g5
+  !end
 
 .pattern2_6
   !instr,!instr0A
@@ -326,6 +334,7 @@ Tracker2422:
   !b3
   !as3
   !c4
+  !end
 
 .pattern2_7
   !instr,!instr09
@@ -355,6 +364,7 @@ Tracker2422:
   !f6
   db 96
   !g6
+  !end
 
 .pattern3_0
   db 24,$7F
@@ -426,6 +436,7 @@ Tracker2422:
   !c4
   !e4
   !g4
+  !end
 
 .pattern3_2
   db 24,$2F
@@ -446,6 +457,7 @@ Tracker2422:
   !g5
   !g5
   !g5
+  !end
 
 .pattern3_3
   db 24,$2F
@@ -481,16 +493,19 @@ Tracker2422:
   !e5
   !e5
   !e5
+  !end
 
 .pattern3_4
   !loop : dw .sub2696 : db 1
   !g5
   !c6
+  !end
 
 .pattern3_5
   !loop : dw .sub2696 : db 1
   !g5
   !c6
+  !end
 
 .pattern3_6
   db 96,$7F
@@ -502,6 +517,7 @@ Tracker2422:
   !b3
   !as3
   !c4
+  !end
 
 .pattern3_7
   db 48,$7F
@@ -527,6 +543,7 @@ Tracker2422:
   !f6
   !g6
   !c7
+  !end
 
 .sub2684
   db 72

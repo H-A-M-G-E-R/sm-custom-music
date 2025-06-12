@@ -71,6 +71,7 @@ Tracker2402:
   !c4
   db 48
   !tie
+  !end
 
 .pattern0_2
   !subtranspose,24
@@ -117,6 +118,7 @@ Tracker2402:
   !g6
   db 6,$77
   !b6
+  !end
 
 .pattern0_3
   db 2
@@ -165,6 +167,7 @@ Tracker2402:
   !g6
   db 4,$77
   !b6
+  !end
 
 .pattern0_4
   db 72
@@ -181,6 +184,7 @@ Tracker2402:
   !c5
   db 53
   !tie
+  !end
 
 .pattern0_5
   db 72
@@ -197,6 +201,7 @@ Tracker2402:
   !e5
   db 50
   !tie
+  !end
 
 .pattern0_6
   db 72
@@ -213,6 +218,7 @@ Tracker2402:
   !g5
   db 48
   !tie
+  !end
 
 .pattern0_7
   db 72
@@ -229,6 +235,7 @@ Tracker2402:
   !b5
   db 45
   !tie
+  !end
 
 .pattern1_0
   db 12,$7D
@@ -415,6 +422,7 @@ Tracker2402:
   !c4
   db 48
   !tie
+  !end
 
 .pattern1_2
   db 6,$7F
@@ -491,6 +499,7 @@ Tracker2402:
   !g6
   db 6,$77
   !b6
+  !end
 
 .pattern1_3
   db 2
@@ -569,6 +578,7 @@ Tracker2402:
   !g6
   db 4,$77
   !b6
+  !end
 
 .pattern1_4
   db 19,$79
@@ -595,6 +605,7 @@ Tracker2402:
   !c5
   db 53
   !tie
+  !end
 
 .pattern1_5
   db 22,$79
@@ -625,6 +636,7 @@ Tracker2402:
   !e5
   db 50
   !tie
+  !end
 
 .pattern1_6
   db 24,$79
@@ -651,6 +663,7 @@ Tracker2402:
   !g5
   db 48
   !tie
+  !end
 
 .pattern1_7
   db 27,$79
@@ -681,6 +694,7 @@ Tracker2402:
   !b5
   db 45
   !tie
+  !end
 
 .sub2784
   db 6,$7F

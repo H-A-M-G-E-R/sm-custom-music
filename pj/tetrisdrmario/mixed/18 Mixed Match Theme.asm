@@ -60,30 +60,35 @@ TrackerD000:
   !tremolo,0,40,250
   db 24
   !rest
+  !end
 
 .pattern0_2
   !volume,200
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern0_3
   !volume,240
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern0_4
   !volume,200
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern0_5
   !volume,200
   !pan,10
   db 24
   !rest
+  !end
 
 .pattern1_0
   !instr,!instr07
@@ -221,6 +226,7 @@ TrackerD000:
   !f7
   db 36,$77
   !fs7
+  !end
 
 .pattern1_2
   db 96
@@ -278,6 +284,7 @@ TrackerD000:
   !rest
   !rest
   !rest
+  !end
 
 .pattern1_3
   !instr,!instr05
@@ -293,6 +300,7 @@ TrackerD000:
   !rest
   !loop : dw .subD1B7 : db 3
   !loop : dw .subD1C4 : db 5
+  !end
 
 .pattern1_4
   !loop : dw .subD1D7 : db 1
@@ -325,6 +333,7 @@ TrackerD000:
   !rest
   db 18
   !rest
+  !end
 
 .pattern1_5
   !loop : dw .subD1D7 : db 1
@@ -357,6 +366,7 @@ TrackerD000:
   !rest
   db 18
   !rest
+  !end
 
 .subD1B7
   db 12

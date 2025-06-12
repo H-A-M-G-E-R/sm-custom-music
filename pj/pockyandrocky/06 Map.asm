@@ -68,6 +68,7 @@ Tracker3C55:
   !volume,120
   !pan,0
   !loop : dw .sub3CE1 : db 1
+  !end
 
 .pattern1_2
   !instr,!instr06
@@ -77,6 +78,7 @@ Tracker3C55:
   !g2
   !f2
   !tie
+  !end
 
 .pattern1_3
   !instr,!instr0A
@@ -92,6 +94,7 @@ Tracker3C55:
   db 96
   !a6
   !tie
+  !end
 
 .pattern1_4
   !instr,!instr05
@@ -99,6 +102,7 @@ Tracker3C55:
   !pan,20
   !subtranspose,24
   !loop : dw .sub3CE1 : db 1
+  !end
 
 .pattern1_5
   !instr,!instr04
@@ -109,6 +113,7 @@ Tracker3C55:
   !g2
   !f2
   !tie
+  !end
 
 .sub3CE1
   db 12,$7F

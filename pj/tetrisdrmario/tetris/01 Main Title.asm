@@ -156,6 +156,7 @@ TrackerD000:
   !instr,!instr08
   !g4
   !loop : dw .subD87F : db 5
+  !end
 
 .pattern0_2
   !loop : dw .subD75A : db 1
@@ -191,6 +192,7 @@ TrackerD000:
   !g5
   !instr,!instr05
   !loop : dw .subD88C : db 3
+  !end
 
 .pattern0_3
   !instr,!instr09
@@ -205,6 +207,7 @@ TrackerD000:
   !vibrato,8,40,40
   !transpose,12
   !loop : dw .subD88C : db 3
+  !end
 
 .pattern0_4
   !instr,!instr09
@@ -225,6 +228,7 @@ TrackerD000:
   !instr,!instr0D
   !vibrato,8,30,40
   !loop : dw .subD8F7 : db 2
+  !end
 
 .pattern0_5
   !volume,200
@@ -268,6 +272,7 @@ TrackerD000:
   !g4
   db 40
   !rest
+  !end
 
 .pattern0_6
   !volume,200
@@ -351,6 +356,7 @@ TrackerD000:
   !g5
   db 40
   !rest
+  !end
 
 .pattern0_7
   !volume,200
@@ -358,6 +364,7 @@ TrackerD000:
   db 96
   !rest
   !loop : dw .subD915 : db 9
+  !end
 
 .pattern1_0
   !loop : dw .subD7EB : db 2
@@ -476,6 +483,7 @@ TrackerD000:
   !g4
   db 96
   !rest
+  !end
 
 .pattern1_2
   db 24,$5F
@@ -559,6 +567,7 @@ TrackerD000:
   !d3
   db 96
   !rest
+  !end
 
 .pattern1_3
   db 24,$5F
@@ -702,6 +711,7 @@ TrackerD000:
   !pitchSlide,0,12 : !d3
   db 84
   !rest
+  !end
 
 .pattern1_4
   db 24,$5F
@@ -842,6 +852,7 @@ TrackerD000:
   !pitchSlide,0,12 : !a3
   db 84
   !rest
+  !end
 
 .pattern1_5
   db 24,$5F
@@ -942,6 +953,7 @@ TrackerD000:
   !pitchSlide,0,12 : !d4
   db 84
   !rest
+  !end
 
 .pattern1_6
   db 24,$5F
@@ -1007,6 +1019,7 @@ TrackerD000:
   !pitchSlide,0,12 : !b3
   db 84
   !rest
+  !end
 
 .pattern1_7
   !instr,!instr03
@@ -1053,6 +1066,7 @@ TrackerD000:
   !pitchSlide,0,12 : !fs3
   db 84
   !rest
+  !end
 
 .subD6D7
   !musicVolume,210;240

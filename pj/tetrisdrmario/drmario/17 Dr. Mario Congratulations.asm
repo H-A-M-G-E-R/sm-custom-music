@@ -99,18 +99,23 @@ TrackerF52A:
   !pan,10
   !instr,!instr13
   !loop : dw .subF792 : db 1
+  !end
 
 .pattern0_2
   !loop : dw .subF7AD : db 1
+  !end
 
 .pattern0_3
   !loop : dw .subF7AD : db 1
+  !end
 
 .pattern0_4
   !loop : dw .subF7AD : db 1
+  !end
 
 .pattern0_5
   !loop : dw .subF7AD : db 1
+  !end
 
 .pattern1_0
   !subtranspose,0
@@ -183,6 +188,7 @@ TrackerF52A:
   db 24
   !b4
   !d5
+  !end
 
 .pattern1_2
   !volume,240
@@ -200,6 +206,7 @@ TrackerF52A:
   db 24
   !a2
   !gs2
+  !end
 
 .pattern1_3
   !instr,!instr13
@@ -216,6 +223,7 @@ TrackerF52A:
   !a4
   db 96
   !g4
+  !end
 
 .pattern1_4
   !instr,!instr07
@@ -224,10 +232,12 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern1_5
   !instr,!instr0A
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern2_0
   !instr,!instr0F
@@ -247,6 +257,7 @@ TrackerF52A:
   !pitchSlide,4,2 : !b5
   !pitchSlide,0,1 : !e7
   !pitchSlide,4,2 : !e5
+  !end
 
 .pattern2_2
   db 14,$77
@@ -255,10 +266,12 @@ TrackerF52A:
   !pitchSlide,4,2 : !f5
   !pitchSlide,0,1 : !as7
   !pitchSlide,4,2 : !as5
+  !end
 
 .pattern2_3
   db 14
   !rest
+  !end
 
 .pattern3_0
   !loop : dw .subF7CD : db 1
@@ -276,6 +289,7 @@ TrackerF52A:
   db 96
   !g6
   !c6
+  !end
 
 .pattern3_2
   !loop : dw .subF7F2 : db 3
@@ -284,6 +298,7 @@ TrackerF52A:
   !g4
   db 24,$7F
   !g3
+  !end
 
 .pattern3_3
   db 96,$75
@@ -291,6 +306,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern3_4
   !instr,!instr07
@@ -299,9 +315,11 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern3_5
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern4_0
   !instr,!instr0F
@@ -317,6 +335,7 @@ TrackerF52A:
   db 10,$79
   !g7
   !pitchSlide,0,2 : !a7
+  !end
 
 .pattern4_2
   db 6
@@ -324,14 +343,17 @@ TrackerF52A:
   db 10,$77
   !gs7
   !pitchSlide,0,2 : !as7
+  !end
 
 .pattern4_3
   db 16
   !rest
+  !end
 
 .pattern4_4
   db 16
   !rest
+  !end
 
 .pattern5_0
   !loop : dw .subF7CD : db 1
@@ -348,6 +370,7 @@ TrackerF52A:
   !g7
   !instr,!instr01
   !a7
+  !end
 
 .pattern5_2
   !loop : dw .subF7F2 : db 3
@@ -356,6 +379,7 @@ TrackerF52A:
   !g4
   db 24,$7F
   !g3
+  !end
 
 .pattern5_3
   db 96,$75
@@ -363,6 +387,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern5_4
   !instr,!instr07
@@ -371,9 +396,11 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern5_5
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern6_0
   !subtranspose,0
@@ -446,6 +473,7 @@ TrackerF52A:
   db 24
   !b4
   !d5
+  !end
 
 .pattern6_2
   !volume,240
@@ -463,6 +491,7 @@ TrackerF52A:
   db 24
   !a2
   !gs2
+  !end
 
 .pattern6_3
   !instr,!instr13
@@ -479,6 +508,7 @@ TrackerF52A:
   !a4
   db 96
   !g4
+  !end
 
 .pattern6_4
   !instr,!instr07
@@ -487,10 +517,12 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern6_5
   !instr,!instr0A
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern7_0
   !instr,!instr0F
@@ -510,6 +542,7 @@ TrackerF52A:
   !pitchSlide,4,2 : !b5
   !pitchSlide,0,1 : !e7
   !pitchSlide,4,2 : !e5
+  !end
 
 .pattern7_2
   db 14,$77
@@ -518,10 +551,12 @@ TrackerF52A:
   !pitchSlide,4,2 : !f5
   !pitchSlide,0,1 : !as7
   !pitchSlide,4,2 : !as5
+  !end
 
 .pattern7_3
   db 14
   !rest
+  !end
 
 .pattern8_0
   !loop : dw .subF7CD : db 1
@@ -539,6 +574,7 @@ TrackerF52A:
   db 96
   !g6
   !c6
+  !end
 
 .pattern8_2
   !loop : dw .subF7F2 : db 3
@@ -547,6 +583,7 @@ TrackerF52A:
   !g4
   db 24,$7F
   !g3
+  !end
 
 .pattern8_3
   db 96,$75
@@ -554,6 +591,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern8_4
   !instr,!instr07
@@ -562,9 +600,11 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern8_5
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern9_0
   !instr,!instr0F
@@ -580,6 +620,7 @@ TrackerF52A:
   db 10,$79
   !g7
   !pitchSlide,0,2 : !a7
+  !end
 
 .pattern9_2
   db 6
@@ -587,14 +628,17 @@ TrackerF52A:
   db 10,$77
   !gs7
   !pitchSlide,0,2 : !as7
+  !end
 
 .pattern9_3
   db 16
   !rest
+  !end
 
 .pattern9_4
   db 16
   !rest
+  !end
 
 .pattern10_0
   !loop : dw .subF7CD : db 1
@@ -611,6 +655,7 @@ TrackerF52A:
   !g7
   !instr,!instr01
   !a7
+  !end
 
 .pattern10_2
   !loop : dw .subF7F2 : db 2
@@ -624,6 +669,7 @@ TrackerF52A:
   !as2
   !a2
   !g2
+  !end
 
 .pattern10_3
   db 96,$75
@@ -631,6 +677,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern10_4
   !instr,!instr07
@@ -647,6 +694,7 @@ TrackerF52A:
   !instr,!instr07
   !g3
   !g3
+  !end
 
 .pattern10_5
   !loop : dw .subF7C0 : db 3
@@ -659,6 +707,7 @@ TrackerF52A:
   db 16,$77
   !g4
   !g4
+  !end
 
 .pattern11_0
   !subtranspose,0
@@ -731,6 +780,7 @@ TrackerF52A:
   db 24
   !b4
   !d5
+  !end
 
 .pattern11_2
   !volume,240
@@ -748,6 +798,7 @@ TrackerF52A:
   db 24
   !a2
   !gs2
+  !end
 
 .pattern11_3
   !instr,!instr13
@@ -764,6 +815,7 @@ TrackerF52A:
   !a4
   db 96
   !g4
+  !end
 
 .pattern11_4
   !instr,!instr07
@@ -772,10 +824,12 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern11_5
   !instr,!instr0A
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern12_0
   !loop : dw .subF7CD : db 1
@@ -793,6 +847,7 @@ TrackerF52A:
   db 96
   !g6
   !c6
+  !end
 
 .pattern12_2
   !loop : dw .subF7F2 : db 3
@@ -801,6 +856,7 @@ TrackerF52A:
   !g4
   db 24,$7F
   !g3
+  !end
 
 .pattern12_3
   db 96,$75
@@ -808,6 +864,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern12_4
   !instr,!instr07
@@ -816,9 +873,11 @@ TrackerF52A:
   !instr,!instr08
   !g3
   !loop : dw .subF7B9 : db 3
+  !end
 
 .pattern12_5
   !loop : dw .subF7C0 : db 4
+  !end
 
 .pattern13_0
   !loop : dw .subF7CD : db 1
@@ -835,6 +894,7 @@ TrackerF52A:
   !g7
   !instr,!instr01
   !a7
+  !end
 
 .pattern13_2
   !loop : dw .subF7F2 : db 2
@@ -848,6 +908,7 @@ TrackerF52A:
   !as2
   !a2
   !g2
+  !end
 
 .pattern13_3
   db 96,$75
@@ -855,6 +916,7 @@ TrackerF52A:
   !tie
   !e5
   !ds5
+  !end
 
 .pattern13_4
   !instr,!instr07
@@ -871,6 +933,7 @@ TrackerF52A:
   !instr,!instr07
   !g3
   !g3
+  !end
 
 .pattern13_5
   !loop : dw .subF7C0 : db 3
@@ -883,6 +946,7 @@ TrackerF52A:
   db 16,$77
   !g4
   !g4
+  !end
 
 .subF792
   db 12,$2F

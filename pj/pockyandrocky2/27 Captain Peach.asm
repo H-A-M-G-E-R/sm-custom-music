@@ -159,6 +159,7 @@ Tracker2402:
   !d6
   db 8
   !fs6
+  !end
 
 .pattern0_2
   !volume,166
@@ -190,6 +191,7 @@ Tracker2402:
   !d4
   db 2
   !rest
+  !end
 
 .pattern0_3
   !volume,198
@@ -231,6 +233,7 @@ Tracker2402:
   !pan,7
   db 8
   !gs4
+  !end
 
 .pattern0_4
   db 96
@@ -256,6 +259,7 @@ Tracker2402:
   !g5
   db 8,$69
   !a5
+  !end
 
 .pattern0_5
   !volume,146
@@ -316,6 +320,7 @@ Tracker2402:
   !fs6
   db 8,$68
   !d6
+  !end
 
 .pattern0_7
   db 16
@@ -353,6 +358,7 @@ Tracker2402:
   !rest
   db 16,$7F
   !d6
+  !end
 
 .pattern1_0
   db 15,$7F
@@ -601,6 +607,7 @@ Tracker2402:
   !rest
   db 32,$78
   !d5
+  !end
 
 .pattern1_2
   !loop : dw .sub2B4B : db 2
@@ -663,6 +670,7 @@ Tracker2402:
   !d4
   db 8,$3F
   !d4
+  !end
 
 .pattern1_3
   !pan,10
@@ -791,6 +799,7 @@ Tracker2402:
   %percNote(!instr06-!instr05)
   db 8
   %percNote(!instr06-!instr05)
+  !end
 
 .pattern1_4
   !instr,!instr03
@@ -939,6 +948,7 @@ Tracker2402:
   db 8,$73
   !fs6
   !rest
+  !end
 
 .pattern1_5
   db 24
@@ -1156,6 +1166,7 @@ Tracker2402:
   !rest
   db 32,$78
   !fs5
+  !end
 
 .pattern1_6
   db 96
@@ -1265,6 +1276,7 @@ Tracker2402:
   !d6
   db 4
   !rest
+  !end
 
 .pattern1_7
   db 16
@@ -1295,6 +1307,7 @@ Tracker2402:
   !rest
   db 16
   !fs6
+  !end
 
 .sub2A50
   !vibrato,0,24,192

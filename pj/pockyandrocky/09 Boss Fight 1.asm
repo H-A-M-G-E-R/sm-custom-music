@@ -137,11 +137,13 @@ Tracker2BAA:
   !dynamicVolume,72,120
   db 96
   !e5
+  !end
 
 .pattern1_2
   !instr,!instr07
   !volume,255
   !loop : dw .sub2E23 : db 1
+  !end
 
 .pattern1_3
   !volume,255
@@ -167,6 +169,7 @@ Tracker2BAA:
   %percNote(!instr0D-!instr0C)
   db 4,$7F
   %percNote(!instr0D-!instr0C)
+  !end
 
 .pattern1_4
   !instr,!instr0A
@@ -198,6 +201,7 @@ Tracker2BAA:
   !dynamicVolume,72,120
   db 96
   !b4
+  !end
 
 .pattern1_5
   !instr,!instr05
@@ -208,6 +212,7 @@ Tracker2BAA:
   !rest
   !rest
   !rest
+  !end
 
 .pattern1_6
   !instr,!instr07
@@ -215,6 +220,7 @@ Tracker2BAA:
   !pan,20
   !subtranspose,48
   !loop : dw .sub2E23 : db 1
+  !end
 
 .pattern1_7
   !volume,255
@@ -224,6 +230,7 @@ Tracker2BAA:
   !rest
   !rest
   !loop : dw .sub2E3D : db 3
+  !end
 
 .pattern2_0
   !volume,200
@@ -281,9 +288,11 @@ Tracker2BAA:
   !dynamicVolume,96,150
   !a5
   !loop : dw .sub2E42 : db 1
+  !end
 
 .pattern2_2
   !loop : dw .sub2E47 : db 1
+  !end
 
 .pattern2_3
   !loop : dw .sub2E93 : db 1
@@ -299,6 +308,7 @@ Tracker2BAA:
   db 12
   %percNote(!instr0D-!instr0C)
   %percNote(!instr0D-!instr0C)
+  !end
 
 .pattern2_4
   !volume,30
@@ -311,6 +321,7 @@ Tracker2BAA:
   !e5
   !dynamicVolume,96,30
   !e5
+  !end
 
 .pattern2_5
   !volume,255
@@ -326,12 +337,15 @@ Tracker2BAA:
   !rest
   db 24
   %percNote(!instr0E-!instr0C)
+  !end
 
 .pattern2_6
   !loop : dw .sub2E47 : db 1
+  !end
 
 .pattern2_7
   !loop : dw .sub2EA8 : db 4
+  !end
 
 .pattern3_0
   db 12,$2F
@@ -385,9 +399,11 @@ Tracker2BAA:
   !dynamicVolume,96,150
   !a5
   !loop : dw .sub2E42 : db 1
+  !end
 
 .pattern3_2
   !loop : dw .sub2EC1 : db 1
+  !end
 
 .pattern3_3
   !loop : dw .sub2E93 : db 1
@@ -405,6 +421,7 @@ Tracker2BAA:
   db 6
   %percNote(!instr0D-!instr0C)
   %percNote(!instr0D-!instr0C)
+  !end
 
 .pattern3_4
   !volume,30
@@ -417,6 +434,7 @@ Tracker2BAA:
   !f5
   !dynamicVolume,96,30
   !f5
+  !end
 
 .pattern3_5
   db 96
@@ -431,9 +449,11 @@ Tracker2BAA:
   !rest
   db 24
   %percNote(!instr0E-!instr0C)
+  !end
 
 .pattern3_6
   !loop : dw .sub2EC1 : db 1
+  !end
 
 .pattern3_7
   !loop : dw .sub2EA8 : db 3
@@ -455,6 +475,7 @@ Tracker2BAA:
   %percNote(!instr0F-!instr0C)
   db 12,$73
   %percNote(!instr0F-!instr0C)
+  !end
 
 .sub2E09
   db 48

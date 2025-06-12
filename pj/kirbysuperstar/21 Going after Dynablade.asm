@@ -98,6 +98,7 @@ Tracker4E85:
   !pan,9
   db 10,$78
   !f4
+  !end
 
 .pattern0_2
   db 20
@@ -108,6 +109,7 @@ Tracker4E85:
   %percNote(!instr30-!instr2C)
   db 32
   !rest
+  !end
 
 .pattern1_0
   !transpose,0
@@ -192,12 +194,14 @@ Tracker4E85:
   !pan,9
   db 9,$78
   !f4
+  !end
 
 .pattern1_2
   !transpose,0
   !instr,!instr09
   !volume,175
   !loop : dw .sub5184 : db 2
+  !end
 
 .pattern1_3
   !transpose,0
@@ -205,6 +209,7 @@ Tracker4E85:
   !pan,8
   !volume,175
   !loop : dw .sub51D9 : db 2
+  !end
 
 .pattern1_4
   !transpose,0
@@ -212,6 +217,7 @@ Tracker4E85:
   !pan,12
   !volume,175
   !loop : dw .sub5226 : db 2
+  !end
 
 .pattern2_0
   !transpose,1
@@ -292,18 +298,22 @@ Tracker4E85:
   !pan,11
   db 9,$78
   !f4
+  !end
 
 .pattern2_2
   !transpose,1
   !loop : dw .sub5184 : db 2
+  !end
 
 .pattern2_3
   !transpose,1
   !loop : dw .sub51D9 : db 2
+  !end
 
 .pattern2_4
   !transpose,1
   !loop : dw .sub5226 : db 2
+  !end
 
 .sub503B
   db 10,$48

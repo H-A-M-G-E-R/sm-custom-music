@@ -82,6 +82,7 @@ Tracker4E85:
   !e7
   db 11,$76
   !c7
+  !end
 
 .pattern0_2
   !transpose,12
@@ -112,6 +113,7 @@ Tracker4E85:
   !c7
   db 16
   !a6
+  !end
 
 .pattern0_3
   !transpose,12
@@ -141,6 +143,7 @@ Tracker4E85:
   !e7
   db 6,$76
   !c7
+  !end
 
 .sub4F4E
   !g6

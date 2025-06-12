@@ -223,6 +223,7 @@ TrackerD000:
   !a2
   db 5
   !rest
+  !end
 
 .pattern0_2
   !instr,!instr05
@@ -266,6 +267,7 @@ TrackerD000:
   !rest
   db 12
   !rest
+  !end
 
 .pattern0_3
   !volume,240
@@ -327,6 +329,7 @@ TrackerD000:
   !g2
   db 1
   !rest
+  !end
 
 .pattern0_4
   !instr,!instr03
@@ -361,6 +364,7 @@ TrackerD000:
   !tie
   db 96
   !rest
+  !end
 
 .pattern1_0
   !instr,!instr11
@@ -401,6 +405,7 @@ TrackerD000:
   !pitchSlide,2,55 : !c3
   db 36
   !rest
+  !end
 
 .pattern1_2
   !instr,!instr05
@@ -414,6 +419,7 @@ TrackerD000:
   !a2
   !a2
   !loop : dw .subD96D : db 7
+  !end
 
 .pattern1_3
   !loop : dw .subD976 : db 7
@@ -440,6 +446,7 @@ TrackerD000:
   !g4
   db 24
   !g4
+  !end
 
 .pattern1_4
   !loop : dw .subD99F : db 4
@@ -518,6 +525,7 @@ TrackerD000:
   db 48
   !tie
   !rest
+  !end
 
 .pattern1_5
   !volume,0
@@ -572,6 +580,7 @@ TrackerD000:
   !a3
   db 45
   !rest
+  !end
 
 .pattern1_6
   !volume,0
@@ -626,6 +635,7 @@ TrackerD000:
   !cs4
   db 45
   !rest
+  !end
 
 .pattern2_0
   !instr,!instr0C
@@ -636,6 +646,7 @@ TrackerD000:
   !instr,!instr0C
   !subtranspose,20
   !loop : dw .subD9DE : db 1
+  !end
 
 .pattern2_2
   !loop : dw .subDA26 : db 1
@@ -646,6 +657,7 @@ TrackerD000:
   !a2
   db 84
   !rest
+  !end
 
 .pattern2_3
   !loop : dw .subD976 : db 7
@@ -672,6 +684,7 @@ TrackerD000:
   !g4
   db 24
   !g4
+  !end
 
 .pattern3_0
   !instr,!instr11
@@ -712,6 +725,7 @@ TrackerD000:
   !pitchSlide,2,55 : !c3
   db 36
   !rest
+  !end
 
 .pattern3_2
   !instr,!instr05
@@ -725,6 +739,7 @@ TrackerD000:
   !a2
   !a2
   !loop : dw .subD96D : db 7
+  !end
 
 .pattern3_3
   !loop : dw .subD976 : db 7
@@ -751,6 +766,7 @@ TrackerD000:
   !g4
   db 24
   !g4
+  !end
 
 .pattern3_4
   !loop : dw .subD99F : db 4
@@ -829,6 +845,7 @@ TrackerD000:
   db 48
   !tie
   !rest
+  !end
 
 .pattern3_5
   !volume,0
@@ -883,6 +900,7 @@ TrackerD000:
   !a3
   db 45
   !rest
+  !end
 
 .pattern3_6
   !volume,0
@@ -937,6 +955,7 @@ TrackerD000:
   !cs4
   db 45
   !rest
+  !end
 
 .pattern4_0
   !instr,!instr0C
@@ -947,6 +966,7 @@ TrackerD000:
   !instr,!instr0C
   !subtranspose,20
   !loop : dw .subD9DE : db 1
+  !end
 
 .pattern4_2
   !loop : dw .subDA26 : db 1
@@ -957,6 +977,7 @@ TrackerD000:
   !a2
   db 84
   !rest
+  !end
 
 .pattern4_3
   !loop : dw .subD976 : db 7
@@ -983,6 +1004,7 @@ TrackerD000:
   !g4
   db 24
   !g4
+  !end
 
 .pattern5_0
   !instr,!instr0C
@@ -1038,6 +1060,7 @@ TrackerD000:
   !rest
   db 20
   !rest
+  !end
 
 .pattern5_2
   !instr,!instr13
@@ -1051,6 +1074,7 @@ TrackerD000:
   !rest
   db 20
   !rest
+  !end
 
 .pattern5_3
   !instr,!instr0A
@@ -1134,6 +1158,7 @@ TrackerD000:
   !g4
   db 14
   !rest
+  !end
 
 .pattern5_4
   !loop : dw .subDA6F : db 1
@@ -1149,6 +1174,7 @@ TrackerD000:
   db 6
   !c5
   !rest
+  !end
 
 .pattern5_5
   !volume,0
@@ -1195,6 +1221,7 @@ TrackerD000:
   !rest
   db 14
   !rest
+  !end
 
 .pattern6_0
   !instr,!instr03
@@ -1238,6 +1265,7 @@ TrackerD000:
   !cs7
   db 48
   !rest
+  !end
 
 .pattern6_2
   !instr,!instr05
@@ -1257,6 +1285,7 @@ TrackerD000:
   !a2
   db 36
   !rest
+  !end
 
 .pattern6_3
   !instr,!instr07
@@ -1301,6 +1330,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern7_0
   !instr,!instr03
@@ -1344,6 +1374,7 @@ TrackerD000:
   !cs7
   db 48
   !rest
+  !end
 
 .pattern7_2
   !instr,!instr05
@@ -1363,6 +1394,7 @@ TrackerD000:
   !a2
   db 36
   !rest
+  !end
 
 .pattern7_3
   !instr,!instr07
@@ -1407,6 +1439,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern8_0
   !instr,!instr03
@@ -1450,6 +1483,7 @@ TrackerD000:
   !cs7
   db 48
   !rest
+  !end
 
 .pattern8_2
   !instr,!instr05
@@ -1469,6 +1503,7 @@ TrackerD000:
   !a2
   db 36
   !rest
+  !end
 
 .pattern8_3
   !instr,!instr07
@@ -1513,6 +1548,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern9_0
   !instr,!instr03
@@ -1556,6 +1592,7 @@ TrackerD000:
   !cs7
   db 48
   !rest
+  !end
 
 .pattern9_2
   !instr,!instr05
@@ -1575,6 +1612,7 @@ TrackerD000:
   !a2
   db 36
   !rest
+  !end
 
 .pattern9_3
   !instr,!instr07
@@ -1619,6 +1657,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern10_0
   !instr,!instr11
@@ -1638,11 +1677,13 @@ TrackerD000:
   !g5
   db 84
   !rest
+  !end
 
 .pattern10_2
   !loop : dw .subDA6F : db 1
   !rest
   !rest
+  !end
 
 .pattern10_3
   !instr,!instr07
@@ -1734,6 +1775,7 @@ TrackerD000:
   !g3
   !g3
   !g3
+  !end
 
 .pattern11_0
   !loop : dw .subDA84 : db 1
@@ -1757,6 +1799,7 @@ TrackerD000:
   !g5
   db 48
   !rest
+  !end
 
 .pattern11_2
   db 6,$3F
@@ -1801,6 +1844,7 @@ TrackerD000:
   !as2
   db 48
   !rest
+  !end
 
 .pattern11_3
   !loop : dw .subDAC8 : db 3
@@ -1816,6 +1860,7 @@ TrackerD000:
   !instr,!instr0A
   db 59,$75
   !c5
+  !end
 
 .pattern12_0
   !instr,!instr0D
@@ -2004,9 +2049,11 @@ TrackerD000:
   db 96
   !rest
   !loop : dw .subD8BA : db 11
+  !end
 
 .pattern12_2
   !loop : dw .subD8BC : db 6
+  !end
 
 .pattern12_3
   !instr,!instr07
@@ -2055,6 +2102,7 @@ TrackerD000:
   db 6
   !g4
   !loop : dw .subD8E8 : db 5
+  !end
 
 .pattern13_0
   !instr,!instr01
@@ -2080,6 +2128,7 @@ TrackerD000:
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern13_2
   db 12,$19
@@ -2098,6 +2147,7 @@ TrackerD000:
   !a2
   db 12,$1F
   !a2
+  !end
 
 .pattern13_3
   !instr,!instr07
@@ -2116,6 +2166,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern14_0
   !instr,!instr01
@@ -2141,6 +2192,7 @@ TrackerD000:
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern14_2
   db 12,$19
@@ -2159,6 +2211,7 @@ TrackerD000:
   !a2
   db 12,$1F
   !a2
+  !end
 
 .pattern14_3
   !instr,!instr07
@@ -2177,6 +2230,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern15_0
   !instr,!instr01
@@ -2202,6 +2256,7 @@ TrackerD000:
   !volume,200
   db 96
   !rest
+  !end
 
 .pattern15_2
   db 12,$19
@@ -2220,6 +2275,7 @@ TrackerD000:
   !a2
   db 12,$1F
   !a2
+  !end
 
 .pattern15_3
   !instr,!instr07
@@ -2238,6 +2294,7 @@ TrackerD000:
   !c5
   !c5
   !c5
+  !end
 
 .pattern16_0
   db 12,$19
@@ -2261,6 +2318,7 @@ TrackerD000:
 .pattern16_1
   db 96
   !rest
+  !end
 
 .pattern16_2
   db 12,$19
@@ -2279,6 +2337,7 @@ TrackerD000:
   !a2
   db 12,$1F
   !a2
+  !end
 
 .pattern16_3
   !instr,!instr07
@@ -2299,6 +2358,7 @@ TrackerD000:
   !g4
   !g4
   !g4
+  !end
 
 .pattern17_0
   !loop : dw .subDAF1 : db 1
@@ -2311,12 +2371,14 @@ TrackerD000:
   !loop : dw .subDA6F : db 1
   !rest
   !rest
+  !end
 
 .pattern17_2
   !loop : dw .subDAF1 : db 1
   !a2
   db 84
   !rest
+  !end
 
 .pattern17_3
   !instr,!instr07
@@ -2394,6 +2456,7 @@ TrackerD000:
   !instr,!instr07
   db 48,$7F
   !g3
+  !end
 
 .pattern18_0
   !loop : dw .subDAF1 : db 1
@@ -2406,12 +2469,14 @@ TrackerD000:
   !loop : dw .subDA6F : db 1
   !rest
   !rest
+  !end
 
 .pattern18_2
   !loop : dw .subDAF1 : db 1
   !a2
   db 84
   !rest
+  !end
 
 .pattern18_3
   !instr,!instr07
@@ -2489,6 +2554,7 @@ TrackerD000:
   !instr,!instr07
   db 48,$7F
   !g3
+  !end
 
 .subD92B
   db 12

@@ -147,6 +147,7 @@ Tracker4E85:
   !g3
   db 22
   !g3
+  !end
 
 .pattern0_2
   !instr,!instr19
@@ -240,6 +241,7 @@ Tracker4E85:
   !d5
   !b4
   !d5
+  !end
 
 .pattern0_3
   !pan,11
@@ -290,6 +292,7 @@ Tracker4E85:
   db 15
   !a5
   !b5
+  !end
 
 .pattern0_4
   !pan,9
@@ -340,6 +343,7 @@ Tracker4E85:
   db 15
   !a5
   !b5
+  !end
 
 .pattern1_0
   db 44,$48
@@ -472,6 +476,7 @@ Tracker4E85:
   !c3
   db 44,$1C
   !c3
+  !end
 
 .pattern1_2
   !subtranspose,60
@@ -651,6 +656,7 @@ Tracker4E85:
   !c5
   db 44,$16
   !c5
+  !end
 
 .pattern1_3
   !subtranspose,60
@@ -830,6 +836,7 @@ Tracker4E85:
   !g4
   db 44,$16
   !g4
+  !end
 
 .pattern1_4
   !pan,10
@@ -888,6 +895,7 @@ Tracker4E85:
   !e5
   db 44,$16
   !e5
+  !end
 endspcblock
 
 spcblock !p_extra nspc

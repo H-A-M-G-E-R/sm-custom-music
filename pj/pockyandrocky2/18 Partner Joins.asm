@@ -84,6 +84,7 @@ Tracker2778:
   !a5
   db 18
   !rest
+  !end
 
 .pattern1_2
   !instr,!instr01
@@ -98,6 +99,7 @@ Tracker2778:
   !d4
   db 18
   !rest
+  !end
 
 .pattern1_3
   !instr,!instr04
@@ -113,6 +115,7 @@ Tracker2778:
   !a5
   db 18,$75
   !a5
+  !end
 
 .pattern1_4
   !instr,!instr04
@@ -129,6 +132,7 @@ Tracker2778:
   !f5
   db 18,$75
   !f5
+  !end
 
 .pattern1_5
   !instr,!instr04
@@ -145,6 +149,7 @@ Tracker2778:
   !d5
   db 18,$75
   !d5
+  !end
 
 .pattern1_6
   db 1
@@ -164,6 +169,7 @@ Tracker2778:
   !a5
   db 17
   !rest
+  !end
 
 .pattern1_7
   db 18
@@ -185,6 +191,7 @@ Tracker2778:
   !c6
   db 96
   !d6
+  !end
 endspcblock
 
 spcblock !p_extra nspc

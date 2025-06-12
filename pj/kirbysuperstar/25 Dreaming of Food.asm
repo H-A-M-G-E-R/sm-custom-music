@@ -249,6 +249,7 @@ Tracker4E85:
   !g5
   db 63
   !rest
+  !end
 
 .pattern0_2
   !volume,220
@@ -352,6 +353,7 @@ Tracker4E85:
   !f6
   db 63
   !rest
+  !end
 
 .pattern0_3
   !instr,!instr04
@@ -400,6 +402,7 @@ Tracker4E85:
   !ds4
   db 54
   !rest
+  !end
 
 .pattern0_4
   !instr,!instr04
@@ -451,6 +454,7 @@ Tracker4E85:
   !as4
   db 54
   !rest
+  !end
 
 .pattern1_0
   db 72

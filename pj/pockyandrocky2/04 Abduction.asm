@@ -95,6 +95,7 @@ Tracker2587:
   !tie
   db 1
   !rest
+  !end
 
 .pattern1_2
   db 24
@@ -107,6 +108,7 @@ Tracker2587:
   !e3
   db 1
   !rest
+  !end
 
 .pattern1_3
   db 24
@@ -115,6 +117,7 @@ Tracker2587:
   !rest
   db 1
   !rest
+  !end
 
 .pattern1_4
   db 24
@@ -129,6 +132,7 @@ Tracker2587:
   !tie
   db 1
   !rest
+  !end
 
 .pattern1_5
   db 24
@@ -157,6 +161,7 @@ Tracker2587:
   !rest
   db 1
   !rest
+  !end
 
 .pattern1_6
   db 24
@@ -185,6 +190,7 @@ Tracker2587:
   !f6
   !e6
   !rest
+  !end
 
 .pattern1_7
   db 24
@@ -203,6 +209,7 @@ Tracker2587:
   !e6
   db 1
   !rest
+  !end
 
 .pattern2_0
   !volume,104
@@ -357,6 +364,7 @@ Tracker2587:
   !loop : dw .sub2927 : db 2
   !loop : dw .sub293E : db 2
   !loop : dw .sub2927 : db 2
+  !end
 
 .pattern2_2
   db 18,$7F
@@ -404,6 +412,7 @@ Tracker2587:
   !rest
   db 24
   !e3
+  !end
 
 .pattern2_3
   !volume,198
@@ -447,6 +456,7 @@ Tracker2587:
   %percNote(!instr05-!instr05)
   %percNote(!instr06-!instr05)
   !loop : dw .sub2997 : db 7
+  !end
 
 .pattern2_4
   !instr,!instr02
@@ -506,6 +516,7 @@ Tracker2587:
   !rest
   db 24
   !g5
+  !end
 
 .pattern2_5
   !instr,!instr02
@@ -565,6 +576,7 @@ Tracker2587:
   !rest
   db 24
   !d5
+  !end
 
 .pattern2_7
   db 24
@@ -632,6 +644,7 @@ Tracker2587:
   !rest
   db 24,$7F
   !e7
+  !end
 
 .sub28A7
   db 48

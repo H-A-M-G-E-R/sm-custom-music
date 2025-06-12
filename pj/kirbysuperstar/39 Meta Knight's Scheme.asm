@@ -258,6 +258,7 @@ Tracker4E85:
   !g4
   db 18,$22
   !f4
+  !end
 
 .pattern0_2
   db 36
@@ -328,6 +329,7 @@ Tracker4E85:
   db 90
   !rest
   !rest
+  !end
 
 .pattern0_3
   db 36
@@ -397,6 +399,7 @@ Tracker4E85:
   db 90
   !rest
   !rest
+  !end
 
 .pattern0_4
   db 36
@@ -467,6 +470,7 @@ Tracker4E85:
   db 90
   !rest
   !rest
+  !end
 endspcblock
 
 spcblock !p_extra nspc

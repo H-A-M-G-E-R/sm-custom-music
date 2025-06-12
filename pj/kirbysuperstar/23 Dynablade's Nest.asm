@@ -87,15 +87,19 @@ Tracker4E85:
 
 .pattern0_1
   !loop : dw .sub4F6F : db 1
+  !end
 
 .pattern0_2
   !loop : dw .sub4FA0 : db 1
+  !end
 
 .pattern0_3
   !loop : dw .sub4FD1 : db 1
+  !end
 
 .pattern0_4
   !loop : dw .sub5002 : db 1
+  !end
 
 .pattern1_0
   !instr,!instr23
@@ -141,15 +145,19 @@ Tracker4E85:
 
 .pattern1_1
   !loop : dw .sub4F6F : db 1
+  !end
 
 .pattern1_2
   !loop : dw .sub4FA0 : db 1
+  !end
 
 .pattern1_3
   !loop : dw .sub4FD1 : db 1
+  !end
 
 .pattern1_4
   !loop : dw .sub5002 : db 1
+  !end
 
 .sub4F60
   db 18,$06

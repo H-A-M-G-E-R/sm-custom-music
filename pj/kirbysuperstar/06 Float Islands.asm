@@ -165,6 +165,7 @@ Tracker4E85:
   !g3
   db 30,$06
   !g3
+  !end
 
 .pattern0_2
   !instr,!instr1D
@@ -279,6 +280,7 @@ Tracker4E85:
   !f5
   db 20
   !rest
+  !end
 
 .pattern0_3
   !instr,!instr1D
@@ -393,6 +395,7 @@ Tracker4E85:
   !a5
   db 20
   !rest
+  !end
 
 .pattern0_4
   !instr,!instr1D
@@ -507,6 +510,7 @@ Tracker4E85:
   !c6
   db 20
   !rest
+  !end
 
 .pattern1_0
   !volume,220
@@ -585,6 +589,7 @@ Tracker4E85:
   !a3
   db 20,$46
   !g3
+  !end
 
 .pattern1_2
   !instr,!instr23
@@ -674,6 +679,7 @@ Tracker4E85:
   !tie
   db 80
   !tie
+  !end
 
 .pattern1_3
   !subtranspose,0
@@ -737,6 +743,7 @@ Tracker4E85:
   !cs5
   db 10,$45
   !e5
+  !end
 
 .pattern1_4
   !subtranspose,0
@@ -800,6 +807,7 @@ Tracker4E85:
   !g5
   db 10,$45
   !as5
+  !end
 
 .pattern2_0
   !loop : dw .sub57CC : db 3
@@ -1011,6 +1019,7 @@ Tracker4E85:
   !g4
   db 20,$46
   !g3
+  !end
 
 .pattern2_2
   db 20
@@ -1111,6 +1120,7 @@ Tracker4E85:
   !tie
   db 28,$68
   !tie
+  !end
 
 .pattern2_3
   !instr,!instr1D
@@ -1304,6 +1314,7 @@ Tracker4E85:
   !b4
   !f5
   !d5
+  !end
 
 .pattern2_4
   !instr,!instr1D
@@ -1498,6 +1509,7 @@ Tracker4E85:
   !g5
   !d6
   !b5
+  !end
 
 .sub56C5
   !instr,!instr2E

@@ -242,6 +242,7 @@ Tracker4E85:
   !pan,9
   db 36,$79
   !d4
+  !end
 
 .pattern0_2
   !pan,8
@@ -291,6 +292,7 @@ Tracker4E85:
   %percNote(!instr30-!instr2C)
   db 36
   %percNote(!instr30-!instr2C)
+  !end
 
 .pattern0_3
   !vibrato,12,14,20
@@ -352,6 +354,7 @@ Tracker4E85:
   !e6
   db 37,$05
   !e7
+  !end
 
 .pattern0_4
   !transpose,5
@@ -414,6 +417,7 @@ Tracker4E85:
   !g6
   db 37,$05
   !g7
+  !end
 
 .pattern0_5
   !instr,!instr1C
@@ -493,6 +497,7 @@ Tracker4E85:
   !c5
   db 36,$0A
   !g4
+  !end
 
 .pattern0_6
   !instr,!instr1C
@@ -572,6 +577,7 @@ Tracker4E85:
   !e5
   db 36,$0A
   !c5
+  !end
 
 .pattern0_7
   db 72
@@ -615,6 +621,7 @@ Tracker4E85:
   !c6
   db 36,$03
   !c7
+  !end
 
 .pattern1_0
   !echo,%00011111,1,1

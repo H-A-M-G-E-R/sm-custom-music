@@ -71,6 +71,7 @@ TrackerEA93:
   !g6
   db 6
   !rest
+  !end
 
 .pattern0_2
   !volume,240
@@ -92,6 +93,7 @@ TrackerEA93:
   !cs7
   db 6
   !rest
+  !end
 
 .pattern0_3
   !volume,240
@@ -107,6 +109,7 @@ TrackerEA93:
   !a4
   db 6
   !rest
+  !end
 
 .pattern0_4
   !volume,240
@@ -128,6 +131,7 @@ TrackerEA93:
   !g6
   db 6
   !rest
+  !end
 
 .pattern0_5
   !volume,240
@@ -150,6 +154,7 @@ TrackerEA93:
   !cs7
   db 6
   !rest
+  !end
 
 .pattern1_0
   !tempo,33
@@ -194,12 +199,15 @@ TrackerEA93:
 
 .pattern1_1
   !loop : dw .subECC0 : db 1
+  !end
 
 .pattern1_2
   !loop : dw .subECEC : db 1
+  !end
 
 .pattern1_3
   !loop : dw .subECEC : db 1
+  !end
 
 .pattern1_4
   db 24,$7F
@@ -236,9 +244,11 @@ TrackerEA93:
   !c6
   !a5
   !fs4
+  !end
 
 .pattern1_5
   !loop : dw .subECC0 : db 1
+  !end
 
 .pattern2_0
   !tempo,33
@@ -283,12 +293,15 @@ TrackerEA93:
 
 .pattern2_1
   !loop : dw .subECC0 : db 1
+  !end
 
 .pattern2_2
   !loop : dw .subECEC : db 1
+  !end
 
 .pattern2_3
   !loop : dw .subECEC : db 1
+  !end
 
 .pattern2_4
   db 24,$7F
@@ -325,9 +338,11 @@ TrackerEA93:
   !c6
   !a5
   !fs4
+  !end
 
 .pattern2_5
   !loop : dw .subECC0 : db 1
+  !end
 
 .pattern3_0
   !tempo,33
@@ -353,6 +368,7 @@ TrackerEA93:
   !rest
   db 24
   !f3
+  !end
 
 .pattern3_2
   db 16,$7B
@@ -382,6 +398,7 @@ TrackerEA93:
   db 24
   !rest
   !f4
+  !end
 
 .pattern3_3
   db 16,$7B
@@ -411,6 +428,7 @@ TrackerEA93:
   db 24
   !rest
   !f4
+  !end
 
 .pattern3_4
   db 96,$7B
@@ -421,6 +439,7 @@ TrackerEA93:
   !rest
   db 24
   !c4
+  !end
 
 .pattern3_5
   db 96,$7B
@@ -431,6 +450,7 @@ TrackerEA93:
   !rest
   db 24
   !f3
+  !end
 
 .subECC0
   db 24,$7B

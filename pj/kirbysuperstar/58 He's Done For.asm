@@ -118,6 +118,7 @@ Tracker4E85:
   !rest
   db 12
   !rest
+  !end
 
 .pattern0_2
   !volume,182
@@ -146,6 +147,7 @@ Tracker4E85:
   !g7
   db 55
   !rest
+  !end
 
 .pattern0_3
   !volume,182
@@ -174,6 +176,7 @@ Tracker4E85:
   !g7
   db 55
   !rest
+  !end
 
 .pattern0_4
   !volume,182
@@ -205,6 +208,7 @@ Tracker4E85:
   !g7
   db 56
   !rest
+  !end
 
 .pattern1_0
   db 72

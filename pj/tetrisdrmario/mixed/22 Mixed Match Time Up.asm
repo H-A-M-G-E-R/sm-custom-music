@@ -126,6 +126,7 @@ TrackerE219:
   !rest
   db 12
   !rest
+  !end
 
 .pattern0_2
   !volume,240
@@ -156,6 +157,7 @@ TrackerE219:
   db 18,$7D
   !as6
   !pitchSlide,6,12 : !as3
+  !end
 
 .pattern0_3
   !volume,240
@@ -174,6 +176,7 @@ TrackerE219:
   !rest
   db 20
   !rest
+  !end
 
 .pattern0_4
   !volume,240
@@ -202,6 +205,7 @@ TrackerE219:
   !cs3
   db 6
   !rest
+  !end
 
 .pattern0_5
   !volume,240
@@ -224,6 +228,7 @@ TrackerE219:
   db 18,$7F
   !as6
   !pitchSlide,6,12 : !as3
+  !end
 
 .pattern0_6
   !volume,240
@@ -245,6 +250,7 @@ TrackerE219:
   db 18,$7D
   !e5
   !pitchSlide,6,12 : !e2
+  !end
 endspcblock
 
 spcblock !p_extra nspc

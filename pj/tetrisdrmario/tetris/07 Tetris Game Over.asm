@@ -101,6 +101,7 @@ TrackerF5B1:
   db 24
   !rest
   !rest
+  !end
 
 .pattern0_2
   !volume,240
@@ -134,6 +135,7 @@ TrackerF5B1:
   db 24
   !rest
   !rest
+  !end
 
 .pattern0_3
   !volume,250
@@ -171,6 +173,7 @@ TrackerF5B1:
   !rest
   db 22
   !rest
+  !end
 
 .pattern0_4
   !volume,200
@@ -186,6 +189,7 @@ TrackerF5B1:
   db 24
   !rest
   !rest
+  !end
 
 .pattern0_5
   !volume,200
@@ -200,6 +204,7 @@ TrackerF5B1:
   !b4
   db 48
   !tie
+  !end
 
 .pattern0_6
   !volume,200
@@ -214,6 +219,7 @@ TrackerF5B1:
   !c5
   db 48
   !tie
+  !end
 endspcblock
 
 spcblock !p_extra nspc

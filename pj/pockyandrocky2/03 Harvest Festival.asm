@@ -91,6 +91,7 @@ Tracker2406:
   !tie
   !tie
   !tie
+  !end
 
 .pattern1_2
   db 24
@@ -117,6 +118,7 @@ Tracker2406:
   !tie
   !tie
   !tie
+  !end
 
 .pattern1_3
   db 24
@@ -144,6 +146,7 @@ Tracker2406:
   !tie
   db 72
   !tie
+  !end
 
 .pattern1_4
   db 25
@@ -186,6 +189,7 @@ Tracker2406:
   !c7
   db 11,$75
   !c7
+  !end
 
 .pattern2_0
   db 12,$7F
@@ -225,6 +229,7 @@ Tracker2406:
   !c7
   db 11,$75
   !c7
+  !end
 
 .sub2547
   db 12,$7F

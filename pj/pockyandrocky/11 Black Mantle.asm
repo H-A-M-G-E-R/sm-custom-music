@@ -87,6 +87,7 @@ Tracker2FB4:
   !tie
   !c3
   !tie
+  !end
 
 .pattern1_2
   !instr,!instr0A
@@ -96,6 +97,7 @@ Tracker2FB4:
   !tie
   !c3
   !tie
+  !end
 
 .pattern1_3
   !volume,255
@@ -105,6 +107,7 @@ Tracker2FB4:
   !rest
   !rest
   !loop : dw .sub30E8 : db 3
+  !end
 
 .pattern1_4
   !instr,!instr09
@@ -112,6 +115,7 @@ Tracker2FB4:
   !pan,8
   !transpose,12
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern1_6
   !instr,!instr09
@@ -119,6 +123,7 @@ Tracker2FB4:
   !pan,12
   !subtranspose,6
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern1_7
   !volume,255
@@ -128,6 +133,7 @@ Tracker2FB4:
   !rest
   !rest
   !loop : dw .sub30E8 : db 3
+  !end
 
 .pattern2_1
   db 96,$7F
@@ -143,12 +149,15 @@ Tracker2FB4:
   !tie
   !c3
   !tie
+  !end
 
 .pattern2_4
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern2_6
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern2_7
   db 96
@@ -159,6 +168,7 @@ Tracker2FB4:
   !rest
   db 24,$75
   %percNote(!instr10-!instr0C)
+  !end
 
 .pattern3_1
   db 96,$7F
@@ -174,6 +184,7 @@ Tracker2FB4:
   !tie
   !c3
   !tie
+  !end
 
 .pattern3_3
   !loop : dw .sub3106 : db 1
@@ -183,12 +194,15 @@ Tracker2FB4:
   %percNote(!instr0C-!instr0C)
   db 24
   %percNote(!instr0D-!instr0C)
+  !end
 
 .pattern3_4
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern3_6
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern3_7
   !loop : dw .sub3118 : db 1
@@ -196,6 +210,7 @@ Tracker2FB4:
   %percNote(!instr0F-!instr0C)
   %percNote(!instr0F-!instr0C)
   %percNote(!instr0F-!instr0C)
+  !end
 
 .pattern4_1
   db 96,$7F
@@ -211,6 +226,7 @@ Tracker2FB4:
   !tie
   !c3
   !tie
+  !end
 
 .pattern4_3
   !loop : dw .sub3106 : db 1
@@ -222,12 +238,15 @@ Tracker2FB4:
   %percNote(!instr0D-!instr0C)
   %percNote(!instr0D-!instr0C)
   %percNote(!instr0D-!instr0C)
+  !end
 
 .pattern4_4
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern4_6
   !loop : dw .sub30ED : db 4
+  !end
 
 .pattern4_7
   !loop : dw .sub3118 : db 1
@@ -235,6 +254,7 @@ Tracker2FB4:
   %percNote(!instr0F-!instr0C)
   %percNote(!instr0F-!instr0C)
   %percNote(!instr0F-!instr0C)
+  !end
 
 .sub30E8
   !rest

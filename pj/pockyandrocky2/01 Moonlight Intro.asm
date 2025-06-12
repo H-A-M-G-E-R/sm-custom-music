@@ -134,6 +134,7 @@ Tracker2404:
   !rest
   db 22
   !rest
+  !end
 
 .pattern1_2
   db 96
@@ -159,6 +160,7 @@ Tracker2404:
   !fs5
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern1_3
   db 96
@@ -187,6 +189,7 @@ Tracker2404:
   !a5
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern1_4
   db 96
@@ -213,6 +216,7 @@ Tracker2404:
   !d6
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern1_5
   db 96
@@ -240,6 +244,7 @@ Tracker2404:
   !e6
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern1_6
   db 96
@@ -260,6 +265,7 @@ Tracker2404:
   !d3
   !dynamicVolume,96,42
   !tie
+  !end
 
 .pattern1_7
   db 96
@@ -289,6 +295,7 @@ Tracker2404:
   !b6
   !dynamicVolume,96,42
   !tie
+  !end
 
 .sub2571
   db 6,$7F

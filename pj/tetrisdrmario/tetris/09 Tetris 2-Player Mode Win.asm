@@ -65,6 +65,7 @@ TrackerF4E1:
   !rest
   db 48,$0D
   !g5
+  !end
 
 .pattern0_2
   !instr,!instr0D
@@ -78,6 +79,7 @@ TrackerF4E1:
   !rest
   db 48,$0F
   !ds4
+  !end
 
 .pattern0_3
   !instr,!instr08
@@ -97,6 +99,7 @@ TrackerF4E1:
   !e5
   db 48,$7F
   !e5
+  !end
 
 .pattern0_4
   !instr,!instr13
@@ -112,6 +115,7 @@ TrackerF4E1:
   !dynamicVolume,48,0
   db 48
   !ds3
+  !end
 
 .pattern0_5
   !instr,!instr13
@@ -127,6 +131,7 @@ TrackerF4E1:
   !dynamicVolume,48,0
   db 48,$75
   !ds7
+  !end
 
 .pattern0_6
   !instr,!instr13
@@ -142,6 +147,7 @@ TrackerF4E1:
   !dynamicVolume,48,0
   db 48,$75
   !g6
+  !end
 
 .pattern0_7
   !instr,!instr0D
@@ -157,6 +163,7 @@ TrackerF4E1:
   !g5
   db 48,$0F
   !as5
+  !end
 endspcblock
 
 spcblock !p_extra nspc

@@ -108,21 +108,25 @@ Tracker4E85:
 
 .pattern0_1
   !loop : dw .sub5055 : db 1
+  !end
 
 .pattern0_2
   !loop : dw .sub50B3 : db 1
+  !end
 
 .pattern0_3
   !instr,!instr01
   !pan,11
   !volume,165
   !loop : dw .sub51AD : db 2
+  !end
 
 .pattern0_4
   !instr,!instr01
   !pan,9
   !volume,175
   !loop : dw .sub51D8 : db 2
+  !end
 
 .pattern1_0
   !pan,10
@@ -172,21 +176,25 @@ Tracker4E85:
 
 .pattern1_1
   !loop : dw .sub5055 : db 1
+  !end
 
 .pattern1_2
   !loop : dw .sub50B3 : db 1
+  !end
 
 .pattern1_3
   !instr,!instr01
   !pan,11
   !volume,165
   !loop : dw .sub51AD : db 2
+  !end
 
 .pattern1_4
   !instr,!instr01
   !pan,9
   !volume,175
   !loop : dw .sub51D8 : db 2
+  !end
 
 .sub4F8C
   !pan,10

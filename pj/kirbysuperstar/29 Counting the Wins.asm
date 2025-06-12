@@ -217,6 +217,7 @@ Tracker4E85:
   %percNote(!instr30-!instr30)
   db 7
   %percNote(!instr30-!instr30)
+  !end
 
 .pattern0_2
   !subtranspose,2
@@ -331,6 +332,7 @@ Tracker4E85:
   %percNote(!instr30-!instr30)
   db 9
   %percNote(!instr30-!instr30)
+  !end
 
 .sub4FEE
   db 6

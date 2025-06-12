@@ -76,6 +76,7 @@ Tracker4E85:
   !pan,12
   !subtranspose,60
   !loop : dw .sub58B7 : db 2
+  !end
 
 .pattern0_2
   !instr,!instr19
@@ -83,6 +84,7 @@ Tracker4E85:
   !pan,8
   !subtranspose,60
   !loop : dw .sub58C4 : db 2
+  !end
 
 .pattern0_3
   !subtranspose,60
@@ -90,6 +92,7 @@ Tracker4E85:
   !volume,162
   !pan,10
   !loop : dw .sub58D1 : db 2
+  !end
 
 .pattern0_4
   !volume,230
@@ -109,6 +112,7 @@ Tracker4E85:
   db 10,$79
   !g3
   !g3
+  !end
 
 .pattern1_0
   !instr,!instr19
@@ -231,6 +235,7 @@ Tracker4E85:
   db 20,$15
   !fs4
   !g4
+  !end
 
 .pattern1_2
   !instr,!instr19
@@ -259,6 +264,7 @@ Tracker4E85:
   !b4
   !b4
   !loop : dw .sub58F8 : db 2
+  !end
 
 .pattern1_3
   !subtranspose,60
@@ -356,6 +362,7 @@ Tracker4E85:
   !d5
   !d5
   !d5
+  !end
 
 .pattern1_4
   !volume,230
@@ -397,6 +404,7 @@ Tracker4E85:
   db 80,$7C
   !e3
   !tie
+  !end
 
 .pattern2_0
   !loop : dw .sub5905 : db 1
@@ -461,6 +469,7 @@ Tracker4E85:
   !b4
   !c5
   !d5
+  !end
 
 .pattern2_2
   !loop : dw .sub5961 : db 1
@@ -518,6 +527,7 @@ Tracker4E85:
   !f5
   !f5
   !f5
+  !end
 
 .pattern2_3
   !loop : dw .sub5986 : db 1
@@ -583,6 +593,7 @@ Tracker4E85:
   !g5
   !g5
   !g5
+  !end
 
 .pattern2_4
   !pan,8
@@ -619,6 +630,7 @@ Tracker4E85:
   db 10,$7C
   !gs4
   !gs4
+  !end
 
 .pattern3_0
   !instr,!instr19
@@ -741,6 +753,7 @@ Tracker4E85:
   db 20,$15
   !fs4
   !g4
+  !end
 
 .pattern3_2
   !instr,!instr19
@@ -769,6 +782,7 @@ Tracker4E85:
   !b4
   !b4
   !loop : dw .sub58F8 : db 2
+  !end
 
 .pattern3_3
   !subtranspose,60
@@ -866,6 +880,7 @@ Tracker4E85:
   !d5
   !d5
   !d5
+  !end
 
 .pattern3_4
   !volume,230
@@ -907,6 +922,7 @@ Tracker4E85:
   db 80,$7C
   !e3
   !tie
+  !end
 
 .pattern4_0
   !loop : dw .sub5905 : db 1
@@ -1017,6 +1033,7 @@ Tracker4E85:
   !g4
   !g4
   !g4
+  !end
 
 .pattern4_2
   !loop : dw .sub5961 : db 1
@@ -1080,6 +1097,7 @@ Tracker4E85:
   !c5
   !c5
   !c5
+  !end
 
 .pattern4_3
   !loop : dw .sub5986 : db 1
@@ -1152,6 +1170,7 @@ Tracker4E85:
   !e5
   !e5
   !e5
+  !end
 
 .pattern4_4
   !pan,8
@@ -1188,6 +1207,7 @@ Tracker4E85:
   db 10,$7C
   !gs4
   !gs4
+  !end
 
 .pattern5_0
   !echo,%00011111,44,44
@@ -1236,6 +1256,7 @@ Tracker4E85:
   db 20,$08
   !d5
   !loop : dw .sub5A33 : db 2
+  !end
 
 .pattern5_2
   !vibrato,0,30,20
@@ -1289,6 +1310,7 @@ Tracker4E85:
   db 20,$08
   !f5
   !loop : dw .sub5A61 : db 2
+  !end
 
 .pattern5_3
   !subtranspose,60
@@ -1459,6 +1481,7 @@ Tracker4E85:
   db 7
   !gs6
   !as6
+  !end
 
 .pattern5_4
   !loop : dw .sub5A78 : db 1
@@ -1586,6 +1609,7 @@ Tracker4E85:
   !as4
   db 10,$73
   !ds5
+  !end
 
 .pattern6_0
   !loop : dw .sub59EB : db 1
@@ -1667,6 +1691,7 @@ Tracker4E85:
   !d5
   db 20,$08
   !d5
+  !end
 
 .pattern6_2
   db 20,$09
@@ -1702,6 +1727,7 @@ Tracker4E85:
   !b4
   db 20,$08
   !b4
+  !end
 
 .pattern6_3
   !pan,10
@@ -1978,6 +2004,7 @@ Tracker4E85:
   !g5
   db 20,$08
   !g5
+  !end
 
 .pattern6_4
   !loop : dw .sub5A78 : db 1
@@ -2017,6 +2044,7 @@ Tracker4E85:
   !volume,230
   db 20,$79
   !g3
+  !end
 
 .sub58AA
   db 20,$2D

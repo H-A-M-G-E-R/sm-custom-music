@@ -80,6 +80,7 @@ Tracker275E:
   !g6
   !e6
   !c6
+  !end
 
 .pattern1_2
   !instr,!instr0A
@@ -89,6 +90,7 @@ Tracker275E:
   !tie
   !as4
   !tie
+  !end
 
 .pattern1_3
   !volume,255
@@ -104,6 +106,7 @@ Tracker275E:
   !rest
   db 24
   %percNote(!instr0E-!instr0E)
+  !end
 
 .pattern1_4
   !instr,!instr0A
@@ -113,6 +116,7 @@ Tracker275E:
   !tie
   !as3
   !tie
+  !end
 
 .pattern1_5
   !instr,!instr05
@@ -136,6 +140,7 @@ Tracker275E:
   !g5
   !e5
   !c5
+  !end
 
 .pattern2_0
   !loop : dw .sub287D : db 1
@@ -179,6 +184,7 @@ Tracker275E:
   !c6
   !e6
   !g6
+  !end
 
 .pattern2_2
   db 96,$7F
@@ -186,6 +192,7 @@ Tracker275E:
   !tie
   !as4
   !tie
+  !end
 
 .pattern2_3
   db 96
@@ -200,6 +207,7 @@ Tracker275E:
   !rest
   db 24
   %percNote(!instr0E-!instr0E)
+  !end
 
 .pattern2_4
   db 96,$7F
@@ -207,6 +215,7 @@ Tracker275E:
   !a3
   !as3
   !as3
+  !end
 
 .pattern2_5
   db 12,$2F
@@ -233,6 +242,7 @@ Tracker275E:
   !c5
   !e5
   !g5
+  !end
 
 .sub287D
   db 36,$7F

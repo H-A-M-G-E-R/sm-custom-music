@@ -581,6 +581,7 @@ Tracker336E:
   !a6
   db 6,$75
   !g6
+  !end
 
 .pattern1_2
   !instr,!instr03
@@ -695,6 +696,7 @@ Tracker336E:
   !d4
   db 48
   !d4
+  !end
 
 .pattern1_3
   !loop : dw .sub3899 : db 1
@@ -722,6 +724,7 @@ Tracker336E:
   %percNote(!instr06-!instr06)
   %percNote(!instr07-!instr06)
   !loop : dw .sub39F0 : db 8
+  !end
 
 .pattern1_4
   !pan,10
@@ -773,6 +776,7 @@ Tracker336E:
   db 96
   !g5
   !f5
+  !end
 
 .pattern1_5
   !pan,11
@@ -824,6 +828,7 @@ Tracker336E:
   db 96
   !d5
   !d5
+  !end
 
 .pattern1_6
   !pan,9
@@ -875,6 +880,7 @@ Tracker336E:
   db 96
   !a4
   !a4
+  !end
 
 .pattern1_7
   db 3
@@ -971,6 +977,7 @@ Tracker336E:
   !dynamicVolume,78,31
   db 78
   !tie
+  !end
 
 .sub3899
   db 96
