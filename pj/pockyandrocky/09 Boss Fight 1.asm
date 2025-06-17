@@ -58,14 +58,14 @@ Tracker2BAA:
 .pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, .pattern1_7
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
+.pattern3: dw .pattern3_0, .pattern2_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
 
 .pattern0_0
   !percBase,!instr0C
   !echo,%01110011,70,70
   !echoParameters,6,72,3
   !tempo,29
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0
@@ -388,17 +388,6 @@ Tracker2BAA:
   !rest
   db 24
   !b6
-  !end
-
-.pattern3_1
-  !volume,30
-  !dynamicVolume,96,150
-  db 96,$7F
-  !a5
-  !loop : dw .sub2E42 : db 1
-  !dynamicVolume,96,150
-  !a5
-  !loop : dw .sub2E42 : db 1
   !end
 
 .pattern3_2

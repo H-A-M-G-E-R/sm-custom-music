@@ -35,7 +35,7 @@ TrackerFC94:
 
 .pattern0_0
   !tempo,26
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,240
   !pan,10
   !echo,%00001111,40,40

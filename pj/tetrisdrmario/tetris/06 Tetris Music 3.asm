@@ -31,7 +31,7 @@ TrackerF0D9:
 .pattern0_0
   !instr,!instr0B
   !tempo,30
-  !musicVolume,193;220
+  !musicVolume,192
   !volume,200
   !pan,10
   !echo,%00011111,30,30

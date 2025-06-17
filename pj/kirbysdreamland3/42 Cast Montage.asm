@@ -92,9 +92,9 @@ Tracker3439:
 
 .pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, .pattern0_6, .pattern0_7
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, .pattern1_7
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern4_7
+.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern1_6, .pattern2_7
+.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern1_5, .pattern1_6, .pattern2_7
+.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern2_7
 .pattern5: dw .pattern5_0, 0, .pattern5_2, .pattern5_3, .pattern5_4, .pattern5_5, .pattern5_6, .pattern5_7
 .pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, .pattern6_5, .pattern6_6, .pattern6_7
 
@@ -558,32 +558,6 @@ Tracker3439:
   !g2
   !end
 
-.pattern2_6
-  !volume,255
-  !pan,10
-  !instr,!instr23
-  db 36,$78
-  !f5
-  !pan,8
-  !instr,!instr28
-  db 24
-  !e5
-  !pan,10
-  !instr,!instr23
-  db 12,$76
-  !f5
-  db 36,$78
-  !f5
-  !pan,8
-  !instr,!instr28
-  db 25,$77
-  !g4
-  db 11,$76
-  !g4
-  !loop : dw .sub433E : db 2
-  !loop : dw .sub4386 : db 1
-  !end
-
 .pattern2_7
   !loop : dw .sub43F4 : db 7
   !pan,12
@@ -743,60 +717,6 @@ Tracker3439:
   !loop : dw .sub4291 : db 2
   !loop : dw .sub429D : db 2
   !loop : dw .sub42A9 : db 1
-  !end
-
-.pattern3_5
-  !loop : dw .sub42C3 : db 1
-  !end
-
-.pattern3_6
-  !volume,255
-  !pan,10
-  !instr,!instr23
-  db 36,$78
-  !f5
-  !pan,8
-  !instr,!instr28
-  db 24
-  !e5
-  !pan,10
-  !instr,!instr23
-  db 12,$76
-  !f5
-  db 36,$78
-  !f5
-  !pan,8
-  !instr,!instr28
-  db 25,$77
-  !g4
-  db 11,$76
-  !g4
-  !loop : dw .sub433E : db 2
-  !loop : dw .sub4386 : db 1
-  !end
-
-.pattern3_7
-  !loop : dw .sub43F4 : db 7
-  !pan,12
-  !instr,!instr24
-  db 24,$73
-  !gs4
-  db 12,$71
-  !gs4
-  db 24,$72
-  !gs4
-  db 12,$71
-  !gs4
-  !pan,10
-  !instr,!instr27
-  db 36,$77
-  !gs4
-  !pan,12
-  !instr,!instr25
-  db 25
-  !cs5
-  db 11,$74
-  !cs5
   !end
 
 .pattern4_0
@@ -1158,30 +1078,6 @@ Tracker3439:
   !g4
   db 11,$77
   !g4
-  !end
-
-.pattern4_7
-  !loop : dw .sub43F4 : db 7
-  !pan,12
-  !instr,!instr24
-  db 24,$73
-  !gs4
-  db 12,$71
-  !gs4
-  db 24,$72
-  !gs4
-  db 12,$71
-  !gs4
-  !pan,10
-  !instr,!instr27
-  db 36,$77
-  !gs4
-  !pan,12
-  !instr,!instr25
-  db 25
-  !cs5
-  db 11,$74
-  !cs5
   !end
 
 .pattern5_0

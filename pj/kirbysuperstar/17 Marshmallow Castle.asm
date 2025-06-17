@@ -62,8 +62,8 @@ Tracker4E85:
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
+.pattern2: dw .pattern1_0, .pattern1_1, .pattern2_2, .pattern1_2, .pattern2_4, 0, 0, 0
+.pattern3: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern3_4, 0, 0, 0
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
 
 .pattern0_0
@@ -224,46 +224,8 @@ Tracker4E85:
   !tie
   !end
 
-.pattern2_0
-  !loop : dw .sub525D : db 7
-  !instr,!instr2E
-  !pan,9
-  db 16,$77
-  !as3
-  !pan,11
-  db 13,$73
-  !f3
-  !pan,8
-  db 16,$74
-  !as3
-  !pan,12
-  db 13,$72
-  !f3
-  !pan,10
-  db 16,$76
-  %percNote(!instr30-!instr30)
-  !instr,!instr2E
-  !pan,8
-  db 13,$72
-  !f3
-  !pan,10
-  !instr,!instr30
-  db 16,$77
-  !as3
-  db 13
-  !cs4
-  !end
-
-.pattern2_1
-  !loop : dw .sub528A : db 2
-  !end
-
 .pattern2_2
   !loop : dw .sub52BC : db 2
-  !end
-
-.pattern2_3
-  !loop : dw .sub52E3 : db 2
   !end
 
 .pattern2_4
@@ -298,51 +260,6 @@ Tracker4E85:
   !f5
   !endSlide
   !tie
-  !end
-
-.pattern3_0
-  !loop : dw .sub525D : db 7
-  !instr,!instr2E
-  !pan,9
-  db 16,$77
-  !as3
-  !pan,11
-  db 13,$73
-  !f3
-  !pan,8
-  db 16,$74
-  !as3
-  !pan,12
-  db 13,$72
-  !f3
-  !pan,10
-  db 16,$76
-  %percNote(!instr30-!instr30)
-  !instr,!instr2E
-  !pan,8
-  db 13,$72
-  !f3
-  !pan,10
-  !instr,!instr30
-  db 16,$77
-  !as3
-  db 13
-  !cs4
-  !end
-
-.pattern3_1
-  !loop : dw .sub528A : db 2
-  !end
-
-.pattern3_2
-  !loop : dw .sub52E3 : db 2
-  !end
-
-.pattern3_3
-  !loop : dw .sub530A : db 1
-  !loop : dw .sub5324 : db 1
-  !loop : dw .sub5332 : db 1
-  !loop : dw .sub5324 : db 1
   !end
 
 .pattern3_4

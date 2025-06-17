@@ -43,7 +43,7 @@ TrackerF5B1:
 
 .pattern0_0
   !tempo,48
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,240
   !pan,10
   !echo,%11111111,20,20

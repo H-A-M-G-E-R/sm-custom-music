@@ -77,7 +77,7 @@ Tracker4739:
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern2: dw .pattern1_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
 
 .pattern0_0
@@ -489,50 +489,6 @@ Tracker4739:
   !e6
   db 34
   !d6
-  !end
-
-.pattern2_0
-  !pan,10
-  db 18,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  db 18,$70
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 18,$71
-  %percNote(!instr24-!instr23)
-  !pan,8
-  db 18,$70
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 18,$76
-  %percNote(!instr27-!instr23)
-  !pan,12
-  db 18,$70
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 18,$71
-  %percNote(!instr24-!instr23)
-  !pan,8
-  db 18,$70
-  %percNote(!instr24-!instr23)
-  !loop : dw .sub4D7E : db 3
-  !pan,12
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 18,$75
-  %percNote(!instr27-!instr23)
-  db 36,$77
-  %percNote(!instr23-!instr23)
-  db 27
-  %percNote(!instr27-!instr23)
-  db 9
-  %percNote(!instr23-!instr23)
-  %percNote(!instr27-!instr23)
-  db 9,$73
-  %percNote(!instr27-!instr23)
-  db 18,$77
-  %percNote(!instr27-!instr23)
   !end
 
 .pattern2_1

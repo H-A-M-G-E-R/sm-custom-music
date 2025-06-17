@@ -51,19 +51,18 @@ TrackerE61B:
   dw .pattern0
 -
   dw .pattern1
+  dw .pattern1
   dw .pattern2
   dw .pattern3
-  dw .pattern4
   dw $00FA,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, .pattern0_7
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, .pattern1_7
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern4_7
+.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,30
   !volume,50
   !pan,10
@@ -466,225 +465,6 @@ TrackerE61B:
   !end
 
 .pattern2_0
-  !instr,!instr0D
-  db 12,$2B
-  !e5
-  db 12,$2F
-  !b5
-  db 12,$2B
-  !e6
-  db 12,$2F
-  !ds6
-  db 12,$2B
-  !e6
-  db 12,$2F
-  !b5
-  db 12,$2B
-  !c6
-  db 12,$2F
-  !a5
-  db 12,$2B
-  !b5
-  db 12,$2F
-  !g5
-  db 12,$2B
-  !a5
-  db 12,$2F
-  !fs5
-  db 12,$2B
-  !g5
-  db 12,$2F
-  !e5
-  db 12,$2B
-  !fs5
-  db 12,$2F
-  !ds5
-  db 12,$2B
-  !e5
-  db 12,$2F
-  !b4
-  db 12,$2B
-  !c5
-  db 12,$2F
-  !ds5
-  db 12,$2B
-  !e5
-  db 12,$2F
-  !b4
-  db 12,$2B
-  !c5
-  db 12,$2F
-  !fs5
-  !end
-
-.pattern2_1
-  !instr,!instr0D
-  db 12,$29
-  !b4
-  db 12,$2D
-  !g5
-  db 12,$29
-  !b5
-  db 12,$2D
-  !a5
-  db 12,$29
-  !g5
-  db 12,$2D
-  !g5
-  db 12,$29
-  !a5
-  db 12,$2D
-  !fs5
-  db 12,$29
-  !g5
-  db 12,$2D
-  !e5
-  db 12,$29
-  !fs5
-  db 12,$2D
-  !ds5
-  db 12,$29
-  !e5
-  db 12,$2D
-  !b4
-  db 12,$29
-  !a4
-  db 12,$2D
-  !a4
-  db 12,$29
-  !g4
-  db 12,$2D
-  !g4
-  db 12,$29
-  !a4
-  db 12,$2D
-  !a4
-  db 12,$29
-  !g4
-  db 12,$2D
-  !g4
-  db 12,$29
-  !a4
-  db 12,$2D
-  !a4
-  !end
-
-.pattern2_2
-  db 12,$2F
-  !e3
-  db 6,$7F
-  !e3
-  !e3
-  db 12,$2F
-  !b2
-  !b2
-  !e3
-  db 6,$7F
-  !e3
-  !e3
-  db 12,$2F
-  !b2
-  !b2
-  !loop : dw .subEF51 : db 2
-  !end
-
-.pattern2_3
-  !loop : dw .subEF0E : db 1
-  !instr,!instr07
-  !g3
-  !instr,!instr08
-  db 12,$7B
-  !c4
-  !instr,!instr07
-  db 12,$7F
-  !g3
-  !instr,!instr08
-  db 12,$7B
-  !c4
-  !instr,!instr07
-  db 12,$7F
-  !g3
-  !instr,!instr08
-  !c4
-  !instr,!instr07
-  !g3
-  !instr,!instr08
-  !c4
-  !end
-
-.pattern2_4
-  db 6,$73
-  !e6
-  !tie
-  !pitchSlide,0,1 : !b5
-  !tie
-  !pitchSlide,0,1 : !c6
-  !tie
-  !pitchSlide,0,1 : !ds6
-  !tie
-  !pitchSlide,0,1 : !e6
-  !tie
-  !pitchSlide,0,1 : !b5
-  !tie
-  !pitchSlide,0,1 : !c6
-  !tie
-  !pitchSlide,0,1 : !ds6
-  !tie
-  !pitchSlide,0,1 : !e6
-  !tie
-  !pitchSlide,0,1 : !b6
-  !tie
-  !pitchSlide,0,1 : !c7
-  !tie
-  !pitchSlide,0,1 : !a6
-  !tie
-  !pitchSlide,0,1 : !b6
-  !tie
-  !pitchSlide,0,1 : !fs6
-  !tie
-  !pitchSlide,0,1 : !g6
-  !tie
-  !pitchSlide,0,1 : !ds6
-  !loop : dw .subEF64 : db 2
-  !end
-
-.pattern2_5
-  !instr,!instr13
-  !dynamicVolume,36,0
-  db 36,$7F
-  !e4
-  db 60
-  !rest
-  db 96
-  !rest
-  !rest
-  !end
-
-.pattern2_6
-  !instr,!instr13
-  !dynamicVolume,24,0
-  db 24,$7F
-  !e7
-  db 72
-  !rest
-  db 96
-  !rest
-  !rest
-  !end
-
-.pattern2_7
-  !instr,!instr13
-  !dynamicVolume,24,0
-  db 24,$7F
-  !e5
-  db 72
-  !rest
-  db 96
-  !rest
-  !rest
-  !end
-
-.pattern3_0
   db 12,$2B
   !e5
   db 60
@@ -823,7 +603,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern3_1
+.pattern2_1
   db 12,$29
   !g4
   db 60
@@ -996,7 +776,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern3_2
+.pattern2_2
   db 12,$2F
   !e3
   db 6,$7F
@@ -1047,12 +827,12 @@ TrackerE61B:
   !loop : dw .subF008 : db 2
   !end
 
-.pattern3_3
+.pattern2_3
   !loop : dw .subEF0E : db 1
   !loop : dw .subF01B : db 12
   !end
 
-.pattern3_4
+.pattern2_4
   db 6,$73
   !e6
   !tie
@@ -1372,7 +1152,7 @@ TrackerE61B:
   !pitchSlide,0,1 : !cs6
   !end
 
-.pattern4_0
+.pattern3_0
   db 96
   !rest
   db 72
@@ -1382,7 +1162,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern4_1
+.pattern3_1
   db 96
   !rest
   db 72
@@ -1392,7 +1172,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern4_2
+.pattern3_2
   db 12,$2F
   !d3
   db 6,$7F
@@ -1424,11 +1204,11 @@ TrackerE61B:
   !b2
   !end
 
-.pattern4_3
+.pattern3_3
   !loop : dw .subEF0E : db 1
   !end
 
-.pattern4_4
+.pattern3_4
   db 6,$73
   !d6
   !tie
@@ -1495,7 +1275,7 @@ TrackerE61B:
   !pitchSlide,0,1 : !cs6
   !end
 
-.pattern4_5
+.pattern3_5
   db 96
   !rest
   db 72
@@ -1509,7 +1289,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern4_6
+.pattern3_6
   db 96
   !rest
   db 72
@@ -1523,7 +1303,7 @@ TrackerE61B:
   !rest
   !end
 
-.pattern4_7
+.pattern3_7
   db 96
   !rest
   db 72

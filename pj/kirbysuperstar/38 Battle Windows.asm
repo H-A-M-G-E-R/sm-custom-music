@@ -57,7 +57,7 @@ Tracker4E85:
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, 0, 0, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, 0, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, 0, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, 0, 0, 0, 0
+.pattern4: dw .pattern1_0, .pattern4_1, .pattern4_2, .pattern4_3, 0, 0, 0, 0
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, 0, 0, 0, 0
 
 .pattern0_0
@@ -751,50 +751,6 @@ Tracker4E85:
   !b6
   db 9,$79
   !b5
-  !end
-
-.pattern4_0
-  !volume,165
-  !instr,!instr25
-  db 18,$07
-  !c3
-  !c4
-  db 9,$47
-  !g3
-  !as3
-  db 18,$17
-  !c4
-  db 9,$47
-  !c3
-  !g3
-  !as3
-  db 18,$27
-  !c4
-  db 9,$47
-  !as3
-  !c4
-  !g3
-  db 18,$07
-  !c3
-  !c4
-  db 9,$47
-  !g3
-  !as3
-  db 18,$17
-  !c4
-  db 9,$47
-  !c3
-  !g3
-  !as3
-  db 18,$27
-  !c4
-  db 9,$47
-  !as3
-  !c4
-  !g3
-  !loop : dw .sub55B4 : db 2
-  !loop : dw .sub559B : db 2
-  !loop : dw .sub55B4 : db 2
   !end
 
 .pattern4_1

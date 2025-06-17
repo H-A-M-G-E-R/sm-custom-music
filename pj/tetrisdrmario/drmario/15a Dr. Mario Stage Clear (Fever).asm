@@ -50,7 +50,7 @@ TrackerED48:
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, .pattern0_7
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,30
   !volume,200
   !pan,10
@@ -69,9 +69,9 @@ TrackerED48:
   !rest
   !slideIn,0,2,255
   !loop : dw .subEEFC : db 1
-  !dynamicMusicVolume,240,131;150
+  !dynamicMusicVolume,240,131
   !loop : dw .subEF45 : db 3
-  !dynamicMusicVolume,240,88;100
+  !dynamicMusicVolume,240,88
   !loop : dw .subEF45 : db 1
   db 16,$09
   !c7

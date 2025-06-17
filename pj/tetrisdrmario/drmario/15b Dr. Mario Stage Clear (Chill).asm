@@ -42,29 +42,23 @@ Trackers:
 TrackerEF7B:
   dw .pattern0
   dw .pattern1
+  dw .pattern1
+  dw .pattern1
+  dw .pattern1
+  dw .pattern2
+  dw .pattern2
+  dw .pattern2
   dw .pattern2
   dw .pattern3
-  dw .pattern4
-  dw .pattern5
-  dw .pattern6
-  dw .pattern7
-  dw .pattern8
-  dw .pattern9
   dw $0000
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, 0, .pattern0_7
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, 0, 0, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, 0, 0, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, 0, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, 0, 0, 0, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, 0, 0, 0, 0
-.pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, 0, 0, 0, 0
-.pattern7: dw .pattern7_0, .pattern7_1, .pattern7_2, .pattern7_3, 0, 0, 0, 0
-.pattern8: dw .pattern8_0, .pattern8_1, .pattern8_2, .pattern8_3, 0, 0, 0, 0
-.pattern9: dw .pattern9_0, 0, 0, 0, 0, 0, 0, 0
+.pattern3: dw .pattern3_0, 0, 0, 0, 0, 0, 0, 0
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,30
   !volume,200
   !pan,10
@@ -278,324 +272,54 @@ TrackerEF7B:
   !end
 
 .pattern2_0
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
+  db 12,$7F
+  !a3
+  !a4
+  !e3
+  !e4
+  !a3
+  !a4
+  !as3
+  !as4
   !end
 
 .pattern2_1
-  !instr,!instr0F
   db 12,$2F
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
+  !a3
+  !a3
+  !a3
+  !a3
+  !a3
+  !a3
+  !a3
+  !as3
   !end
 
 .pattern2_2
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
+  db 12,$7F
+  !a2
+  !a3
+  !e2
+  !e3
+  !a2
+  !a3
+  !as2
+  !as3
   !end
 
 .pattern2_3
-  !instr,!instr0F
   db 12,$2F
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !cs4
+  !e4
+  !e4
+  !e4
+  !e4
+  !e4
+  !e4
+  !e4
+  !f4
   !end
 
 .pattern3_0
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
-  !end
-
-.pattern3_1
-  !instr,!instr0F
-  db 12,$2F
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !end
-
-.pattern3_2
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
-  !end
-
-.pattern3_3
-  !instr,!instr0F
-  db 12,$2F
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !cs4
-  !end
-
-.pattern4_0
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
-  !end
-
-.pattern4_1
-  !instr,!instr0F
-  db 12,$2F
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !f3
-  !end
-
-.pattern4_2
-  db 24,$7F
-  !f2
-  !ds2
-  !f2
-  !b2
-  !end
-
-.pattern4_3
-  !instr,!instr0F
-  db 12,$2F
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !c4
-  !cs4
-  !end
-
-.pattern5_0
-  db 12,$7F
-  !a3
-  !a4
-  !e3
-  !e4
-  !a3
-  !a4
-  !as3
-  !as4
-  !end
-
-.pattern5_1
-  db 12,$2F
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !as3
-  !end
-
-.pattern5_2
-  db 12,$7F
-  !a2
-  !a3
-  !e2
-  !e3
-  !a2
-  !a3
-  !as2
-  !as3
-  !end
-
-.pattern5_3
-  db 12,$2F
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !f4
-  !end
-
-.pattern6_0
-  db 12,$7F
-  !a3
-  !a4
-  !e3
-  !e4
-  !a3
-  !a4
-  !as3
-  !as4
-  !end
-
-.pattern6_1
-  db 12,$2F
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !as3
-  !end
-
-.pattern6_2
-  db 12,$7F
-  !a2
-  !a3
-  !e2
-  !e3
-  !a2
-  !a3
-  !as2
-  !as3
-  !end
-
-.pattern6_3
-  db 12,$2F
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !f4
-  !end
-
-.pattern7_0
-  db 12,$7F
-  !a3
-  !a4
-  !e3
-  !e4
-  !a3
-  !a4
-  !as3
-  !as4
-  !end
-
-.pattern7_1
-  db 12,$2F
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !as3
-  !end
-
-.pattern7_2
-  db 12,$7F
-  !a2
-  !a3
-  !e2
-  !e3
-  !a2
-  !a3
-  !as2
-  !as3
-  !end
-
-.pattern7_3
-  db 12,$2F
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !f4
-  !end
-
-.pattern8_0
-  db 12,$7F
-  !a3
-  !a4
-  !e3
-  !e4
-  !a3
-  !a4
-  !as3
-  !as4
-  !end
-
-.pattern8_1
-  db 12,$2F
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !a3
-  !as3
-  !end
-
-.pattern8_2
-  db 12,$7F
-  !a2
-  !a3
-  !e2
-  !e3
-  !a2
-  !a3
-  !as2
-  !as3
-  !end
-
-.pattern8_3
-  db 12,$2F
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !e4
-  !f4
-  !end
-
-.pattern9_0
   !instr,!instr03
   db 8,$7F
   !g3

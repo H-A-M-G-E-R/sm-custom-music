@@ -46,12 +46,12 @@ TrackerE644:
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern1_4, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !musicTranspose,2
   !tempo,30
   !instr,!instr0E
@@ -319,26 +319,6 @@ TrackerE644:
 
 .pattern2_3
   !loop : dw .subEA5C : db 4
-  !end
-
-.pattern2_4
-  db 16,$73
-  !c5
-  db 8
-  !c5
-  db 16,$7F
-  !c5
-  db 8,$73
-  !c5
-  db 16
-  !c5
-  db 8
-  !c5
-  db 16,$7F
-  !c5
-  db 8,$73
-  !c5
-  !loop : dw .subEA47 : db 7
   !end
 
 .pattern3_0

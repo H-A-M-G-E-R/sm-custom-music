@@ -23,18 +23,17 @@ TrackerEA93:
   dw .pattern0
 -
   dw .pattern1
+  dw .pattern1
   dw .pattern2
-  dw .pattern3
   dw $00FA,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, 0, 0
 
 .pattern0_0
   !musicTranspose,255
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,33
   !volume,240
   !instr,!instr12
@@ -252,100 +251,6 @@ TrackerEA93:
 
 .pattern2_0
   !tempo,33
-  db 24,$7F
-  !g4
-  !dynamicTempo,72,32
-  db 72
-  !rest
-  db 24,$7D
-  !c6
-  db 8,$7B
-  !c6
-  db 8,$7D
-  !e6
-  db 8,$7B
-  !g6
-  db 24,$7D
-  !fs6
-  !a6
-  !tempo,33
-  db 24,$2D
-  !d5
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  !dynamicTempo,96,31
-  db 24,$7B
-  !as5
-  !c6
-  !a5
-  !fs4
-  !end
-
-.pattern2_1
-  !loop : dw .subECC0 : db 1
-  !end
-
-.pattern2_2
-  !loop : dw .subECEC : db 1
-  !end
-
-.pattern2_3
-  !loop : dw .subECEC : db 1
-  !end
-
-.pattern2_4
-  db 24,$7F
-  !g4
-  db 72
-  !rest
-  db 24,$7D
-  !c6
-  db 8,$7B
-  !c6
-  db 8,$7D
-  !e6
-  db 8,$7B
-  !g6
-  db 24,$7D
-  !fs6
-  !a6
-  db 24,$2D
-  !d5
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  db 16,$7B
-  !d5
-  db 8,$7F
-  !d4
-  db 24,$7B
-  !as5
-  !c6
-  !a5
-  !fs4
-  !end
-
-.pattern2_5
-  !loop : dw .subECC0 : db 1
-  !end
-
-.pattern3_0
-  !tempo,33
   !dynamicTempo,192,35
   db 96,$7B
   !g6
@@ -359,7 +264,7 @@ TrackerEA93:
   !c4
   !end
 
-.pattern3_1
+.pattern2_1
   db 96,$7B
   !d6
   !g6
@@ -370,7 +275,7 @@ TrackerEA93:
   !f3
   !end
 
-.pattern3_2
+.pattern2_2
   db 16,$7B
   !b4
   db 8
@@ -400,7 +305,7 @@ TrackerEA93:
   !f4
   !end
 
-.pattern3_3
+.pattern2_3
   db 16,$7B
   !b4
   db 8
@@ -430,7 +335,7 @@ TrackerEA93:
   !f4
   !end
 
-.pattern3_4
+.pattern2_4
   db 96,$7B
   !g6
   !b6
@@ -441,7 +346,7 @@ TrackerEA93:
   !c4
   !end
 
-.pattern3_5
+.pattern2_5
   db 96,$7B
   !d6
   !g6

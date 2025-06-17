@@ -1069,7 +1069,7 @@ TrackerD000:
   !end
 
 .subD6D7
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,25
   !instr,!instr0A
   !volume,200

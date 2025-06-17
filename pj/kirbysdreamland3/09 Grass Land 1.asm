@@ -80,11 +80,11 @@ Tracker4739:
 
 .pattern0: dw .pattern0_0, 0, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
+.pattern2: dw .pattern1_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern3: dw .pattern1_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
-.pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
+.pattern5: dw .pattern4_0, .pattern4_1, .pattern5_2, .pattern5_3, .pattern4_4, 0, 0, 0
+.pattern6: dw .pattern4_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
 .pattern7: dw .pattern7_0, .pattern7_1, .pattern7_2, .pattern7_3, .pattern7_4, 0, 0, 0
 
 .pattern0_0
@@ -398,40 +398,6 @@ Tracker4739:
   !g5
   !end
 
-.pattern2_0
-  !loop : dw .sub5077 : db 7
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$73
-  !d5
-  db 4,$75
-  !d5
-  db 4,$72
-  !d5
-  db 4,$71
-  !d5
-  db 3
-  !d5
-  !end
-
 .pattern2_1
   !subtranspose,0
   !pan,10
@@ -703,40 +669,6 @@ Tracker4739:
   !vibrato,14,12,30
   db 32,$79
   !g5
-  !end
-
-.pattern3_0
-  !loop : dw .sub5077 : db 7
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 17,$77
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$73
-  !d5
-  db 4,$75
-  !d5
-  db 4,$72
-  !d5
-  db 4,$71
-  !d5
-  db 3
-  !d5
   !end
 
 .pattern3_1
@@ -1148,53 +1080,6 @@ Tracker4739:
   !loop : dw .sub5195 : db 1
   !end
 
-.pattern5_0
-  !loop : dw .sub5164 : db 7
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$73
-  !d5
-  db 4,$75
-  !d5
-  db 4,$72
-  !d5
-  db 4,$71
-  !d5
-  db 3
-  !d5
-  !end
-
-.pattern5_1
-  !loop : dw .sub50E0 : db 1
-  !loop : dw .sub50F5 : db 1
-  !loop : dw .sub5106 : db 2
-  !loop : dw .sub5113 : db 1
-  !end
-
 .pattern5_2
   !pan,12
   !instr,!instr19
@@ -1281,50 +1166,6 @@ Tracker4739:
   !vibrato,10,20,30
   db 32
   !g5
-  !end
-
-.pattern5_4
-  !loop : dw .sub5195 : db 1
-  !end
-
-.pattern6_0
-  !loop : dw .sub5164 : db 7
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$71
-  !d5
-  db 8,$73
-  !d5
-  db 7,$72
-  !d5
-  db 9,$77
-  !d5
-  db 8,$73
-  !d5
-  db 4,$75
-  !d5
-  db 4,$72
-  !d5
-  db 4,$71
-  !d5
-  db 3
-  !d5
   !end
 
 .pattern6_1

@@ -34,7 +34,7 @@ Tracker4E85:
   dw $00C8,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
-.pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
+.pattern1: dw .pattern1_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 
 .pattern0_0
   !setNoteLengthTable : dw NoteLengthTable
@@ -141,22 +141,6 @@ Tracker4E85:
   !b4
   db 18,$14
   !e5
-  !end
-
-.pattern1_1
-  !loop : dw .sub4F6F : db 1
-  !end
-
-.pattern1_2
-  !loop : dw .sub4FA0 : db 1
-  !end
-
-.pattern1_3
-  !loop : dw .sub4FD1 : db 1
-  !end
-
-.pattern1_4
-  !loop : dw .sub5002 : db 1
   !end
 
 .sub4F60

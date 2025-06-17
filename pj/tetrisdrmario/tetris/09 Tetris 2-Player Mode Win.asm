@@ -36,7 +36,7 @@ TrackerF4E1:
 .pattern0_0
   !instr,!instr0D
   !tempo,28
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,230
   !pan,10
   !echo,%11111111,30,30

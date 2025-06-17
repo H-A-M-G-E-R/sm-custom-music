@@ -45,7 +45,7 @@ TrackerD000:
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, 0, 0
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,28
   !volume,200
   !pan,10

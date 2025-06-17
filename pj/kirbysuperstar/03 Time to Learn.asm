@@ -65,7 +65,7 @@ Tracker4E85:
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern2: dw .pattern1_0, .pattern2_1, .pattern1_2, .pattern2_3, .pattern2_4, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
 
 .pattern0_0
@@ -506,45 +506,6 @@ Tracker4E85:
   !loop : dw .sub55E1 : db 2
   !end
 
-.pattern2_0
-  !loop : dw .sub552A : db 7
-  !pan,10
-  db 18,$76
-  %percNote(!instr30-!instr2D)
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2D)
-  db 9,$70
-  %percNote(!instr2D-!instr2D)
-  !instr,!instr26
-  !pan,10
-  !slideOut,0,18,250
-  db 18,$73
-  !g3
-  !endSlide
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2D)
-  db 9,$70
-  %percNote(!instr2D-!instr2D)
-  !pan,10
-  !instr,!instr2F
-  db 18,$07
-  !d7
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2D)
-  db 9,$70
-  %percNote(!instr2D-!instr2D)
-  db 18,$72
-  %percNote(!instr2D-!instr2D)
-  !pan,10
-  db 9,$70
-  %percNote(!instr30-!instr2D)
-  db 9,$71
-  %percNote(!instr30-!instr2D)
-  !end
-
 .pattern2_1
   !instr,!instr1B
   !subtranspose,58
@@ -628,12 +589,6 @@ Tracker4E85:
   !volume,150
   db 9,$75
   !c5
-  !end
-
-.pattern2_2
-  !loop : dw .sub5564 : db 4
-  !loop : dw .sub557D : db 2
-  !loop : dw .sub5564 : db 2
   !end
 
 .pattern2_3

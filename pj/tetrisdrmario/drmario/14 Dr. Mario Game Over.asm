@@ -73,7 +73,7 @@ TrackerF7F9:
 
 .pattern0_0
   !tempo,26
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,240
   !instr,!instr15
   !subtranspose,80
@@ -85,7 +85,7 @@ TrackerF7F9:
   !a6
   !pitchSlide,0,40 : !a2
   !volume,200
-  !musicVolume,175;200
+  !musicVolume,175
   db 1
   !rest
   !end

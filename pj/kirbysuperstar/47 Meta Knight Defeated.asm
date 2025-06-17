@@ -58,8 +58,8 @@ Tracker4E85:
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, .pattern0_7
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, .pattern1_7
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, 0, .pattern3_5, .pattern3_6, .pattern3_7
+.pattern2: dw .pattern1_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
+.pattern3: dw .pattern1_0, .pattern3_1, .pattern3_2, .pattern3_3, 0, .pattern3_5, .pattern3_6, .pattern3_7
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern4_7
 
 .pattern0_0
@@ -924,37 +924,6 @@ Tracker4E85:
   !e5
   !end
 
-.pattern2_0
-  !pan,10
-  db 9,$79
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  !instr,!instr2D
-  db 18,$72
-  !g4
-  db 9,$71
-  !g4
-  db 9,$72
-  !g4
-  db 9,$71
-  !g4
-  !pan,10
-  !instr,!instr30
-  db 18,$79
-  !gs4
-  !pan,12
-  !instr,!instr2D
-  db 9,$72
-  !g4
-  db 9,$71
-  !g4
-  !pan,10
-  db 18,$79
-  %percNote(!instr2C-!instr2C)
-  !loop : dw .sub5AE7 : db 2
-  !loop : dw .sub5B3B : db 1
-  !end
-
 .pattern2_1
   !loop : dw .sub5BBD : db 1
   db 54,$37
@@ -1329,37 +1298,6 @@ Tracker4E85:
   !a5
   db 10,$08
   !b5
-  !end
-
-.pattern3_0
-  !pan,10
-  db 9,$79
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  !instr,!instr2D
-  db 18,$72
-  !g4
-  db 9,$71
-  !g4
-  db 9,$72
-  !g4
-  db 9,$71
-  !g4
-  !pan,10
-  !instr,!instr30
-  db 18,$79
-  !gs4
-  !pan,12
-  !instr,!instr2D
-  db 9,$72
-  !g4
-  db 9,$71
-  !g4
-  !pan,10
-  db 18,$79
-  %percNote(!instr2C-!instr2C)
-  !loop : dw .sub5AE7 : db 2
-  !loop : dw .sub5B3B : db 1
   !end
 
 .pattern3_1

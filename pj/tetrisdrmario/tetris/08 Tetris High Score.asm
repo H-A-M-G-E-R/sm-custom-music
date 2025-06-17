@@ -47,7 +47,7 @@ TrackerF7F3:
 .pattern0_0
   !instr,!instr0D
   !tempo,29
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,200
   !echo,%01001111,60,60
   !echoParameters,4,40,2

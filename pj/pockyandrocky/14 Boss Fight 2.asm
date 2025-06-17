@@ -59,14 +59,14 @@ TrackerC53E:
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, .pattern0_7
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, .pattern1_7
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern4_7
+.pattern3: dw .pattern3_0, .pattern3_1, .pattern1_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern2_7
+.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern2_7
 
 .pattern0_0
   !percBase,!instr0C
   !echo,%01110111,50,50
   !echoParameters,6,72,3
-  !musicVolume,200;255
+  !musicVolume,200
   !tempo,30
   db 48
   !rest
@@ -448,11 +448,6 @@ TrackerC53E:
   !loop : dw .subC8E7 : db 2
   !end
 
-.pattern3_2
-  !loop : dw .subC8F8 : db 2
-  !loop : dw .subC901 : db 2
-  !end
-
 .pattern3_3
   !loop : dw .subC939 : db 1
   db 72
@@ -495,10 +490,6 @@ TrackerC53E:
   !tie
   !g3
   !tie
-  !end
-
-.pattern3_7
-  !loop : dw .subC90F : db 4
   !end
 
 .pattern4_0
@@ -696,10 +687,6 @@ TrackerC53E:
   !b2
   !c3
   !d3
-  !end
-
-.pattern4_7
-  !loop : dw .subC90F : db 4
   !end
 
 .subC8C4

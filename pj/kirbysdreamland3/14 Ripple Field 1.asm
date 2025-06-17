@@ -84,9 +84,9 @@ Tracker4739:
 .pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
+.pattern3: dw .pattern1_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
+.pattern5: dw .pattern1_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
 .pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
 
 .pattern0_0
@@ -632,10 +632,6 @@ Tracker4739:
   !d6
   !end
 
-.pattern3_0
-  !loop : dw .sub528E : db 8
-  !end
-
 .pattern3_1
   !loop : dw .sub52DF : db 1
   !loop : dw .sub5303 : db 1
@@ -1161,10 +1157,6 @@ Tracker4739:
   db 9,$47
   !d6
   !b5
-  !end
-
-.pattern5_0
-  !loop : dw .sub528E : db 8
   !end
 
 .pattern5_1

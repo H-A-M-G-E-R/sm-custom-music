@@ -61,8 +61,9 @@ Trackers:
 
 TrackerDB17:
   dw .pattern0
-  dw .pattern1
+  dw .pattern0
 -
+  dw .pattern1
   dw .pattern2
   dw .pattern3
   dw .pattern4
@@ -70,23 +71,21 @@ TrackerDB17:
   dw .pattern6
   dw .pattern7
   dw .pattern8
-  dw .pattern9
   dw $00FA,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, 0, 0, 0, 0
-.pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, 0, 0, 0, 0
+.pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, 0, .pattern1_5, .pattern1_6, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, 0, .pattern2_5, .pattern2_6, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, 0, .pattern3_5, .pattern3_6, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, 0, .pattern4_5, .pattern4_6, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, 0, 0, .pattern5_6, 0
-.pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, 0, 0, .pattern6_6, 0
+.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, 0, 0, .pattern4_6, 0
+.pattern5: dw .pattern5_0, .pattern5_1, .pattern3_2, .pattern5_3, 0, 0, .pattern5_6, 0
+.pattern6: dw .pattern6_0, 0, .pattern6_2, .pattern6_3, 0, 0, 0, 0
 .pattern7: dw .pattern7_0, 0, .pattern7_2, .pattern7_3, 0, 0, 0, 0
-.pattern8: dw .pattern8_0, 0, .pattern8_2, .pattern8_3, 0, 0, 0, 0
-.pattern9: dw .pattern9_0, .pattern9_1, .pattern9_2, .pattern9_3, .pattern9_4, 0, 0, 0
+.pattern8: dw .pattern8_0, .pattern8_1, .pattern8_2, .pattern8_3, .pattern8_4, 0, 0, 0
 
 .pattern0_0
   !musicTranspose,2
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,30
   !instr,!instr01
   !volume,200
@@ -138,59 +137,6 @@ TrackerDB17:
   !end
 
 .pattern1_0
-  !musicTranspose,2
-  !musicVolume,240
-  !tempo,30
-  !instr,!instr01
-  !volume,200
-  !pan,10
-  !echo,%00000111,20,20
-  !echoParameters,4,80,0
-  db 12,$2F
-  !g2
-  !g2
-  !as2
-  !b2
-  !c3
-  !b2
-  !as2
-  !a2
-  !end
-
-.pattern1_1
-  !volume,200
-  !pan,10
-  db 96
-  !rest
-  !end
-
-.pattern1_2
-  !instr,!instr05
-  !volume,200
-  !pan,10
-  db 12,$4F
-  !g2
-  !g2
-  !as2
-  !b2
-  !c3
-  !b2
-  !as2
-  !a2
-  !end
-
-.pattern1_3
-  !volume,240
-  !pan,10
-  !instr,!instr07
-  db 12,$7F
-  !g3
-  !g3
-  db 72
-  !rest
-  !end
-
-.pattern2_0
   !instr,!instr0C
   db 12,$19
   !d4
@@ -305,7 +251,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern2_1
+.pattern1_1
   !instr,!instr0C
   db 12,$1D
   !as5
@@ -405,7 +351,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern2_2
+.pattern1_2
   !instr,!instr05
   !loop : dw .subE46F : db 1
   db 6,$29
@@ -433,7 +379,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern2_3
+.pattern1_3
   !instr,!instr0A
   db 6,$77
   !c5
@@ -585,7 +531,7 @@ TrackerDB17:
   !g5
   !end
 
-.pattern2_5
+.pattern1_5
   !volume,0
   !instr,!instr0C
   db 12,$17
@@ -705,7 +651,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern2_6
+.pattern1_6
   !volume,0
   !instr,!instr0C
   db 12,$1B
@@ -804,7 +750,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern3_0
+.pattern2_0
   !instr,!instr01
   db 12
   !rest
@@ -827,7 +773,7 @@ TrackerDB17:
   !g5
   !end
 
-.pattern3_1
+.pattern2_1
   db 12,$1B
   !gs6
   !a6
@@ -868,7 +814,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern3_2
+.pattern2_2
   db 12,$4F
   !c3
   db 12,$2F
@@ -935,11 +881,11 @@ TrackerDB17:
   !g3
   !end
 
-.pattern3_3
+.pattern2_3
   !loop : dw .subE4B8 : db 4
   !end
 
-.pattern3_5
+.pattern2_5
   !volume,200
   !instr,!instr01
   db 12
@@ -963,7 +909,7 @@ TrackerDB17:
   !f5
   !end
 
-.pattern3_6
+.pattern2_6
   db 12,$1B
   !ds6
   !e6
@@ -999,7 +945,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern4_0
+.pattern3_0
   db 12
   !rest
   db 12,$17
@@ -1043,7 +989,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern4_1
+.pattern3_1
   db 12,$1B
   !gs6
   !a6
@@ -1091,11 +1037,11 @@ TrackerDB17:
   !g4
   !end
 
-.pattern4_2
+.pattern3_2
   !loop : dw .subE4F6 : db 1
   !end
 
-.pattern4_3
+.pattern3_3
   !instr,!instr07
   db 6,$7B
   !g3
@@ -1179,7 +1125,7 @@ TrackerDB17:
   !c3
   !end
 
-.pattern4_5
+.pattern3_5
   db 12
   !rest
   db 12,$15
@@ -1215,11 +1161,11 @@ TrackerDB17:
   !rest
   !end
 
-.pattern4_6
+.pattern3_6
   !loop : dw .subE53C : db 1
   !end
 
-.pattern5_0
+.pattern4_0
   !instr,!instr0F
   !loop : dw .subE572 : db 3
   db 6,$37
@@ -1289,7 +1235,7 @@ TrackerDB17:
   !f4
   !end
 
-.pattern5_1
+.pattern4_1
   !instr,!instr0E
   !tremolo,0,30,252
   db 48,$7F
@@ -1325,7 +1271,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern5_2
+.pattern4_2
   db 12,$3F
   !c3
   !c3
@@ -1362,12 +1308,12 @@ TrackerDB17:
   !loop : dw .subE5A3 : db 1
   !end
 
-.pattern5_3
+.pattern4_3
   !instr,!instr0A
   !loop : dw .subE5E0 : db 8
   !end
 
-.pattern5_6
+.pattern4_6
   !instr,!instr0F
   db 6,$37
   !c5
@@ -1469,7 +1415,7 @@ TrackerDB17:
   !f4
   !end
 
-.pattern6_0
+.pattern5_0
   !instr,!instr0C
   db 6,$67
   !g3
@@ -1520,7 +1466,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern6_1
+.pattern5_1
   !instr,!instr0C
   db 12,$1B
   !ds5
@@ -1564,11 +1510,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern6_2
-  !loop : dw .subE4F6 : db 1
-  !end
-
-.pattern6_3
+.pattern5_3
   !instr,!instr07
   db 6,$7B
   !c6
@@ -1652,11 +1594,11 @@ TrackerDB17:
   !g5
   !end
 
-.pattern6_6
+.pattern5_6
   !loop : dw .subE53C : db 1
   !end
 
-.pattern7_0
+.pattern6_0
   !instr,!instr01
   db 12,$2F
   !c2
@@ -1687,7 +1629,7 @@ TrackerDB17:
   !gs2
   !end
 
-.pattern7_2
+.pattern6_2
   db 12,$2F
   !c2
   !c2
@@ -1717,7 +1659,7 @@ TrackerDB17:
   !gs2
   !end
 
-.pattern7_3
+.pattern6_3
   !instr,!instr07
   db 12,$7B
   !g5
@@ -1770,15 +1712,15 @@ TrackerDB17:
   !loop : dw .subE61A : db 4
   !end
 
-.pattern8_0
+.pattern7_0
   !loop : dw .subE62F : db 1
   !end
 
-.pattern8_2
+.pattern7_2
   !loop : dw .subE62F : db 1
   !end
 
-.pattern8_3
+.pattern7_3
   !instr,!instr07
   db 12,$79
   !g5
@@ -1798,7 +1740,7 @@ TrackerDB17:
   !g5
   !end
 
-.pattern9_0
+.pattern8_0
   !instr,!instr0F
   db 6,$17
   !g6
@@ -1824,7 +1766,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern9_1
+.pattern8_1
   !instr,!instr13
   db 48,$7B
   !b5
@@ -1839,7 +1781,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern9_2
+.pattern8_2
   !instr,!instr13
   db 48,$7F
   !g3
@@ -1854,7 +1796,7 @@ TrackerDB17:
   !rest
   !end
 
-.pattern9_3
+.pattern8_3
   db 12
   !rest
   !instr,!instr0A
@@ -1922,7 +1864,7 @@ TrackerDB17:
   !c6
   !end
 
-.pattern9_4
+.pattern8_4
   !instr,!instr13
   db 48,$77
   !d5

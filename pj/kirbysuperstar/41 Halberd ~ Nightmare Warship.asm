@@ -109,9 +109,9 @@ Tracker4E85:
 .pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
 .pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
-.pattern7: dw .pattern7_0, .pattern7_1, .pattern7_2, .pattern7_3, .pattern7_4, 0, 0, 0
+.pattern7: dw .pattern5_0, .pattern7_1, .pattern7_2, .pattern7_3, .pattern7_4, 0, 0, 0
 .pattern8: dw .pattern8_0, .pattern8_1, .pattern8_2, .pattern8_3, .pattern8_4, 0, 0, 0
-.pattern9: dw .pattern9_0, .pattern9_1, .pattern9_2, .pattern9_3, .pattern9_4, 0, 0, 0
+.pattern9: dw .pattern3_0, .pattern9_1, .pattern3_2, .pattern9_3, .pattern9_4, 0, 0, 0
 .pattern10: dw .pattern10_0, .pattern10_1, .pattern10_2, .pattern10_3, .pattern10_4, 0, 0, 0
 
 .pattern0_0
@@ -1305,12 +1305,6 @@ Tracker4E85:
   !a6
   !end
 
-.pattern7_0
-  !echoParameters,5,50,0
-  !echo,%00011100,30,30
-  !loop : dw .sub5A2F : db 4
-  !end
-
 .pattern7_1
   !transpose,0
   !instr,!instr06
@@ -1674,53 +1668,9 @@ Tracker4E85:
   !a6
   !end
 
-.pattern9_0
-  !echo,%00011000,49,49
-  !echoParameters,5,70,0
-  !loop : dw .sub5BFB : db 1
-  !pan,10
-  db 9,$79
-  %percNote(!instr2C-!instr2C)
-  !instr,!instr2E
-  !pan,9
-  db 9,$78
-  !f3
-  !pan,11
-  db 9,$76
-  !as3
-  !pan,9
-  db 9,$78
-  !f3
-  !pan,10
-  !instr,!instr33
-  db 27,$76
-  !a4
-  db 9
-  %percNote(!instr2C-!instr2C)
-  db 18,$79
-  %percNote(!instr2C-!instr2C)
-  %percNote(!instr2C-!instr2C)
-  !instr,!instr33
-  db 18,$76
-  !a4
-  !instr,!instr2E
-  !pan,11
-  db 9
-  !as3
-  !pan,10
-  db 9,$18
-  !f3
-  !end
-
 .pattern9_1
   !transpose,1
   !loop : dw .sub5CAF : db 2
-  !end
-
-.pattern9_2
-  !instr,!instr2D
-  !volume,200
-  !loop : dw .sub5CEE : db 4
   !end
 
 .pattern9_3

@@ -81,22 +81,20 @@ Tracker4E85:
   dw .pattern0
 -
   dw .pattern1
+  dw .pattern1
   dw .pattern2
   dw .pattern3
+  dw .pattern1
   dw .pattern4
   dw .pattern5
-  dw .pattern6
-  dw .pattern7
   dw $00C8,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
+.pattern2: dw .pattern1_0, .pattern2_1, .pattern1_2, .pattern2_3, .pattern2_4, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
+.pattern4: dw .pattern1_0, .pattern4_1, .pattern1_2, .pattern4_3, .pattern4_4, 0, 0, 0
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
-.pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
-.pattern7: dw .pattern7_0, .pattern7_1, .pattern7_2, .pattern7_3, .pattern7_4, 0, 0, 0
 
 .pattern0_0
   !setNoteLengthTable : dw NoteLengthTable
@@ -718,242 +716,12 @@ Tracker4E85:
   !a5
   !end
 
-.pattern2_0
-  !loop : dw .sub5879 : db 3
-  !pan,10
-  db 9,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  db 9,$73
-  %percNote(!instr2C-!instr2C)
-  db 18,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 9,$73
-  !as4
-  !end
-
 .pattern2_1
-  !pan,10
-  !volume,255
-  !instr,!instr06
-  !loop : dw .sub58B7 : db 2
-  !loop : dw .sub58CE : db 2
-  !end
-
-.pattern2_2
-  !loop : dw .sub58E5 : db 4
-  !end
-
-.pattern2_3
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,8
-  db 9,$76
-  !g5
-  !g4
-  !c5
-  !e5
-  db 18,$16
-  !g5
-  db 36,$26
-  !g5
-  db 9,$76
-  !g5
-  !g5
-  db 36,$36
-  !g5
-  db 18,$16
-  !c6
-  db 6,$76
-  !c6
-  !c6
-  !c6
-  db 18,$06
-  !c6
-  !c6
-  db 36,$46
-  !b5
-  !a5
-  db 9,$76
-  !f5
-  !g5
-  db 36
-  !as5
-  db 9,$72
-  !f5
-  !g5
-  db 36
-  !as5
-  db 9,$71
-  !f5
-  !g5
-  db 18
-  !as5
-  !instr,!instr27
-  !volume,175
-  db 9,$75
-  !d5
-  !e5
-  db 36
-  !f5
-  db 9,$72
-  !d5
-  !e5
-  db 36
-  !f5
-  db 9,$71
-  !d5
-  !e5
-  db 18
-  !f5
-  !end
-
-.pattern2_4
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,12
-  db 9,$76
-  !c6
-  !c5
-  !e5
-  !g5
-  db 18,$16
-  !c6
-  db 36,$26
-  !c6
-  db 9,$76
-  !c6
-  !c6
-  db 36,$36
-  !d6
-  db 18,$16
-  !e6
-  db 6,$76
-  !e6
-  !e6
-  !e6
-  db 18,$06
-  !e6
-  !e6
-  db 36,$46
-  !d6
-  !c6
-  db 9,$76
-  !as5
-  !c6
-  db 36
-  !d6
-  db 9,$72
-  !as5
-  !c6
-  db 36
-  !d6
-  db 9,$71
-  !as5
-  !c6
-  db 18
-  !d6
-  !instr,!instr27
-  !volume,175
-  db 9,$75
-  !f5
-  !g5
-  db 36
-  !a5
-  db 9,$72
-  !f5
-  !g5
-  db 36
-  !a5
-  db 9,$71
-  !f5
-  !g5
-  db 18
-  !a5
-  !end
-
-.pattern3_0
-  !loop : dw .sub5879 : db 3
-  !pan,10
-  db 9,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  db 9,$73
-  %percNote(!instr2C-!instr2C)
-  db 18,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 9,$73
-  !as4
-  !end
-
-.pattern3_1
   !loop : dw .sub591C : db 2
   !loop : dw .sub5933 : db 2
   !end
 
-.pattern3_2
-  !loop : dw .sub58E5 : db 4
-  !end
-
-.pattern3_3
+.pattern2_3
   !instr,!instr23
   !volume,190
   db 9,$76
@@ -1016,7 +784,7 @@ Tracker4E85:
   !e5
   !end
 
-.pattern3_4
+.pattern2_4
   !instr,!instr23
   !volume,190
   db 9,$76
@@ -1079,7 +847,7 @@ Tracker4E85:
   !gs5
   !end
 
-.pattern4_0
+.pattern3_0
   !loop : dw .sub5879 : db 2
   !pan,10
   db 9,$76
@@ -1154,7 +922,7 @@ Tracker4E85:
   !as4
   !end
 
-.pattern4_1
+.pattern3_1
   !loop : dw .sub591C : db 2
   db 18,$27
   !fs2
@@ -1196,7 +964,7 @@ Tracker4E85:
   !e3
   !end
 
-.pattern4_2
+.pattern3_2
   !loop : dw .sub58E5 : db 3
   !pan,12
   !instr,!instr2E
@@ -1239,7 +1007,7 @@ Tracker4E85:
   !e3
   !end
 
-.pattern4_3
+.pattern3_3
   !vibrato,0,20,10
   !instr,!instr22
   !volume,165
@@ -1306,7 +1074,7 @@ Tracker4E85:
   !e5
   !end
 
-.pattern4_4
+.pattern3_4
   !vibrato,0,20,10
   !instr,!instr22
   !volume,165
@@ -1373,366 +1141,136 @@ Tracker4E85:
   !gs5
   !end
 
+.pattern4_1
+  !loop : dw .sub58B7 : db 2
+  !loop : dw .sub58CE : db 2
+  !end
+
+.pattern4_3
+  !instr,!instr01
+  !volume,175
+  !vibrato,18,20,14
+  !pan,8
+  db 9,$76
+  !g5
+  !g4
+  !c5
+  !e5
+  db 18,$16
+  !g5
+  db 36,$26
+  !g5
+  db 9,$76
+  !g5
+  !g5
+  db 36,$56
+  !g5
+  db 18,$16
+  !c6
+  db 6,$76
+  !c6
+  !c6
+  !c6
+  db 18,$06
+  !c6
+  !c6
+  db 36,$56
+  !b5
+  db 36,$76
+  !c6
+  db 18,$16
+  !as5
+  db 6,$76
+  !c6
+  !d6
+  !c6
+  db 18,$16
+  !as5
+  !a5
+  db 72,$46
+  !as5
+  !instr,!instr0A
+  !volume,140
+  db 9,$56
+  !d5
+  !e5
+  db 36,$36
+  !f5
+  db 9,$56
+  !as4
+  !c5
+  db 36,$36
+  !d5
+  db 9,$56
+  !f5
+  !g5
+  db 18,$76
+  !a5
+  !end
+
+.pattern4_4
+  !instr,!instr01
+  !volume,175
+  !vibrato,18,20,14
+  !pan,12
+  db 9,$76
+  !c6
+  !c5
+  !e5
+  !g5
+  db 18,$16
+  !c6
+  db 36,$26
+  !c6
+  db 9,$76
+  !c6
+  !c6
+  db 36,$56
+  !d6
+  db 18,$16
+  !e6
+  db 6,$76
+  !e6
+  !e6
+  !e6
+  db 18,$06
+  !e6
+  !e6
+  db 36,$56
+  !d6
+  db 36,$76
+  !e6
+  db 18,$16
+  !f6
+  db 6,$76
+  !e6
+  !f6
+  !e6
+  db 18,$16
+  !d6
+  !c6
+  db 72,$46
+  !d6
+  !instr,!instr0A
+  !volume,140
+  db 9,$56
+  !f5
+  !g5
+  db 36,$36
+  !a5
+  db 9,$56
+  !d5
+  !e5
+  db 36,$36
+  !f5
+  db 9,$56
+  !a5
+  !as5
+  db 18,$76
+  !c6
+  !end
+
 .pattern5_0
-  !loop : dw .sub5879 : db 3
-  !pan,10
-  db 9,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  db 9,$73
-  %percNote(!instr2C-!instr2C)
-  db 18,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 9,$73
-  !as4
-  !end
-
-.pattern5_1
-  !pan,10
-  !volume,255
-  !instr,!instr06
-  !loop : dw .sub58B7 : db 2
-  !loop : dw .sub58CE : db 2
-  !end
-
-.pattern5_2
-  !loop : dw .sub58E5 : db 4
-  !end
-
-.pattern5_3
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,8
-  db 9,$76
-  !g5
-  !g4
-  !c5
-  !e5
-  db 18,$16
-  !g5
-  db 36,$26
-  !g5
-  db 9,$76
-  !g5
-  !g5
-  db 36,$36
-  !g5
-  db 18,$16
-  !c6
-  db 6,$76
-  !c6
-  !c6
-  !c6
-  db 18,$06
-  !c6
-  !c6
-  db 36,$46
-  !b5
-  !a5
-  db 9,$76
-  !f5
-  !g5
-  db 36
-  !as5
-  db 9,$72
-  !f5
-  !g5
-  db 36
-  !as5
-  db 9,$71
-  !f5
-  !g5
-  db 18
-  !as5
-  !instr,!instr27
-  !volume,175
-  db 9,$75
-  !d5
-  !e5
-  db 36
-  !f5
-  db 9,$72
-  !d5
-  !e5
-  db 36
-  !f5
-  db 9,$71
-  !d5
-  !e5
-  db 18
-  !f5
-  !end
-
-.pattern5_4
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,12
-  db 9,$76
-  !c6
-  !c5
-  !e5
-  !g5
-  db 18,$16
-  !c6
-  db 36,$26
-  !c6
-  db 9,$76
-  !c6
-  !c6
-  db 36,$36
-  !d6
-  db 18,$16
-  !e6
-  db 6,$76
-  !e6
-  !e6
-  !e6
-  db 18,$06
-  !e6
-  !e6
-  db 36,$46
-  !d6
-  !c6
-  db 9,$76
-  !as5
-  !c6
-  db 36
-  !d6
-  db 9,$72
-  !as5
-  !c6
-  db 36
-  !d6
-  db 9,$71
-  !as5
-  !c6
-  db 18
-  !d6
-  !instr,!instr27
-  !volume,175
-  db 9,$75
-  !f5
-  !g5
-  db 36
-  !a5
-  db 9,$72
-  !f5
-  !g5
-  db 36
-  !a5
-  db 9,$71
-  !f5
-  !g5
-  db 18
-  !a5
-  !end
-
-.pattern6_0
-  !loop : dw .sub5879 : db 3
-  !pan,10
-  db 9,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  db 9,$73
-  %percNote(!instr2C-!instr2C)
-  db 18,$76
-  %percNote(!instr2C-!instr2C)
-  !pan,12
-  db 9,$71
-  %percNote(!instr2D-!instr2C)
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 18,$77
-  !as4
-  !pan,12
-  db 9,$70
-  %percNote(!instr2D-!instr2C)
-  !pan,10
-  !instr,!instr30
-  db 9,$73
-  !as4
-  !end
-
-.pattern6_1
-  !loop : dw .sub58B7 : db 2
-  !loop : dw .sub58CE : db 2
-  !end
-
-.pattern6_2
-  !loop : dw .sub58E5 : db 4
-  !end
-
-.pattern6_3
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,8
-  db 9,$76
-  !g5
-  !g4
-  !c5
-  !e5
-  db 18,$16
-  !g5
-  db 36,$26
-  !g5
-  db 9,$76
-  !g5
-  !g5
-  db 36,$56
-  !g5
-  db 18,$16
-  !c6
-  db 6,$76
-  !c6
-  !c6
-  !c6
-  db 18,$06
-  !c6
-  !c6
-  db 36,$56
-  !b5
-  db 36,$76
-  !c6
-  db 18,$16
-  !as5
-  db 6,$76
-  !c6
-  !d6
-  !c6
-  db 18,$16
-  !as5
-  !a5
-  db 72,$46
-  !as5
-  !instr,!instr0A
-  !volume,140
-  db 9,$56
-  !d5
-  !e5
-  db 36,$36
-  !f5
-  db 9,$56
-  !as4
-  !c5
-  db 36,$36
-  !d5
-  db 9,$56
-  !f5
-  !g5
-  db 18,$76
-  !a5
-  !end
-
-.pattern6_4
-  !instr,!instr01
-  !volume,175
-  !vibrato,18,20,14
-  !pan,12
-  db 9,$76
-  !c6
-  !c5
-  !e5
-  !g5
-  db 18,$16
-  !c6
-  db 36,$26
-  !c6
-  db 9,$76
-  !c6
-  !c6
-  db 36,$56
-  !d6
-  db 18,$16
-  !e6
-  db 6,$76
-  !e6
-  !e6
-  !e6
-  db 18,$06
-  !e6
-  !e6
-  db 36,$56
-  !d6
-  db 36,$76
-  !e6
-  db 18,$16
-  !f6
-  db 6,$76
-  !e6
-  !f6
-  !e6
-  db 18,$16
-  !d6
-  !c6
-  db 72,$46
-  !d6
-  !instr,!instr0A
-  !volume,140
-  db 9,$56
-  !f5
-  !g5
-  db 36,$36
-  !a5
-  db 9,$56
-  !d5
-  !e5
-  db 36,$36
-  !f5
-  db 9,$56
-  !a5
-  !as5
-  db 18,$76
-  !c6
-  !end
-
-.pattern7_0
   !loop : dw .sub5879 : db 3
   !pan,10
   db 9,$76
@@ -1833,7 +1371,7 @@ Tracker4E85:
   !as4
   !end
 
-.pattern7_1
+.pattern5_1
   db 18,$78
   !f2
   db 18,$77
@@ -1939,7 +1477,7 @@ Tracker4E85:
   !e4
   !end
 
-.pattern7_2
+.pattern5_2
   !loop : dw .sub58E5 : db 7
   !pan,12
   !instr,!instr2E
@@ -1965,7 +1503,7 @@ Tracker4E85:
   !e3
   !end
 
-.pattern7_3
+.pattern5_3
   !instr,!instr01
   !volume,175
   !vibrato,0,14,20
@@ -2067,7 +1605,7 @@ Tracker4E85:
   !tie
   !end
 
-.pattern7_4
+.pattern5_4
   !instr,!instr01
   !volume,175
   !vibrato,0,14,24

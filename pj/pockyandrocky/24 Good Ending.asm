@@ -74,14 +74,14 @@ Tracker241A:
   dw .pattern11
   dw .pattern12
   dw .pattern13
+  dw .pattern7
+  dw .pattern8
+  dw .pattern9
+  dw .pattern10
+  dw .pattern11
+-
   dw .pattern14
   dw .pattern15
-  dw .pattern16
-  dw .pattern17
-  dw .pattern18
--
-  dw .pattern19
-  dw .pattern20
   dw $008C,-
 
 .pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
@@ -92,25 +92,20 @@ Tracker241A:
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, 0, 0, .pattern5_6, .pattern5_7
 .pattern6: dw .pattern6_0, 0, .pattern6_2, .pattern6_3, 0, 0, .pattern6_6, .pattern6_7
 .pattern7: dw .pattern7_0, .pattern7_1, .pattern7_2, .pattern7_3, .pattern7_4, .pattern7_5, .pattern7_6, .pattern7_7
-.pattern8: dw .pattern8_0, .pattern8_1, .pattern8_2, .pattern8_3, .pattern8_4, .pattern8_5, .pattern8_6, .pattern8_7
+.pattern8: dw .pattern8_0, .pattern8_1, .pattern8_2, .pattern7_3, .pattern8_4, .pattern8_5, .pattern7_6, .pattern7_7
 .pattern9: dw .pattern9_0, .pattern9_1, .pattern9_2, .pattern9_3, .pattern9_4, .pattern9_5, 0, .pattern9_7
 .pattern10: dw .pattern10_0, .pattern10_1, .pattern10_2, .pattern10_3, .pattern10_4, .pattern10_5, .pattern10_6, .pattern10_7
 .pattern11: dw .pattern11_0, .pattern11_1, .pattern11_2, .pattern11_3, .pattern11_4, .pattern11_5, .pattern11_6, .pattern11_7
-.pattern12: dw .pattern12_0, .pattern12_1, .pattern12_2, .pattern12_3, .pattern12_4, .pattern12_5, .pattern12_6, .pattern12_7
-.pattern13: dw .pattern13_0, .pattern13_1, .pattern13_2, .pattern13_3, .pattern13_4, .pattern13_5, .pattern13_6, .pattern13_7
+.pattern12: dw .pattern12_0, .pattern12_1, .pattern5_2, .pattern5_3, .pattern12_4, .pattern12_5, .pattern5_6, .pattern5_7
+.pattern13: dw .pattern13_0, .pattern13_1, .pattern6_2, .pattern6_3, .pattern13_4, .pattern13_5, .pattern6_6, .pattern6_7
 .pattern14: dw .pattern14_0, .pattern14_1, .pattern14_2, .pattern14_3, .pattern14_4, .pattern14_5, .pattern14_6, .pattern14_7
-.pattern15: dw .pattern15_0, .pattern15_1, .pattern15_2, .pattern15_3, .pattern15_4, .pattern15_5, .pattern15_6, .pattern15_7
-.pattern16: dw .pattern16_0, .pattern16_1, .pattern16_2, .pattern16_3, .pattern16_4, .pattern16_5, 0, .pattern16_7
-.pattern17: dw .pattern17_0, .pattern17_1, .pattern17_2, .pattern17_3, .pattern17_4, .pattern17_5, .pattern17_6, .pattern17_7
-.pattern18: dw .pattern18_0, .pattern18_1, .pattern18_2, .pattern18_3, .pattern18_4, .pattern18_5, .pattern18_6, .pattern18_7
-.pattern19: dw .pattern19_0, .pattern19_1, .pattern19_2, .pattern19_3, .pattern19_4, .pattern19_5, .pattern19_6, .pattern19_7
-.pattern20: dw .pattern20_0, .pattern20_1, .pattern20_2, .pattern20_3, .pattern20_4, .pattern20_5, .pattern20_6, .pattern20_7
+.pattern15: dw .pattern15_0, .pattern15_1, .pattern14_2, .pattern14_3, .pattern15_4, .pattern15_5, .pattern15_6, .pattern14_7
 
 .pattern0_0
   !percBase,!instr0C
   !echo,%01110111,70,70
   !echoParameters,6,72,3
-  !musicVolume,200;255
+  !musicVolume,200
   !tempo,22
   !end
 
@@ -732,17 +727,6 @@ Tracker241A:
   !rest
   !end
 
-.pattern8_3
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !loop : dw .sub2DCB : db 3
-  !end
-
 .pattern8_4
   !loop : dw .sub2DD3 : db 1
   !volume,80
@@ -761,18 +745,6 @@ Tracker241A:
   !volume,80
   !dynamicVolume,96,160
   !e5
-  !end
-
-.pattern8_6
-  db 72
-  !rest
-  db 24,$7F
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2D71 : db 3
-  !end
-
-.pattern8_7
-  !loop : dw .sub2DF1 : db 4
   !end
 
 .pattern9_0
@@ -1190,31 +1162,6 @@ Tracker241A:
   !rest
   !end
 
-.pattern12_2
-  !volume,255
-  db 48,$7F
-  !f3
-  !e3
-  !d3
-  !c3
-  !as2
-  !c3
-  db 96
-  !d3
-  !end
-
-.pattern12_3
-  !transpose,0
-  !volume,255
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 48
-  %percNote(!instr0C-!instr0C)
-  !loop : dw .sub2D6A : db 3
-  !end
-
 .pattern12_4
   !instr,!instr09
   !volume,150
@@ -1257,27 +1204,6 @@ Tracker241A:
   !dynamicPan,192,20
   !tie
   !tie
-  !end
-
-.pattern12_6
-  !volume,255
-  !pan,10
-  db 72
-  !rest
-  db 24,$7F
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2D71 : db 3
-  !end
-
-.pattern12_7
-  !volume,255
-  !pan,10
-  db 24,$75
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  !loop : dw .sub2D76 : db 3
   !end
 
 .pattern13_0
@@ -1327,41 +1253,6 @@ Tracker241A:
   !rest
   !rest
   !rest
-  !end
-
-.pattern13_2
-  db 48,$7F
-  !as2
-  !a2
-  !as2
-  !a2
-  !g2
-  !f2
-  !as2
-  !c3
-  db 96
-  !f2
-  !end
-
-.pattern13_3
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 48
-  %percNote(!instr0C-!instr0C)
-  !loop : dw .sub2D6A : db 3
-  db 36
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  db 6
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
   !end
 
 .pattern13_4
@@ -1429,568 +1320,7 @@ Tracker241A:
   !a6
   !end
 
-.pattern13_6
-  db 72
-  !rest
-  db 24,$7F
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2D71 : db 3
-  !rest
-  !rest
-  !rest
-  !rest
-  !end
-
-.pattern13_7
-  db 24,$75
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  !loop : dw .sub2D76 : db 4
-  !end
-
 .pattern14_0
-  db 36,$6F
-  !d5
-  db 6
-  !f5
-  !g5
-  db 24
-  !a5
-  !f5
-  !loop : dw .sub2D9E : db 1
-  !end
-
-.pattern14_1
-  !instr,!instr05
-  !volume,180
-  !pan,10
-  db 36,$7F
-  !d5
-  db 6
-  !f5
-  !g5
-  db 24
-  !a5
-  !f5
-  !loop : dw .sub2D9E : db 1
-  !end
-
-.pattern14_2
-  !loop : dw .sub2DB3 : db 1
-  !f2
-  db 12
-  !rest
-  !f2
-  db 24
-  !f2
-  !rest
-  !end
-
-.pattern14_3
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !loop : dw .sub2DCB : db 3
-  !end
-
-.pattern14_4
-  !instr,!instr0A
-  !pan,13
-  !loop : dw .sub2DD3 : db 1
-  !volume,80
-  !dynamicVolume,72,140
-  db 72
-  !f5
-  !volume,80
-  !dynamicVolume,24,160
-  db 24
-  !g5
-  !volume,80
-  !dynamicVolume,96,160
-  db 96
-  !e5
-  !end
-
-.pattern14_5
-  !instr,!instr0A
-  !pan,7
-  !loop : dw .sub2DE2 : db 1
-  !volume,80
-  !dynamicVolume,72,140
-  db 72
-  !d5
-  !volume,80
-  !dynamicVolume,24,160
-  db 24
-  !d5
-  !volume,80
-  !dynamicVolume,96,160
-  db 96
-  !c5
-  !end
-
-.pattern14_6
-  db 72
-  !rest
-  db 24,$7F
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2D71 : db 3
-  !end
-
-.pattern14_7
-  !loop : dw .sub2DF1 : db 4
-  !end
-
-.pattern15_0
-  db 36,$6F
-  !d5
-  db 6
-  !f5
-  !g5
-  db 24
-  !a5
-  !f5
-  !loop : dw .sub2E0A : db 1
-  !end
-
-.pattern15_1
-  db 36,$7F
-  !d5
-  db 6
-  !f5
-  !g5
-  db 24
-  !a5
-  !f5
-  !loop : dw .sub2E0A : db 1
-  !end
-
-.pattern15_2
-  !loop : dw .sub2DB3 : db 1
-  !c3
-  db 12
-  !rest
-  !c3
-  db 24
-  !c3
-  !rest
-  !end
-
-.pattern15_3
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !loop : dw .sub2DCB : db 3
-  !end
-
-.pattern15_4
-  !loop : dw .sub2DD3 : db 1
-  !volume,80
-  !dynamicVolume,96,160
-  !f5
-  !volume,80
-  !dynamicVolume,96,160
-  !g5
-  !end
-
-.pattern15_5
-  !loop : dw .sub2DE2 : db 1
-  !volume,80
-  !dynamicVolume,96,160
-  !d5
-  !volume,80
-  !dynamicVolume,96,160
-  !e5
-  !end
-
-.pattern15_6
-  db 72
-  !rest
-  db 24,$7F
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2D71 : db 3
-  !end
-
-.pattern15_7
-  !loop : dw .sub2DF1 : db 4
-  !end
-
-.pattern16_0
-  db 12,$6F
-  !f6
-  !g6
-  !f6
-  !d6
-  !c6
-  !d6
-  !c6
-  !a5
-  !g5
-  !f5
-  !d5
-  !f5
-  db 48
-  !f5
-  !tie
-  db 24
-  !f5
-  !g5
-  !end
-
-.pattern16_1
-  db 12,$7F
-  !f6
-  !g6
-  !f6
-  !d6
-  !c6
-  !d6
-  !c6
-  !a5
-  !g5
-  !f5
-  !d5
-  !f5
-  db 48
-  !f5
-  !tie
-  !rest
-  !end
-
-.pattern16_2
-  db 48,$7F
-  !as2
-  db 24
-  !a2
-  !d3
-  !g2
-  !c3
-  db 48
-  !f2
-  !tie
-  db 24
-  !c3
-  !e3
-  !end
-
-.pattern16_3
-  db 36,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  db 36
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 18
-  %percNote(!instr0C-!instr0C)
-  db 6
-  %percNote(!instr0D-!instr0C)
-  db 12
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  !end
-
-.pattern16_4
-  !volume,80
-  !dynamicVolume,48,160
-  db 48,$7F
-  !f5
-  !volume,80
-  !dynamicVolume,24,160
-  db 24
-  !e5
-  !volume,80
-  !dynamicVolume,24,160
-  !f5
-  !volume,80
-  !dynamicVolume,24,160
-  !f5
-  !volume,80
-  !dynamicVolume,24,160
-  !g5
-  !volume,80
-  !dynamicVolume,72,160
-  db 48
-  !f5
-  db 24
-  !tie
-  !dynamicVolume,72,80
-  db 72
-  !tie
-  !end
-
-.pattern16_5
-  !volume,80
-  !dynamicVolume,48,160
-  db 48,$7F
-  !d5
-  !volume,80
-  !dynamicVolume,24,160
-  db 24
-  !c5
-  !volume,80
-  !dynamicVolume,24,160
-  !d5
-  !volume,80
-  !dynamicVolume,24,160
-  !d5
-  !volume,80
-  !dynamicVolume,24,160
-  !e5
-  !volume,80
-  !dynamicVolume,72,160
-  db 48
-  !c5
-  db 24
-  !tie
-  !dynamicVolume,72,80
-  db 72
-  !tie
-  !end
-
-.pattern16_7
-  db 36,$75
-  %percNote(!instr0F-!instr0C)
-  db 12
-  %percNote(!instr0F-!instr0C)
-  db 24
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  db 12
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  db 12,$72
-  %percNote(!instr0F-!instr0C)
-  !end
-
-.pattern17_0
-  !loop : dw .sub2E1E : db 1
-  db 24
-  !d5
-  !f5
-  !g5
-  db 12
-  !f5
-  !g5
-  !end
-
-.pattern17_1
-  !instr,!instr06
-  !volume,150
-  !pan,20
-  !loop : dw .sub2E34 : db 1
-  !end
-
-.pattern17_2
-  !loop : dw .sub2E58 : db 1
-  !as2
-  db 6
-  !rest
-  !as2
-  db 12,$1F
-  !as3
-  db 12,$7F
-  !as2
-  !c3
-  db 12,$2F
-  !c4
-  db 12,$7F
-  !e3
-  db 12,$2F
-  !e4
-  !end
-
-.pattern17_3
-  db 24,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !loop : dw .sub2E88 : db 3
-  !end
-
-.pattern17_4
-  !loop : dw .sub2CF1 : db 1
-  !volume,120
-  !dynamicVolume,48,80
-  !f5
-  !volume,120
-  !dynamicVolume,48,80
-  !g5
-  !end
-
-.pattern17_5
-  !loop : dw .sub2D2E : db 1
-  !volume,120
-  !dynamicVolume,48,80
-  !d5
-  !volume,120
-  !dynamicVolume,48,80
-  !e5
-  !end
-
-.pattern17_6
-  !instr,!instr06
-  !volume,150
-  !pan,0
-  !loop : dw .sub2E90 : db 1
-  !end
-
-.pattern17_7
-  !loop : dw .sub2EB4 : db 4
-  !end
-
-.pattern18_0
-  !loop : dw .sub2E1E : db 1
-  db 24
-  !d5
-  !f5
-  !g5
-  !c6
-  !end
-
-.pattern18_1
-  !loop : dw .sub2E34 : db 1
-  !end
-
-.pattern18_2
-  !loop : dw .sub2E58 : db 1
-  !as2
-  db 6
-  !rest
-  !as2
-  db 12,$1F
-  !as3
-  db 12,$7F
-  !as2
-  !c3
-  db 12,$2F
-  !c4
-  db 24,$7F
-  !c3
-  !end
-
-.pattern18_3
-  db 24,$7F
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !loop : dw .sub2E88 : db 2
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  db 24
-  %percNote(!instr0C-!instr0C)
-  db 12
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !end
-
-.pattern18_4
-  !loop : dw .sub2CF1 : db 1
-  !volume,120
-  !dynamicVolume,48,80
-  !f5
-  !volume,120
-  !dynamicVolume,24,100
-  db 24
-  !g5
-  !volume,120
-  !dynamicVolume,24,100
-  !c6
-  !end
-
-.pattern18_5
-  !loop : dw .sub2D2E : db 1
-  !volume,120
-  !dynamicVolume,48,80
-  !d5
-  !volume,120
-  !dynamicVolume,24,100
-  db 24
-  !e5
-  !volume,120
-  !dynamicVolume,24,100
-  !g5
-  !end
-
-.pattern18_6
-  !loop : dw .sub2E90 : db 1
-  !end
-
-.pattern18_7
-  db 12,$75
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr10-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  !loop : dw .sub2EE1 : db 2
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  %percNote(!instr0F-!instr0C)
-  !end
-
-.pattern19_0
   !echo,%11111111,70,70
   db 48,$6F
   !a5
@@ -2000,7 +1330,7 @@ Tracker241A:
   !loop : dw .sub2EEA : db 1
   !end
 
-.pattern19_1
+.pattern14_1
   !instr,!instr05
   !volume,180
   !pan,10
@@ -2012,7 +1342,7 @@ Tracker241A:
   !loop : dw .sub2EEA : db 1
   !end
 
-.pattern19_2
+.pattern14_2
   db 96,$7F
   !ds3
   !d3
@@ -2020,13 +1350,13 @@ Tracker241A:
   !c3
   !end
 
-.pattern19_3
+.pattern14_3
   !loop : dw .sub2EF9 : db 1
   %percNote(!instr0C-!instr0C)
   %percNote(!instr0C-!instr0C)
   !end
 
-.pattern19_4
+.pattern14_4
   !instr,!instr0A
   !pan,10
   !loop : dw .sub2EFE : db 1
@@ -2039,7 +1369,7 @@ Tracker241A:
   !g5
   !end
 
-.pattern19_5
+.pattern14_5
   !instr,!instr0A
   !pan,13
   !volume,80
@@ -2062,7 +1392,7 @@ Tracker241A:
   !c5
   !end
 
-.pattern19_6
+.pattern14_6
   !instr,!instr0A
   !pan,7
   !loop : dw .sub2F1B : db 1
@@ -2075,7 +1405,7 @@ Tracker241A:
   !a4
   !end
 
-.pattern19_7
+.pattern14_7
   db 47
   !rest
   db 1,$7F
@@ -2085,7 +1415,7 @@ Tracker241A:
   !loop : dw .sub2F31 : db 3
   !end
 
-.pattern20_0
+.pattern15_0
   db 48,$6F
   !a5
   db 24
@@ -2103,7 +1433,7 @@ Tracker241A:
   !g5
   !end
 
-.pattern20_1
+.pattern15_1
   db 48,$7F
   !a5
   db 24
@@ -2121,21 +1451,7 @@ Tracker241A:
   !g5
   !end
 
-.pattern20_2
-  db 96,$7F
-  !ds3
-  !d3
-  !cs3
-  !c3
-  !end
-
-.pattern20_3
-  !loop : dw .sub2EF9 : db 1
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  !end
-
-.pattern20_4
+.pattern15_4
   !loop : dw .sub2EFE : db 1
   !volume,80
   !dynamicVolume,96,160
@@ -2146,7 +1462,7 @@ Tracker241A:
   !g5
   !end
 
-.pattern20_5
+.pattern15_5
   !volume,80
   !dynamicVolume,96,160
   db 96,$7F
@@ -2171,7 +1487,7 @@ Tracker241A:
   !e5
   !end
 
-.pattern20_6
+.pattern15_6
   !loop : dw .sub2F1B : db 1
   !volume,80
   !dynamicVolume,72,160
@@ -2184,16 +1500,6 @@ Tracker241A:
   !volume,80
   !dynamicVolume,48,160
   !c5
-  !end
-
-.pattern20_7
-  db 47
-  !rest
-  db 1,$7F
-  %percNote(!instr0E-!instr0C)
-  db 48
-  %percNote(!instr0E-!instr0C)
-  !loop : dw .sub2F31 : db 3
   !end
 
 .sub2CB6

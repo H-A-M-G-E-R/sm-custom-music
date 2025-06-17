@@ -54,8 +54,8 @@ TrackerE337:
 
 .pattern0_0
   !tempo,32
-  !musicVolume,44;50
-  !dynamicMusicVolume,240,210;240
+  !musicVolume,44
+  !dynamicMusicVolume,240,210
   !volume,240
   !pan,10
   !echo,%00011111,20,20

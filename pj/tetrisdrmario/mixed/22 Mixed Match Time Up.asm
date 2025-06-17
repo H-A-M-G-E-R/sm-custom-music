@@ -54,7 +54,7 @@ TrackerE219:
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, 0
 
 .pattern0_0
-  !musicVolume,210;240
+  !musicVolume,210
   !tempo,28
   !volume,240
   !pan,10

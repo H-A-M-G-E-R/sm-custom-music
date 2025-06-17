@@ -50,7 +50,7 @@ Tracker4E85:
   dw $00C8,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
-.pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
+.pattern1: dw .pattern1_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 
 .pattern0_0
   !setNoteLengthTable : dw NoteLengthTable
@@ -172,28 +172,6 @@ Tracker4E85:
   db 11,$70
   %percNote(!instr2D-!instr2D)
   !loop : dw .sub4F8C : db 1
-  !end
-
-.pattern1_1
-  !loop : dw .sub5055 : db 1
-  !end
-
-.pattern1_2
-  !loop : dw .sub50B3 : db 1
-  !end
-
-.pattern1_3
-  !instr,!instr01
-  !pan,11
-  !volume,165
-  !loop : dw .sub51AD : db 2
-  !end
-
-.pattern1_4
-  !instr,!instr01
-  !pan,9
-  !volume,175
-  !loop : dw .sub51D8 : db 2
   !end
 
 .sub4F8C

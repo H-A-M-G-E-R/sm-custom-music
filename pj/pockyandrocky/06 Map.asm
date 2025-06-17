@@ -43,7 +43,7 @@ Tracker3C55:
   !echo,%00111111,50,50
   !echoParameters,6,72,3
   !tempo,25
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0

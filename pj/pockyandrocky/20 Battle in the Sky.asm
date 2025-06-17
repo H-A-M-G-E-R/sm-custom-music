@@ -62,7 +62,7 @@ Tracker2422:
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, 0, .pattern1_7
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, 0, .pattern2_7
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, 0, .pattern3_7
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, 0, .pattern4_7
+.pattern4: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, 0, .pattern4_7
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, .pattern5_5, 0, .pattern5_7
 .pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, .pattern6_5, 0, .pattern6_7
 
@@ -71,7 +71,7 @@ Tracker2422:
   !echo,%01110111,50,50
   !echoParameters,6,72,3
   !tempo,31
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0
@@ -593,135 +593,6 @@ Tracker2422:
   %percNote(!instr0F-!instr0C)
   db 16,$73
   %percNote(!instr10-!instr0C)
-  !end
-
-.pattern4_0
-  !loop : dw .sub2993 : db 1
-  db 48
-  !e5
-  !g5
-  db 96
-  !a5
-  !end
-
-.pattern4_1
-  db 8,$7F
-  !f5
-  !d5
-  !a4
-  !e5
-  !c5
-  !g4
-  !c5
-  !g4
-  !d5
-  !a4
-  !e5
-  !c5
-  !loop : dw .sub2934 : db 6
-  !e5
-  !cs5
-  !a4
-  !e5
-  !cs5
-  !g4
-  !cs5
-  !a4
-  !e5
-  !cs5
-  !a5
-  !e5
-  !end
-
-.pattern4_2
-  !loop : dw .sub29B2 : db 1
-  !loop : dw .sub29CB : db 2
-  !loop : dw .sub29D7 : db 2
-  !loop : dw .sub29E3 : db 1
-  !end
-
-.pattern4_3
-  db 24,$7F
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 16
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0C-!instr0C)
-  !loop : dw .sub2959 : db 6
-  db 24
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 16
-  %percNote(!instr0C-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  db 8
-  %percNote(!instr0D-!instr0C)
-  %percNote(!instr0D-!instr0C)
-  !end
-
-.pattern4_4
-  db 8,$7F
-  !a5
-  !f5
-  !d5
-  !g5
-  !e5
-  !c5
-  !e5
-  !c5
-  !f5
-  !d5
-  !g5
-  !e5
-  !loop : dw .sub2961 : db 6
-  !a5
-  !e5
-  !cs5
-  !g5
-  !e5
-  !cs5
-  !e5
-  !cs5
-  !a5
-  !e5
-  !cs6
-  !a5
-  !end
-
-.pattern4_5
-  db 16,$7F
-  !d5
-  !e5
-  !f5
-  !d6
-  !e6
-  !f6
-  db 96
-  !a6
-  db 16
-  !e5
-  !f5
-  !e5
-  !e6
-  !f6
-  !e6
-  db 96
-  !c6
-  db 16
-  !d5
-  !e5
-  !f5
-  !d6
-  !e6
-  !f6
-  db 96
-  !a6
-  db 48
-  !e5
-  !g5
-  !a5
-  !cs6
   !end
 
 .pattern4_7

@@ -42,7 +42,7 @@ TrackerC380:
   !echo,%11111111,70,70
   !echoParameters,6,72,3
   !tempo,22
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0

@@ -57,7 +57,7 @@ Tracker2424:
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, .pattern1_7
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, .pattern2_7
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, .pattern3_7
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern4_7
+.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, .pattern2_7
 .pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
 
 .pattern0_0
@@ -65,7 +65,7 @@ Tracker2424:
   !echo,%11111111,70,70
   !echoParameters,6,72,3
   !tempo,27
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0
@@ -649,10 +649,6 @@ Tracker2424:
   !g4
   !f4
   !gs4
-  !end
-
-.pattern4_7
-  !loop : dw .sub27E9 : db 8
   !end
 
 .pattern5_0

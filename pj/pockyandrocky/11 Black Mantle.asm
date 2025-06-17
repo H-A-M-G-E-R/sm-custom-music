@@ -63,7 +63,7 @@ Tracker2FB4:
   !echo,%11111111,50,50
   !echoParameters,6,72,3
   !tempo,31
-  !musicVolume,200;255
+  !musicVolume,200
   !end
 
 .pattern1_0

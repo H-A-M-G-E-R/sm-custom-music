@@ -84,9 +84,9 @@ Tracker4739:
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, 0, 0, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
+.pattern3: dw .pattern3_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern3_4, 0, 0, 0
+.pattern4: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern4_4, 0, 0, 0
+.pattern5: dw .pattern2_0, .pattern2_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
 
 .pattern0_0
   !setNoteLengthTable : dw NoteLengthTable
@@ -671,79 +671,6 @@ Tracker4739:
   !a4
   !end
 
-.pattern3_1
-  !instr,!instr21
-  !volume,180
-  !loop : dw .sub4E66 : db 1
-  !end
-
-.pattern3_2
-  !endVibrato
-  db 17
-  !rest
-  !instr,!instr04
-  !pan,12
-  !volume,140
-  db 9,$37
-  !f5
-  db 8,$34
-  !f5
-  db 17
-  !rest
-  db 9,$37
-  !f5
-  db 8,$34
-  !f5
-  db 17
-  !rest
-  db 9,$37
-  !f5
-  db 8,$34
-  !f5
-  db 17
-  !rest
-  db 9,$37
-  !f5
-  db 8,$34
-  !f5
-  !loop : dw .sub4ED0 : db 2
-  !loop : dw .sub4EF1 : db 1
-  !end
-
-.pattern3_3
-  !transpose,0
-  !endVibrato
-  db 17
-  !rest
-  !instr,!instr04
-  !pan,8
-  !volume,140
-  db 9,$37
-  !a5
-  db 8,$34
-  !a5
-  db 17
-  !rest
-  db 9,$37
-  !a5
-  db 8,$34
-  !a5
-  db 17
-  !rest
-  db 9,$37
-  !a5
-  db 8,$34
-  !a5
-  db 17
-  !rest
-  db 9,$37
-  !a5
-  db 8,$34
-  !a5
-  !loop : dw .sub4F92 : db 2
-  !loop : dw .sub4FB3 : db 1
-  !end
-
 .pattern3_4
   !pan,10
   !instr,!instr00
@@ -859,107 +786,6 @@ Tracker4739:
   !f5
   !end
 
-.pattern4_0
-  !loop : dw .sub4E2E : db 7
-  !pan,10
-  db 17,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  db 9,$72
-  %percNote(!instr24-!instr23)
-  db 8,$71
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 17,$77
-  %percNote(!instr27-!instr23)
-  !pan,12
-  db 9,$71
-  %percNote(!instr24-!instr23)
-  db 8,$70
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 9,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  db 8,$70
-  %percNote(!instr24-!instr23)
-  db 9,$72
-  %percNote(!instr24-!instr23)
-  db 8,$70
-  %percNote(!instr24-!instr23)
-  !pan,12
-  !instr,!instr25
-  db 9,$76
-  !c5
-  db 8
-  !c5
-  !pan,8
-  db 17
-  !g4
-  !end
-
-.pattern4_1
-  !loop : dw .sub4E66 : db 1
-  !end
-
-.pattern4_2
-  db 17
-  !rest
-  db 9,$37
-  !f5
-  db 8
-  !f5
-  db 17
-  !rest
-  db 9
-  !f5
-  db 8
-  !f5
-  db 17
-  !rest
-  db 9
-  !f5
-  db 8
-  !f5
-  db 17
-  !rest
-  db 9
-  !f5
-  db 8
-  !f5
-  !loop : dw .sub509D : db 2
-  !loop : dw .sub50B6 : db 1
-  !end
-
-.pattern4_3
-  db 17
-  !rest
-  db 9,$37
-  !a5
-  db 8
-  !a5
-  db 17
-  !rest
-  db 9
-  !a5
-  db 8
-  !a5
-  db 17
-  !rest
-  db 9
-  !a5
-  db 8
-  !a5
-  db 17
-  !rest
-  db 9
-  !a5
-  db 8
-  !a5
-  !loop : dw .sub512F : db 2
-  !loop : dw .sub5148 : db 1
-  !end
-
 .pattern4_4
   !instr,!instr03
   !volume,155
@@ -1071,79 +897,6 @@ Tracker4739:
   !e6
   db 17
   !f6
-  !end
-
-.pattern5_0
-  !pan,10
-  db 9,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  db 8,$71
-  %percNote(!instr24-!instr23)
-  db 9,$73
-  %percNote(!instr24-!instr23)
-  db 8,$72
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 9,$77
-  %percNote(!instr27-!instr23)
-  !pan,12
-  db 8,$71
-  %percNote(!instr24-!instr23)
-  db 9,$73
-  %percNote(!instr24-!instr23)
-  db 8,$72
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 9,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  db 8,$71
-  %percNote(!instr24-!instr23)
-  db 9,$73
-  %percNote(!instr24-!instr23)
-  db 8,$72
-  %percNote(!instr24-!instr23)
-  !pan,10
-  db 9,$77
-  %percNote(!instr27-!instr23)
-  !pan,12
-  db 8,$71
-  %percNote(!instr24-!instr23)
-  db 9,$73
-  %percNote(!instr24-!instr23)
-  db 8,$72
-  %percNote(!instr24-!instr23)
-  !loop : dw .sub51C1 : db 3
-  !pan,10
-  !instr,!instr27
-  db 17,$77
-  !c4
-  !pan,12
-  db 9,$73
-  %percNote(!instr24-!instr23)
-  db 8,$72
-  %percNote(!instr24-!instr23)
-  !pan,12
-  !instr,!instr25
-  db 9,$76
-  !c5
-  db 8
-  !c5
-  !pan,8
-  db 17
-  !g4
-  !pan,10
-  !dynamicEcho,34,1,1
-  db 34,$16
-  !c5
-  !rest
-  !end
-
-.pattern5_1
-  !loop : dw .sub5242 : db 1
-  !loop : dw .sub5292 : db 2
-  !loop : dw .sub52A7 : db 1
   !end
 
 .pattern5_2

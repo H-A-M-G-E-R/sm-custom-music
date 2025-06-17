@@ -36,19 +36,18 @@ TrackerDFD1:
 -
   dw .pattern1
   dw .pattern2
+  dw .pattern1
   dw .pattern3
-  dw .pattern4
   dw $00FA,-
 
 .pattern0: dw .pattern0_0, .pattern0_1, .pattern0_2, .pattern0_3, .pattern0_4, .pattern0_5, .pattern0_6, 0
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, .pattern1_5, .pattern1_6, 0
-.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern2_5, .pattern2_6, 0
-.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, .pattern3_5, .pattern3_6, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, .pattern4_5, .pattern4_6, 0
+.pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, .pattern1_5, .pattern2_6, 0
+.pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern1_4, .pattern1_5, .pattern1_6, 0
 
 .pattern0_0
   !tempo,31
-  !musicVolume,210;240
+  !musicVolume,210
   !volume,200
   !pan,10
   !echo,%00011111,30,30
@@ -569,51 +568,6 @@ TrackerDFD1:
   !loop : dw .subE5AC : db 3
   !end
 
-.pattern2_5
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 24,$7F
-  !e4
-  !end
-
 .pattern2_6
   !pan,10
   !transpose,244
@@ -622,303 +576,13 @@ TrackerDFD1:
   !end
 
 .pattern3_0
-  !instr,!instr12
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !b5
-  db 12,$3F
-  !fs5
-  !g5
-  !dynamicVolume,48,150
-  db 24,$7F
-  !a5
-  db 12,$5F
-  !g5
-  !fs5
-  !loop : dw .subE48B : db 1
-  !end
-
-.pattern3_1
-  !instr,!instr12
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !fs5
-  db 12,$3F
-  !ds5
-  !ds5
-  !dynamicVolume,48,150
-  db 24,$7F
-  !ds5
-  db 12,$3F
-  !ds5
-  !ds5
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !b4
-  db 12,$3F
-  !b4
-  !e5
-  db 24,$7F
-  !g5
-  !dynamicVolume,24,150
-  db 12,$3F
-  !fs5
-  !e5
-  !volume,200
-  !dynamicVolume,24,100
-  db 36,$7F
-  !ds5
-  db 12,$3F
-  !e5
-  !dynamicVolume,48,150
-  db 24,$7F
-  !fs5
-  !g5
-  !dynamicVolume,24,50
-  !e5
-  !volume,150
-  !dynamicVolume,24,50
-  !b4
-  !volume,150
-  !dynamicVolume,36,50
-  db 48,$3F
-  !b4
-  db 12
-  !rest
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !e5
-  db 12,$3F
-  !a5
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !c6
-  db 12,$3F
-  !b5
-  !a5
-  !volume,200
-  !dynamicVolume,24,100
-  db 36,$7F
-  !g5
-  db 12,$3F
-  !d5
-  !dynamicVolume,48,150
-  db 24,$7F
-  !g5
-  db 12,$3F
-  !fs5
-  !d5
-  !dynamicVolume,24,100
-  db 36,$7F
-  !ds5
-  !dynamicVolume,12,200
-  db 12,$3F
-  !e5
-  !dynamicVolume,24,100
-  db 24,$7F
-  !fs5
-  !fs5
-  !volume,200
-  !dynamicVolume,24,100
-  !e5
-  !volume,200
-  !dynamicVolume,24,100
-  !b4
-  !volume,200
-  !dynamicVolume,24,100
-  db 48,$3F
-  !b4
-  !end
-
-.pattern3_2
-  !instr,!instr12
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !ds5
-  db 12,$3F
-  !a4
-  !b4
-  !dynamicVolume,48,150
-  db 24,$7F
-  !c5
-  db 12,$3F
-  !b4
-  !a4
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !g4
-  db 12,$3F
-  !g4
-  !b4
-  db 24,$7F
-  !e5
-  !dynamicVolume,24,150
-  db 12,$3F
-  !c5
-  !b4
-  !volume,200
-  !dynamicVolume,24,100
-  db 36,$7F
-  !a4
-  db 12,$3F
-  !b4
-  !dynamicVolume,48,150
-  db 24,$7F
-  !c5
-  !ds5
-  !dynamicVolume,24,50
-  !b4
-  !volume,150
-  !dynamicVolume,24,50
-  !g4
-  db 48,$3F
-  !g4
-  db 12
-  !rest
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !c5
-  db 12,$3F
-  !e5
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !a5
-  db 12
-  !rest
-  !e5
-  !volume,200
-  !dynamicVolume,24,100
-  db 36
-  !d5
-  db 12,$3F
-  !b4
-  !dynamicVolume,48,150
-  db 24,$7F
-  !d5
-  db 12,$3F
-  !c5
-  !b4
-  !dynamicVolume,24,100
-  db 36,$7F
-  !a4
-  !dynamicVolume,12,200
-  db 12,$3F
-  !b4
-  !dynamicVolume,24,100
-  db 24,$7F
-  !c5
-  !ds5
-  !volume,200
-  !dynamicVolume,24,100
-  !b4
-  !volume,200
-  !dynamicVolume,24,100
-  !g4
-  !volume,200
-  !dynamicVolume,24,100
-  db 48,$3F
-  !g4
-  !end
-
-.pattern3_3
-  !instr,!instr12
-  !subtranspose,20
-  !volume,200
-  !dynamicVolume,24,100
-  db 24,$7F
-  !b5
-  db 12,$3F
-  !fs5
-  !g5
-  !dynamicVolume,48,150
-  db 24,$7F
-  !a5
-  db 12,$5F
-  !g5
-  !fs5
-  !loop : dw .subE48B : db 1
-  !end
-
-.pattern3_4
-  !volume,200
-  !pan,10
-  !instr,!instr05
-  db 24,$3F
-  !b2
-  !fs2
-  !b2
-  !fs2
-  !loop : dw .subE51D : db 1
-  !end
-
-.pattern3_5
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 24,$7F
-  !e4
-  !end
-
-.pattern3_6
-  db 96
-  !rest
-  !loop : dw .subE559 : db 7
-  !end
-
-.pattern4_0
   !volume,200
   !instr,!instr11
   !loop : dw .subE5C3 : db 1
   !loop : dw .subE5E7 : db 1
   !end
 
-.pattern4_1
+.pattern3_1
   !volume,200
   db 12
   !rest
@@ -987,7 +651,7 @@ TrackerDFD1:
   !rest
   !end
 
-.pattern4_2
+.pattern3_2
   !volume,200
   !instr,!instr11
   !transpose,244
@@ -1063,74 +727,11 @@ TrackerDFD1:
   !rest
   !end
 
-.pattern4_3
+.pattern3_3
   !volume,200
   !instr,!instr11
   !loop : dw .subE5C3 : db 1
   !loop : dw .subE5E7 : db 1
-  !end
-
-.pattern4_4
-  !volume,200
-  !pan,10
-  !instr,!instr05
-  db 24,$3F
-  !b2
-  !fs2
-  !b2
-  !fs2
-  !loop : dw .subE51D : db 1
-  !end
-
-.pattern4_5
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  !loop : dw .subE547 : db 3
-  db 12,$7F
-  !e4
-  db 24,$79
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 12,$7F
-  !e4
-  db 4,$75
-  !e4
-  db 4,$77
-  !e4
-  db 4,$79
-  !e4
-  db 24,$7F
-  !e4
-  !end
-
-.pattern4_6
-  db 96
-  !rest
-  !loop : dw .subE559 : db 7
   !end
 
 .subE48B

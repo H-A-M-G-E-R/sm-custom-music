@@ -94,8 +94,8 @@ Tracker4739:
 .pattern1: dw .pattern1_0, .pattern1_1, .pattern1_2, .pattern1_3, .pattern1_4, 0, 0, 0
 .pattern2: dw .pattern2_0, .pattern2_1, .pattern2_2, .pattern2_3, .pattern2_4, 0, 0, 0
 .pattern3: dw .pattern3_0, .pattern3_1, .pattern3_2, .pattern3_3, .pattern3_4, 0, 0, 0
-.pattern4: dw .pattern4_0, .pattern4_1, .pattern4_2, .pattern4_3, .pattern4_4, 0, 0, 0
-.pattern5: dw .pattern5_0, .pattern5_1, .pattern5_2, .pattern5_3, .pattern5_4, 0, 0, 0
+.pattern4: dw .pattern1_0, .pattern2_1, .pattern1_2, .pattern4_3, .pattern4_4, 0, 0, 0
+.pattern5: dw .pattern5_0, .pattern2_1, .pattern2_2, .pattern5_3, .pattern5_4, 0, 0, 0
 .pattern6: dw .pattern6_0, .pattern6_1, .pattern6_2, .pattern6_3, .pattern6_4, 0, 0, 0
 
 .pattern0_0
@@ -898,94 +898,6 @@ Tracker4739:
   !b4
   !end
 
-.pattern4_0
-  !pan,10
-  db 18,$77
-  %percNote(!instr23-!instr23)
-  !pan,12
-  !instr,!instr24
-  db 9,$72
-  !a4
-  db 9,$70
-  !a4
-  !pan,10
-  !instr,!instr27
-  db 18,$77
-  !b4
-  !pan,12
-  !instr,!instr24
-  db 9,$71
-  !a4
-  db 9,$70
-  !a4
-  db 18,$73
-  !a4
-  !pan,10
-  db 18,$77
-  %percNote(!instr23-!instr23)
-  !instr,!instr27
-  !b4
-  !pan,12
-  !instr,!instr24
-  db 9,$71
-  !a4
-  db 9,$70
-  !a4
-  !loop : dw .sub5251 : db 3
-  db 18,$73
-  !a4
-  !pan,10
-  db 18,$77
-  %percNote(!instr23-!instr23)
-  !instr,!instr27
-  !b4
-  db 36
-  %percNote(!instr23-!instr23)
-  !pan,12
-  !instr,!instr24
-  db 9,$72
-  !a4
-  db 9,$70
-  !a4
-  !pan,10
-  !instr,!instr27
-  db 18,$77
-  !b4
-  db 9,$74
-  !b4
-  db 9,$72
-  !b4
-  !end
-
-.pattern4_1
-  !loop : dw .sub52AF : db 2
-  !end
-
-.pattern4_2
-  !endVibrato
-  !instr,!instr10
-  !volume,120
-  !pan,12
-  db 9,$47
-  !b4
-  !g4
-  !b4
-  !d5
-  !b4
-  !g4
-  !b4
-  !d5
-  !b4
-  !g4
-  !b4
-  !d5
-  !b4
-  !g4
-  !b4
-  !d5
-  !loop : dw .sub52EE : db 1
-  !end
-
 .pattern4_3
   !subtranspose,0
   !pan,8
@@ -1214,14 +1126,6 @@ Tracker4739:
   !instr,!instr25
   db 18,$75
   !c5
-  !end
-
-.pattern5_1
-  !loop : dw .sub52AF : db 2
-  !end
-
-.pattern5_2
-  !loop : dw .sub535F : db 1
   !end
 
 .pattern5_3
