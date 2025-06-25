@@ -31,6 +31,8 @@ Kirby Super Star music by Jun Ishikawa, Dan Miyakawa
 
 Kirby's Dream Land 3 music by Jun Ishikawa
 
+Yoshi's Island music by Koji Kondo
+
 SPCs from https://www.zophar.net/music/nintendo-snes-spc
 
 I use my [sm-nspc-tools](https://github.com/H-A-M-G-E-R/sm-nspc-tools) to port these songs.
