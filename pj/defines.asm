@@ -1,8 +1,8 @@
 ; Change these below if you repoint the SPC engine.
-!p_spcEngine = $31E
-!p_instrumentTable = $26E0
-!p_sampleTable = $2800
-!p_sampleData = $2900
+!p_spcEngine = $2E8
+!p_instrumentTable = $25E0
+!p_sampleTable = $2700
+!p_sampleData = $2800
 !p_extra = $E0
 
 !noteEndInTicks = $E3
