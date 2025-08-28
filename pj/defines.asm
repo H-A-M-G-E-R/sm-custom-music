@@ -5,7 +5,8 @@
 !p_sampleData = $2800
 !p_extra = $E0
 
-!noteEndInTicks = $E3
+!noteEndInTicks = $E5
+!disablePsychoacousticAdjustment = $E6
 
 !c2 = "db $80"
 !cs2 = "db $81"
