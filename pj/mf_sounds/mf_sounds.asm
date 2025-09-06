@@ -26,7 +26,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleDoorOpen,0
   dw SampleDoorClose,0
   dw SampleAbsorbX0,SampleAbsorbX0+1024*9/16
-  dw SampleAbsorbX1,SampleAbsorbX1
+  dw SampleAbsorbX1,SampleAbsorbX1+16*9/16
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -35,7 +35,7 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleDoorOpen: incbin "door_open_5256_noloop.brr"
   SampleDoorClose: incbin "door_close_5256_noloop.brr"
   SampleAbsorbX0: incbin "absorb_x_0_10467.649872_1024.brr"
-  SampleAbsorbX1: incbin "absorb_x_1_10457.253504_0.brr"
+  SampleAbsorbX1: incbin "absorb_x_1_10457.253504_16.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:

@@ -24,6 +24,8 @@ endmacro
 !sampleZombieCry = $19
 !sampleHornoadSpit = $1A
 !sampleSovaHurt = $1B
+!sampleGeronHurt0 = $1C
+!sampleGeronHurt1 = $1D
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -32,15 +34,19 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleZombieCry,$FF,$E0,$00,$02,$84
   db !sampleHornoadSpit,$FF,$E0,$00,$02,$84
   db !sampleSovaHurt,$FF,$E0,$00,$01,$2F
+  db !sampleGeronHurt0,$FF,$E0,$00,$02,$84
+  db !sampleGeronHurt1,$FF,$E0,$00,$01,$EA
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleHornoadHalzynCry,0
-  dw SampleMotoYamebaSciserYardChootCry,SampleMotoYamebaSciserYardChootCry
-  dw SampleSidehopperCry,SampleSidehopperCry
+  dw SampleMotoYamebaSciserYardChootCry,SampleMotoYamebaSciserYardChootCry+16*9/16
+  dw SampleSidehopperCry,SampleSidehopperCry+16*9/16
   dw SampleZombieCry,0
   dw SampleHornoadSpit,0
-  dw SampleSovaHurt,SampleSovaHurt
+  dw SampleSovaHurt,SampleSovaHurt+16*9/16
+  dw SampleGeronHurt0,0
+  dw SampleGeronHurt1,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -50,6 +56,8 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleZombieCry: incbin "zombie_cry_10512_noloop.brr"
   SampleHornoadSpit: incbin "hornoad_spit_10512_noloop.brr"
   SampleSovaHurt: incbin "sova_hurt_4953.705_0.brr"
+  SampleGeronHurt0: incbin "geron_hurt_0_10512_noloop.brr"
+  SampleGeronHurt1: incbin "geron_hurt_1_8000_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -72,27 +80,28 @@ Sounds:
   dw SoundMotoHurt ; C4
   dw SoundZebesianHurt ; C5
   dw SoundYamebaHurt ; C6
-  dw SoundSciserHurt ; C7
-  dw SoundGoldSciserHurt ; C8
-  dw SoundGeemerHurt ; C9
-  dw SoundZoroHurt ; CA
-  dw SoundBlueZoroHurt ; CB
-  dw SoundKihunterHurt ; CC
-  dw SoundSidehopperShakeHead ; CD
-  dw SoundSidehopperHurt ; CE
-  dw SoundDessgeegaShakeHead ; CF
-  dw SoundDessgeegaHurt ; D0
-  dw SoundReoHurt ; D1
-  dw SoundFuneHurt ; D2
-  dw SoundNamiheHurt ; D3
-  dw SoundGerudaHurt ; D4
-  dw SoundSovaHurt ; D5
-  dw SoundSkulteraSmallHurt ; D6
-  dw SoundSkulteraLargeHurt ; D7
-  dw SoundYardHurt ; D8
-  dw SoundGerubossHurt ; D9
-  dw SoundWaverHurt ; DA
-  dw SoundEvirHurt ; DB
+  dw SoundGeronHurt ; C7
+  dw SoundSciserHurt ; C8
+  dw SoundGoldSciserHurt ; C9
+  dw SoundGeemerHurt ; CA
+  dw SoundZoroHurt ; CB
+  dw SoundBlueZoroHurt ; CC
+  dw SoundKihunterHurt ; CD
+  dw SoundSidehopperShakeHead ; CE
+  dw SoundSidehopperHurt ; CF
+  dw SoundDessgeegaShakeHead ; D0
+  dw SoundDessgeegaHurt ; D1
+  dw SoundReoHurt ; D2
+  dw SoundFuneHurt ; D3
+  dw SoundNamiheHurt ; D4
+  dw SoundGerudaHurt ; D5
+  dw SoundSovaHurt ; D6
+  dw SoundSkulteraSmallHurt ; D7
+  dw SoundSkulteraLargeHurt ; D8
+  dw SoundYardHurt ; D9
+  dw SoundGerubossHurt ; DA
+  dw SoundWaverHurt ; DB
+  dw SoundEvirHurt ; DC
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -157,6 +166,18 @@ SoundYamebaHurt:
   db !sampleMotoYamebaSciserYardChootCry
   !f5,255,6
   !c5,104,7
+  db $FF
+
+SoundGeronHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleGeronHurt0
+  !c5,255,3
+  db !sampleGeronHurt1
+  !c5,240,5
+  !f5,240,5
+  !c5,240,5
+  !a4,240,5
   db $FF
 
 SoundSciserHurt:
