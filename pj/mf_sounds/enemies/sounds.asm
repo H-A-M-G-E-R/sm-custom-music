@@ -26,6 +26,9 @@ endmacro
 !sampleSovaHurt = $1B
 !sampleGeronHurt0 = $1C
 !sampleGeronHurt1 = $1D
+!sampleZeelaShoot0 = $1E
+!sampleZeelaShoot1 = $1F
+!sampleZeelaHurt = $20
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -36,6 +39,9 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSovaHurt,$FF,$E0,$00,$01,$2F
   db !sampleGeronHurt0,$FF,$E0,$00,$02,$84
   db !sampleGeronHurt1,$FF,$E0,$00,$01,$EA
+  db !sampleZeelaShoot0,$FF,$E0,$00,$02,$84
+  db !sampleZeelaShoot1,$FF,$E0,$00,$02,$84
+  db !sampleZeelaHurt,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -47,6 +53,9 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSovaHurt,SampleSovaHurt+16*9/16
   dw SampleGeronHurt0,0
   dw SampleGeronHurt1,0
+  dw SampleZeelaShoot0,0
+  dw SampleZeelaShoot1,0
+  dw SampleZeelaHurt,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -58,6 +67,9 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleSovaHurt: incbin "sova_hurt_4953.705_0.brr"
   SampleGeronHurt0: incbin "geron_hurt_0_10512_noloop.brr"
   SampleGeronHurt1: incbin "geron_hurt_1_8000_noloop.brr"
+  SampleZeelaShoot0: incbin "zeela_shoot_0_10512_noloop.brr"
+  SampleZeelaShoot1: incbin "zeela_shoot_1_10512_noloop.brr"
+  SampleZeelaHurt: incbin "zeela_hurt_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -102,6 +114,8 @@ Sounds:
   dw SoundGerubossHurt ; DA
   dw SoundWaverHurt ; DB
   dw SoundEvirHurt ; DC
+  dw SoundZeelaShoot ; DD
+  dw SoundZeelaHurt ; DE
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -375,6 +389,23 @@ SoundEvirHurt:
 .voice0
   db !sampleHornoadHalzynCry
   !g4,200,4
+  db $FF
+
+SoundZeelaShoot:
+  db $01 : dw .voice0
+.voice0
+  db !sampleZeelaShoot0
+  !c5,0,16
+  !c5,12*4,8
+  db !sampleZeelaShoot1
+  !c5,20*4,8
+  db $FF
+
+SoundZeelaHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleZeelaHurt
+  !c5,64*4-1,16
   db $FF
 
 endspcblock
