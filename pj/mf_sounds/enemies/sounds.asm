@@ -2,17 +2,13 @@ asar 1.91
 norom : org 0
 incsrc "../../defines.asm"
 
-; nice trick to make subnotes
 macro make_sound_subnote(note, subnote, vol, len)
   if <subnote> < 0
-    db $F5,-<subnote>*256 : !c2
+    db $F7,-<subnote>*256
+    <note>-1,<vol>,<len>
   else
-    db $F5,<subnote>*256 : !b7
-  endif
-  <note>,<vol>,1
-  if <len> > 1
-    db $F5,0 : !b7
-    db $F0,<vol>,<len>-1
+    db $F7,<subnote>*256
+    <note>,<vol>,<len>
   endif
 endmacro
 
@@ -169,7 +165,7 @@ SoundZebesianHurt:
   db !sampleZombieCry
   !fs5,160,2
   %make_sound_subnote("!c6", 3/64*12, 160, 3)
-  %make_sound_subnote("!c6", 7/64*12, 160, 2)
+  %make_sound_subnote("!d6", 7/64*12-1, 160, 2)
   %make_sound_subnote("!c6", 5/64*12, 160, 2)
   !c6,160,1
   db $FF
