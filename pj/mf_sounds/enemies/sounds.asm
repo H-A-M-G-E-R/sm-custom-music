@@ -29,7 +29,7 @@ endmacro
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
   db !sampleMotoYamebaSciserYardChootCry,$FF,$E0,$00,$02,$84
-  db !sampleSidehopperCry,$FF,$E0,$00,$01,$2E
+  db !sampleSidehopperCry,$FF,$E0,$00,$02,$62
   db !sampleZombieCry,$FF,$E0,$00,$02,$84
   db !sampleHornoadSpit,$FF,$E0,$00,$02,$84
   db !sampleSovaHurt,$FF,$E0,$00,$01,$2F
@@ -57,7 +57,7 @@ endspcblock
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleHornoadHalzynCry: incbin "hornoad_halzyn_cry_10512_noloop.brr"
   SampleMotoYamebaSciserYardChootCry: incbin "moto_yameba_sciser_yard_choot_cry_10512_loop0.brr"
-  SampleSidehopperCry: incbin "sidehopper_dessgeega_geruda_skultera_yard_geruboss_waver_cry_4935.345_loop0.brr"
+  SampleSidehopperCry: incbin "sidehopper_cry_9956.52_loop16.brr"
   SampleZombieCry: incbin "zombie_cry_10512_noloop.brr"
   SampleHornoadSpit: incbin "hornoad_spit_10512_noloop.brr"
   SampleSovaHurt: incbin "sova_hurt_4953.705_0.brr"
