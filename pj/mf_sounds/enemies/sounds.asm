@@ -116,7 +116,7 @@ SoundHornoadHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !c5,255,8
+  !c5,255*200/255,8
   db $FF
 
 ; but hornoads don't spit in x-fusion
@@ -124,37 +124,37 @@ SoundHornoadSpit:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadSpit
-  !c5,255,4
+  !c5,255*200/255,4
   db $FF
 
 SoundHalzynHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !fs5,255,4
-  !as4,160,5
+  !fs5,255*200/255,4
+  !as4,160*200/255,5
   db $FF
 
 SoundHalzynLunge:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !c4,160,3
-  !g4,200,4
-  !c5,255,3
+  !c4,160*200/255,3
+  !g4,200*200/255,4
+  !c5,255*200/255,3
   !c5,0,20
-  !e5,255,6
-  !e5,104,4
-  !e5,40,4
+  !e5,255*200/255,6
+  !e5,104*200/255,4
+  !e5,40*200/255,4
   db $FF
 
 SoundMotoHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleMotoYamebaSciserYardChootCry
-  !d3,160,4
-  !c4,255,4
-  !g3,160,10
+  !d3,160*200/255,4
+  !c4,255*200/255,4
+  !g3,160*200/255,10
   db $FF
 
 SoundZebesianHurt:
@@ -162,83 +162,83 @@ SoundZebesianHurt:
 .voice0
   db $F5,0 : !b7 ; enable legato
   db !sampleZombieCry
-  !fs5,160,2
-  %make_sound_subnote("!c6", 3/64*12, 160, 3)
-  %make_sound_subnote("!c6", 7/64*12, 160, 2)
-  %make_sound_subnote("!c6", 5/64*12, 160, 2)
-  !c6,160,1
+  !fs5,160*200/255,2
+  %make_sound_subnote("!c6", 3/64*12, 160*200/255, 3)
+  %make_sound_subnote("!c6", 7/64*12, 160*200/255, 2)
+  %make_sound_subnote("!c6", 5/64*12, 160*200/255, 2)
+  !c6,160*200/255,1
   db $FF
 
 SoundYamebaHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleMotoYamebaSciserYardChootCry
-  !f5,255,6
-  !c5,104,7
+  !f5,255*200/255,6
+  !c5,104*200/255,7
   db $FF
 
 SoundGeronHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleGeronHurt0
-  !c5,255,3
+  !c5,255*200/255,3
   db !sampleGeronHurt1
-  !c5,240,5
-  !f5,240,5
-  !c5,240,5
-  !a4,240,5
+  !c5,240*200/255,5
+  !f5,240*200/255,5
+  !c5,240*200/255,5
+  !a4,240*200/255,5
   db $FF
 
 SoundSciserHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleMotoYamebaSciserYardChootCry
-  !d4,255,4
-  !a3,160,4
-  !f3,104,4
+  !d4,255*200/255,4
+  !a3,160*200/255,4
+  !f3,104*200/255,4
   db $FF
 
 SoundGoldSciserHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleMotoYamebaSciserYardChootCry
-  !gs4,255,4
-  !cs4,160,4
-  !a3,104,4
+  !gs4,255*200/255,4
+  !cs4,160*200/255,4
+  !a3,104*200/255,4
   db $FF
 
 SoundGeemerHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !a5,160,4
-  !c6,104,4
-  !f6,104,4
+  !a5,160*200/255,4
+  !c6,104*200/255,4
+  !f6,104*200/255,4
   db $FF
 
 SoundZoroHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !b3,255,5
-  !f4,160,10
+  !b3,255*200/255,5
+  !f4,160*200/255,10
   db $FF
 
 SoundBlueZoroHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !ds4,255,5
-  !a4,160,10
+  !ds4,255*200/255,5
+  !a4,160*200/255,10
   db $FF
 
 SoundKihunterHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !a4,160,3
-  !g5,160,3
-  !e5,160,3
+  !a4,160*200/255,3
+  !g5,160*200/255,3
+  !e5,160*200/255,3
   db $FF
 
 SoundSidehopperShakeHead:
@@ -246,20 +246,20 @@ SoundSidehopperShakeHead:
 .voice0
   db !sampleSidehopperCry
   !c4,0,8
-  !c4,200,6
-  !f4,160,3
-  !f4,120,3
+  !c4,200*200/255,6
+  !f4,160*200/255,3
+  !f4,120*200/255,3
   !f4,0,7
-  !g4,120,3
-  !b4,120,3
+  !g4,120*200/255,3
+  !b4,120*200/255,3
   db $FF
 
 SoundSidehopperHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleSidehopperCry
-  !a5,255,5
-  !f5,224,9
+  !a5,255*200/255,5
+  !f5,224*200/255,9
   db $FF
 
 SoundDessgeegaShakeHead:
@@ -267,67 +267,67 @@ SoundDessgeegaShakeHead:
 .voice0
   db !sampleSidehopperCry
   !e4,0,8
-  !e4,200,6
-  !a4,160,3
-  !a4,120,3
+  !e4,200*200/255,6
+  !a4,160*200/255,3
+  !a4,120*200/255,3
   !a4,0,7
-  !b4,120,3
-  !d5,120,3
+  !b4,120*200/255,3
+  !d5,120*200/255,3
   db $FF
 
 SoundDessgeegaHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadSpit
-  !as5,255,2
+  !as5,255*200/255,2
   db !sampleSidehopperCry
-  !a4,255,5
-  !c5,224,9
+  !a4,255*200/255,5
+  !c5,224*200/255,9
   db $FF
 
 SoundReoHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !d4,160,3
-  !d5,160,3
-  !a4,160,13
+  !d4,160*200/255,3
+  !d5,160*200/255,3
+  !a4,160*200/255,13
   db $FF
 
 SoundFuneHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !b3,255,38
+  !b3,255*200/255,38
   db $FF
 
 SoundNamiheHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !g3,255,38
+  !g3,255*200/255,38
   db $FF
 
 SoundGerudaHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleSidehopperCry
-  !c5,255,5
+  !c5,255*200/255,5
   db !sampleHornoadHalzynCry
-  !f5,200,10
+  !f5,200*200/255,10
   db $FF
 
 SoundSovaHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleSovaHurt
-  !a4,255,4
-  !e5,200,4
+  !a4,255*200/255,4
+  !e5,200*200/255,4
   db $F5,0 : !b7 ; enable legato
-  !c5,200,7
-  !c5,200*32/47,3
-  !c5,200*18/47,3
-  !c5,200*8/47,1
+  !c5,200*200/255,7
+  !c5,200*200/255*32/47,3
+  !c5,200*200/255*18/47,3
+  !c5,200*200/255*8/47,1
   db $FF
 
 ; TODO: it sounds bad
@@ -336,13 +336,13 @@ SoundSkulteraSmallHurt:
 .voice0
   db $F5,0 : !b7 ; enable legato
   db !sampleSidehopperCry
-  !ds4,255,2
-  %make_sound_subnote("!a4", -29/64*12, 255, 2)
-  %make_sound_subnote("!a4", -26/64*12, 255, 2)
-  %make_sound_subnote("!a4", -23/64*12, 255, 2)
-  %make_sound_subnote("!a4", -19/64*12, 255, 2)
-  %make_sound_subnote("!a4", -13/64*12, 255, 1)
-  %make_sound_subnote("!a4", -9/64*12, 255, 3)
+  !ds4,255*200/255,2
+  %make_sound_subnote("!a4", -29/64*12, 255*200/255, 2)
+  %make_sound_subnote("!a4", -26/64*12, 255*200/255, 2)
+  %make_sound_subnote("!a4", -23/64*12, 255*200/255, 2)
+  %make_sound_subnote("!a4", -19/64*12, 255*200/255, 2)
+  %make_sound_subnote("!a4", -13/64*12, 255*200/255, 1)
+  %make_sound_subnote("!a4", -9/64*12, 255*200/255, 3)
   db $FF
 
 SoundSkulteraLargeHurt:
@@ -352,29 +352,29 @@ SoundYardHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleMotoYamebaSciserYardChootCry
-  !f4,255,7
+  !f4,255*200/255,7
   db !sampleSidehopperCry
-  !c4,200,7
+  !c4,200*200/255,7
   db !sampleMotoYamebaSciserYardChootCry
-  !c4,160,5
+  !c4,160*200/255,5
   db $FF
 
 SoundGerubossHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleSidehopperCry
-  !g4,255,4
-  !g5,255,4
-  !c5,200,4
-  !d5,200,6
+  !g4,255*200/255,4
+  !g5,255*200/255,4
+  !c5,200*200/255,4
+  !d5,200*200/255,6
   db $FF
 
 SoundWaverHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleSidehopperCry
-  !c4,200,4
-  !f4,255,10
+  !c4,200*200/255,4
+  !f4,255*200/255,10
   db $FF
 
 ; minus the bubbles
@@ -382,7 +382,7 @@ SoundEvirHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !g4,200,4
+  !g4,200*200/255,4
   db $FF
 
 SoundZeelaShoot:
