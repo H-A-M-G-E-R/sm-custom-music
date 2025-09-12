@@ -330,22 +330,36 @@ SoundSovaHurt:
   !c5,200*200/255*8/47,1
   db $FF
 
-; TODO: it sounds bad
 SoundSkulteraSmallHurt:
   db $01 : dw .voice0
 .voice0
   db $F5,0 : !b7 ; enable legato
   db !sampleSidehopperCry
-  !ds4,255*200/255,2
-  %make_sound_subnote("!a4", -29/64*12, 255*200/255, 2)
-  %make_sound_subnote("!a4", -26/64*12, 255*200/255, 2)
-  %make_sound_subnote("!a4", -23/64*12, 255*200/255, 2)
-  %make_sound_subnote("!a4", -19/64*12, 255*200/255, 2)
-  %make_sound_subnote("!a4", -13/64*12, 255*200/255, 1)
-  %make_sound_subnote("!a4", -9/64*12, 255*200/255, 3)
+  !ds4,160*55/70,2
+  %make_sound_subnote("!a4", -29/64*12, 160*55/70, 2)
+  %make_sound_subnote("!a4", -26/64*12, 160*55/70, 2)
+  %make_sound_subnote("!a4", -23/64*12, 160*55/70, 2)
+  %make_sound_subnote("!a4", -19/64*12, 160*55/70, 1)
+  %make_sound_subnote("!a4", -19/64*12, 160*70/70, 1)
+  %make_sound_subnote("!a4", -13/64*12, 160*55/70, 1)
+  %make_sound_subnote("!a4", -9/64*12, 160*41/70, 1)
+  %make_sound_subnote("!a4", -9/64*12, 160*29/70, 2)
   db $FF
 
 SoundSkulteraLargeHurt:
+  db $01 : dw .voice0
+.voice0
+  db $F5,0 : !b7 ; enable legato
+  db !sampleSidehopperCry
+  !c4,200*55/70,2
+  %make_sound_subnote("!c4", -1/64*12, 200*55/70, 1)
+  %make_sound_subnote("!c4", -1/64*12, 200*53/70, 3)
+  %make_sound_subnote("!c4", -3/64*12, 200*50/70, 3)
+  %make_sound_subnote("!c4", -3/64*12, 200*46/70, 2)
+  %make_sound_subnote("!c4", -10/64*12, 200*46/70, 1)
+  %make_sound_subnote("!c4", -10/64*12, 200*40/70, 3)
+  %make_sound_subnote("!c4", -19/64*12, 200*31/70, 3)
+  %make_sound_subnote("!c4", -19/64*12, 200*11/70, 1)
   db $FF
 
 SoundYardHurt:
