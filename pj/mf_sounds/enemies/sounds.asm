@@ -24,6 +24,10 @@ endmacro
 !sampleZeelaShoot0 = $1E
 !sampleZeelaShoot1 = $1F
 !sampleZeelaHurt = $20
+!sampleHornoadJump = $21
+!sampleSciserShoot = $22
+!sampleFireBeamStart = $23
+!sampleSpin = $24
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -37,6 +41,10 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleZeelaShoot0,$FF,$E0,$00,$02,$84
   db !sampleZeelaShoot1,$FF,$E0,$00,$02,$84
   db !sampleZeelaHurt,$FF,$E0,$00,$02,$84
+  db !sampleHornoadJump,$FF,$E0,$00,$02,$84
+  db !sampleSciserShoot,$FF,$E0,$00,$01,$32
+  db !sampleFireBeamStart,$FF,$E0,$00,$02,$84
+  db !sampleSpin,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -51,6 +59,10 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleZeelaShoot0,0
   dw SampleZeelaShoot1,0
   dw SampleZeelaHurt,0
+  dw SampleHornoadJump,SampleHornoadJump+16*9/16
+  dw SampleSciserShoot,0
+  dw SampleFireBeamStart,0
+  dw SampleSpin,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -65,6 +77,10 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleZeelaShoot0: incbin "zeela_shoot_0_10512_noloop.brr"
   SampleZeelaShoot1: incbin "zeela_shoot_1_10512_noloop.brr"
   SampleZeelaHurt: incbin "zeela_hurt_10512_noloop.brr"
+  SampleHornoadJump: incbin "hornoad_jump_10512_16.brr"
+  SampleSciserShoot: incbin "sciser_shoot_5000_noloop.brr"
+  SampleFireBeamStart: incbin "../fire_beam_start_10512_noloop.brr"
+  SampleSpin: incbin "../spin_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -82,35 +98,40 @@ Trackers:
 Sounds:
   dw SoundHornoadHurt ; C0
   dw SoundHornoadSpit ; C1
-  dw SoundHalzynHurt ; C2
-  dw SoundHalzynLunge ; C3
-  dw SoundMotoHurt ; C4
-  dw SoundZebesianHurt ; C5
-  dw SoundYamebaHurt ; C6
-  dw SoundGeronHurt ; C7
-  dw SoundSciserHurt ; C8
-  dw SoundGoldSciserHurt ; C9
-  dw SoundGeemerHurt ; CA
-  dw SoundZoroHurt ; CB
-  dw SoundBlueZoroHurt ; CC
-  dw SoundKihunterHurt ; CD
-  dw SoundSidehopperShakeHead ; CE
-  dw SoundSidehopperHurt ; CF
-  dw SoundDessgeegaShakeHead ; D0
-  dw SoundDessgeegaHurt ; D1
-  dw SoundReoHurt ; D2
-  dw SoundFuneHurt ; D3
-  dw SoundNamiheHurt ; D4
-  dw SoundGerudaHurt ; D5
-  dw SoundSovaHurt ; D6
-  dw SoundSkulteraSmallHurt ; D7
-  dw SoundSkulteraLargeHurt ; D8
-  dw SoundYardHurt ; D9
-  dw SoundGerubossHurt ; DA
-  dw SoundWaverHurt ; DB
-  dw SoundEvirHurt ; DC
-  dw SoundZeelaShoot ; DD
-  dw SoundZeelaHurt ; DE
+  dw SoundHornoadJump ; C2
+  dw SoundHalzynHurt ; C3
+  dw SoundHalzynLunge ; C4
+  dw SoundHalzynLand ; C5
+  dw SoundHalzynFlap ; C6
+  dw SoundMotoHurt ; C7
+  dw SoundZebesianHurt ; C8
+  dw SoundYamebaHurt ; C9
+  dw SoundGeronHurt ; CA
+  dw SoundSciserPrepareToShoot ; CB
+  dw SoundSciserShoot ; CC
+  dw SoundSciserHurt ; CD
+  dw SoundGoldSciserHurt ; CE
+  dw SoundGeemerHurt ; CF
+  dw SoundZoroHurt ; D0
+  dw SoundBlueZoroHurt ; D1
+  dw SoundKihunterHurt ; D2
+  dw SoundSidehopperShakeHead ; D3
+  dw SoundSidehopperHurt ; D4
+  dw SoundDessgeegaShakeHead ; D5
+  dw SoundDessgeegaHurt ; D6
+  dw SoundReoHurt ; D7
+  dw SoundFuneHurt ; D8
+  dw SoundNamiheHurt ; D9
+  dw SoundGerudaHurt ; DA
+  dw SoundSovaHurt ; DB
+  dw SoundSkulteraSmallHurt ; DC
+  dw SoundSkulteraLargeHurt ; DD
+  dw SoundYardHurt ; DE
+  dw SoundGerubossHurt ; DF
+  dw SoundWaverHurt ; E0
+  dw SoundEvirHurt ; E1
+  dw SoundZeelaShoot ;E2
+  dw SoundZeelaHurt ; E3
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -125,6 +146,13 @@ SoundHornoadSpit:
 .voice0
   db !sampleHornoadSpit
   !c5,255*200/255,4
+  db $FF
+
+SoundHornoadJump:
+  db $01 : dw .voice0
+.voice0
+  db !sampleHornoadJump
+  !c5,255*200/255,5
   db $FF
 
 SoundHalzynHurt:
@@ -146,6 +174,22 @@ SoundHalzynLunge:
   !e5,255*200/255,6
   !e5,104*200/255,4
   !e5,40*200/255,4
+  db $FF
+
+SoundHalzynLand:
+  db $01 : dw .voice0
+.voice0
+  db !sampleFireBeamStart
+  !c5,224*200/255,4
+  db !sampleHornoadJump
+  !c5,255*200/255,3
+  db $FF
+
+SoundHalzynFlap:
+  db $01 : dw .voice0
+.voice0
+  db !sampleSpin
+  !c5,255*200/255,8
   db $FF
 
 SoundMotoHurt:
@@ -187,6 +231,27 @@ SoundGeronHurt:
   !f5,240*200/255,5
   !c5,240*200/255,5
   !a4,240*200/255,5
+  db $FF
+
+SoundSciserPrepareToShoot:
+  db $01 : dw .voice0
+.voice0
+  db !sampleHornoadJump
+  !e4,40*200/255,7
+  !e4,104*200/255,7
+  !e4,160*200/255,7
+  !e4,255*200/255,7
+  db $FF
+
+SoundSciserShoot:
+  db $01 : dw .voice0
+.voice0
+  db !sampleMotoYamebaSciserYardChootCry
+  !b3,120*200/255,5
+  db !sampleSciserShoot
+  !c4,224*200/255,5
+  !c4,160*200/255,4
+  !c4,80*200/255,4
   db $FF
 
 SoundSciserHurt:
