@@ -28,6 +28,10 @@ endmacro
 !sampleSciserShoot = $22
 !sampleFireBeamStart = $23
 !sampleSpin = $24
+!samplePuyoHurt = $25
+!sampleGenesisHurt = $26
+!sampleRipperHurt = $27
+!sampleOwtchHurt = $28
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -45,6 +49,10 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSciserShoot,$FF,$E0,$00,$01,$32
   db !sampleFireBeamStart,$FF,$E0,$00,$02,$84
   db !sampleSpin,$FF,$E0,$00,$02,$84
+  db !samplePuyoHurt,$FF,$E0,$00,$02,$84
+  db !sampleGenesisHurt,$FF,$E0,$00,$02,$84
+  db !sampleRipperHurt,$FF,$E0,$00,$02,$84
+  db !sampleOwtchHurt,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -63,6 +71,10 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSciserShoot,0
   dw SampleFireBeamStart,0
   dw SampleSpin,0
+  dw SamplePuyoHurt,0
+  dw SampleGenesisHurt,0
+  dw SampleRipperHurt,0
+  dw SampleOwtchHurt,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -81,6 +93,10 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleSciserShoot: incbin "sciser_shoot_5000_noloop.brr"
   SampleFireBeamStart: incbin "../fire_beam_start_10512_noloop.brr"
   SampleSpin: incbin "../spin_10512_noloop.brr"
+  SamplePuyoHurt: incbin "puyo_hurt_10512_noloop.brr"
+  SampleGenesisHurt: incbin "genesis_hurt_10512_noloop.brr"
+  SampleRipperHurt: incbin "ripper_hurt_10512_noloop.brr"
+  SampleOwtchHurt: incbin "owtch_hurt_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -130,8 +146,12 @@ Sounds:
   dw SoundGerubossHurt ; DF
   dw SoundWaverHurt ; E0
   dw SoundEvirHurt ; E1
-  dw SoundZeelaShoot ;E2
-  dw SoundZeelaHurt ; E3
+  dw SoundPuyoHurt ;E2
+  dw SoundGenesisHurt ;E3
+  dw SoundZeelaShoot ;E4
+  dw SoundZeelaHurt ; E5
+  dw SoundRipperHurt ; E6
+  dw SoundOwtchHurt ; E7
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -464,6 +484,20 @@ SoundEvirHurt:
   !g4,200*200/255,4
   db $FF
 
+SoundPuyoHurt:
+  db $01 : dw .voice0
+.voice0
+  db !samplePuyoHurt
+  !c5,255,11
+  db $FF
+
+SoundGenesisHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleGenesisHurt
+  !c5,255,14
+  db $FF
+
 SoundZeelaShoot:
   db $01 : dw .voice0
 .voice0
@@ -479,6 +513,20 @@ SoundZeelaHurt:
 .voice0
   db !sampleZeelaHurt
   !c5,64*4-1,16
+  db $FF
+
+SoundRipperHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleRipperHurt
+  !c5,200,14
+  db $FF
+
+SoundOwtchHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleOwtchHurt
+  !c5,150,9
   db $FF
 
 endspcblock
