@@ -32,6 +32,9 @@ endmacro
 !sampleGenesisHurt = $26
 !sampleRipperHurt = $27
 !sampleOwtchHurt = $28
+!sampleSovaHurtFade = $29
+!sampleZozoroHurt = $2A
+!samplePowampHurt = $2B
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -53,6 +56,9 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleGenesisHurt,$FF,$E0,$00,$02,$84
   db !sampleRipperHurt,$FF,$E0,$00,$02,$84
   db !sampleOwtchHurt,$FF,$E0,$00,$02,$84
+  db !sampleSovaHurtFade,$FF,$F6,$00,$01,$2F
+  db !sampleZozoroHurt,$FF,$E0,$00,$02,$84
+  db !samplePowampHurt,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -75,6 +81,9 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleGenesisHurt,0
   dw SampleRipperHurt,0
   dw SampleOwtchHurt,0
+  dw SampleSovaHurt,SampleSovaHurt+16*9/16
+  dw SampleZozoroHurt,0
+  dw SamplePowampHurt,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -97,6 +106,8 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleGenesisHurt: incbin "genesis_hurt_10512_noloop.brr"
   SampleRipperHurt: incbin "ripper_hurt_10512_noloop.brr"
   SampleOwtchHurt: incbin "owtch_hurt_10512_noloop.brr"
+  SampleZozoroHurt: incbin "zozoro_hurt_10512_noloop.brr"
+  SamplePowampHurt: incbin "powamp_hurt_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -146,12 +157,14 @@ Sounds:
   dw SoundGerubossHurt ; DF
   dw SoundWaverHurt ; E0
   dw SoundEvirHurt ; E1
-  dw SoundPuyoHurt ;E2
-  dw SoundGenesisHurt ;E3
-  dw SoundZeelaShoot ;E4
+  dw SoundPuyoHurt ; E2
+  dw SoundGenesisHurt ; E3
+  dw SoundZeelaShoot ; E4
   dw SoundZeelaHurt ; E5
-  dw SoundRipperHurt ; E6
-  dw SoundOwtchHurt ; E7
+  dw SoundPowampHurt ; E6
+  dw SoundZozoroHurt ; E7
+  dw SoundRipperHurt ; E8
+  dw SoundOwtchHurt ; E9
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -409,10 +422,12 @@ SoundSovaHurt:
   !a4,255*200/255,4-1
   !e5,200*200/255,4-1
   db $F5,0 : !b7 ; enable legato
-  !c5,200*200/255,7
-  !c5,200*200/255*32/47,3
-  !c5,200*200/255*18/47,3
-  !c5,200*200/255*8/47,1
+  ;!c5,200*200/255,7
+  ;!c5,200*200/255*32/47,3
+  ;!c5,200*200/255*18/47,3
+  ;!c5,200*200/255*8/47,1
+  db !sampleSovaHurtFade
+  !c5,200*200/255,14
   db $FF
 
 SoundSkulteraSmallHurt:
@@ -513,6 +528,24 @@ SoundZeelaHurt:
 .voice0
   db !sampleZeelaHurt
   !c5,64*4-1,16
+  db $FF
+
+SoundPowampHurt:
+  db $01 : dw .voice0
+.voice0
+  db !samplePowampHurt
+  !c5,200,11
+  db $FF
+
+SoundZozoroHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleZozoroHurt
+  !c5,200*24/32,4-1
+  !d5,200*24/32,4-1
+  !e5,200*24/32,4-1
+  !fs5,200*24/32,4-1
+  !gs5,200*32/32,4-1
   db $FF
 
 SoundRipperHurt:
