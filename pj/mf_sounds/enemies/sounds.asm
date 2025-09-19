@@ -35,6 +35,7 @@ endmacro
 !sampleSovaHurtFade = $29
 !sampleZozoroHurt = $2A
 !samplePowampHurt = $2B
+!sampleWaterFootstep = $2C
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -59,6 +60,7 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSovaHurtFade,$FF,$F6,$00,$01,$2F
   db !sampleZozoroHurt,$FF,$E0,$00,$02,$84
   db !samplePowampHurt,$FF,$E0,$00,$02,$84
+  db !sampleWaterFootstep,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -84,6 +86,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSovaHurt,SampleSovaHurt+16*9/16
   dw SampleZozoroHurt,0
   dw SamplePowampHurt,0
+  dw SampleWaterFootstep,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -108,6 +111,7 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleOwtchHurt: incbin "owtch_hurt_10512_noloop.brr"
   SampleZozoroHurt: incbin "zozoro_hurt_10512_noloop.brr"
   SamplePowampHurt: incbin "powamp_hurt_10512_noloop.brr"
+  SampleWaterFootstep: incbin "../water_footstep_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -155,16 +159,17 @@ Sounds:
   dw SoundSkulteraLargeHurt ; DD
   dw SoundYardHurt ; DE
   dw SoundGerubossHurt ; DF
-  dw SoundWaverHurt ; E0
-  dw SoundEvirHurt ; E1
-  dw SoundPuyoHurt ; E2
-  dw SoundGenesisHurt ; E3
-  dw SoundZeelaShoot ; E4
-  dw SoundZeelaHurt ; E5
-  dw SoundPowampHurt ; E6
-  dw SoundZozoroHurt ; E7
-  dw SoundRipperHurt ; E8
-  dw SoundOwtchHurt ; E9
+  dw SoundChootHurt ; E0
+  dw SoundWaverHurt ; E1
+  dw SoundEvirHurt ; E2
+  dw SoundPuyoHurt ; E3
+  dw SoundGenesisHurt ; E4
+  dw SoundZeelaShoot ; E5
+  dw SoundZeelaHurt ; E6
+  dw SoundPowampHurt ; E7
+  dw SoundZozoroHurt ; E8
+  dw SoundRipperHurt ; E9
+  dw SoundOwtchHurt ; EA
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -483,6 +488,15 @@ SoundGerubossHurt:
   !d5,200*200/255,6
   db $FF
 
+SoundChootHurt:
+  db $01 : dw .voice0
+.voice0
+  db !sampleWaterFootstep
+  !e5,255*200/255,5-1
+  db !sampleMotoYamebaSciserYardChootCry
+  !f5,200*200/255,5
+  db $FF
+
 SoundWaverHurt:
   db $01 : dw .voice0
 .voice0
@@ -545,7 +559,7 @@ SoundZozoroHurt:
   !d5,200*24/32,4-1
   !e5,200*24/32,4-1
   !fs5,200*24/32,4-1
-  !gs5,200*32/32,4-1
+  !gs5,200*32/32,4
   db $FF
 
 SoundRipperHurt:
