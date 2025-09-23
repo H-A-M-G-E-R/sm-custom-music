@@ -32,6 +32,8 @@ endmacro
 !sampleHeatDamage = $1C
 !sampleSamusHurt = $1D
 !sampleMissileToggle = $1E
+!sampleSamusFootstep = $1F
+!sampleSamusLand = $20
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleMissileLaunch,$FF,$E0,$00,$01,$32
@@ -43,6 +45,8 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHeatDamage,$FF,$E0,$00,$02,$84
   db !sampleSamusHurt,$FF,$E0,$00,$02,$84
   db !sampleMissileToggle,$FF,$E0,$00,$02,$84
+  db !sampleSamusFootstep,$FF,$E0,$00,$02,$84
+  db !sampleSamusLand,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -55,6 +59,8 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleHeatDamage,0
   dw SampleSamusHurt,0
   dw SampleMissileToggle,0
+  dw SampleSamusFootstep,0
+  dw SampleSamusLand,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -67,6 +73,8 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleHeatDamage: incbin "heat_damage_10512_noloop_fixed.brr"
   SampleSamusHurt: incbin "samus_hurt_10512_noloop.brr"
   SampleMissileToggle: incbin "missile_toggle_10512_noloop.brr"
+  SampleSamusFootstep: incbin "samus_footstep_10512_noloop_fixed.brr"
+  SampleSamusLand: incbin "samus_land_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -90,6 +98,8 @@ Sounds:
   dw SoundHeatDamage ; C5
   dw SoundSamusHurt ; C6
   dw SoundMissileToggle ; C7
+  dw SoundSamusFootstep ; C8
+  dw SoundSamusLand ; C9
 
 SoundMissileLaunch:
   db $01 : dw .voice0
@@ -183,6 +193,20 @@ SoundMissileToggle:
   db !sampleMissileToggle
   !c5,255,3-1
   !c5,64,4
+  db $FF
+
+SoundSamusFootstep:
+  db $01 : dw .voice0
+.voice0
+  db !sampleSamusFootstep
+  !c5,150,2
+  db $FF
+
+SoundSamusLand:
+  db $01 : dw .voice0
+.voice0
+  db !sampleSamusLand
+  !c5,150*65/50,3
   db $FF
 
 endspcblock
