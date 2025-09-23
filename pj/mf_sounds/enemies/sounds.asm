@@ -115,16 +115,10 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
-  dw .pattern0
+  dw Tracker5
+
+Tracker5:
   dw $0000
-
-.pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
-
-.pattern0_0
-  !endEcho
-  db 1,$7F
-  !rest
-  !end
 
 Sounds:
   dw SoundHornoadHurt ; C0

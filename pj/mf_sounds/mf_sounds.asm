@@ -34,6 +34,7 @@ endmacro
 !sampleMissileToggle = $1E
 !sampleSamusFootstep = $1F
 !sampleSamusLand = $20
+!sampleLavaDamage = $21
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleMissileLaunch,$FF,$E0,$00,$01,$32
@@ -47,6 +48,7 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleMissileToggle,$FF,$E0,$00,$02,$84
   db !sampleSamusFootstep,$FF,$E0,$00,$02,$84
   db !sampleSamusLand,$FF,$E0,$00,$02,$84
+  db !sampleLavaDamage,$FF,$E0,$00,$00,$F2
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -61,6 +63,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleMissileToggle,0
   dw SampleSamusFootstep,0
   dw SampleSamusLand,0
+  dw SampleLavaDamage,SampleLavaDamage+16*9/16
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -75,19 +78,14 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleMissileToggle: incbin "missile_toggle_10512_noloop.brr"
   SampleSamusFootstep: incbin "samus_footstep_10512_noloop_fixed.brr"
   SampleSamusLand: incbin "samus_land_10512_noloop.brr"
+  SampleLavaDamage: incbin "lava_damage_3951.924_16.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
-  dw .pattern0
+  dw Tracker5
+
+Tracker5:
   dw $0000
-
-.pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
-
-.pattern0_0
-  !endEcho
-  db 1,$7F
-  !rest
-  !end
 
 Sounds:
   dw SoundMissileLaunch ; C0
@@ -100,6 +98,7 @@ Sounds:
   dw SoundMissileToggle ; C7
   dw SoundSamusFootstep ; C8
   dw SoundSamusLand ; C9
+  dw SoundLavaDamage ; CA
 
 SoundMissileLaunch:
   db $01 : dw .voice0
@@ -207,6 +206,13 @@ SoundSamusLand:
 .voice0
   db !sampleSamusLand
   !c5,150*65/50,3
+  db $FF
+
+SoundLavaDamage:
+  db $01 : dw .voice0
+.voice0
+  db !sampleLavaDamage
+  !c5,255,29
   db $FF
 
 endspcblock
