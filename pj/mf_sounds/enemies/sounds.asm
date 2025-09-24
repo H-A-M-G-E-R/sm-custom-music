@@ -1,3 +1,5 @@
+; Requires the ADSR sound command to be enabled ($F9).
+
 asar 1.91
 norom : org 0
 incsrc "../../defines.asm"
@@ -21,21 +23,11 @@ endmacro
 !sampleSovaHurt = $1B
 !sampleGeronHurt0 = $1C
 !sampleGeronHurt1 = $1D
-!sampleZeelaShoot0 = $1E
-!sampleZeelaShoot1 = $1F
-!sampleZeelaHurt = $20
-!sampleHornoadJump = $21
-!sampleSciserShoot = $22
-!sampleFireBeamStart = $23
-!sampleSpin = $24
-!samplePuyoHurt = $25
-!sampleGenesisHurt = $26
-!sampleRipperHurt = $27
-!sampleOwtchHurt = $28
-!sampleSovaHurtFade = $29
-!sampleZozoroHurt = $2A
-!samplePowampHurt = $2B
-!sampleWaterFootstep = $2C
+!sampleHornoadJump = $1E
+!sampleSciserShoot = $1F
+!sampleFireBeamStart = $20
+!sampleSpin = $21
+!sampleWaterFootstep = $22
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -46,20 +38,10 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSovaHurt,$FF,$E0,$00,$01,$2F
   db !sampleGeronHurt0,$FF,$E0,$00,$02,$84
   db !sampleGeronHurt1,$FF,$E0,$00,$01,$EA
-  db !sampleZeelaShoot0,$FF,$E0,$00,$02,$84
-  db !sampleZeelaShoot1,$FF,$E0,$00,$02,$84
-  db !sampleZeelaHurt,$FF,$E0,$00,$02,$84
   db !sampleHornoadJump,$FF,$E0,$00,$02,$84
   db !sampleSciserShoot,$FF,$E0,$00,$01,$32
   db !sampleFireBeamStart,$FF,$E0,$00,$02,$84
   db !sampleSpin,$FF,$E0,$00,$02,$84
-  db !samplePuyoHurt,$FF,$E0,$00,$02,$84
-  db !sampleGenesisHurt,$FF,$E0,$00,$02,$84
-  db !sampleRipperHurt,$FF,$E0,$00,$02,$84
-  db !sampleOwtchHurt,$FF,$E0,$00,$02,$84
-  db !sampleSovaHurtFade,$FF,$F6,$00,$01,$2F
-  db !sampleZozoroHurt,$FF,$E0,$00,$02,$84
-  db !samplePowampHurt,$FF,$E0,$00,$02,$84
   db !sampleWaterFootstep,$FF,$E0,$00,$02,$84
 endspcblock
 
@@ -72,20 +54,11 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSovaHurt,SampleSovaHurt+16*9/16
   dw SampleGeronHurt0,0
   dw SampleGeronHurt1,0
-  dw SampleZeelaShoot0,0
-  dw SampleZeelaShoot1,0
-  dw SampleZeelaHurt,0
   dw SampleHornoadJump,SampleHornoadJump+16*9/16
   dw SampleSciserShoot,0
   dw SampleFireBeamStart,0
   dw SampleSpin,0
-  dw SamplePuyoHurt,0
-  dw SampleGenesisHurt,0
-  dw SampleRipperHurt,0
-  dw SampleOwtchHurt,0
   dw SampleSovaHurt,SampleSovaHurt+16*9/16
-  dw SampleZozoroHurt,0
-  dw SamplePowampHurt,0
   dw SampleWaterFootstep,0
 endspcblock
 
@@ -98,19 +71,10 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleSovaHurt: incbin "sova_hurt_4953.705_0.brr"
   SampleGeronHurt0: incbin "geron_hurt_0_10512_noloop.brr"
   SampleGeronHurt1: incbin "geron_hurt_1_8000_noloop.brr"
-  SampleZeelaShoot0: incbin "zeela_shoot_0_10512_noloop.brr"
-  SampleZeelaShoot1: incbin "zeela_shoot_1_10512_noloop.brr"
-  SampleZeelaHurt: incbin "zeela_hurt_10512_noloop.brr"
   SampleHornoadJump: incbin "hornoad_jump_10512_16.brr"
   SampleSciserShoot: incbin "sciser_shoot_5000_noloop.brr"
   SampleFireBeamStart: incbin "../fire_beam_start_10512_noloop.brr"
   SampleSpin: incbin "../spin_10512_noloop.brr"
-  SamplePuyoHurt: incbin "puyo_hurt_10512_noloop.brr"
-  SampleGenesisHurt: incbin "genesis_hurt_10512_noloop.brr"
-  SampleRipperHurt: incbin "ripper_hurt_10512_noloop.brr"
-  SampleOwtchHurt: incbin "owtch_hurt_10512_noloop.brr"
-  SampleZozoroHurt: incbin "zozoro_hurt_10512_noloop.brr"
-  SamplePowampHurt: incbin "powamp_hurt_10512_noloop.brr"
   SampleWaterFootstep: incbin "../water_footstep_10512_noloop.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
@@ -156,14 +120,6 @@ Sounds:
   dw SoundChootHurt ; E0
   dw SoundWaverHurt ; E1
   dw SoundEvirHurt ; E2
-  dw SoundPuyoHurt ; E3
-  dw SoundGenesisHurt ; E4
-  dw SoundZeelaShoot ; E5
-  dw SoundZeelaHurt ; E6
-  dw SoundPowampHurt ; E7
-  dw SoundZozoroHurt ; E8
-  dw SoundRipperHurt ; E9
-  dw SoundOwtchHurt ; EA
 
 SoundHornoadHurt:
   db $01 : dw .voice0
@@ -317,16 +273,17 @@ SoundZoroHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !b3,255*200/255,5-1
-  !f4,160*200/255,10
+  !b3,255*255/255,5-1
+  ;db $F9,$FF,$F7
+  !f4,160*255/255,10
   db $FF
 
 SoundBlueZoroHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleZombieCry
-  !ds4,255*200/255,5-1
-  !a4,160*200/255,10
+  !ds4,255*255/255,5-1
+  !a4,160*255/255,10
   db $FF
 
 SoundKihunterHurt:
@@ -388,7 +345,8 @@ SoundReoHurt:
   db !sampleHornoadHalzynCry
   !d4,160*200/255,3-1
   !d5,160*200/255,3-1
-  !a4,160*200/255,13
+  db $F9,$FF,$F6
+  !a4,160*200/255,14
   db $FF
 
 SoundFuneHurt:
@@ -410,6 +368,7 @@ SoundGerudaHurt:
 .voice0
   db !sampleSidehopperCry
   !c5,255*200/255,5-1
+  db $F9,$FF,$F6
   db !sampleHornoadHalzynCry
   !f5,200*200/255,10
   db $FF
@@ -425,7 +384,7 @@ SoundSovaHurt:
   ;!c5,200*200/255*32/47,3
   ;!c5,200*200/255*18/47,3
   ;!c5,200*200/255*8/47,1
-  db !sampleSovaHurtFade
+  db $F9,$FF,$F6
   !c5,200*200/255,14
   db $FF
 
@@ -496,7 +455,10 @@ SoundWaverHurt:
 .voice0
   db !sampleSidehopperCry
   !c4,200*200/255,4-1
-  !f4,255*200/255,10
+  db $F5,0 : !b7 ; enable legato
+  !f4,255*200/255,6
+  db $F9,$FF,$FB
+  !f4,255*200/255,4
   db $FF
 
 ; minus the bubbles
@@ -505,69 +467,6 @@ SoundEvirHurt:
 .voice0
   db !sampleHornoadHalzynCry
   !g4,200*200/255,4
-  db $FF
-
-SoundPuyoHurt:
-  db $01 : dw .voice0
-.voice0
-  db !samplePuyoHurt
-  !c5,255,11
-  db $FF
-
-SoundGenesisHurt:
-  db $01 : dw .voice0
-.voice0
-  db !sampleGenesisHurt
-  !c5,255,14
-  db $FF
-
-SoundZeelaShoot:
-  db $01 : dw .voice0
-.voice0
-  db !sampleZeelaShoot0
-  !c5,0,16
-  !c5,12*4,8-1
-  db !sampleZeelaShoot1
-  !c5,20*4,8
-  db $FF
-
-SoundZeelaHurt:
-  db $01 : dw .voice0
-.voice0
-  db !sampleZeelaHurt
-  !c5,64*4-1,16
-  db $FF
-
-SoundPowampHurt:
-  db $01 : dw .voice0
-.voice0
-  db !samplePowampHurt
-  !c5,200,11
-  db $FF
-
-SoundZozoroHurt:
-  db $01 : dw .voice0
-.voice0
-  db !sampleZozoroHurt
-  !c5,200*24/32,4-1
-  !d5,200*24/32,4-1
-  !e5,200*24/32,4-1
-  !fs5,200*24/32,4-1
-  !gs5,200*32/32,4
-  db $FF
-
-SoundRipperHurt:
-  db $01 : dw .voice0
-.voice0
-  db !sampleRipperHurt
-  !c5,200,14
-  db $FF
-
-SoundOwtchHurt:
-  db $01 : dw .voice0
-.voice0
-  db !sampleOwtchHurt
-  !c5,150,9
   db $FF
 
 endspcblock

@@ -5,7 +5,7 @@ nspc_paths = glob.glob('pj/**/*.nspc' if len(sys.argv) == 1 else sys.argv[1], re
 for nspc_path in nspc_paths:
     nspc = open(nspc_path, 'rb')
     spc = open(os.path.splitext(nspc_path)[0] + '.spc', 'wb')
-    org = open('org/pjorg.spc', 'rb')
+    org = open('org/pjorg.spc' if len(sys.argv) < 3 else sys.argv[2], 'rb')
 
     spc.write(org.read()) # Copy org to spc
 
