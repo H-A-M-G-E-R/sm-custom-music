@@ -35,6 +35,7 @@ endmacro
 !sampleSamusFootstep = $1F
 !sampleSamusLand = $20
 !sampleLavaDamage = $21
+!sampleElevator = $22
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleMissileLaunch,$FF,$E0,$00,$01,$32
@@ -49,6 +50,7 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSamusFootstep,$FF,$E0,$00,$02,$84
   db !sampleSamusLand,$FF,$E0,$00,$02,$84
   db !sampleLavaDamage,$FF,$E0,$00,$00,$F2
+  db !sampleElevator,$F5,$E0,$00,$02,$83
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -64,6 +66,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSamusFootstep,0
   dw SampleSamusLand,0
   dw SampleLavaDamage,SampleLavaDamage+16*9/16
+  dw SampleElevator,SampleElevator+16*9/16
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -79,6 +82,7 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleSamusFootstep: incbin "samus_footstep_10512_noloop_fixed.brr"
   SampleSamusLand: incbin "samus_land_10512_noloop.brr"
   SampleLavaDamage: incbin "lava_damage_3951.924_16.brr"
+  SampleElevator: incbin "elevator_10491.144192_16.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -99,6 +103,7 @@ Sounds:
   dw SoundSamusFootstep ; C8
   dw SoundSamusLand ; C9
   dw SoundLavaDamage ; CA
+  dw SoundElevator ; CB
 
 SoundMissileLaunch:
   db $01 : dw .voice0
@@ -214,6 +219,19 @@ SoundLavaDamage:
   db !sampleLavaDamage
   !c5,255,29
   db $FF
+
+SoundElevator:
+  db $01 : dw .voice0
+.voice0
+  db $F5,$100/64 : !b7
+  db !sampleElevator
+  !c4,200,64
+  db $FE,$00
+    db $F5,$200/128 : !c2
+    db $F0,200,128
+    db $F5,$200/128 : !b7
+    db $F0,200,128
+  db $FB
 
 endspcblock
 
