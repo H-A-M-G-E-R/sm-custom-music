@@ -71,13 +71,13 @@ SoundChargingChargeBeam:
   db $F5,(($A4+32/64*12)-($A4-47/64*12))/52*256 : !b7
   %make_sound_subnote_with_instr(!sampleChargingBeamCommon, "!c5", -47/64*12, 55*4, 52)
   db $F5,0 : !b7
-  !fs5,55*4,255
+  %make_sound_subnote("!c5", 32/64*12, 55*4, 255)
 
 .voice1
   db $F5,(($A4+32/64*12)-($A4-47/64*12))/52*256 : !b7
   %make_sound_subnote_with_instr(!sampleChargingChargeBeam, "!c5", -47/64*12, 27*4, 52)
   db $F5,0 : !b7
-  !fs5,22*4,255
+  %make_sound_subnote("!c5", 32/64*12, 22*4, 255)
 
 SoundChargingWideBeam:
   db $02 : dw .voice0, .voice1
@@ -91,7 +91,7 @@ SoundChargingWideBeam:
   db $F5,(($A4+32/64*12)-($A4-47/64*12))/52*256 : !b7
   %make_sound_subnote_with_instr(!sampleChargingWideBeam, "!c5", -47/64*12, 27*4, 52)
   db $F5,0 : !b7
-  !fs5,22*4,255
+  %make_sound_subnote("!c5", 32/64*12, 22*4, 255)
 
 SoundChargingPlasmaBeam:
   db $02 : dw .voice0, .voice1
@@ -105,7 +105,7 @@ SoundChargingPlasmaBeam:
   db $F5,(($A4+32/64*12)-($A4-47/64*12))/52*256 : !b7
   %make_sound_subnote_with_instr(!sampleChargingPlasmaBeam, "!c5", -47/64*12, 27*4, 52)
   db $F5,0 : !b7
-  !fs5,22*4,255
+  %make_sound_subnote("!c5", 32/64*12, 22*4, 255)
 
 SoundChargingWaveBeam:
   db $02 : dw .voice0, .voice1
