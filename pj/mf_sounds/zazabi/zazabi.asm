@@ -28,7 +28,7 @@ endmacro
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleZazabiOpenMouth,$FF,$E0,$00,$01,$EA
-  db !sampleZazabiHurt,$FF,$E0,$00,$02,$81
+  db !sampleZazabiHurt,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -38,7 +38,7 @@ endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleZazabiOpenMouth: incbin "zazabi_open_mouth_8000_noloop.brr"
-  SampleZazabiHurt: incbin "zazabi_hurt_10463.823504_16.brr"
+  SampleZazabiHurt: incbin "zazabi_hurt_10512_16_fixed.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
