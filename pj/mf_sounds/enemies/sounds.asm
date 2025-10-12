@@ -28,6 +28,7 @@ endmacro
 !sampleFireBeamStart = $20
 !sampleSpin = $21
 !sampleWaterFootstep = $22
+!sampleEvirSmallBubble = $23
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleHornoadHalzynCry,$FF,$E0,$00,$02,$84
@@ -43,6 +44,7 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleFireBeamStart,$FF,$E0,$00,$02,$84
   db !sampleSpin,$FF,$E0,$00,$02,$84
   db !sampleWaterFootstep,$FF,$E0,$00,$02,$84
+  db !sampleEvirSmallBubble,$FF,$E0,$00,$01,$32
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -58,8 +60,8 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSciserShoot,0
   dw SampleFireBeamStart,0
   dw SampleSpin,0
-  dw SampleSovaHurt,SampleSovaHurt+16*9/16
   dw SampleWaterFootstep,0
+  dw SampleEvirSmallBubble,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -76,6 +78,7 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleFireBeamStart: incbin "../fire_beam_start_10512_noloop.brr"
   SampleSpin: incbin "../spin_10512_noloop.brr"
   SampleWaterFootstep: incbin "../water_footstep_10512_noloop.brr"
+  SampleEvirSmallBubble: incbin "evir_small_bubble_5000_noloop_fixed.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -461,12 +464,16 @@ SoundWaverHurt:
   !f4,255*200/255,4
   db $FF
 
-; minus the bubbles
 SoundEvirHurt:
   db $01 : dw .voice0
 .voice0
   db !sampleHornoadHalzynCry
-  !g4,200*200/255,4
+  !g4,200*200/255,4-1
+  !g4,0,2-1
+  db !sampleEvirSmallBubble
+  !g4,160*200/255,6-1
+  !a4,160*200/255,7-1
+  !e5,160*200/255,4
   db $FF
 
 endspcblock
