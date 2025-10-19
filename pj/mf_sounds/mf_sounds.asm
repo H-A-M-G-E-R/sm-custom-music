@@ -36,6 +36,9 @@ endmacro
 !sampleSamusLand = $20
 !sampleLavaDamage = $21
 !sampleElevator = $22
+!sampleMorphBallBounce = $23
+!sampleGrabLedge = $24
+!sampleGrabbingLedge = $25
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleMissileLaunch,$FF,$E0,$00,$01,$32
@@ -51,6 +54,9 @@ spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !sampleSamusLand,$FF,$E0,$00,$02,$84
   db !sampleLavaDamage,$FF,$E0,$00,$00,$F2
   db !sampleElevator,$F5,$E0,$00,$02,$83
+  db !sampleMorphBallBounce,$FF,$E0,$00,$02,$84
+  db !sampleGrabLedge,$FF,$E0,$00,$02,$84
+  db !sampleGrabbingLedge,$FF,$E0,$00,$02,$84
 endspcblock
 
 spcblock 4*$16+!p_sampleTable nspc ; sample table
@@ -67,6 +73,9 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleSamusLand,0
   dw SampleLavaDamage,SampleLavaDamage+16*9/16
   dw SampleElevator,SampleElevator+16*9/16
+  dw SampleMorphBallBounce,SampleMorphBallBounce+16*9/16
+  dw SampleGrabLedge,0
+  dw SampleGrabbingLedge,0
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -83,6 +92,9 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   SampleSamusLand: incbin "samus_land_10512_noloop.brr"
   SampleLavaDamage: incbin "lava_damage_3951.924_16.brr"
   SampleElevator: incbin "elevator_10491.144192_16.brr"
+  SampleMorphBallBounce: incbin "morph_ball_bounce_10512_16_fixed.brr"
+  SampleGrabLedge: incbin "grab_ledge_10512_noloop.brr"
+  SampleGrabbingLedge: incbin "grabbing_ledge_10512_noloop_fixed.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
@@ -104,6 +116,10 @@ Sounds:
   dw SoundSamusLand ; C9
   dw SoundLavaDamage ; CA
   dw SoundElevator ; CB
+  dw SoundMorphBallJump ; CC
+  dw SoundMorphBallLand ; CD
+  dw SoundGrabLedge ; CE
+  dw SoundGrabbingLedge ; CF
 
 SoundMissileLaunch:
   db $01 : dw .voice0
@@ -232,6 +248,36 @@ SoundElevator:
     db $F5,$200/128 : !b7
     db $F0,200,128
   db $FB
+
+SoundMorphBallJump:
+  db $01 : dw .voice0
+.voice0
+  db $F9,$FF,$F8
+  db !sampleMorphBallBounce
+  !c5,170,13
+  db $FF
+
+SoundMorphBallLand:
+  db $01 : dw .voice0
+.voice0
+  db $F9,$FF,$F9
+  db !sampleMorphBallBounce
+  !c5,170,11
+  db $FF
+
+SoundGrabLedge:
+  db $01 : dw .voice0
+.voice0
+  db !sampleGrabLedge
+  !c5,180,2
+  db $FF
+
+SoundGrabbingLedge:
+  db $01 : dw .voice0
+.voice0
+  db !sampleGrabbingLedge
+  !c5,180*35/75,2
+  db $FF
 
 endspcblock
 
