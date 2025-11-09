@@ -1,6 +1,6 @@
 ; Track 60
 ; Converted from IT using mITroid (https://github.com/tewtal/mITroid),
-; made tweaks by disassembling the generated SPC file using my tool (https://github.com/H-A-M-G-E-R/nspc-track-disassembler) 
+; made tweaks by disassembling the generated SPC file using my tool (https://github.com/H-A-M-G-E-R/sm-nspc-tools) 
 
 asar 1.91
 norom : org 0
