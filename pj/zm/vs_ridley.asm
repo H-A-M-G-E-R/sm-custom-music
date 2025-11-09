@@ -14,7 +14,6 @@ incsrc "../defines.asm"
 !instr09 = $1F
 !instr0A = $20
 !instr0B = $21
-!instr0C = $22
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !instr00,$00,$00,$7F,$2C,$05
@@ -45,7 +44,6 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample09,Sample09+1287
   dw Sample0A,Sample0A+18
   dw Sample0B,Sample0B+1233
-  dw Sample0C,Sample0C+27
 endspcblock
 
 spcblock $B210-$6E00+!p_sampleData nspc ; sample data
@@ -61,7 +59,6 @@ spcblock $B210-$6E00+!p_sampleData nspc ; sample data
   Sample09: incbin "Sample_869aad196336c0ed58aa8c8ae9d90cb5.brr"
   Sample0A: incbin "Sample_49736d9aba314fce7fc8863498b2b0ef.brr"
   Sample0B: incbin "Sample_c95c18f8f092e58956fdfbb91cb359e9.brr"
-  Sample0C: incbin "Sample_dca5fa7dddc217b4b10eea25d390f923.brr"
 
 dw 0,0,0,0 ; padding for shared trackers
 Trackers:
