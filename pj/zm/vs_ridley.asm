@@ -14,6 +14,7 @@ incsrc "../defines.asm"
 !instr09 = $1F
 !instr0A = $20
 !instr0B = $21
+!instr0C = $22
 
 spcblock 6*$16+!p_instrumentTable nspc ; instruments
   db !instr00,$00,$00,$7F,$2C,$05
