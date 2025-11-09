@@ -2882,8 +2882,6 @@ Tracker5830:
   !fs5
   db 6
   !f5
-  db 1
-  !rest
   !end
 
 .pattern6_1
@@ -2909,8 +2907,6 @@ Tracker5830:
   !fs6
   db 26
   !a6
-  db 1
-  !rest
   !end
 
 .pattern6_2
@@ -2935,8 +2931,6 @@ Tracker5830:
   !fs4
   db 26
   !a4
-  db 1
-  !rest
   !end
 
 .pattern6_3
@@ -2962,8 +2956,6 @@ Tracker5830:
   !volume,248
   db 26
   !ds6
-  db 1
-  !rest
   !end
 
 .pattern6_4
@@ -2994,8 +2986,6 @@ Tracker5830:
   !volume,242
   db 26
   !ds5
-  db 1
-  !rest
   !end
 
 .pattern6_5
@@ -3083,8 +3073,6 @@ Tracker5830:
   !volume,255
   db 30
   !fs4
-  db 1
-  !rest
   !end
 
 .pattern6_6
@@ -3179,7 +3167,7 @@ Tracker5830:
   !rest
   !volume,255
   !a3
-  db 25
+  db 24
   !rest
   !end
 
@@ -3256,7 +3244,7 @@ Tracker5830:
   !fs3
   !rest
   !a3
-  db 25
+  db 24
   !rest
   !end
 endspcblock
