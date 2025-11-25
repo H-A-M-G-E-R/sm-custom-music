@@ -33,6 +33,8 @@ Kirby's Dream Land 3 music by Jun Ishikawa
 
 Yoshi's Island music by Koji Kondo
 
+Thunder Force III/Thunder Spirits music by Tomomi Ootani, Toshiharu Yamanishi, Naosuke Arai
+
 SPCs from https://www.zophar.net/music/nintendo-snes-spc
 
 I use my [sm-nspc-tools](https://github.com/H-A-M-G-E-R/sm-nspc-tools) to port these songs.

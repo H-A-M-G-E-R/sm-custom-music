@@ -120,3 +120,22 @@ endmacro
 !setNoteLengthTable = "db $FB, $00"
 !adsrGain = "db $FB, $01"
 !setDPMiscCommand = "db $FB, $02"
+
+macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
+  if <delta> < 0
+    db $F7,-<delta>*256
+  else
+    db $F7,<delta>*256
+  endif
+  db <instr>
+  <note>+<delta>,<vol>,<len>
+endmacro
+
+macro make_sound_subnote(note, delta, vol, len)
+  if <delta> < 0
+    db $F7,-<delta>*256
+  else
+    db $F7,<delta>*256
+  endif
+  <note>+<delta>,<vol>,<len>
+endmacro
