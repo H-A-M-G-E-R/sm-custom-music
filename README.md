@@ -37,4 +37,6 @@ Thunder Force III/Thunder Spirits music by Tomomi Ootani, Toshiharu Yamanishi, N
 
 SPCs from https://www.zophar.net/music/nintendo-snes-spc
 
+Music from smwcentral.net belong to their respective authors.
+
 I use my [sm-nspc-tools](https://github.com/H-A-M-G-E-R/sm-nspc-tools) to port these songs.

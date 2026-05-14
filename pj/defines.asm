@@ -120,6 +120,7 @@ endmacro
 !setNoteLengthTable = "db $FB, $00"
 !adsrGain = "db $FB, $01"
 !setDPMiscCommand = "db $FB, $02"
+!toggleEcho = "db $FB, $03"
 
 macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
   if <delta> < 0
