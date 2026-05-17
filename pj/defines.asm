@@ -118,9 +118,10 @@ endmacro
 !percBase = "db $FA"
 
 !setNoteLengthTable = "db $FB, $00"
-!adsrGain = "db $FB, $01"
+!setEchoFirFilters = "db $FB, $01"
 !setDPMiscCommand = "db $FB, $02"
 !toggleEcho = "db $FB, $03"
+!toggleKeyOffGain = "db $FB, $04"
 
 macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
   if <delta> < 0
