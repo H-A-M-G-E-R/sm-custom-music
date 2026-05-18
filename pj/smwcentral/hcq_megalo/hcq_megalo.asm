@@ -61,7 +61,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample1F,Sample1F+0
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample05: incbin "05 SMW @8.brr":2..0
   Sample0B: incbin "0B SMW @10.brr":2..0
   Sample06: incbin "06 SMW @22.brr":2..0
@@ -283,62 +283,10 @@ Tracker2A50:
   !loop : dw .sub30D1 : db 1
   !loop : dw .sub30A7 : db 2
   !endEcho
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,27
   !loop : dw .sub30A7 : db 2
   !loop : dw .sub30BC : db 1
   !loop : dw .sub30D1 : db 1
@@ -566,78 +514,10 @@ Tracker2A50:
   !instr,!instr25
   !loop : dw .sub31E0 : db 1
   !loop : dw .sub31E0 : db 1
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,35
   !end
 
 .pattern0_2
@@ -1132,78 +1012,10 @@ Tracker2A50:
   !instr,!instr1E
   !loop : dw .sub35EF : db 1
   !loop : dw .sub35EF : db 1
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,35
   !end
 
 .pattern0_7
@@ -1377,78 +1189,10 @@ Tracker2A50:
   !loop : dw .sub362E : db 1
   !loop : dw .sub362E : db 1
   !pan,10
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,35
   !end
 
 .sub30A7

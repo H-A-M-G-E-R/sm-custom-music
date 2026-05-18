@@ -2,15 +2,6 @@ asar 1.91
 norom : org 0
 incsrc "../../defines.asm"
 
-macro make_sound_subnote(note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  <note>+<delta>,<vol>,<len>
-endmacro
-
 ; Pitch calculation: round(n*0x1000/0x1053B) or round(n*4096/66875) where n is the sample rate
 
 !samplePuyoHurt = $16
@@ -47,7 +38,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleOwtchHurt,0
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   SamplePuyoHurt: incbin "puyo_hurt_10512_noloop.brr"
   SampleGenesisHurt: incbin "genesis_hurt_10512_noloop.brr"
   SampleZeelaShoot0: incbin "zeela_shoot_0_10512_noloop.brr"

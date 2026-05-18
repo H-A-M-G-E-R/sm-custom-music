@@ -4,25 +4,6 @@ incsrc "../../defines.asm"
 
 ; Pitch calculation: round(n*0x1000/0x1053B) or round(n*4096/66875) where n is the sample rate
 
-macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  db <instr>
-  <note>+<delta>,<vol>,<len>
-endmacro
-
-macro make_sound_subnote(note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  <note>+<delta>,<vol>,<len>
-endmacro
-
 !sampleChargingBeamCommon = $16
 !sampleChargingChargeBeam = $17
 !sampleChargingWideBeam = $18
@@ -45,7 +26,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleChargingWaveBeam,SampleChargingWaveBeam+16*9/16
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   SampleChargingBeamCommon: incbin "charging_beam_common_10503.579888_16.brr"
   SampleChargingChargeBeam: incbin "charging_charge_beam_10512_16.brr"
   SampleChargingWideBeam: incbin "charging_wide_beam_10468.921824_16.brr"

@@ -12,7 +12,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample01,Sample01+36
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample01: incbin "Sample01.brr"
 
 NoteLengthTable: ; note length table

@@ -43,7 +43,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample1B,Sample1B+27
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample14: incbin "15.brr":2..0
   Sample15: incbin "16.brr":2..0
   Sample16: incbin "19.brr":2..0
@@ -156,19 +156,15 @@ Tracker2B60:
   !volume,162
   !loop : dw .sub2E95 : db 4
   !loop : dw .sub2EA8 : db 1
+  !subloop,0
   !loop : dw .sub2E95 : db 1
   !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
+  !subloop,2
   !loop : dw .sub2EBB : db 1
+  !subloop,0
   !loop : dw .sub2EA8 : db 1
   !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
+  !subloop,2
   !loop : dw .sub2EA8 : db 1
   !loop : dw .sub2EBB : db 1
   !loop : dw .sub2E95 : db 1
@@ -176,26 +172,13 @@ Tracker2B60:
   !loop : dw .sub2EE1 : db 2
   !loop : dw .sub2E95 : db 1
   !loop : dw .sub2ECE : db 1
+  !subloop,0
   db 12,$7F
   !e5
   !cs5
   !g4
   !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
+  !subloop,3
   !loop : dw .sub2EA8 : db 1
   !end
 
@@ -248,684 +231,22 @@ Tracker2B60:
 .pattern0_5
   !instr,!instr1E
   !volume,204
+  !subloop,0
   db 12,$7F
   !c4
   db 12,$7C
   !c4
   db 24,$79
   !c4
+  !subloop,1
+  !subloop,0
   db 12,$7F
   !c4
   db 12,$7C
   !c4
   db 24,$79
   !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
+  !subloop,110
   db 12,$7F
   !c4
   db 12,$7C
@@ -941,16 +262,13 @@ Tracker2B60:
   !rest
   !instr,!instr23
   !volume,132
+  !subloop,0
   db 96,$7F
   !g4
   !tie
   !tie
   !tie
-  db 96,$7F
-  !g4
-  !tie
-  !tie
-  !tie
+  !subloop,1
   !loop : dw .sub2F7A : db 2
   !loop : dw .sub2F82 : db 1
   !loop : dw .sub2F7A : db 2
@@ -1083,19 +401,15 @@ Tracker2B60:
   !volume,162
   !loop : dw .sub2E95 : db 4
   !loop : dw .sub2EA8 : db 1
+  !subloop,0
   !loop : dw .sub2E95 : db 1
   !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
+  !subloop,2
   !loop : dw .sub2EBB : db 1
+  !subloop,0
   !loop : dw .sub2EA8 : db 1
   !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
-  !loop : dw .sub2EA8 : db 1
-  !loop : dw .sub2E95 : db 1
+  !subloop,2
   !loop : dw .sub2EA8 : db 1
   !loop : dw .sub2EBB : db 1
   !loop : dw .sub2E95 : db 1
@@ -1103,26 +417,13 @@ Tracker2B60:
   !loop : dw .sub2EE1 : db 2
   !loop : dw .sub2E95 : db 1
   !loop : dw .sub2ECE : db 1
+  !subloop,0
   db 12,$7F
   !e5
   !cs5
   !g4
   !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
-  db 12,$7F
-  !e5
-  !cs5
-  !g4
-  !cs5
+  !subloop,3
   !loop : dw .sub2EA8 : db 1
   !end
 
@@ -1158,672 +459,14 @@ Tracker2B60:
   !end
 
 .pattern1_5
+  !subloop,0
   db 12,$7F
   !c4
   db 12,$7C
   !c4
   db 24,$79
   !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
-  db 12,$7F
-  !c4
-  db 12,$7C
-  !c4
-  db 24,$79
-  !c4
+  !subloop,110
   db 12,$7F
   !c4
   db 12,$7C
@@ -1837,16 +480,13 @@ Tracker2B60:
 .pattern1_6
   !instr,!instr23
   !volume,132
+  !subloop,0
   db 96,$7F
   !g4
   !tie
   !tie
   !tie
-  db 96,$7F
-  !g4
-  !tie
-  !tie
-  !tie
+  !subloop,1
   !loop : dw .sub2F7A : db 2
   !loop : dw .sub2F82 : db 1
   !loop : dw .sub2F7A : db 2
@@ -2077,6 +717,7 @@ Tracker2B60:
   !end
 
 .sub2E59
+  !subloop,0
   db 24,$7F
   !rest
   db 36
@@ -2094,40 +735,7 @@ Tracker2B60:
   !e4
   db 24
   !g4
-  db 24,$7F
-  !rest
-  db 36
-  !c4
-  !c4
-  !d4
-  !fs4
-  db 24
-  !d4
-  !rest
-  db 36
-  !e4
-  !e4
-  !g4
-  !e4
-  db 24
-  !g4
-  db 24,$7F
-  !rest
-  db 36
-  !c4
-  !c4
-  !d4
-  !fs4
-  db 24
-  !d4
-  !rest
-  db 36
-  !e4
-  !e4
-  !g4
-  !e4
-  db 24
-  !g4
+  !subloop,2
   db 24,$7F
   !rest
   db 36
@@ -2378,6 +986,7 @@ Tracker2B60:
   !end
 
 .sub2F5E
+  !subloop,0
   db 48,$7F
   !rest
   db 72
@@ -2385,20 +994,7 @@ Tracker2B60:
   db 36
   !c4
   !c4
-  db 48,$7F
-  !rest
-  db 72
-  !c4
-  db 36
-  !c4
-  !c4
-  db 48,$7F
-  !rest
-  db 72
-  !c4
-  db 36
-  !c4
-  !c4
+  !subloop,2
   db 48,$7F
   !rest
   db 36

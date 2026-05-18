@@ -51,7 +51,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample1D,Sample1D+27
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample14: incbin "12.brr":2..0
   Sample15: incbin "14.brr":2..0
   Sample16: incbin "15.brr":2..0
@@ -319,6 +319,7 @@ Tracker2B34:
   !rest
   !loop : dw .sub3031 : db 1
   !volume,162
+  !subloop,0
   db 12,$7F
   !d4
   !rest
@@ -326,55 +327,7 @@ Tracker2B34:
   !d4
   !d4
   !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
-  db 12,$7F
-  !d4
-  !rest
-  db 24
-  !d4
-  !d4
-  !d4
+  !subloop,7
   !instr,!instr24
   !volume,208
   !loop : dw .sub3047 : db 1
@@ -594,24 +547,10 @@ Tracker2B34:
   !end
 
 .pattern0_4
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,8
   !instr,!instr1F
   !volume,224
   db 24,$7F
@@ -628,6 +567,7 @@ Tracker2B34:
   !rest
   db 24
   !a3
+  !subloop,0
   db 96,$7F
   !rest
   db 24
@@ -636,30 +576,7 @@ Tracker2B34:
   !rest
   db 24
   !b3
-  db 96,$7F
-  !rest
-  db 24
-  !b3
-  db 48
-  !rest
-  db 24
-  !b3
-  db 96,$7F
-  !rest
-  db 24
-  !b3
-  db 48
-  !rest
-  db 24
-  !b3
-  db 96,$7F
-  !rest
-  db 24
-  !b3
-  db 48
-  !rest
-  db 24
-  !b3
+  !subloop,3
   db 12,$7F
   !b3
   !b4
@@ -683,12 +600,10 @@ Tracker2B34:
   !loop : dw .sub31A8 : db 1
   !loop : dw .sub3175 : db 1
   !loop : dw .sub3186 : db 1
+  !subloop,0
   !loop : dw .sub3197 : db 1
   !loop : dw .sub31A8 : db 1
-  !loop : dw .sub3197 : db 1
-  !loop : dw .sub31A8 : db 1
-  !loop : dw .sub3197 : db 1
-  !loop : dw .sub31A8 : db 1
+  !subloop,2
   !loop : dw .sub3175 : db 1
   !loop : dw .sub3186 : db 1
   !loop : dw .sub3197 : db 1
@@ -696,32 +611,10 @@ Tracker2B34:
   !end
 
 .pattern0_5
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,12
   db 12,$7F
   !tie
   !subtranspose,37
@@ -752,70 +645,16 @@ Tracker2B34:
   !end
 
 .pattern0_6
+  !subloop,0
   db 96,$7F
   !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
-  db 96,$7F
-  !rest
+  !subloop,8
   !instr,!instr20
   !volume,224
+  !subloop,0
   db 48,$7F
   !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
+  !subloop,21
   db 36,$7F
   !c4
   db 60
@@ -1184,12 +1023,10 @@ Tracker2B34:
   !loop : dw .sub31A8 : db 1
   !loop : dw .sub3175 : db 1
   !loop : dw .sub3186 : db 1
+  !subloop,0
   !loop : dw .sub3197 : db 1
   !loop : dw .sub31A8 : db 1
-  !loop : dw .sub3197 : db 1
-  !loop : dw .sub31A8 : db 1
-  !loop : dw .sub3197 : db 1
-  !loop : dw .sub31A8 : db 1
+  !subloop,2
   !loop : dw .sub3175 : db 1
   !loop : dw .sub3186 : db 1
   !loop : dw .sub3197 : db 1
@@ -1754,111 +1591,15 @@ Tracker2B34:
   !end
 
 .sub31B9
+  !subloop,0
   !instr,!instr20
-  !echo,%00001111,-2,2
+  !echo,%00001111,-75,75
   db 48,$7F
   !c4
   !instr,!instr22
-  !echo,%00101111,-2,2
+  !echo,%00101111,-75,75
   !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
-  !instr,!instr20
-  !echo,%00001111,-2,2
-  db 48,$7F
-  !c4
-  !instr,!instr22
-  !echo,%00101111,-2,2
-  !c4
+  !subloop,14
   !instr,!instr20
   !echo,%00001111,-75,75
   db 12,$7F
@@ -1881,126 +1622,10 @@ Tracker2B34:
   !c5
   !instr,!instr26
   !volume,118
+  !subloop,0
   db 12,$7F
   !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
-  db 12,$7F
-  !c5
+  !subloop,59
   !end
 endspcblock
 

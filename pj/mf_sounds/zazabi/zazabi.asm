@@ -4,25 +4,6 @@ incsrc "../../defines.asm"
 
 ; Pitch calculation: round(n*0x1000/0x1053B) or round(n*4096/66875) where n is the sample rate
 
-macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  db <instr>
-  <note>+<delta>,<vol>,<len>
-endmacro
-
-macro make_sound_subnote(note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  <note>+<delta>,<vol>,<len>
-endmacro
-
 !sampleZazabiOpenMouth = $16
 !sampleZazabiHurt = $17
 
@@ -36,7 +17,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleZazabiHurt,SampleZazabiHurt+16*9/16
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   SampleZazabiOpenMouth: incbin "zazabi_open_mouth_8000_noloop.brr"
   SampleZazabiHurt: incbin "zazabi_hurt_10512_16_fixed.brr"
 

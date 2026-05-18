@@ -12,7 +12,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample0B,Sample0B+27
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample0B: incbin "Sample0B.brr"
 
 dw 0,0,0,0 ; padding for shared trackers

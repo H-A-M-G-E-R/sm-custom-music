@@ -18,7 +18,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample13,Sample13+27
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample0B: incbin "Sample0B.brr"
   Sample0D: incbin "Sample0D.brr"
   Sample13: incbin "Sample13.brr"

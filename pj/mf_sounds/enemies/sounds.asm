@@ -4,15 +4,6 @@ asar 1.91
 norom : org 0
 incsrc "../../defines.asm"
 
-macro make_sound_subnote(note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  <note>+<delta>,<vol>,<len>
-endmacro
-
 ; Pitch calculation: round(n*0x1000/0x1053B) or round(n*4096/66875) where n is the sample rate
 
 !sampleHornoadHalzynCry = $16
@@ -64,7 +55,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleEvirSmallBubble,0
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   SampleHornoadHalzynCry: incbin "hornoad_halzyn_cry_10512_noloop.brr"
   SampleMotoYamebaSciserYardChootCry: incbin "moto_yameba_sciser_yard_choot_cry_10512_loop0.brr"
   SampleSidehopperCry: incbin "sidehopper_cry_9956.52_loop16.brr"

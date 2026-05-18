@@ -4,25 +4,6 @@ incsrc "../defines.asm"
 
 ; Pitch calculation: round(n*0x1000/0x1053B) or round(n*4096/66875) where n is the sample rate
 
-macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  db <instr>
-  <note>+<delta>,<vol>,<len>
-endmacro
-
-macro make_sound_subnote(note, delta, vol, len)
-  if <delta> < 0
-    db $F7,-<delta>*256
-  else
-    db $F7,<delta>*256
-  endif
-  <note>+<delta>,<vol>,<len>
-endmacro
-
 !sampleMissileLaunch = $16
 !sampleSmallExplosion = $17
 !sampleDoorOpen = $18
@@ -78,7 +59,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw SampleGrabbingLedge,0
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   SampleMissileLaunch: incbin "missile_launch_5000_noloop.brr"
   SampleSmallExplosion: incbin "small_explosion_5000_noloop.brr"
   SampleDoorOpen: incbin "door_open_5256_noloop.brr"
@@ -120,6 +101,7 @@ Sounds:
   dw SoundMorphBallLand ; CD
   dw SoundGrabLedge ; CE
   dw SoundGrabbingLedge ; CF
+  dw SoundWallJump ; D0
 
 SoundMissileLaunch:
   db $01 : dw .voice0
@@ -277,6 +259,15 @@ SoundGrabbingLedge:
 .voice0
   db !sampleGrabbingLedge
   !c5,180*35/75,2
+  db $FF
+
+SoundWallJump:
+  db $01 : dw .voice0
+.voice0
+  db !sampleGrabLedge
+  !c5,160*0.8,2-1
+  db !sampleSamusFootstep
+  !c5,255*0.8,2
   db $FF
 
 endspcblock

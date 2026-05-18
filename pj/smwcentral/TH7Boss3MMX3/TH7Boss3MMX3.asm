@@ -47,7 +47,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample1C,Sample1C+0
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample14: incbin "40_Hihat.brr":2..0
   Sample15: incbin "41_Cymbal.brr":2..0
   Sample16: incbin "42_Kick.brr":2..0
@@ -322,46 +322,20 @@ Tracker2B06:
   !pan,15
   !instr,!instr1E
   !volume,144
+  !subloop,0
   db 24,$7F
   !fs4
   !cs4
   !ds4
   !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
+  !subloop,3
+  !subloop,0
   db 24,$7F
   !as4
   !f4
   !g4
   !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
+  !subloop,3
   !loop : dw .sub2FEF : db 2
   !loop : dw .sub2FFA : db 1
   db 24,$7F
@@ -430,6 +404,7 @@ Tracker2B06:
   !loop : dw .sub31B6 : db 3
   !loop : dw .sub3207 : db 1
   !loop : dw .sub3244 : db 1
+  !subloop,0
   db 24,$7D
   !cs6
   db 12
@@ -437,19 +412,14 @@ Tracker2B06:
   !rest
   !cs6
   !rest
-  db 24,$7D
-  !cs6
-  db 12
-  !cs6
-  !rest
-  !cs6
-  !rest
+  !subloop,1
   db 24,$7D
   !cs6
   db 12
   !cs6
   !rest
   !loop : dw .sub3244 : db 1
+  !subloop,0
   db 24,$7D
   !d6
   db 12
@@ -457,13 +427,7 @@ Tracker2B06:
   !rest
   !d6
   !rest
-  db 24,$7D
-  !d6
-  db 12
-  !d6
-  !rest
-  !d6
-  !rest
+  !subloop,1
   db 24,$7D
   !d6
   db 12
@@ -487,135 +451,39 @@ Tracker2B06:
   !loop : dw .sub326A : db 1
   !loop : dw .sub3291 : db 3
   !loop : dw .sub32D3 : db 1
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
+  !subloop,7
   !loop : dw .sub32D3 : db 1
+  !subloop,0
   db 24,$7F
   !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
+  !subloop,7
   !loop : dw .sub326A : db 1
   !end
 
@@ -637,6 +505,7 @@ Tracker2B06:
   !a4
   !a4
   !a4
+  !subloop,0
   !loop : dw .sub333C : db 1
   !instr,!instr21
   db 48,$7F
@@ -651,20 +520,7 @@ Tracker2B06:
   !a4
   !a4
   !a4
-  !loop : dw .sub333C : db 1
-  !instr,!instr21
-  db 48,$7F
-  !a4
-  !instr,!instr23
-  !a4
-  !loop : dw .sub333C : db 1
-  !instr,!instr21
-  db 24,$7F
-  !a4
-  !instr,!instr23
-  !a4
-  !a4
-  !a4
+  !subloop,1
   !loop : dw .sub333C : db 1
   !instr,!instr21
   db 48,$7F
@@ -687,139 +543,19 @@ Tracker2B06:
 .pattern0_6
   !instr,!instr22
   !volume,144
+  !subloop,0
   db 48,$7F
   !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
+  !subloop,31
   !instr,!instr26
   !volume,124
   !loop : dw .sub33A8 : db 5
   !instr,!instr22
   !volume,144
+  !subloop,0
   db 48,$7F
   !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
+  !subloop,31
   !end
 
 .pattern1_0
@@ -841,46 +577,20 @@ Tracker2B06:
   !pan,15
   !instr,!instr1E
   !volume,144
+  !subloop,0
   db 24,$7F
   !fs4
   !cs4
   !ds4
   !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
-  db 24,$7F
-  !fs4
-  !cs4
-  !ds4
-  !as3
+  !subloop,3
+  !subloop,0
   db 24,$7F
   !as4
   !f4
   !g4
   !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
-  db 24,$7F
-  !as4
-  !f4
-  !g4
-  !d4
+  !subloop,3
   !loop : dw .sub2FEF : db 2
   !loop : dw .sub2FFA : db 1
   db 24,$7F
@@ -941,6 +651,7 @@ Tracker2B06:
   !loop : dw .sub31B6 : db 3
   !loop : dw .sub3207 : db 1
   !loop : dw .sub3244 : db 1
+  !subloop,0
   db 24,$7D
   !cs6
   db 12
@@ -948,19 +659,14 @@ Tracker2B06:
   !rest
   !cs6
   !rest
-  db 24,$7D
-  !cs6
-  db 12
-  !cs6
-  !rest
-  !cs6
-  !rest
+  !subloop,1
   db 24,$7D
   !cs6
   db 12
   !cs6
   !rest
   !loop : dw .sub3244 : db 1
+  !subloop,0
   db 24,$7D
   !d6
   db 12
@@ -968,13 +674,7 @@ Tracker2B06:
   !rest
   !d6
   !rest
-  db 24,$7D
-  !d6
-  db 12
-  !d6
-  !rest
-  !d6
-  !rest
+  !subloop,1
   db 24,$7D
   !d6
   db 12
@@ -995,135 +695,39 @@ Tracker2B06:
 .pattern1_4
   !loop : dw .sub3291 : db 3
   !loop : dw .sub32D3 : db 1
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
-  db 24,$7F
-  !d5
+  !subloop,7
   !loop : dw .sub32D3 : db 1
+  !subloop,0
   db 24,$7F
   !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
-  db 24,$7F
-  !gs4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
-  db 24,$7F
-  !b4
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
+  !subloop,7
   !loop : dw .sub326A : db 1
   !end
 
@@ -1142,6 +746,7 @@ Tracker2B06:
   !a4
   !a4
   !a4
+  !subloop,0
   !loop : dw .sub333C : db 1
   !instr,!instr21
   db 48,$7F
@@ -1156,20 +761,7 @@ Tracker2B06:
   !a4
   !a4
   !a4
-  !loop : dw .sub333C : db 1
-  !instr,!instr21
-  db 48,$7F
-  !a4
-  !instr,!instr23
-  !a4
-  !loop : dw .sub333C : db 1
-  !instr,!instr21
-  db 24,$7F
-  !a4
-  !instr,!instr23
-  !a4
-  !a4
-  !a4
+  !subloop,1
   !loop : dw .sub333C : db 1
   !instr,!instr21
   db 48,$7F
@@ -1195,70 +787,10 @@ Tracker2B06:
   !loop : dw .sub33A8 : db 5
   !instr,!instr22
   !volume,144
+  !subloop,0
   db 48,$7F
   !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
-  db 48,$7F
-  !c4
+  !subloop,31
   !end
 
 .sub2EC1
@@ -1278,46 +810,21 @@ Tracker2B06:
   !end
 
 .sub2ED0
+  !subloop,0
   db 24,$7F
   !as4
   !f4
   !fs4
   !ds4
-  db 24,$7F
-  !as4
-  !f4
-  !fs4
-  !ds4
-  db 24,$7F
-  !as4
-  !f4
-  !fs4
-  !ds4
-  db 24,$7F
-  !as4
-  !f4
-  !fs4
-  !ds4
+  !subloop,3
+  !subloop,0
   db 24,$7F
   !d5
   !a4
   !as4
   !g4
-  db 24,$7F
-  !d5
-  !a4
-  !as4
-  !g4
-  db 24,$7F
-  !d5
-  !a4
-  !as4
-  !g4
-  db 24,$7F
-  !d5
-  !a4
-  !as4
-  !g4
+  !subloop,3
+  !subloop,0
   db 24,$7F
   !e4
   !b4
@@ -1327,15 +834,7 @@ Tracker2B06:
   !b4
   !a4
   !b4
-  db 24,$7F
-  !e4
-  !b4
-  !fs4
-  !b4
-  !g4
-  !b4
-  !a4
-  !b4
+  !subloop,1
   db 24,$7F
   !ds4
   !as4
@@ -1502,6 +1001,7 @@ Tracker2B06:
   !end
 
 .sub2F96
+  !subloop,0
   db 12,$7F
   !as4
   !rest
@@ -1511,33 +1011,8 @@ Tracker2B06:
   !rest
   !ds4
   !rest
-  db 12,$7F
-  !as4
-  !rest
-  !f4
-  !rest
-  !fs4
-  !rest
-  !ds4
-  !rest
-  db 12,$7F
-  !as4
-  !rest
-  !f4
-  !rest
-  !fs4
-  !rest
-  !ds4
-  !rest
-  db 12,$7F
-  !as4
-  !rest
-  !f4
-  !rest
-  !fs4
-  !rest
-  !ds4
-  !rest
+  !subloop,3
+  !subloop,0
   db 12,$7F
   !d5
   !rest
@@ -1547,33 +1022,8 @@ Tracker2B06:
   !rest
   !g4
   !rest
-  db 12,$7F
-  !d5
-  !rest
-  !a4
-  !rest
-  !as4
-  !rest
-  !g4
-  !rest
-  db 12,$7F
-  !d5
-  !rest
-  !a4
-  !rest
-  !as4
-  !rest
-  !g4
-  !rest
-  db 12,$7F
-  !d5
-  !rest
-  !a4
-  !rest
-  !as4
-  !rest
-  !g4
-  !rest
+  !subloop,3
+  !subloop,0
   db 12,$7F
   !b4
   !rest
@@ -1583,33 +1033,8 @@ Tracker2B06:
   !rest
   !e4
   !rest
-  db 12,$7F
-  !b4
-  !rest
-  !fs4
-  !rest
-  !g4
-  !rest
-  !e4
-  !rest
-  db 12,$7F
-  !b4
-  !rest
-  !fs4
-  !rest
-  !g4
-  !rest
-  !e4
-  !rest
-  db 12,$7F
-  !b4
-  !rest
-  !fs4
-  !rest
-  !g4
-  !rest
-  !e4
-  !rest
+  !subloop,3
+  !subloop,0
   db 12,$7F
   !ds5
   !rest
@@ -1619,15 +1044,7 @@ Tracker2B06:
   !rest
   !ds4
   !rest
-  db 12,$7F
-  !ds5
-  !rest
-  !gs4
-  !rest
-  !as4
-  !rest
-  !ds4
-  !rest
+  !subloop,1
   !end
 
 .sub2FCF
@@ -1684,6 +1101,7 @@ Tracker2B06:
   !end
 
 .sub3001
+  !subloop,0
   db 24,$7F
   !as4
   db 12
@@ -1698,20 +1116,7 @@ Tracker2B06:
   !rest
   !as4
   !rest
-  db 24,$7F
-  !as4
-  db 12
-  !as4
-  !rest
-  !as4
-  !rest
-  db 24
-  !as4
-  db 12
-  !as4
-  !rest
-  !as4
-  !rest
+  !subloop,1
   db 24,$7F
   !as4
   db 12
@@ -1719,6 +1124,7 @@ Tracker2B06:
   !rest
   db 48
   !as4
+  !subloop,0
   db 24,$7F
   !d5
   db 12
@@ -1733,20 +1139,7 @@ Tracker2B06:
   !rest
   !d5
   !rest
-  db 24,$7F
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
-  db 24
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
+  !subloop,1
   db 24,$7F
   !d5
   db 12
@@ -1754,6 +1147,7 @@ Tracker2B06:
   !rest
   db 48
   !d5
+  !subloop,0
   db 24,$7F
   !b4
   db 12
@@ -1768,20 +1162,7 @@ Tracker2B06:
   !rest
   !b4
   !rest
-  db 24,$7F
-  !b4
-  db 12
-  !b4
-  !rest
-  !b4
-  !rest
-  db 24
-  !b4
-  db 12
-  !b4
-  !rest
-  !b4
-  !rest
+  !subloop,1
   db 24,$7F
   !b4
   db 12
@@ -1789,6 +1170,7 @@ Tracker2B06:
   !rest
   db 48
   !b4
+  !subloop,0
   db 24,$7F
   !as4
   db 12
@@ -1796,13 +1178,7 @@ Tracker2B06:
   !rest
   !as4
   !rest
-  db 24,$7F
-  !as4
-  db 12
-  !as4
-  !rest
-  !as4
-  !rest
+  !subloop,1
   db 24,$7F
   !as4
   db 12
@@ -1827,6 +1203,7 @@ Tracker2B06:
   !end
 
 .sub3075
+  !subloop,0
   db 24,$7F
   !as4
   db 12
@@ -1841,20 +1218,7 @@ Tracker2B06:
   !rest
   !as4
   !rest
-  db 24,$7F
-  !as4
-  db 12
-  !as4
-  !rest
-  !as4
-  !rest
-  db 24
-  !as4
-  db 12
-  !as4
-  !rest
-  !as4
-  !rest
+  !subloop,1
   db 24,$7F
   !as4
   db 12
@@ -1862,6 +1226,7 @@ Tracker2B06:
   !rest
   db 48
   !as4
+  !subloop,0
   db 24,$7F
   !d5
   db 12
@@ -1876,20 +1241,7 @@ Tracker2B06:
   !rest
   !d5
   !rest
-  db 24,$7F
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
-  db 24
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
+  !subloop,1
   db 24,$7F
   !d5
   db 12
@@ -1897,6 +1249,7 @@ Tracker2B06:
   !rest
   db 48
   !d5
+  !subloop,0
   db 24,$7F
   !b4
   db 12
@@ -1911,20 +1264,7 @@ Tracker2B06:
   !rest
   !b4
   !rest
-  db 24,$7F
-  !b4
-  db 12
-  !b4
-  !rest
-  !b4
-  !rest
-  db 24
-  !b4
-  db 12
-  !b4
-  !rest
-  !b4
-  !rest
+  !subloop,1
   db 24,$7F
   !b4
   db 12
@@ -1932,6 +1272,7 @@ Tracker2B06:
   !rest
   db 48
   !b4
+  !subloop,0
   db 24,$7F
   !d5
   db 12
@@ -1946,20 +1287,7 @@ Tracker2B06:
   !rest
   !d5
   !rest
-  db 24,$7F
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
-  db 24
-  !d5
-  db 12
-  !d5
-  !rest
-  !d5
-  !rest
+  !subloop,1
   db 24,$7F
   !d5
   db 12
@@ -1970,6 +1298,7 @@ Tracker2B06:
   !end
 
 .sub30E2
+  !subloop,0
   db 24,$7D
   !as5
   db 12
@@ -1977,18 +1306,13 @@ Tracker2B06:
   !rest
   !as5
   !rest
+  !subloop,1
   db 24,$7D
   !as5
   db 12
   !as5
   !rest
-  !as5
-  !rest
-  db 24,$7D
-  !as5
-  db 12
-  !as5
-  !rest
+  !subloop,0
   db 24,$7D
   !gs5
   db 12
@@ -1996,18 +1320,13 @@ Tracker2B06:
   !rest
   !gs5
   !rest
+  !subloop,1
   db 24,$7D
   !gs5
   db 12
   !gs5
   !rest
-  !gs5
-  !rest
-  db 24,$7D
-  !gs5
-  db 12
-  !gs5
-  !rest
+  !subloop,0
   db 24,$7D
   !g5
   db 12
@@ -2027,28 +1346,11 @@ Tracker2B06:
   db 12
   !g5
   !rest
-  db 24,$7D
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24
-  !g5
-  db 12
-  !g5
-  !rest
+  !subloop,1
   !end
 
 .sub311F
+  !subloop,0
   db 24,$7D
   !fs5
   db 12
@@ -2056,18 +1358,13 @@ Tracker2B06:
   !rest
   !fs5
   !rest
+  !subloop,1
   db 24,$7D
   !fs5
   db 12
   !fs5
   !rest
-  !fs5
-  !rest
-  db 24,$7D
-  !fs5
-  db 12
-  !fs5
-  !rest
+  !subloop,0
   db 24,$7D
   !gs5
   db 12
@@ -2075,13 +1372,7 @@ Tracker2B06:
   !rest
   !gs5
   !rest
-  db 24,$7D
-  !gs5
-  db 12
-  !gs5
-  !rest
-  !gs5
-  !rest
+  !subloop,1
   db 24,$7D
   !gs5
   db 12
@@ -2090,6 +1381,7 @@ Tracker2B06:
   !end
 
 .sub3144
+  !subloop,0
   db 24,$7F
   !ds5
   db 12
@@ -2097,13 +1389,7 @@ Tracker2B06:
   !rest
   !ds5
   !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
+  !subloop,1
   db 24,$7F
   !ds5
   db 12
@@ -2112,6 +1398,7 @@ Tracker2B06:
   !end
 
 .sub3157
+  !subloop,0
   db 24,$7F
   !ds5
   db 12
@@ -2119,27 +1406,7 @@ Tracker2B06:
   !rest
   !ds5
   !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
+  !subloop,3
   db 24,$7F
   !ds5
   db 12
@@ -2147,6 +1414,7 @@ Tracker2B06:
   !rest
   db 48
   !ds5
+  !subloop,0
   db 24,$7F
   !g5
   db 12
@@ -2154,27 +1422,7 @@ Tracker2B06:
   !rest
   !g5
   !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
+  !subloop,3
   db 24,$7F
   !g5
   db 12
@@ -2182,6 +1430,7 @@ Tracker2B06:
   !rest
   db 48
   !g5
+  !subloop,0
   db 24,$7F
   !e5
   db 12
@@ -2189,27 +1438,7 @@ Tracker2B06:
   !rest
   !e5
   !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
+  !subloop,3
   db 24,$7F
   !e5
   db 12
@@ -2217,6 +1446,7 @@ Tracker2B06:
   !rest
   db 48
   !e5
+  !subloop,0
   db 24,$7F
   !ds5
   db 12
@@ -2224,13 +1454,7 @@ Tracker2B06:
   !rest
   !ds5
   !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
+  !subloop,1
   db 24,$7F
   !ds5
   db 12
@@ -2255,6 +1479,7 @@ Tracker2B06:
   !end
 
 .sub31B6
+  !subloop,0
   db 24,$7F
   !ds5
   db 12
@@ -2262,27 +1487,7 @@ Tracker2B06:
   !rest
   !ds5
   !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
-  db 24,$7F
-  !ds5
-  db 12
-  !ds5
-  !rest
-  !ds5
-  !rest
+  !subloop,3
   db 24,$7F
   !ds5
   db 12
@@ -2290,6 +1495,7 @@ Tracker2B06:
   !rest
   db 48
   !ds5
+  !subloop,0
   db 24,$7F
   !g5
   db 12
@@ -2297,27 +1503,7 @@ Tracker2B06:
   !rest
   !g5
   !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
-  db 24,$7F
-  !g5
-  db 12
-  !g5
-  !rest
-  !g5
-  !rest
+  !subloop,3
   db 24,$7F
   !g5
   db 12
@@ -2325,6 +1511,7 @@ Tracker2B06:
   !rest
   db 48
   !g5
+  !subloop,0
   db 24,$7F
   !e5
   db 12
@@ -2332,27 +1519,7 @@ Tracker2B06:
   !rest
   !e5
   !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
-  db 24,$7F
-  !e5
-  db 12
-  !e5
-  !rest
-  !e5
-  !rest
+  !subloop,3
   db 24,$7F
   !e5
   db 12
@@ -2360,6 +1527,7 @@ Tracker2B06:
   !rest
   db 48
   !e5
+  !subloop,0
   db 24,$7F
   !f5
   db 12
@@ -2367,27 +1535,7 @@ Tracker2B06:
   !rest
   !f5
   !rest
-  db 24,$7F
-  !f5
-  db 12
-  !f5
-  !rest
-  !f5
-  !rest
-  db 24,$7F
-  !f5
-  db 12
-  !f5
-  !rest
-  !f5
-  !rest
-  db 24,$7F
-  !f5
-  db 12
-  !f5
-  !rest
-  !f5
-  !rest
+  !subloop,3
   db 24,$7F
   !f5
   db 12
@@ -2398,6 +1546,7 @@ Tracker2B06:
   !end
 
 .sub3207
+  !subloop,0
   db 24,$7D
   !ds6
   db 12
@@ -2405,18 +1554,13 @@ Tracker2B06:
   !rest
   !ds6
   !rest
+  !subloop,1
   db 24,$7D
   !ds6
   db 12
   !ds6
   !rest
-  !ds6
-  !rest
-  db 24,$7D
-  !ds6
-  db 12
-  !ds6
-  !rest
+  !subloop,0
   db 24,$7D
   !cs6
   db 12
@@ -2424,18 +1568,13 @@ Tracker2B06:
   !rest
   !cs6
   !rest
+  !subloop,1
   db 24,$7D
   !cs6
   db 12
   !cs6
   !rest
-  !cs6
-  !rest
-  db 24,$7D
-  !cs6
-  db 12
-  !cs6
-  !rest
+  !subloop,0
   db 24,$7D
   !c6
   db 12
@@ -2455,28 +1594,11 @@ Tracker2B06:
   db 12
   !c6
   !rest
-  db 24,$7D
-  !c6
-  db 12
-  !c6
-  !rest
-  !c6
-  !rest
-  db 24
-  !c6
-  db 12
-  !c6
-  !rest
-  !c6
-  !rest
-  db 24
-  !c6
-  db 12
-  !c6
-  !rest
+  !subloop,1
   !end
 
 .sub3244
+  !subloop,0
   db 24,$7D
   !b5
   db 12
@@ -2484,13 +1606,7 @@ Tracker2B06:
   !rest
   !b5
   !rest
-  db 24,$7D
-  !b5
-  db 12
-  !b5
-  !rest
-  !b5
-  !rest
+  !subloop,1
   db 24,$7D
   !b5
   db 12
@@ -2499,6 +1615,7 @@ Tracker2B06:
   !end
 
 .sub3257
+  !subloop,0
   db 24,$7F
   !gs5
   db 12
@@ -2506,13 +1623,7 @@ Tracker2B06:
   !rest
   !gs5
   !rest
-  db 24,$7F
-  !gs5
-  db 12
-  !gs5
-  !rest
-  !gs5
-  !rest
+  !subloop,1
   db 24,$7F
   !gs5
   db 12
@@ -2521,118 +1632,22 @@ Tracker2B06:
   !end
 
 .sub326A
+  !subloop,0
   db 24,$7F
   !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
+  !subloop,15
+  !subloop,0
   db 24,$7F
   !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
-  db 24,$7F
-  !g4
+  !subloop,15
+  !subloop,0
   db 24,$7F
   !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
-  db 24,$7F
-  !e5
+  !subloop,15
+  !subloop,0
   db 24,$7F
   !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
+  !subloop,7
   db 24,$7F
   !as4
   !as4
@@ -2694,26 +1709,10 @@ Tracker2B06:
   !b4
   !b4
   !b4
+  !subloop,0
   db 24,$7F
   !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
-  db 24,$7F
-  !as4
+  !subloop,9
   db 24,$7F
   !gs5
   !gs5
@@ -2724,70 +1723,18 @@ Tracker2B06:
   !end
 
 .sub32D3
+  !subloop,0
   db 24,$7F
   !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
-  db 24,$7F
-  !ds5
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
-  db 24,$7F
-  !cs5
+  !subloop,7
+  !subloop,0
   db 24,$7F
   !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
+  !subloop,15
   !end
 
 .sub32E9
@@ -2942,134 +1889,10 @@ Tracker2B06:
   !end
 
 .sub33A8
+  !subloop,0
   db 24,$7F
   !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
-  db 24,$7F
-  !c5
+  !subloop,63
   !end
 endspcblock
 

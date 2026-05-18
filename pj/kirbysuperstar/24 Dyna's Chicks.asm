@@ -12,7 +12,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample26,Sample26+27
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample26: incbin "Sample_dd96e3e590d00a0f1207b4507dbe0624.brr"
 
 NoteLengthTable: ; note length table

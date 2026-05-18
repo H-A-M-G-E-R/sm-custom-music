@@ -48,7 +48,7 @@ spcblock 4*$16+!p_sampleTable nspc ; sample table
   dw Sample17,Sample17+1206
 endspcblock
 
-spcblock $B210-$6E00+!p_sampleData nspc ; sample data
+spcblock !p_songSpecificData nspc ; sample data
   Sample00: incbin "Sample_22402e2a3eb504d235368cf3d8515aec.brr"
   Sample08: incbin "Sample_76cf21864e2caf209c0abf24ad7c26f3.brr"
   Sample0C: incbin "Sample_410da31f00acd2c10200c79c31c5c32d.brr"
@@ -656,6 +656,7 @@ Tracker2E6A:
   !end
 
 .sub330B
+  !subloop,0
   db 24,$7F
   !cs4
   db 12
@@ -665,15 +666,7 @@ Tracker2E6A:
   !rest
   db 72
   !cs4
-  db 24,$7F
-  !cs4
-  db 12
-  !as3
-  !rest
-  !c4
-  !rest
-  db 72
-  !cs4
+  !subloop,1
   db 24,$7F
   !rest
   db 12
@@ -911,20 +904,10 @@ Tracker2E6A:
   !end
 
 .sub340D
+  !subloop,0
   db 48,$7F
   !f3
-  db 48,$7F
-  !f3
-  db 48,$7F
-  !f3
-  db 48,$7F
-  !f3
-  db 48,$7F
-  !f3
-  db 48,$7F
-  !f3
-  db 48,$7F
-  !f3
+  !subloop,6
   db 12,$7F
   !f3
   !f3
@@ -969,18 +952,16 @@ Tracker2E6A:
   !end
 
 .sub3444
+  !subloop,0
   db 48,$7F
   !fs3
   !fs3
-  db 48,$7F
-  !fs3
-  !fs3
-  db 48,$7F
-  !gs3
-  !gs3
+  !subloop,1
+  !subloop,0
   db 48,$7F
   !gs3
   !gs3
+  !subloop,1
   !end
 
 .sub3455
@@ -1024,15 +1005,15 @@ Tracker2E6A:
   !ds5
   db 24
   !ds5
+  !subloop,0
   db 48,$7F
   !ds5
   !ds5
-  db 48,$7F
-  !ds5
-  !ds5
+  !subloop,1
   !end
 
 .sub3485
+  !subloop,0
   db 24,$7F
   !f5
   db 12
@@ -1042,15 +1023,7 @@ Tracker2E6A:
   !rest
   db 72
   !cs5
-  db 24,$7F
-  !f5
-  db 12
-  !ds5
-  !rest
-  !gs5
-  !rest
-  db 72
-  !cs5
+  !subloop,1
   db 24,$7F
   !rest
   db 12
@@ -1218,26 +1191,13 @@ Tracker2E6A:
   !end
 
 .sub3539
+  !subloop,0
   db 24,$7F
   !rest
   db 12
   !c4
   !c4
-  db 24,$7F
-  !rest
-  db 12
-  !c4
-  !c4
-  db 24,$7F
-  !rest
-  db 12
-  !c4
-  !c4
-  db 24,$7F
-  !rest
-  db 12
-  !c4
-  !c4
+  !subloop,3
   !end
 
 .sub3544
