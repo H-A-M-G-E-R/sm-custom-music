@@ -9,6 +9,8 @@
 !noteEndInTicks = $E5
 !disablePsychoacousticAdjustment = $E6
 
+!musicTempo = $4F
+
 !c2 = "db $80"
 !cs2 = "db $81"
 !d2 = "db $82"
