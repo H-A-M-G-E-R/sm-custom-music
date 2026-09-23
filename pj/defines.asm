@@ -127,6 +127,7 @@ endmacro
 !toggleKeyOffGain = "db $FB, $04"
 !amplify = "db $FB, $05"
 !restoreInstrument = "db $FB, $06"
+!toggleLegato = "db $FB, $07"
 
 !subloop = "db $FC"
 !adsrGain = "db $FD"
