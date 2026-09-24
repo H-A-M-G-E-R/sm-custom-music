@@ -1,8 +1,6 @@
-;../asar.exe --fix-checksum=off pj\adsr_test.asm pj\adsr_test.nspc
-;python3 build_spc.py pj\adsr_test.nspc
 asar 1.91
 norom : org 0
-incsrc "defines.asm"
+incsrc "../defines.asm"
 
 spcblock !p_songSpecificData nspc
 dw 0,0,0,0 ; padding for shared trackers
@@ -14,24 +12,23 @@ Tracker2A50:
   dw .pattern0
   dw $00FF,-
 
-.pattern0: dw .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0
+.pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
 
 .pattern0_0
   !endEcho
   !setDPMiscCommand,!noteEndInTicks,1
-  !musicVolume,100
+  !musicVolume,255
   !tempo,24;24.576 or 60 bpm
   !setDPMiscCommand,!musicTempo,147;0.576*256
   !volume,255
   !instr,$0B
-  !adsrGain,$7F,$F0
-  db 48,$7F
+  !setInstrumentByte,3,$87 ; GAIN
   !subloop,0
-  ;!adsrGain,$7F,$F0
-  ;!c4
-  ;!adsrGain,$80,$CA
+  !setInstrumentByte,1,$FF ; ADSR1
+  db 48,$7F
   !c4
-  ;!restoreInstrument
+  !setInstrumentByte,1,$7F ; ADSR1
+  !tie
   !subloop,255
   !end
 endspcblock

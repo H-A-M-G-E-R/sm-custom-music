@@ -1,8 +1,12 @@
-;../asar.exe --fix-checksum=off pj\legato_test.asm pj\legato_test.nspc
-;python3 build_spc.py pj\legato_test.nspc
+; tick_len_ms = 2
+; beat_len_ticks = 48 (addmusic)
+; beat_len_ms_max_tempo = beat_len_ticks * tick_len_ms = 96
+; max_bpm = 60000 / beat_len_ms_max_tempo = 625
+; bpm = 625 * tempo / 256 = tempo * 625 / 256
+; tempo = bpm * 256 / 625
 asar 1.91
 norom : org 0
-incsrc "defines.asm"
+incsrc "../defines.asm"
 
 spcblock !p_songSpecificData nspc
 dw 0,0,0,0 ; padding for shared trackers
@@ -18,20 +22,14 @@ Tracker2A50:
 
 .pattern0_0
   !endEcho
-  !setDPMiscCommand,!noteEndInTicks,1
   !musicVolume,255
   !tempo,24;24.576 or 60 bpm
   !setDPMiscCommand,!musicTempo,147;0.576*256
   !volume,255
-  !instr,$0B
-  !adsrGain,$7F,$EB
-  !toggleLegato
+  !instr,0
   db 48,$7F
   !subloop,0
   !c4
-  !d4
-  !e4
-  !rest
   !subloop,255
   !end
 endspcblock

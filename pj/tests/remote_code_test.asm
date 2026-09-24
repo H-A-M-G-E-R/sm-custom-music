@@ -1,8 +1,6 @@
-;../asar.exe --fix-checksum=off pj\remote_code_test.asm pj\remote_code_test.nspc
-;python3 build_spc.py pj\remote_code_test.nspc
 asar 1.91
 norom : org 0
-incsrc "defines.asm"
+incsrc "../defines.asm"
 
 spcblock !p_songSpecificData nspc
 dw 0,0,0,0 ; padding for shared trackers

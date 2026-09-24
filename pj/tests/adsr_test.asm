@@ -1,12 +1,6 @@
-; tick_len_ms = 2
-; beat_len_ticks = 48 (addmusic)
-; beat_len_ms_max_tempo = beat_len_ticks * tick_len_ms = 96
-; max_bpm = 60000 / beat_len_ms_max_tempo = 625
-; bpm = 625 * tempo / 256 = tempo * 625 / 256
-; tempo = bpm * 256 / 625
 asar 1.91
 norom : org 0
-incsrc "defines.asm"
+incsrc "../defines.asm"
 
 spcblock !p_songSpecificData nspc
 dw 0,0,0,0 ; padding for shared trackers
@@ -18,18 +12,24 @@ Tracker2A50:
   dw .pattern0
   dw $00FF,-
 
-.pattern0: dw .pattern0_0, 0, 0, 0, 0, 0, 0, 0
+.pattern0: dw .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0, .pattern0_0
 
 .pattern0_0
   !endEcho
-  !musicVolume,255
+  !setDPMiscCommand,!noteEndInTicks,1
+  !musicVolume,100
   !tempo,24;24.576 or 60 bpm
   !setDPMiscCommand,!musicTempo,147;0.576*256
   !volume,255
-  !instr,0
+  !instr,$0B
+  !adsrGain,$7F,$F0
   db 48,$7F
   !subloop,0
+  ;!adsrGain,$7F,$F0
+  ;!c4
+  ;!adsrGain,$80,$CA
   !c4
+  ;!restoreInstrument
   !subloop,255
   !end
 endspcblock

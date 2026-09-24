@@ -1,8 +1,6 @@
-;../asar.exe --fix-checksum=off pj\adsr_test_2.asm pj\adsr_test_2.nspc
-;python3 build_spc.py pj\adsr_test_2.nspc
 asar 1.91
 norom : org 0
-incsrc "defines.asm"
+incsrc "../defines.asm"
 
 spcblock !p_songSpecificData nspc
 dw 0,0,0,0 ; padding for shared trackers
@@ -24,13 +22,14 @@ Tracker2A50:
   !setDPMiscCommand,!musicTempo,147;0.576*256
   !volume,255
   !instr,$0B
+  !adsrGain,$7F,$EB
+  !toggleLegato
   db 48,$7F
   !subloop,0
-  !adsrGain,$7F,$E0
   !c4
-  ;!adsrGain,$80,$87
-  !adsrGain,$7F,$EF
-  !tie
+  !d4
+  !e4
+  !rest
   !subloop,255
   !end
 endspcblock

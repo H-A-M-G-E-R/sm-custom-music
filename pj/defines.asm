@@ -128,6 +128,7 @@ endmacro
 !amplify = "db $FB, $05"
 !restoreInstrument = "db $FB, $06"
 !toggleLegato = "db $FB, $07"
+!setInstrumentByte = "db $FB, $08"
 
 !subloop = "db $FC"
 !adsrGain = "db $FD"
