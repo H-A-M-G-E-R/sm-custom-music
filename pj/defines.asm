@@ -1,9 +1,9 @@
 ; Change these below if you repoint the SPC engine.
-!p_spcEngine = $357
-!p_instrumentTable = $27DA
-!p_sampleTable = $2900
-!p_sampleData = $2A00
-!p_songSpecificData = $6E10
+!p_spcEngine = $388
+!p_instrumentTable = $24DA
+!p_sampleTable = $2600
+!p_sampleData = $2700
+!p_songSpecificData = $6B10
 !p_extra = $E0
 
 !noteEndInTicks = $E5
@@ -131,6 +131,7 @@ endmacro
 
 !subloop = "db $FC"
 !adsrGain = "db $FD"
+!remoteCode = "db $FE"
 
 macro make_sound_subnote_with_instr(instr, note, delta, vol, len)
   if <delta> < 0
